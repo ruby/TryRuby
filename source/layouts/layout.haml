@@ -1,0 +1,27 @@
+!!!
+%html
+  %head
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0, maximum-scale=1.0 user-scalable=no"}
+    %meta{:name => "charset", :content => "utf-8"}
+    %title= data.page.title || 'TryRuby'
+    %meta{:name => "description", :content => "#{data.page.description || 'Learn programming with Ruby'}"}
+
+    = stylesheet_link_tag 'vendor/bootstrap', media: 'all'
+    = stylesheet_link_tag 'vendor/bootstrap-theme', media: 'all'
+    = stylesheet_link_tag 'vendor/codemirror', media: 'all'
+    = stylesheet_link_tag 'vendor/codemirror-solarized', media: 'all'
+    = stylesheet_link_tag 'vendor/pygment_solarized_light', media: 'all'
+    = stylesheet_link_tag 'application', media: 'all'
+
+    = javascript_include_tag 'vendor/jquery'
+    = javascript_include_tag 'vendor/bootstrap'
+    = javascript_include_tag 'vendor/codemirror-compressed-4.8'
+    = javascript_include_tag 'application'
+
+  %body
+    %header
+      = partial 'layouts/_header'
+      %script= '$(\'a[href="\'+location.pathname.replace(/\/$/,\'\')+\'"]\').parent().addClass(\'active\')'
+    
+    .container
+      = yield

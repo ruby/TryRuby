@@ -1,0 +1,41 @@
+/*
+
+    Name:       Tomorrow Night - Eighties
+    Author:     Chris Kempson
+
+    CodeMirror template by Jan T. Sott (https://github.com/idleberg/base16-codemirror)
+    Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16)
+
+*/
+
+.cm-s-tomorrow-night-eighties.CodeMirror {
+  font-family: "Menlo", "Consolas", "Courier New", "monospace";
+  font-size: 13px;
+}
+
+.cm-s-tomorrow-night-eighties.CodeMirror {background: #f7f7f9; color: #4d4d4c;}
+.cm-s-tomorrow-night-eighties div.CodeMirror-selected {background: #c7c7c9 !important;}
+.cm-s-tomorrow-night-eighties .CodeMirror-gutters {background: #f7f7f9; border-right: 0px;}
+.cm-s-tomorrow-night-eighties .CodeMirror-guttermarker { color: #f2777a; }
+.cm-s-tomorrow-night-eighties .CodeMirror-guttermarker-subtle { color: #777; }
+.cm-s-tomorrow-night-eighties .CodeMirror-linenumber {color: #8e8e8e;}
+.cm-s-tomorrow-night-eighties .CodeMirror-cursor {border-left: 1px solid #6A6A6A !important;}
+
+.cm-s-tomorrow-night-eighties span.cm-comment {color: #8e8e8e;}
+.cm-s-tomorrow-night-eighties span.cm-atom {color: #8959a8;}
+.cm-s-tomorrow-night-eighties span.cm-number {color: #f5871f;}
+
+.cm-s-tomorrow-night-eighties span.cm-property, .cm-s-tomorrow-night-eighties span.cm-attribute {color: #4271ae;}
+.cm-s-tomorrow-night-eighties span.cm-keyword {color: #8959a8;}
+.cm-s-tomorrow-night-eighties span.cm-string {color: #718c00;}
+
+.cm-s-tomorrow-night-eighties span.cm-variable {color: #4d4d4c;}
+.cm-s-tomorrow-night-eighties span.cm-variable-2 {color: #c82829;}
+.cm-s-tomorrow-night-eighties span.cm-def {color: #4271ae;}
+.cm-s-tomorrow-night-eighties span.cm-bracket {color: #CCCCCC;}
+.cm-s-tomorrow-night-eighties span.cm-tag {color: #c82829;}
+.cm-s-tomorrow-night-eighties span.cm-link {color: #a16a94;}
+.cm-s-tomorrow-night-eighties span.cm-error {background: #f2777a; color: #6A6A6A;}
+
+.cm-s-tomorrow-night-eighties .CodeMirror-activeline-background {background: #343600 !important;}
+.cm-s-tomorrow-night-eighties .CodeMirror-matchingbracket { text-decoration: underline; color: white !important;}
