@@ -31,7 +31,7 @@ This fourth iteration of TryRuby was created for several reasons.
   free spirit in which TryRuby was created
 - Since I have a C/C++ background and am switching to Ruby/Rails, I needed a small but significant
   Ruby project for my resume.  
-  Since the original lesson content was brilliant stuff, working on TryRuby was a most
+  The original lesson content was brilliant stuff, so working on TryRuby was a most
   enjoyable experience
 
 ### Changes
@@ -45,11 +45,11 @@ I had to make some alterations to the TryRuby lesson content. Also updated some 
 - Removed the pop-up stuff
 - Removed mousehole stuff
 - Improved the feedback given to the user based on the program's output a bit
-- Added support for lesson content in multiple languages. __Translators are welcome !__
-  I will be starting on the Dutch translation soon
+- Added support for lesson content in multiple languages. The Dutch translation is available.
+  __Translators are welcome !__
 - Added explanation of if/else statements
 - Changed the subject of the "Class" tutorials from building a blog (so last decade) to making an
-  instant messaging app called: Twatify<sup>TM</sup>
+  instant messaging app called: Blurbalizer<sup>TM</sup>
 - Used markdown with frontmatter for editing lesson content
 - Used middleman as development environment
 - Added some articles with more background information for aspiring software developers

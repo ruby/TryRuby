@@ -11,15 +11,15 @@ of a certain class. Think "class" as in "working class" &mdash; a specific group
 are similar, have the same jobs, the same shirts.
 What use is a class ?
 
-### Twatify<sup>TM</sup>
+### Blurbalizer<sup>TM</sup>
 You just had a brilliant idea for a new app. It is going to be __the__ next instant
 messaging platform. You want an app where people can send each other short messages. You call
-these messages Twats<sup>TM</sup>. A Twat<sup>TM</sup> has a maximum length of just 40 characters. Let's do a mood setting too.
+these messages Blurbs<sup>TM</sup>. A Blurb<sup>TM</sup> has a maximum length of just 40 characters. Let's do a mood setting too.
 
 <!---The Internet has really brought back stick people and smileys out of bankruptcy. __Emote!__-->
 
 ### Where to start
-Well, you might store your Twats<sup>TM</sup> entries in a json file, right?
+Well, you might store your Blurbs<sup>TM</sup> entries in a json file, right?
 But how would you keep track of the content of the entry and the time it was posted?
 And when you loaded the file, how would it look in Ruby?
 Would it be a Hash? Or an Array? Or an Array of Arrays? Or something else? 
@@ -29,5 +29,5 @@ I really think you'll want to use a class. You are already familiar with many cl
 Hash, Array, String.  
 Let's make a new class (returns no output):
 
-    class Twat
+    class Blurb
     end

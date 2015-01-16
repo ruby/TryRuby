@@ -32,5 +32,5 @@ Here are a couple of expressions with their outcomes:
                     # comparison of String with
                     # Numeric failed
 
-The _if expression_ can take many forms. It can compare literal values, variables and
-the return value of a method.
+The _if expression_ can take many forms. It can compare literal values (1 < 2),
+variables (a < 1) and the return value of a method ('xyz'.empty?).

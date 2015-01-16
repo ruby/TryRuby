@@ -113,15 +113,15 @@ class TryRuby
     # No cookie -> user browser settings to determine language
     if language.empty?
       # Only English for now. Uncomment lines to get browser setting
-      #browserlang = `navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage || navigator.browserLanguage)`
-      #case browserlang[0..1]
-      #when 'nl'
-      #  language = 'nl'
+      browserlang = `navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage || navigator.browserLanguage)`
+      case browserlang[0..1]
+      when 'nl'
+        language = 'nl'
       #when 'es'
       #  language = 'es'
-      #else
+      else
         language = 'en'
-      #end
+      end
 
       # Set session cookie to store language
       set_cookie('tryruby_nl_language', language)
@@ -195,9 +195,9 @@ class TryRuby
   def switch_to_last_used
     last_step = get_cookie('tryruby_nl_step').to_i
 
-    if last_step > 0
-      update_screen(get_step_content(last_step, '', ''))
-    else
+    update_screen(get_step_content(last_step > 0 ? last_step : 1, '', ''))
+
+    if last_step <= 1
       @editor.value = INITIAL_TRY_CODE.strip
       do_run
     end

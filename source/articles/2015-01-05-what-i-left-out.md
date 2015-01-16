@@ -152,6 +152,10 @@ The Cow and Chicken classes can use all attributes and methods that are defined 
 
 A course or a book on _Object Oriented programming_ can teach you all about this import concept.
 
+### Instance variables
+In the lessons we mentioned _object variables_. Actually these should be called _instance variables_,
+since these variables belong to one instance of a type of object.
+
 ### Modules and mixins
 Sometimes you have two classes that have a lot of similar code, but they cannot inherit from a common
 parent. To avoid having the same code in two places (something you really should avoid) you can
@@ -160,21 +164,21 @@ place the common code in a module and __mix that module into your class__.
 Or you can mix-in an existing module like _Enumerable_:
 
       # Mix-in
-      class Twatify
+      class Blurbalizer
         include Enumerable
         
-        attr_reader :twats
+        attr_reader :blurbs
         
         def initialize
-          @twats = []
+          @blurbs = []
         end
         
         def each(&block)
-          @twats.each{ |twat| block.call(twat) }
+          @blurbs.each{ |blurb| block.call(blurb) }
         end
       end
 
-      Twatify.new.methods
+      Blurbalizer.new.methods
       
 As long as you define method each, the Enumerable mixin now provides a lot of methods for free, like
 map and sort.

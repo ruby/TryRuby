@@ -32,18 +32,11 @@ Then visit `http://localhost:4567`.
 The `build` directory now holds a publishable version of TryRuby.
 
 ## Translators
-When adding a new translation:
-
-- Create a new sub-directory in translations
-- Copy the files from translations/en to the new sub-directory
-- Add the new language to collector.rb (line 138)
-- Translate
-- Middleman/livereload should notice any changes to translations and
-  refresh the webpage for you
+When adding a new translation: see the README file in /translations.
 
 ## Why
-See the website [TryRuby.nl/articles](http://TryRuby.nl/articles) for more
-background information on how and why this website was created.
+See the website [TryRuby.nl](http://TryRuby.nl/articles/try-ruby-version-4/)
+for more background information on how and why this website was created.
 
 ## The MIT License
 

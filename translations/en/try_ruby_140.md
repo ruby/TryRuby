@@ -22,7 +22,7 @@ Variables save a thing and give it a name. You used the equals sign to do this. 
 ticket = [14, 37, 18].
 
 ### 2/8
-In all there are eight lessons. You are two-eighths of the way there! This is simple stuff,
+In all there are eight sections. You are two-eighths of the way there! This is simple stuff,
 don't you think? Good stuff up ahead.
 
 Let's change directions for a moment. I've stuffed a bit of poetry for you in a certain variable.

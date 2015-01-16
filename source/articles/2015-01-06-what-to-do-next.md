@@ -34,7 +34,7 @@ an invaluable resource.
 
 
 ## Real applications
-The example app Twatify<sup>TM</sup> only showed the bare bones of setting up an application.
+The example app Blurbalizer<sup>TM</sup> only showed the bare bones of setting up an application.
 Moreover it combined storing- and displaying of content. In practice these tasks are
 split up between a back-end application (Rails would be an excellent choice for this) and a
 front-end (usually a web browser or an app on your smartphone).

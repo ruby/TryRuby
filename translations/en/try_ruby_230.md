@@ -15,3 +15,5 @@ In your reviews, the book's title is the key and the rating is the value.
 If you want to just see the titles of all the books you've reviewed:
 
     books.keys
+
+You can also try this with .values instead of .keys.

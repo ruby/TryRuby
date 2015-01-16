@@ -1,7 +1,7 @@
 ---
 lang:   EN
 title:  It's All About Combining
-answer: :-\|
+answer: :-
 ok:     Moody !
 error:  
 load:   prev
@@ -13,12 +13,12 @@ Here we've got an app made of a class containing another class. And, actually, R
 with this kind of creature. It is called object oriented programming.
 
 We have arrived at the __last programming excercise__ of TryRuby. If you want, you can add some
-more features to Twatify<sup>TM</sup>.
+more features to Blurbalizer<sup>TM</sup>.
 
 Maybe you want to print the mood as a smiley in the __show_timeline__ method. You could add
-a _moodify_ method to the Twat<sup>TM</sup> class and then use that method in the _show\_timeline_ method:
+a _moodify_ method to the Blurb<sup>TM</sup> class and then use that method in the _show\_timeline_ method:
 
-    class Twat
+    class Blurb
       attr_accessor :content, :time, :mood
       
       def initialize(mood, content="")
@@ -34,25 +34,26 @@ a _moodify_ method to the Twat<sup>TM</sup> class and then use that method in th
           return ":-)"
         # Add other moods here
         end
-        
+
+        # The default mood
         ":-|"
       end
     end
     
-    class Twatify
+    class Blurbalizer
       def initialize(title)
-        @title    = title
-        @twatlist = []
+        @title  = title
+        @blurbs = []
       end
       
-      def add_a_twat(mood, content)
-        @twatlist << Twat.new(mood, content)
+      def add_a_blurb(mood, content)
+        @blurbs << Blurb.new(mood, content)
       end
       
       def show_timeline
-        puts "Twatify: #{@title} has #{@twatlist.count} Twats"
+        puts "Blurbalizer: #{@title} has #{@blurbs.count} Blurbs"
         
-        @twatlist.sort_by { |t|
+        @blurbs.sort_by { |t|
           t.time
         }.reverse.each { |t|
           puts "#{t.content.ljust(40)} #{t.time}"

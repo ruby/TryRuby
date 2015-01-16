@@ -27,5 +27,5 @@ We'll define two methods first and then take a decision:
     
     eat_an 'apple' if hungry?(10)
 
-Now see if you can change the function __hungry?__ to display __"Me not hungry"__ and returning false
+Now see if you can change the method __hungry?__ to display __"Me not hungry"__ and returning false
 when the time is less than 12.

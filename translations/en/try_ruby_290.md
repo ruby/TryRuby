@@ -20,5 +20,5 @@ Here's the code:
     
 > __P.S.__  
 > If you don't get the title of this chapter.
-> <a href="http://en.wikipedia.org/wiki/Def_Leppard" target="_blank">Def Leppards</a>
+> <a href="http://en.wikipedia.org/wiki/Def_Leppard" target="_blank">Def Leppard</a>
 > is the name of a, once famous, English rock band.

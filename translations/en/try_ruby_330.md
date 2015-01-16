@@ -15,8 +15,8 @@ Many, many, many websites are available that you can ask for information. For in
 this link will give you all current <a href="http://news.google.com/news/section?q=ruby&output=rss" target="_blank">Google news feeds</a>
 about Ruby.
 
-Your webbrowser will probably display it quite nicely for you. If you look at the source
-(type: control-D) you will see a long string of strangely formatted text. In the Google example
+Your web browser will probably display it quite nicely for you. If you look at the source
+(type: control-U) you will see a long string of strangely formatted text. In the Google example
 it is in the __rss__ format.
 
 ### Formats

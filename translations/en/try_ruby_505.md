@@ -1,10 +1,10 @@
 ---
 lang:   EN
 title:  Your Own Turf
-answer: Twatify:
+answer: Blurbify:
 ok:     My app created
 error:  
-load:   class Twat;attr_accessor :content,:time,:mood;def initialize(mood, content="");@time=Time.now;@content=content[0..39];@mood=mood;end;end
+load:   class Blurb;attr_accessor :content,:time,:mood;def initialize(mood, content="");@time=Time.now;@content=content[0..39];@mood=mood;end;end
 ---
 
 Okay, let's wrap things up, kid. Here's the last chapter of the GRIPPING epic story of Try Ruby!
@@ -14,27 +14,28 @@ You're a great person (one of my favorites), but you need guidance.
 
 ### Let's finish your app
 You have app entries, but no actual app.
-It still needs a title, someplace to store all Twats<sup>TM</sup> and a timeline in order to work.
+It still needs a title, someplace to store all Blurbs<sup>TM</sup> and a timeline in order to work.
 
 Guess what, we're going to use another class. I've given all the code for the new class in one go.
-Just _take your time to look through it_. I'm in no hurry, I'll wait for you in the next lesson.
+Just __take your time__ to study it.  
+I'm in no hurry, I'll wait for you in the next lesson.
 
-    class Twatify
+    class Blurbalizer
       def initialize(title)
-        @title    = title
-        @twatlist = []  # A fresh clean array
-                        # for storing Twats
+        @title  = title
+        @blurbs = [] # A fresh clean array
+                     # for storing Blurbs
       end
       
-      def add_a_twat(mood, content)
+      def add_a_blurb(mood, content)
         # The << means add to the end of the array
-        @twatlist << Twat.new(mood, content)
+        @blurbs << Blurb.new(mood, content)
       end
       
       def show_timeline
-        puts "Twatify: #{@title} has #{@twatlist.count} Twats"
+        puts "Blurbify: #{@title} has #{@blurbs.count} Blurbs"
         
-        @twatlist.sort_by { |t|
+        @blurbs.sort_by { |t|
           t.time
         }.reverse.each { |t|
           puts "#{t.content.ljust(40)} #{t.time}"
@@ -42,4 +43,4 @@ Just _take your time to look through it_. I'm in no hurry, I'll wait for you in 
       end
     end
     
-    myapp = Twatify.new "The big twat"
+    myapp = Blurbalizer.new "The Big Blurb"

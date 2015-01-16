@@ -15,7 +15,7 @@ description: Learn to program in Ruby in 15 minutes
           <div class="hidden" id="tryruby-lang-hider">
             <select class="form-control"" id="tryruby-lang-select">
               <option value="en">English</option>
-              <!--option value="nl">Nederlands</option-->
+              <option value="nl">Nederlands</option>
               <!--option value="es">Espagnol</option-->
             </select>
           </div>

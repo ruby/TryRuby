@@ -21,7 +21,7 @@ and easier to read.
 Methods can have parameters.
 
 ### Return values
-Methods (almost) always return a value
+Methods (almost) always return a value.
 
 ## Now
-To be or not to be is not a question to you anymore. Are you ready for some more Shakespeare ?
+To (be) or not to (be) is not a question to you anymore. Are you ready for some more Shakespeare ?

@@ -9,9 +9,9 @@ error:
 Did you notice that if you typed more than one formula you only saw the answer for the last one.
 What is going on ?
 
-To make this website easier to use I have told Ruby to copy the result of your program to the output
-screen at the top. So when you type a formula you get to see the results.
-__But only the last result.__ And only if the output is still empty.
+> To make this website easier to use I have told Ruby to copy the result of your program to the
+> output screen at the top. So when you type a formula you get to see the results.
+> __But only the last result.__ And only if the output is still empty.
 
 So when you entered 2 or more formula's, Ruby only showed the result of the last formula.
 
