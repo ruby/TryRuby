@@ -10,3 +10,4 @@ gem "middleman-syntax"
 gem "middleman-sprockets"
 gem "middleman-blog"
 gem "redcarpet"
+gem 'therubyracer', :platforms => :ruby
