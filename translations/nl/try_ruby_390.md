@@ -6,7 +6,7 @@ ok:     Klopt
 error:  Om 10 uur heb ik nog geen trek !
 ---
 
-Dit gaat echt goed. Gaat jou gemakkelijk af allemaal, en dat terweil je een kwartier
+Dit gaat echt goed. Gaat jou gemakkelijk af allemaal, en dat terwijl je een kwartier
 geleden nog helemaal __niets van Ruby wist !__
 
 Laatste stap van dit onderdeel. We laten nu alles samenwerken als één soepele machine.
@@ -27,4 +27,5 @@ Eerst definiëren we twee methoden. Dan nemen we een beslissing:
     eet_een 'appel' if hongerig?(10)
 
 Kan jij de methode __hongerig?__ zo aanpassen dat er __"Ik ben niet hongerig."__
-getoont wordt en __false__ teruggeeft als het tijdstip kleiner is dan 12.
+getoond wordt en __false__ teruggeeft als het tijdstip kleiner is dan 12.  
+(Dit is de lastigste TryRuby opgave !)

@@ -9,7 +9,7 @@ error:  Dit kan niet kloppen
 Zag je dat dubbele is teken in __'abc' == 'def'__?
 
 Zo'n dubbele is __==__ betekent __is gelijk aan ???__  
-Het enkele is teken die we hiervoor al vaak hebben gezien betekent:
+Het enkele is-teken die we hiervoor al vaak hebben gezien betekent:
 __ken een waarde toe aan een variabele__ (dit heet assigment in het Engels).
 
 En om je nog verder in verwarring te brengen: je mag de assignment gebruiken

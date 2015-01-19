@@ -20,4 +20,7 @@ You can type some Ruby code in the editor and use these buttons to navigate:
 - __Back__ &rarr; Allows you to return to the previous lesson
 - __Clear__ &rarr; Clears the editor
 
+Use the 'world' button <span aria-hidden="true" class="glyphicon glyphicon-globe"></span>
+above to change TryRuby's language.
+
 ### Click on __Next__ to start learning.

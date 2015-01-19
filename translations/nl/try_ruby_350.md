@@ -15,8 +15,8 @@ blok om aan te geven wat we precies willen selecteren.
 We kunnen de door _select_ teruggegeven waarden gebruiken in de __each__ methode. Dit hebben
 we al eerder gezien en is weer een voorbeeld van _method chaining_.
 
-Ik heb een __tel\_toneelstukken__ methode voor je gemaakt.
-Probeer jij eens uit te zoeken hoeveel toneelstukken Shakespeare in __1591__ heeft geschreven:
+> Ik heb een __tel\_toneelstukken__ methode voor je gemaakt.
+> Probeer jij eens uit te zoeken hoeveel toneelstukken Shakespeare in __1591__ heeft geschreven:
 
     def tel_toneelstukken(jaar)
       s = get_shakey

@@ -19,4 +19,7 @@ Type wat Ruby code in de editor en gebruik de knoppen om TryRuby te bedienen:
 - __Back__ &rarr; Ga terug naar de vorige les
 - __Clear__ &rarr; Wis inhoud van de editor
 
+Met de 'wereld' knop <span aria-hidden="true" class="glyphicon glyphicon-globe"></span>
+hierboven kan je kiezen welke taal je voor TryRuby wilt gebruiken.
+
 ### Klik op __Next__ om te beginnen
