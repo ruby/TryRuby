@@ -34,10 +34,10 @@ class Collector
     end
 
     def source_is_newer?
-      target_time = File.ctime(@target_file)
+      target_time = File.mtime(@target_file)
 
       @sources.each do |f|
-        return true if File.ctime(f) > target_time
+        return true if File.mtime(f) > target_time
       end
 
       return false
