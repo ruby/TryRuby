@@ -14,4 +14,4 @@ Al revés, pero no __tan__ al revés.
 
 Así es como se haría:
 
-    poem.lines.reverse
+    poema.lines.reverse

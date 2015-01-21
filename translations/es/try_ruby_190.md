@@ -18,14 +18,13 @@ Buscar y modificar strings
 ### Encadenar
 Encadenar métodos te permite hacer mucho más trabajo. Partir un poema, darle la vuelta, volverlo a ensamblar:
 
-__poem.lines.reverse.join__
+__poema.lines.reverse.join__
 
-En este punto, puedes jugar con el poema un poco más. Puedes encontrar <a href="http://ruby-doc.org/core/classes/String.html" target="_blank">aquí</a> una
-lista completa de todos los métodos de String.
+En este punto, puedes jugar con el poema un poco más. Puedes encontrar <a href="http://ruby-doc.org/core/classes/String.html" target="_blank">aquí</a> una lista completa de todos los métodos de String.
 
-Adelante, prueba algunos de ellos como: poem.downcase o poem.swapcase
+Adelante, prueba algunos de ellos como: poema.downcase o poema.swapcase
 
 ## ¿Listo?
 Cuando estés listo para seguir, teclea:
 
-    books = {}
+    libros = {}

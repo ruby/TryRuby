@@ -8,6 +8,6 @@ error:
 
 Bien, bien. Pero es molesto tener que teclear esa lista cada vez que la necesitas, ¿verdad?
 
-Vamos a guardar nuestros números en un ticket, así:
+Vamos a guardar nuestros números en un boleto, así:
 
-    ticket = [12, 47, 35]
+    boleto = [12, 47, 35]

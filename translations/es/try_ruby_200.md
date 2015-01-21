@@ -2,7 +2,7 @@
 lang:   ES
 title:  Un Diminuto Libro En Blanco
 answer: ^(esplendido|muy_bueno|mediocre|malo|abismal)$
-load:   books = {}
+load:   libros = {}
 ok:     Sí, eso es una nueva reseña
 error:  Usa uno de :esplendido, :muy_bueno, :mediocre, :malo, :abismal. No te olvides los dos puntos.
 ---
@@ -19,9 +19,9 @@ Vamos a meter algunas mini-reseñas de libros en nuestro nuevo hash. Aquí está
 
 Para puntuar un libro, pon el título entre paréntesis cuadrados y la puntuación después del igual. Por ejemplo:
 
-    books["Gravitys Rainbow"] = :esplendido
+    libros["El Arco Iris de Gravedad"] = :esplendido
 
-> Ya es momento de contarte que las lecciones de TryRuby son independientes unas de otras.
+> Es momento de contarte que las lecciones de TryRuby son independientes unas de otras.
 > Así que si te vuelves loco escribiendo reseñas ahora, solo las podrás usar en esta lección.
 > Si quieres usar tus reseñas en la siguiente lección, te recomiendo que las copies y las pegues.
 > Pero no te preocupes demasiado, cada lección tiene suficiente contenido predefinido para que juegues con él.

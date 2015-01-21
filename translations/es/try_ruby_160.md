@@ -9,4 +9,4 @@ error:
 
 Pregunta: ¿qué pasa si le damos la vuelta a todo este poema?
 
-    poem.reverse
+    poema.reverse

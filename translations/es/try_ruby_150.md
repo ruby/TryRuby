@@ -10,7 +10,7 @@ error:  Me sigue oliendo a tostada
 Mira, no importa. No tiene por qué gustarte. Arréglalo, por favor. En lugar de toast (tostada), 
 prueba con un melón o algo. Prueba esto para ver el nuevo poema:
 
-    poem.gsub("toast", "honeydew")
+    poema.gsub("toast", "honeydew")
 
 El método __gsub__  es un diminutivo de "global substitute" (sustitución global). Reemplaza todas las ocurrencias de "toast" con
 "honeydew" (melón chino).

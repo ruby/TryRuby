@@ -20,7 +20,7 @@ También sabemos cómo crear arrays y obtener elementos de arrays.
 
 ### Variables
 Las variables almacenan una cosa y le dan un nombre, usamos el signo igual para hacerlo. Así:
-ticket = [14, 37, 18].
+boleto = [14, 37, 18].
 
 ### 2/8
 En total hay ocho secciones. ¡Ya llevas dos octavos del camino! Por ahora son cosas simples, 
@@ -29,4 +29,4 @@ En total hay ocho secciones. ¡Ya llevas dos octavos del camino! Por ahora son c
 Cambiemos de dirección por un momento. He metido un poco de poesía para ti en una variable. 
 Echa un vistazo. Escribe:
 
-    puts poem
+    puts poema
