@@ -1,12 +1,12 @@
 ---
-lang:   EN
+lang:   ES
 title:  The Ripened Fruit of Your Own Creation
-answer: ^Tamed a shrew
-ok:     That'll show those shrews
+answer: ^Domé una fierecilla
+ok:     Así aprenderán esas fierecillas.
 error:  
-load:   def tame(number_of_shrews);number_of_shrews.times{puts "Tamed a shrew"};end;
+load:  def domar(numero_de_fierecillas); numero_de_fierecillas.times {puts "Domé una fierecilla"}; end;
 ---
 
-A new method is born. Let us use it now: 
+Ha nacido un nuevo método. Usémoslo:
 
-    tame 5
+    domar 5

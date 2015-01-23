@@ -1,20 +1,20 @@
 ---
-lang:   EN
-title:  Wait, Did I Like Gravity's Rainbow?
-answer: ^(splendid|quite_good|mediocre|quite_not_good|abyssmal)$
-load:   books = {"Gravitys Rainbow" => :splendid, "The deep end" => :abyssmal, "Living colors" => :mediocre}
-ok:     I liked it a lot
+lang:   ES
+title:  Espera, ¿me gustó El Arco Iris de Gravedad?
+answer: ^(esplendido|muy_bueno|mediocre|malo|abismal)$
+load:   libros = {"El Arco Iris de Gravedad" => :esplendido, ""El fin profundo"" => :abismal, "Colores vivientes" => :mediocre}
+ok:     Me gustó mucho
 error:  
 ---
 
-One great thing about Ruby is that names are often reused, which means fewer names you need to remember.
+Una gran cosa de Ruby es que normalmente se reutilizan los nombres, lo que significa que hay menos nombres que memorizar.
 
-Remember how we retrieved items from an array using a number:  
-__puts ticket[1]__.
+Recuerda cómo se obtenían elementos de un array usando un número:
+__puts boleto[1]__.
 
-For a hash this works the same way, except we don't use a number to get an element but a name.
+Para un hash, funciona igual, excepto que no usamos un número para obtener un elemento, sino un nombre.
 
-So, if you'd like to look up one of your old reviews, again put the title in the square. But leave off the equals.
-Just like this:
+Así que si quieres consultar una de tus antiguas reseñas, pon el título en el cuadrado. Pero no pongas un igual.
+Así:
 
-    puts books["Gravitys Rainbow"]
+    puts libros["El Arco Iris de Gravedad"]

@@ -1,34 +1,33 @@
 ---
-lang:   EN
-title:  And Now For the Startling Conclusion
-answer: is not equal to 100$
-ok:     That's better
-error:  This can't be right
+lang:   ES
+title:  Y ahora para la sorprendente conclusión
+answer: no es igual a 100$
+ok:     Eso está mejor
+error:  Eso no puede estar bien
 ---
 
-Did you see the 2 equal signs in __'abc' == 'def'__?
+¿Has visto los dos símbolos de igual en __'abc' == 'def'__?
 
-This __==__ means __is equal to__.
-The single equal sign that we have seen before means __assign a value to a variable__.
+El __==__ significa __es igual a__.
 
-To make it more confusing: you can use the assignment after an if method like this:
+Un único símbolo de igual (que hemos visto anteriormente) significa __asigna un valor a esta variable__.
+
+Para hacer más confuso, puedes usar la asignación después de un if, así:
 
     a = 0
     
     if a = 100
-      puts "Expression is true, but a is now: #{a}"
+      puts "La expresión es true, pero a ahora es: #{a}"
     else
-      puts "#{a} is not equal to 100"
+      puts "#{a} no es igual a 100"
     end
 
-Change the = into == and see what happens.
+Cambia el = por == y mira qué pasa.
 
-I can guarantee you that you will forget typing the second equal sign regularly. I also
-still forget it sometimes.
+Te garantizo que se te olvidará teclear el segundo símbolo de igual con bastante frecuencia. Yo mismo me olvido a veces.
 
 ### else
-In the code above I have added an else expression. This part will be executed when the
-__if test-expression__ evaluates to false.
+En el código de arriba he añadido una expresión else. Esta es la parte que se ejecutará cuando la __expresión del if__ se evalua a false.
 
-> There are more variations to this if-then-else theme. You can read more
-> <a href="http://www.ruby-doc.org/core/doc/syntax/control_expressions_rdoc.html" target="_blank">here</a>.
+> Hay más variantes de este if-then-else. Puedes leer más
+> <a href="http://www.ruby-doc.org/core/doc/syntax/control_expressions_rdoc.html" target="_blank">aquí</a>.

@@ -1,27 +1,26 @@
 ---
-lang:   EN
-title:  Hello, Who's There? And Summary #5 Waves Its Hat!
+lang:   ES
+title:  ¿Hola, quién está ahí? ¡ Y el resumen #5 agita su sombrero !
 answer: 
 class:  stretcher chapmark
 ok:     
 error:  
 ---
 
-Well done, well done, well done, well done!
+Bien hecho, bien hecho, bien hecho, ¡ bien hecho !
 
-Truly, truly, truly, truly, truuuuuuuuly!
+De verdad, de verdad, de verdad, ¡ de verdaaaaaaaaaad !
 
-Here's the last few minutes of your life in review:
+Aquí hay un resumen de los últimos minutos de tu vida:
 
-### Methods
-Methods can be defined with __def__ and have a name. Methods make your program shorter
-and easier to read.
+### Métodos
+Los métodos se pueden definir con __def__ y tienen un nombre. Los métodos hacen tu programa más corto y fácil de leer.
 
-### Parameters
-Methods can have parameters.
+### Parámetros
+Los métodos pueden recibir parámetros.
 
-### Return values
-Methods (almost) always return a value.
+### Valor de retorno
+Los métodos (casi) siempre devuelven un valor.
 
-## Now
-To (be) or not to (be) is not a question to you anymore. Are you ready for some more Shakespeare ?
+## Ahora
+"To (be) or not to (be)" ya no es una incógnita para ti. ¿Listo para más Shakespeare?

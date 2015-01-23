@@ -1,24 +1,24 @@
 ---
-lang:   EN
-title:  In Ruby, Def Leppard means: define method Leppard
-answer: ^tame
-ok:     Tame is not lame
+lang:   ES
+title:  En Ruby, Def Leppard significa: define el método Leppard
+answer: ^domé
+ok:     Domar no es aburrido
 error:  
 ---
 
-Hey, okay, you done it. You're making your own method. You started with def, followed by the name of the method.
-And a list of arguments which the method will need. This isn't too scary and dangerous!
-All we have to do is fill it up with Ruby and finish it up with end.
+Estupendo, lo has hecho. Estás haciendo tu propio método. Se empieza por def, seguido del nombre del método.
+Y una lista de los argumentos que el método va a necesitar. ¡ No suena nada difícil ni peligroso !
+Lo único que falta es rellenarlo con Ruby y terminarlo con end.
 
-Here's the code:
-    
-    def tame( number_of_shrews )
-      number_of_shrews.times {
-        puts "Tamed a shrew"
+Aquí está el código:
+
+    def domar( numero_de_fierecillas )
+      numero_de_fierecillas.times {
+        puts "Domé una fierecilla"
       }
     end
-    
-> __P.S.__  
-> If you don't get the title of this chapter.
-> <a href="http://en.wikipedia.org/wiki/Def_Leppard" target="_blank">Def Leppard</a>
-> is the name of a, once famous, English rock band.
+
+> __P.D.__  
+> Si no has entendido el título:
+> <a href="http://es.wikipedia.org/wiki/Def_Leppard" target="_blank">Def Leppard</a>
+> es el nombre de, una vez famoso, grupo británico.

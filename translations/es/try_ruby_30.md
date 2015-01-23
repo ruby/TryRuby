@@ -1,16 +1,15 @@
 ---
-lang:   EN
-title:  Say Your Name Backwards
+lang:   ES
+title:  Di tu nombre al revés
 answer: \w+
-ok:     dooG
+ok:     neiB
 error:  
 ---
 
-A string is a set of characters the computer can process. Imagine the letters are on a string of
-laundry line and the quotes are clothespins holding the ends. The quotes mark the beginning and end.
-
-To reverse your name, type: 
+Un string es un conjunto de caracteres que el ordenador puede procesar. Imagina que las letras están
+en la cuerda de la colada, y que las comillas son las pinzas que sujetan los extremos. Las comillas marcan el principio y el final.
+Para dar la vuelta a tu nombre, teclea:
 
     "Jimmy".reverse
 
-(Don't forget the dot!)
+(¡No te olvides del punto!)

@@ -1,24 +1,24 @@
 ---
-lang:   EN
-title:  Now Arriving at Summary #4
+lang:   ES
+title:  Llegando al resumen #4
 answer: 
 class:  stretcher chapmark
 ok:     
 error:  
 ---
 
-This last lesson was a bit longer. You've probably used up three minutes learning about:
+Esta última lección ha sido un poco más larga. Probablemente habrás usado hasta tres minutos aprendiendo acerca de:
 
 ### Hashes
-The little dictionary with the curly pages: __{}__
+El pequeño diccionario con las páginas curvas: __{}__
 
-### Symbols
-Tiny, efficient code words with a colon, like: __:splendid__
+### Símbolos
+Pequeñas y eficientes palabras clave, con dos puntos, como __:esplendido__
 
-### Blocks
-Chunks of code which can be tacked on to many of Ruby's methods. Here's the code you used to
-build a scorecard:  
-__books.values.each { |rate| ratings[rate] += 1 }__
+### Bloques
+Trozos de código que se pueden añadir a muchos métodos de Ruby. Aquí está el código que usaste para calcular la cuenta de puntuaciones:
+__libros.values.each { |puntuacion| puntuaciones[puntuacion] += 1 }__
 
-### Next
-In the next lesson we will delve al little bit deeper into methods.
+### Siguiente
+En la siguiente leccion ahondaremos un poco más en los métodos.
+

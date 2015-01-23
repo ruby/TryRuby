@@ -1,31 +1,28 @@
 ---
-lang:   EN
-title:  Me hungry
-answer: ^Me not hungry.$
-ok:     Yes
-error:  No way am I hungry at 10 AM !
+lang:   ES
+title:  Tengo hambre
+answer: ^No tengo hambre.$
+ok:     Sí
+error:  ¡ No es posible tener hambre a las 10 AM !
 ---
 
-Okay, this is coming along wonderfully. This is simple stuff for you, but keep in mind that you
-didn't know __any Ruby whatsoever__ just fifteen minutes ago!
+Bien, esto va avanzando maravillosamente. Esto te puede parecer simple, pero recuerda que ¡ no sabías __nada de nada de Ruby__ hace 15 minutos !
 
-Last step. Let's tie it all together, you know? Let's make it chime together like a very nice set
-of glistening chimes on the beach in the maginificent sunlight!
+Ultimo paso. Juntémoslo todo, ¿de acuerdo? Hagamoslo repicar todo como un conjunto de brillantes campanas en la playa bajo una gloriosa luz del sol.
 
-We'll define two methods first and then take a decision:
+Definamos dos métodos y luego tomaremos una decisión:
 
-    def hungry?(time_of_day_in_hours)
-      puts "Me hungry."
+    def hambre?(hora_del_dia)
+      puts "Tengo hambre."
       true
     end
     
-    def eat_an(what)
-      puts "Me eat #{what}.\n"
+    def come(que)
+      puts "Me como un #{que}.\n"
     end
     
-    eat_an 'apple' if hungry?(14)
+    come 'manzana' if hambre?(14)
     
-    eat_an 'apple' if hungry?(10)
+    come 'manzana' if hambre?(10)
 
-Now see if you can change the method __hungry?__ to display __"Me not hungry"__ and returning false
-when the time is less than 12.
+Mira a ver si puedes cambiar el método __hambre?__ para que muestre __"No tengo hambre"__ y devuelva false, si es antes de las 12.

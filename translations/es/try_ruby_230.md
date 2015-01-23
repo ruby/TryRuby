@@ -1,19 +1,18 @@
 ---
-lang:   EN
-title:  Hashes as Pairs
+lang:   ES
+title:  Hashes como Parejas
 answer: ^\[".*"\]
 load:   prev
-ok:     You found the keys
+ok:     Encontraste las claves
 error:  
 ---
 
-Keep in mind that hashes won't keep things in order. That's not their job. It'll just pair up
-two things: a __key__ and a __value__.
+Ten en cuenta que los hashes no guardan las cosas en orden. Ese no es su trabajo. Simplemente emparejan dos cosas: una __clave__ y un __valor__.
 
-In your reviews, the book's title is the key and the rating is the value.
+En tus reseñas, el título del libro es la clave, y la puntuación es el valor.
 
-If you want to just see the titles of all the books you've reviewed:
+Si quieres ver solo los títulos de todos los libros que has reseñado:
 
-    books.keys
+    libros.keys
 
-You can also try this with .values instead of .keys.
+Puedes probar también con .values en lugar de .keys

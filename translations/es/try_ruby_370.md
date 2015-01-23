@@ -1,25 +1,25 @@
 ---
-lang:   EN
-title:  If only I new how to make a decision
+lang:   ES
+title:  Si supiera cómo tomar decisiones
 answer: 
 ok:     
 error:  
 ---
 
-Decision making, in real life this can be a real problem. Not for us though.
-Ruby makes it very easy to make decisions.
+La toma de decisiones, en la vida real esto puede suponer un gran problema. No para nosotros.
+Ruby hace que tomar decisiones sea muy fácil.
 
     if 1 < 2
-      puts "It is true: 1 is less than 2"
+      puts "Es cierto: 1 es menor que 2"
     end
 
-The key word here is __if__. If can be placed before a method or after a method, like so:
+La palabra clave el __if__. If se puede situar antes o después de los métodos, así:
 
-    puts "It is true: 1 is less than 2" if 1 < 2
+    puts "Es cierto: 1 es menor que 2" if 1 < 2
 
-__If__ is a method that requires one parameter. That parameter can be any expression that you
-want to test. The outcome of the expression must be either __true__ or __false__.
-Here are a couple of expressions with their outcomes:
+__If__ es un método que requiere un parámetro. Ese parámetro puede ser cualquier expresión que
+quieras verificar. El resultado de la expresión tiene que ser __true__ or __false__ (verdadero o falso).
+Como ejemplo unas cuantas expresiones y su resultado:
 
     5     <= 10     # => true
     'abc' == 'def'  # => false
@@ -32,5 +32,5 @@ Here are a couple of expressions with their outcomes:
                     # comparison of String with
                     # Numeric failed
 
-The _if expression_ can take many forms. It can compare literal values (1 < 2),
-variables (a < 1) and the return value of a method ('xyz'.empty?).
+La _expresión del if_ puede tomar muchas formas. Puede comparar valores literales (1 < 2), 
+variables (a < 1) y el valor de retorno de un método ('xyz'.empty?).

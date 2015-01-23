@@ -1,29 +1,29 @@
 ---
-lang:   EN
-title:  Give and take
+lang:   ES
+title:  Dar y recibir
 answer: \d+
-ok:     Right on. Bravo.
+ok:     Perfecto.
 error:  
 ---
 
-Most methods do not only want some parameters as input, but will also __give something back__.
-I have changed our method a bit so it will return a value to you. Try it:
+La mayoría de los métodos no solo reciben parametros de entrada, pero también __devolverán algo__.
+He cambiado tu método un poco para que te devuelva un valor. Pruébalo:
 
-    def tame( number_of_shrews )
-      number_of_shrews.times {
-        puts "Tamed a shrew"
+    def domar( numero_de_fierecillas )
+      numero_de_fierecillas.times {
+        puts "Domé una fierecilla"
       }
-      return number_of_shrews
+      return numero_de_fierecillas
     end
-    
-    puts tame(3)
+
+    puts domar(3)
 
 ### Return
-And, since you're getting so advanced and capable here, one other tip:
-you can omit the word __return__ from the last line of the method.
-Ruby will automagically return the last value that was used inside the method.
+Y cómo te estás volviendo tan experto y avanzado, una consejo más:
+puedes omitir la palabra __return__ de la última línea del método.
+Ruby automágicamente devolverá el último valor que se haya usado dentro del método.
 
-So we can change the last line to just: __number\_of\_shrews__.
+Así que podemos cambiar la última línea a esto: __numero\_de\_fierecillas__.
 
-But since method __.times__ also returns the _number\_of\_shrews_ we can
-remove the entire last line. So in fact our original method already did what we wanted all along !
+Pero como el método __.times__ también devuelve el __numero\_de\_fierecillas__ podemos eliminar la última línea completamente.
+¡ Resulta que nuestra versión original del método ya era la que queríamos !

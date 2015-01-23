@@ -1,18 +1,17 @@
 ---
-lang:   EN
-title:  A Tally
+lang:   ES
+title:  El Total
 answer: \w+
-ok:     Yodelay!
+ok:     ¡Requeteolé!
 error:
 ---
 
-One of the amazing new things we've just used is a __block__. We're going to explore these more
-in this and the next lesson. But, basically, a block is a bit of Ruby code surrounded by curly
-braces.
+Una de las impresionantes novedades que acabamos de usar es un __bloque__. Vamos a explorar 
+un poco más en esta lección y en la siguiente. Pero básicamente, un bloque es un poco de código Ruby
+rodeado de llaves ({}).
 
-Let's try another block:
+Probemos otro bloque:
 
-    5.times { print "Odelay! " }
+    5.times { print "¡Olé! " }
 
-Blocks are always attached to methods. Like the __times__ method, which takes the block and runs
-the code over and over. (In our example: five times.)
+Los bloques siempre se asocian a métodos. Por ejemplo el método __times__, que coge el bloque y ejecuta el código muchas veces (en nuestro ejemplo: cinco veces).

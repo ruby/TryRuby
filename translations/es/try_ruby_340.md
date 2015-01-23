@@ -1,36 +1,36 @@
 ---
-lang:   EN
-title:  Noble Kinsmen
-answer: ^The Two Noble Kinsmen$
-ok:     That's much better
+lang:   ES
+title:  Nobles caballeros
+answer: ^Los dos nobles caballeros$
+ok:     Mucho mejor
 error:  
 load:   prev
 ---
 
-Okay we now have a list of plays from the internet. The list was in the json format.
-Fortunately for us Ruby kindly provides a method to convert json data to a Ruby hash.
-The _get\_shakey_ method already did that for us.
+Bien, ahora tenemos una lista de obras obtenidas de internet. Esta lista estaba en el formato json.
+Afortunadamente para nosotros, Ruby amablemente nos ofrece un método para convertir datos en json a un hash de Ruby.
+El método _get\_shakey_ hace eso por nosotros.
 
-But since the structure of the json data is retained in the hash, it is still a bit difficult to read.
-Let us write a method to display the plays nicely.
+Pero como la estructura de los datos en json se mantiene en el hash, sigue siendo un poco difícil de leer.
+Escribamos un método para mostrar las obras más adecuadamente.
 
-If you inspect the list of plays carefully you will see that it has a kind of nested
-structure. (This is actually quite common in data you get from the internet.)
-Looks like this:
+Si miras detenidamente la lista de obras, verás que sigue una especie de estructura anidada
+(esto es bastante frecuente en los datos que se obtienen de internet).
+Se parece a esto:
 
 <ul>
   <li>"William Shakespeare"
   <ul>
       <li>"1"
       <ul>
-        <li>"title": "The Two Gentlemen of Verona"</li>
-        <li>"finished": 1591</li>
+        <li>"titulo": "Los dos hidalgos de Verona"</li>
+        <li>"terminado": 1591</li>
       </ul>
       </li>
       <li>"2"
       <ul>
-        <li>"title": "The Taming of the Shrew"</li>
-        <li>"finished": 1591</li>
+        <li>"titulo": "La fierecilla domada"</li>
+        <li>"terminado": 1591</li>
       </ul>
       </li>
       <li>...</li>
@@ -38,13 +38,13 @@ Looks like this:
   </li>
 </ul>
 
-To list the plays we first have to access the top "William Shakespeare" hash element by it's name.
-Next we have to __iterate__ through each element below it.
+Para listas las obras, primero tenemos que acceder al elemento de primer nivel del hash "William Shakespeare" por su nombre.
+Después tenemos que __iterar__ todos los elementos bajo él.
 
-Ruby has a method for iterating. It is called __each__. We have seen it before when
-creating our book rating system.
+Ruby tiene un método para iterar. Se llama __each__. Lo hemos visto antes, 
+cuando creamos el sistema de reseñas de libros.
 
-Everything that method __each__ returns is passed to a block:
+Todo lo que el método __each__ devuelve se le pasa a un bloque:
 
     s = get_shakey
     
