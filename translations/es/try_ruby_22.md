@@ -1,6 +1,6 @@
 ---
 lang:   ES
-title:  Mostrandolo diferente
+title:  Mostrándolo diferente
 answer: ^[0-9\.,-]{1,}$
 ok:     Bien dicho
 error:  

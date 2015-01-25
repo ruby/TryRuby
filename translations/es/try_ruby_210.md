@@ -1,7 +1,7 @@
 ---
 lang:   ES
 title:  Más mini-reseñas
-answer: [3-10]
+answer: [3-9]
 load:   libros = {"El Arco Iris de Gravedad" => :esplendido}
 ok:     Ves, el método length funciona con strings, arrays y hashes.
 error:

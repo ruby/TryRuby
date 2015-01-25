@@ -10,7 +10,7 @@ error:
 Has almacenado tus números de la loto, guardándolos en una __variable__ llamada boleto.
 Cualquier otro nombre, como _listadejimmy_ hubiera funcionado también.
 
-Programar, te darás cuenta, es principalmente trabajar con variables.
+Programar, te darás cuenta, consiste principalmente en trabajar con variables.
 
 ¿Qué te parece si ordenamos los números de la lotería?
 

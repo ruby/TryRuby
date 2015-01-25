@@ -1,6 +1,6 @@
 ---
 lang:   ES
-title:  Los "Accessors" son las extremidades colgantes
+title:  Los 'Accessors' son las extremidades colgantes
 answer: Blurb:
 ok:     Mi primer Blurb
 error:  

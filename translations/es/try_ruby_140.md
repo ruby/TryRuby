@@ -1,6 +1,6 @@
 ---
 lang:   ES
-title:  El Resumen #2 está on Nosotros
+title:  El Resumen #2 está con Nosotros
 answer: \w+
 class:  stretcher chapmark
 load:   poema = "My toast has flown from my hand\nAnd my toast has gone to the moon.\nBut when I saw it on television,\nPlanting our flag on Halley's comet,\nMore still did I want to eat it.\n"
