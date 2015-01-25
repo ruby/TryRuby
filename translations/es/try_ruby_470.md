@@ -1,15 +1,15 @@
 ---
-lang:   EN
-title:  An Object, That Neat Little Package
+lang:   ES
+title:  El Objeto, ese Genial Pequeño Paquete
 answer: Blurb:
-ok:     Blurb updated
+ok:     Blurb actualizado
 error:  
-load:   prev;blurb1=Blurb.new;blurb1.content="Today Mount Hood Was Stolen!"
+load:   prev;blurb1=Blurb.new;blurb1.contenido="¡El Everest ha sido robado!"
 ---
 
-Go ahead and set the Blurb<sup>TM</sup> time and mood:
+Ve y fija la hora y el ánimo del Blurb<sup>TM</sup>:
 
-    blurb1.time = Time.now
-    blurb1.mood = :sick
+    blurb1.hora = Time.now
+    blurb1.animo = :enfermo
     
     puts blurb1

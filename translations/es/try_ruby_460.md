@@ -1,25 +1,25 @@
 ---
-lang:   EN
-title:  Accessors Are the Dangling Limbs
+lang:   ES
+title:  Los "Accessors" son las extremidades colgantes
 answer: Blurb:
-ok:     My first Blurb
+ok:     Mi primer Blurb
 error:  
-load:   class Blurb;attr_accessor :content,:time,:mood;end
+load:   class Blurb;attr_accessor :contenido,:hora,:animo;end
 ---
 
-Hey, good class, man. You've got a new Blurb<sup>TM</sup> class.
+Buena clase, amigo. Tienes una nueva clase Blurb<sup>TM</sup>.
 
-In the class definition, you used a method called attr\_accessor.
-There are many __attr__ibute methods like this which add little settings to classes.
-These attributes are just variables attached to a class.
+En la definición de la clase, usaste un método llamado attr\_accessor.
+Hay muchos métodos de __attr__ibutos como este que añaden pequeños ajustes.
+Estos atributos son simplemente variables adjuntadas a una clase.
 
-Think of it this way. A class is like a person. That star-shaped human thing out there.
-And the attributes are the dangling limbs, the different parts that make up a body and
-other people can shake hands with.
+Pienslo de esta manera. Una clase es como una persona. Esa cosa humana con forma de estrella de ahí.
+Y los atributos son las extremidades colgantes, las diferentes partes que forman el cuerpo y con las que otras
+personas pueden extrecharle las manos.
 
-### Now
-To create a Blurb<sup>TM</sup> and set the content:
+### Ahora
+Para crear un Blurb<sup>TM</sup> y fijar su contenido:
 
     blurb1 = Blurb.new
     puts blurb1
-    blurb1.content = "Today Mount Hood Was Stolen!"
+    blurb1.contenido = "¡El Everest ha sido robado!"

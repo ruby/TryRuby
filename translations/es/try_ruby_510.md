@@ -1,24 +1,23 @@
 ---
-lang:   EN
-title:  What's that Blurb all about?
-answer: Today
-ok:     Bring on the blurbs
+lang:   ES
+title:  ¿De qué va todo ese Blurb?
+answer: Hoy
+ok:     Trae los blurbs
 error:  
-load:   prev;class Blurbalizer;attr_reader :title;def initialize(title);@title=title;@blurbs=[];end;def add_a_blurb(mood, content);@blurbs << Blurb.new(mood, content);@blurbs.each {|t| t.time -= 73};end;def show_timeline;puts "Blurbalizer: #{@title} has #{@blurbs.count} Blurbs\n";@blurbs.sort_by { |t| t.time}.reverse.each { |t| puts "#{t.content.ljust(40)} #{t.time}"};end;end;myapp = Blurbalizer.new "The Big Blurb";myapp.add_a_blurb :sick,"Today Mount Hood Was Stolen!";myapp.add_a_blurb :confused,"I can not believe Mt. Hood was stolen!";myapp.add_a_blurb :dazed,"I am speechless!";myapp.add_a_blurb :mad,"It was stolen by a giraffe !!";myapp.add_a_blurb :sad,"I Left my Hoodie on the Mountain!";myapp.add_a_blurb :mad,"I am never going back to that mountain."
+load:   prev;class Blurbalizer;attr_reader :titulo;def initialize(titulo);@titulo=titulo;@blurbs=[];end;def crear_un_blurb(animo, contenido);@blurbs << Blurb.new(animo, contenido);@blurbs.each {|t| t.hora -= 73};end;def mostrar_cronologia;puts "Blurbalizer: #{@titulo} tiene #{@blurbs.count} Blurbs\n";@blurbs.sort_by { |t| t.hora}.reverse.each { |t| puts "#{t.contenido.ljust(40)} #{t.hora}"};end;end;mi_app = Blurbalizer.new "El Gran Blurb";mi_app.crear_un_blurb :enfermo,"¡Han robado el Everest!";mi_app.crear_un_blurb :confuso,"¡No me puedo creer que hayan robado el Everest!";mi_app.crear_un_blurb :aturdido,"¡Me he quedado sin palabras!";mi_app.crear_un_blurb :de_locos,"¡¡Lo robó una jirafa!!";mi_app.crear_un_blurb :triste,"¡Me había dejado mi sudadera en la montaña!";mi_app.crear_un_blurb :rabioso,"Jamás volveré a esa montaña."
 ---
 
-There you are. Did you figure out what all that code in the Blurbalizer<sup>TM</sup> class does ?
+Aquí estás. ¿Pudiste descifrar todo lo que hace el código de la clase Blurbalizer<sup>TM</sup>?
 
-> In the Blurbalizer<sup>TM</sup> class are two __methods__ (add\_a\_blurb and show\_timeline).
-> You can use a method outside the class, just like we did with accessors.
+> El la clase Blurbalizer<sup>TM</sup> hay dos __métodos__ (crear\_un\_blurb y mostrar\_cronologia).
+> Puedes usar los métodos desde fuera de la clase, tal como hicimos con los accessors.
 
-Time to start using Blurbalizer<sup>TM</sup>. I've already loaded some Blurbs<sup>TM</sup> for you,
-but feel free to add your own.
+Hora de usar Blurbalizer<sup>TM</sup>. He cargado ya unos Blurbs<sup>TM</sup> para ti, pero puedes añadir los tuyos propios si quieres.
 
-We're no longer creating Blurbs<sup>TM</sup> directly, but we use the add\_a\_blurb __method__ of the
-Blurbalizer<sup>TM</sup> class. This way we can be sure all our Blurbs<sup>TM</sup> are stored in the
-myapp object.
+Ya no estamos creando Blurbs<sup>TM</sup> directamente, sino que usamos el __método__ crear_un_blurb de la clase
+Blurbalizer<sup>TM</sup>. De este modo, nos aseguramos de que todos los Blurbs<sup>TM</sup> quedan almacenados 
+en el objeto mi_app.
 
-    myapp.add_a_blurb :moody, "Add Blurb here"
+    mi_app.crear_un_blurb :malhumorado, "Añade un blurb aqui"
     
-    myapp.show_timeline
+    mi_app.mostrar_cronologia

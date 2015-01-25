@@ -1,31 +1,29 @@
 ---
-lang:   EN
-title:  Quickening it Up
+lang:   ES
+title:  Acelerandolo todo
 answer: ^\d{4}
-ok:     Noted
+ok:     Apuntado
 error:  
 ---
 
-Cool, you're app is awesome. Hey, let's make things a bit easier on you.
-You're not going to want to set the time like that every time you Blurb<sup>TM</sup>.
+Genial, tu aplicación es impresionante. Vamos a hacer las cosas un poco más fáciles para ti.
+No vas a querer fijar la hora así cada vez que publiques un Blurb<sup>TM</sup>.
 
-You just want to type the content and set the mood, right?
+Simplemente quieres escribir el contenido y fijar el estado de ánimo, ¿verdad?
 
-Let's add an __initialize__ method to our class. This method is called whenever a new Blurb<sup>TM</sup>
-is created.
-At the same time we can limit the length of the Blurb<sup>TM</sup> content to 40 characters.
+Añadamos un método __initialize__ a nuestra clase. Este método se llama cada vez que se crea un nuevo Blurb<sup>TM</sup>.
+A la misma vez podemos limitar la longitud del contenido del Blurb<sup>TM</sup> a 40 caracteres.
 
     class Blurb
-      attr_accessor :content, :time, :mood
+      attr_accessor :contenido, :hora, :animo
 
-      def initialize(mood, content="")
-        @time    = Time.now
-        @content = content[0..39]
-        @mood    = mood
+      def initialize(animo, contenido="")
+        @hora    = hora.now
+        @contenido = contenido[0..39]
+        @animo    = animo
       end
     end
     
-    Blurb.new.time
+    Blurb.new.hora
 
-(That parameter __content=""__ is there to make sure that we know content is a string,
-even if no content parameter is passed to the initialize method.)
+(Ese parámetro __contenido=""__ está ahí para asegurarnos de que tenemos un string como contenido, aunque no le pasemos nada al método initialize).
