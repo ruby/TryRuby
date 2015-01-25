@@ -1,5 +1,5 @@
 ## Copyright (C)
-Try Ruby version 4 Spanish translation, 2015, _Jesus Gabriel y Galan_
+Try Ruby version 4 Spanish translation, 2015, _Jesus Gabriel y Galan_, _Pablo García_
 
 ## The MIT License
 Permission is hereby granted, free of charge, to any person obtaining a copy
