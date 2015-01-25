@@ -1,31 +1,28 @@
 ---
-lang:   EN
-title:  Summary #8, The Hey-Relax-You-Did-Good Summary
+lang:   ES
+title:  Sumario #8, El Sumario Ey-Relájate-Lo-Hiciste-Bien
 answer: 
 class:  stretcher chapmark
 ok:     
 error:  
-load:   def ruby(f);puts "Go to www.ruby-lang.org to download Ruby";end;class K;attr_reader :rb;end;my_first_progam=K.new
+load:   def ruby(f);puts "Ve a www.ruby-lang.org para descargar Ruby";end;class K;attr_reader :rb;end;mi_primer_progama=K.new
 ---
 
-This last section took a moment to wind down, to give you some pointers as to how you can use Ruby.
+Esta última sección se tomó un momento para relajarse, y darte algunas pistas de cómo puedes usar Ruby.
 
-If you enjoyed yourself, you can continue with the <a href="/playground">TryRuby Playground</a>
-or download and install Ruby:
+Si has disfrutado, puedes seguir con la zona de juegos <a href="/playground">TryRuby Playground</a>
+o descargarte e instalar Ruby:
 <a href="https://www.ruby-lang.org/en/downloads/" target="_blank">ruby-lang.org</a>
 
-Once you have Ruby installed, you can create a file, let say _my\_first\_progam.rb_, with a text
-editor, type some Ruby code and then run it by opening a command prompt and typing:
+Una vez que tengas Ruby instalado, con un editor de textos puedes crear un archivo, digamos _mi\_primer\_programa.rb_, escribir algo de código Ruby y ejecutarlo abriendo una ventana de comandos y escribiendo:
 
-    ruby my_first_progam.rb
+    ruby mi_primer_programa.rb
 
-There are many (free) development tools available that combine an editor, file browser and a
-'ruby-runner'.
+Hay un montón de herramientas de desarrollo disponibles (libres) que combinan un editor, un navegador de archivos y un intérprete de Ruby.
 
-## Celebrate
-You really deserve a double-layer cake with double-double frosting and a guy playing one of those guitars that's a double guitar.
-I mean you finished, you really did! No doubt about it, you're a __certified red-blooded smartiac!__
+## Celebrar
+Te mereces una tarta doble-capa con doble glaseado extra y un tipo tocando una de esas guitarras dobles.
+Quiero decir, lo has conseguido, de verdad lo hiciste, has terminado! No hay ninguna duda, eres un __rojo-maniaco listillo certificado!__
 
-## More info
-There are a couple of articles on this website. They can give you some pointers on where to
-go from here.
+## Más Información
+Hay un par de artículos en esta web que pueden darte pistas de cómo seguir a partir de aquí.
