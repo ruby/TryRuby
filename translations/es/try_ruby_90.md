@@ -1,18 +1,19 @@
 ---
-lang:   EN
-title:  Standing in Line
+lang:   ES
+title:  En la cola
 answer: ^\[(\d+)(,\s*\d+){3,}\]$
-ok:     Excellent
-error:  Try adding a fouth number to the list
+ok:     Excelente
+error:  Prueba a añadir un cuarto número a la lista
 ---
 
-Lists (arrays) store things __in some order__.
+Las listas (arrays) guardan cosas __en algún orden__.
 
-Like standing in line for popcorn. You are behind someone and you wouldn't dream of pushing them aside,
-right? And the guy behind you, you've got a close eye on him, right?
+Como estar en la cola para comprar palomitas de maíz. Estás detrás de alguien y no se te ocurriría empujare a un lado, no? Además tienes a alguien detrás de tí, y no le pierdes de vista, correcto?
 
-Here's a list for you. Lottery numbers: 
+Aquí hay una lista para tí. Números de lotería:
 
     [12, 47, 35]
 
-Try adding a number to this list: type a comma after 35 followed by a number. The space is optional.
+
+Prueba a añadir un número a esta lista: pon una coma detrás del 35 y a continuación un número, el espacio es opcional.
+

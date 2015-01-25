@@ -1,64 +1,61 @@
 ---
-lang:   EN
-title:  It's All About Combining
+lang:   ES
+title:  Todo es combinar
 answer: :-
-ok:     Moody !
+ok:     Ánimo cambiante !
 error:  
 load:   prev
 ---
 
-Some beautiful things can be done with the simple parts of Ruby, especially when you combine them
-together into new things.  
-Here we've got an app made of a class containing another class. And, actually, Ruby really does good
-with this kind of creature. It is called object oriented programming.
+Se pueden hacer cosas preciosas con las partes simples de Ruby, especialmente cuando las combinas y creas cosas nuevas.  
+Aquí tenemos un programa que está hecho con una clase que contiene otra clase. Y, la verdad, a Ruby se le dan muy bien este tipo de criaturas. Se llama programación orientada a objetos.
 
-We have arrived at the __last programming excercise__ of TryRuby. If you want, you can add some
-more features to Blurbalizer<sup>TM</sup>.
+Hemos llegado al __último ejercicio de programación__ de TryRuby. Si quieres, puedes añadir más características a 
+Blurbalizer<sup>TM</sup>
 
-Maybe you want to print the mood as a smiley in the __show_timeline__ method. You could add
-a _moodify_ method to the Blurb<sup>TM</sup> class and then use that method in the _show\_timeline_ method:
+Quizás quieres mostrar el ánimo con un smiley en el método __mostrar_cronologia__. Podrías incluso añadir un método __simley_para_animo__ a la clase Blurb<sup>TM</sup> y usarlo en el método __mostrar_cronologia__:
 
     class Blurb
-      attr_accessor :content, :time, :mood
+      attr_accessor :contenido, :tiempo, :animo
       
-      def initialize(mood, content="")
-        @time    = Time.now
-        @content = content[0..39]
-        @mood    = mood
+      def initialize(animo, contenido="")
+        @tiempo    = Time.now
+        @contenido = contenido[0..39]
+        @animo    = animo
       end
       
-      def moodify
-        if    @mood == :sad
+      def smiley_para_animo
+        if    @animo == :triste
           return ":-("
-        elsif @mood == :happy
+        elsif @animo == :alegre
           return ":-)"
-        # Add other moods here
+        # Añade otros animos aqui
         end
 
-        # The default mood
+        # Animo por defecto
         ":-|"
       end
     end
     
     class Blurbalizer
-      def initialize(title)
-        @title  = title
+      def initialize(titulo)
+        @titulo  = titulo
         @blurbs = []
       end
       
-      def add_a_blurb(mood, content)
-        @blurbs << Blurb.new(mood, content)
+      def añade_un_blurb(animo, contenido)
+        @blurbs << Blurb.new(animo, contenido)
       end
       
-      def show_timeline
-        puts "Blurbalizer: #{@title} has #{@blurbs.count} Blurbs"
+      def mostrar_cronologia
+        puts "Blurbalizer: #{@titulo} tiene #{@blurbs.count} Blurbs"
         
         @blurbs.sort_by { |t|
-          t.time
+          t.tiempo
         }.reverse.each { |t|
-          puts "#{t.content.ljust(40)} #{t.time}"
+          puts "#{t.contenido.ljust(40)} #{t.tiempo}"
         }
       end
     end
     
-    myapp.show_timeline
+    mi_app.mostrar_cronologia

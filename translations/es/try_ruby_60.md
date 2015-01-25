@@ -1,30 +1,30 @@
 ---
-lang:   EN
-title:  Hey, Summary #1 Already
+lang:   ES
+title:  Ey, Sumario #1 Ya
 answer: ^NoMethodError(.*)$
 class:  stretcher chapmark
-ok:     Nope, it is not possible to reverse a number. Click 'next'
+ok:     Nop, no es posible dar la vuelta a un número. Pulsa 'next'
 error:  
 ---
 
-Let's look at what you've learned in the first minute.
+Echemos un vistazo a lo que has aprendido en el primer minuto.
 
-### The editor
-Typing code into the editor and clicking on run gives you an answer in the ouput window.
-(Almost) all code gives an answer.
+### El editor
+Escribir código en el editor y pulsar __run__ te da una respuesta en la ventana de resultado.
+(Casi) todo código da una respuesta.
 
-### Numbers and strings
-Numbers and strings are Ruby's math and text objects.
+### Números y strings (cadenas de texto)
+Los números y los strings (las cadenas de texto) son los objetos de Ruby para las mates y los textos.
 
-### Methods
-You've used English-language methods like reverse and length. And symbolic methods like the
-multiplication method: \*  
-__Methods mean action!__
+### Métodos
+Ya has usado métodos de lenguaje como dar la __vuelta__ (reverse) o __tamaño__ (length). Y también métodos simbólicos como la multiplicación: \*  
+__Los Métodos significan acción!__
 
-This is the essence of your learning. Taking simple things, toying with them and turning them into
-new things. Feeling comfortable yet? I promise you are.
+Esta es la esencia de tu aprendizaje. Coger cosas simples, jugar con ellas y convertirlas en cosas nuevas. ¿Te sientes cómodo? Seguro que sí.
 
-## Okay,
-let's do something uncomfortable. Try reversing a number:
+## De acuerdo
+
+Hagamos algo incómodo. Intenta darle la vuelta a un número:
 
     40.reverse
+
