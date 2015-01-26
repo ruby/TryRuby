@@ -12,24 +12,24 @@ Bien, tenemos ciertos datos de internet, hemos seleccionado lo que queríamos y 
 añadir el año, y alinear los títulos y años.
 
 Eso implica imprimir varios valores en una línea. Ruby tiene una manera muy limpia de hacerlo.
-Es como imprimir un string como: __puts "Hola, me llamo Jimmy"__.
-Pero en lugar del valor literal _Jimmy_ podemos usar el valor de una variable.
+Es como imprimir un string como: __puts "Hola, me llamo Juan"__.
+Pero en lugar del valor literal _Juan_ podemos usar el valor de una variable.
 
-Primero, reemplazamos __Jimmy__ con __#{}__. Si Ruby ve un símbolo de almohadilla # seguido de una llave de abrir {, buscará una variable entre la primera llave y la siguiente llave de cerrar }.
+Primero, reemplazamos __Juan__ con __#{}__. Si Ruby ve un símbolo de almohadilla # seguido de una llave de abrir {, buscará una variable entre la primera llave y la siguiente llave de cerrar }.
 Así que podríamos usar esto: __"Hola, me llamo #{nombre}"__.
 
 Cambiemos nuestro código un poco:
 
-    def imprimir_obras(año_desde, año_hasta)
+    def imprimir_obras(anyo_desde, anyo_hasta)
       get_shakey["William Shakespeare"]
         .select { |k, v|
-          año_desde <= v["terminado"] &&
-          año_hasta   >= v["terminado"]
+          anyo_desde <= v["terminado"] &&
+          anyo_hasta   >= v["terminado"]
         }.each { |k, v|
           puts "#{v["titulo"].ljust(30)} #{v["terminado"]}"
         }
     end
-    print_plays(1600, 1605)
+    imprimir_obras(1600, 1605)
 
 He añadido __.ljust(30)__ al título. De este modo, el título se _justifica a la izquierda_ con una longitud mínima de 30 caracteres, para que los años se alineen y quede más bonito.
 

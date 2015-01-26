@@ -1,7 +1,7 @@
 ---
 lang:   ES
 title:  La fierecilla domada
-answer: ^tame
+answer: ^domar
 ok:     Bien, bien.
 error:  
 ---

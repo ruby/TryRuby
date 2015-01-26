@@ -4,7 +4,7 @@ title:  Tu Propio Territorio
 answer: Blurbalizer:
 ok:     Aplicación creada.
 error:  
-load:   class Blurb;attr_accessor :contenido,:hora,:animo;def initialize(animo, contenido="");@hora=Time.now;@contenido=contenido[0..39];@animo=animo;end;end
+load:   class Blurb;attr_accessor :contenido,:tiempo,:animo;def initialize(animo, contenido="");@tiempo=Time.now;@contenido=contenido[0..39];@animo=animo;end;end
 ---
 
 Bien, cerremos todo esto, chico. !Este es el último capítulo de la FASCINANTE y épica historia de Try Ruby !
@@ -34,9 +34,9 @@ No tengo prisa, te espero en la siguiente lección.
         puts "Blurbalizer: #{@titulo} tiene #{@blurbs.count} Blurbs"
         
         @blurbs.sort_by { |t|
-          t.hora
+          t.tiempo
         }.reverse.each { |t|
-          puts "#{t.contenido.ljust(40)} #{t.hora}"
+          puts "#{t.contenido.ljust(40)} #{t.tiempo}"
         }
       end
     end

@@ -15,15 +15,15 @@ Añadamos un método __initialize__ a nuestra clase. Este método se llama cada 
 A la misma vez podemos limitar la longitud del contenido del Blurb<sup>TM</sup> a 40 caracteres.
 
     class Blurb
-      attr_accessor :contenido, :hora, :animo
+      attr_accessor :contenido, :tiempo, :animo
 
       def initialize(animo, contenido="")
-        @hora    = hora.now
+        @tiempo    = Time.now
         @contenido = contenido[0..39]
         @animo    = animo
       end
     end
     
-    Blurb.new.hora
+    Blurb.new.tiempo
 
 (Ese parámetro __contenido=""__ está ahí para asegurarnos de que tenemos un string como contenido, aunque no le pasemos nada al método initialize).

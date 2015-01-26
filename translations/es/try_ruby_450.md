@@ -12,7 +12,7 @@ El contenido, por supuesto. También la hora a la que el Blurb<sup>TM</sup> se p
 Bien, ya tienes la primera línea de la clase. Aquí está el resto:
 
     class Blurb
-      attr_accessor :contenido, :hora, :animo
+      attr_accessor :contenido, :tiempo, :animo
     end
 
 Los nombres de clases empiezan por mayúscula.

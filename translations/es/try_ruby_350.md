@@ -19,12 +19,12 @@ que vimos con anterioridad al darle la vuelta al poema.
 He preparado el método __cuenta\_obras__ para ti. Mira a ver si puedes averiguar cuántas obras
 escribió Shakespeare en el año __1591__. Prueba esto:
 
-    def cuenta_obras(año)
+    def cuenta_obras(anyo)
       s = get_shakey
       
       s["William Shakespeare"]
         .select { |k, v|
-          v["terminado"] == año
+          v["terminado"] == anyo
         }.each { |key, val|
           puts val["titulo"]
         }.count
@@ -37,5 +37,7 @@ Esto nos da un valor de retorno para el método __cuenta\_obras__.
 
 Hay otra posibilidad de encadenar. ¿Ves esa solitaria linea: __s = get_shakey__?
 
-POdrías añadir el __["William Shakespeare"].select { |k, v|__ a continuación de get_shakey
+Podrías añadir el __["William Shakespeare"].select { |k, v|__ a continuación de get_shakey
 (no se necesita punto en este caso).
+
+> Nota: en Ruby podrías escribir año con la ñ, pero parece que Opal, lo que usamos para ejecutar Ruby en el navegador tiene problemas con estos caracteres.

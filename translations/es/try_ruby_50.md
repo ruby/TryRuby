@@ -14,4 +14,4 @@ Algunos programas usan ese simple código: __.length__
 
 Mira esto. Multiplica tu nombre por 5:
 
-    "Jimmy" * 5
+    "Juan" * 5

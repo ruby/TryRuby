@@ -19,8 +19,8 @@ Puedes usar clases para modelar (en cierto modo) los objetos de la vida real.
 
 ### Accessors
 Los Accessors son variables adjuntas a un objetos que se pueden usar desde __fuera__ del objeto.
-(blurb2.hora = Time.now)
+(blurb2.tiempo = Time.now)
 
 ### Variables de objetos
 Las variables de objetos son las mismas variables que estás usando como accessors, pero __dentro__ del objeto.
-(@hora = Time.now)
+(@tiempo = Time.now)

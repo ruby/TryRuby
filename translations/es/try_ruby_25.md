@@ -10,4 +10,4 @@ Claro, los ordenadores son prácticos y rápidos para las matemáticas. Sigamos.
 
 Primero, teclea tu nombre entre comillas, así:
 
-    "Jimmy"
+    "Juan"

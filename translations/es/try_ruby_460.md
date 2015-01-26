@@ -4,7 +4,7 @@ title:  Los 'Accessors' son las extremidades colgantes
 answer: Blurb:
 ok:     Mi primer Blurb
 error:  
-load:   class Blurb;attr_accessor :contenido,:hora,:animo;end
+load:   class Blurb;attr_accessor :contenido,:tiempo,:animo;end
 ---
 
 Buena clase, amigo. Tienes una nueva clase Blurb<sup>TM</sup>.

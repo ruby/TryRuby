@@ -49,5 +49,5 @@ Todo lo que el método __each__ devuelve se le pasa a un bloque:
     s = get_shakey
     
     s["William Shakespeare"].each { |key, val|
-      puts val["title"]
+      puts val["titulo"]
     }

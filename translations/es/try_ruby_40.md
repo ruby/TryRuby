@@ -10,4 +10,4 @@ Has usado el __método__ reverse en tu nombre. Has hecho un string escribiendo t
 
 Ahora, veamos cuántas letras tiene tu nombre:
 
-    "Jimmy".length
+    "Juan".length

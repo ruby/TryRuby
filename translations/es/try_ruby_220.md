@@ -2,7 +2,7 @@
 lang:   ES
 title:  Espera, ¿me gustó El Arco Iris de Gravedad?
 answer: ^(esplendido|muy_bueno|mediocre|malo|abismal)$
-load:   libros = {"El Arco Iris de Gravedad" => :esplendido, ""El fin profundo"" => :abismal, "Colores vivientes" => :mediocre}
+load:   libros = {"El Arco Iris de Gravedad" => :esplendido, "El fin profundo" => :abismal, "Colores vivientes" => :mediocre}
 ok:     Me gustó mucho
 error:  
 ---

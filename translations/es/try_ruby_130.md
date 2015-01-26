@@ -8,7 +8,7 @@ error:
 ---
 
 Has almacenado tus números de la loto, guardándolos en una __variable__ llamada boleto.
-Cualquier otro nombre, como _listadejimmy_ hubiera funcionado también.
+Cualquier otro nombre, como _listadejuan_ hubiera funcionado también.
 
 Programar, te darás cuenta, consiste principalmente en trabajar con variables.
 

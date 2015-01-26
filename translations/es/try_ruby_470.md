@@ -9,7 +9,7 @@ load:   prev;blurb1=Blurb.new;blurb1.contenido="¡El Everest ha sido robado!"
 
 Ve y fija la hora y el ánimo del Blurb<sup>TM</sup>:
 
-    blurb1.hora = Time.now
+    blurb1.tiempo = Time.now
     blurb1.animo = :enfermo
     
     puts blurb1
