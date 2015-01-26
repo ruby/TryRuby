@@ -13,7 +13,7 @@ Aquí tenemos un programa que está hecho con una clase que contiene otra clase.
 Hemos llegado al __último ejercicio de programación__ de TryRuby. Si quieres, puedes añadir más características a 
 Blurbalizer<sup>TM</sup>
 
-Quizás quieres mostrar el ánimo con un smiley en el método __mostrar_cronologia__. Podrías incluso añadir un método __simley_para_animo__ a la clase Blurb<sup>TM</sup> y usarlo en el método __mostrar_cronologia__:
+Quizás quieres mostrar el ánimo con un smiley en el método __mostrar\_cronologia__. Podrías incluso añadir un método __smiley\_para\_animo__ a la clase Blurb<sup>TM</sup> y usarlo en el método __mostrar\_cronologia__:
 
     class Blurb
       attr_accessor :contenido, :tiempo, :animo
@@ -43,7 +43,7 @@ Quizás quieres mostrar el ánimo con un smiley en el método __mostrar_cronolog
         @blurbs = []
       end
       
-      def añade_un_blurb(animo, contenido)
+      def crear_un_blurb(animo, contenido)
         @blurbs << Blurb.new(animo, contenido)
       end
       
