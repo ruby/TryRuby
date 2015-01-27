@@ -37,6 +37,11 @@ This website is partially based on <a href="http://opalrb.org/" target="_blank">
 by _Adam Beynon_,
 and uses <a href="http://glyphicons.com/" target="_blank">Gyphicons</a>.
 
+### Translations
+
+Spanish translation by _Jesus Gabriel y Galan_ & _Pablo García_  
+Dutch translation by _Ivo Herweijer_  
+
 ### Privacy
 
 TryRuby.nl only uses session cookies. These store language preference and last
