@@ -12,6 +12,10 @@ Try Ruby version 4 by _Ivo Herweijer_
 
 This website is partially based on OpalRb.org by _Adam Beynon_.
 
+### Translations
+Spanish translation by _Jesus Gabriel y Galan_ & _Pablo García_
+Dutch translation by _Ivo Herweijer_
+
 ## Preparing
 Clone this repo, and use bundler to get dependencies:
 

@@ -6,12 +6,13 @@ When adding a new translation:
 
 - Create a new sub-directory in translations
 - Copy the files from translations/en to the new sub-directory
-- Add the new language to collector.rb (~ line 138)
+- Add the new language to collector.rb (~ line 140)
 - Translate
-- Middleman/livereload should note any changes to translations and
-  refresh the webpage for you
-- Update the README file for the new translation, adding your name
-  to the copyright message
+- If you are running `bundle exec middleman server`, Middleman/livereload
+  should notice any changes to translations and refresh the webpage for you,
+  available on `http://localhost:4567`
+- Update the README file for the new translation, replacing all names in
+  the copyright message with your own
 
 ## Suggestions
 
@@ -22,14 +23,10 @@ Since Ruby itself is English it is inevitable that some of the lesson
 content contains English words. For the Dutch translation I've left in
 all important English words (like hash) and gave a translation or description
 the first time such a word is encountered.
+I have translated variable names (like ticket) and method arguments into
+something more understandable for a Dutch reader. I've also added a comment
+about English being the programmers 'native' language on the 'toast poetry'
+page.
 
-You probably should not translate Blurb and Blurbalizer. I've also left
-the Blurb content untranslated.
-
-## Converted
-
-The converted subdir contains the TryRuby R2 spanish translation, converted
-into individual markdown files.
-
-The numbering is in principle the same as the English version. But since I
-modified the lesson content quite a lot it is not the same any more.
+You probably should not translate Blurb and Blurbalizer. But feel free to
+translate the Blurb content.
