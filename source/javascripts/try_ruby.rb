@@ -117,8 +117,8 @@ class TryRuby
       case browserlang[0..1]
       when 'nl'
         language = 'nl'
-      #when 'es'
-      #  language = 'es'
+      when 'es'
+        language = 'es'
       else
         language = 'en'
       end
