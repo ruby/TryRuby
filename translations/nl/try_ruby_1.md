@@ -7,7 +7,7 @@ ok:
 error:  
 ---
 
-Ruby is a programmeertaal uit Japan die software ontwikkeling op zijn kop zet !
+Ruby is een programmeertaal uit Japan die software ontwikkeling op zijn kop zet !
 
 Het mooie van Ruby is de balans tussen eenvoud en kracht.
 
