@@ -1,12 +1,12 @@
 ---
-lang:   EN
-title:  The Ripened Fruit of Your Own Creation
-answer: ^Tamed a shrew
-ok:     That'll show those shrews
+lang:   PT-BR
+title:  O Amadurecido Fruto de Sua Própria Criação
+answer: ^Megera domada
+ok:     Isso vai mostrar essas megeras
 error:  
-load:   def tame(number_of_shrews);number_of_shrews.times{puts "Tamed a shrew"};end;
+load:   def domar(numero_de_megeras);numero_de_megeras.times{puts "Megera domada"};end;
 ---
 
-A new method is born. Let us use it now: 
+Um novo método nasceu. Vamos usa-lo agora:
 
-    tame 5
+    domar 5
