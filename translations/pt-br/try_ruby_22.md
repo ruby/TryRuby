@@ -1,27 +1,27 @@
 ---
-lang:   EN
-title:  Putting it differently
+lang:   PT-BR
+title:  Colocando de forma diferente
 answer: ^[0-9\.,-]{1,}$
-ok:     Well put
+ok:     Bem colocado
 error:  
 ---
 
-Did you notice that if you typed more than one formula you only saw the answer for the last one.
-What is going on ?
+Você percebeu que se você digitou mais de uma fórmula, você só viu o resultado da última?
+O que está acontecendo?
 
-> To make this website easier to use I have told Ruby to copy the result of your program to the
-> output screen at the top. So when you type a formula you get to see the results.
-> __But only the last result.__ And only if the output is still empty.
+> Para tornar este site mais fácil de usar, eu disse ao Ruby para copiar o resultado do seu programa
+> para a tela de saída ao topo. Então quando você digita uma fórmula, você consegue ver o resultado.
+> __Mas apenas o último resultado.__ E apenas se a saída estiver vazia.
 
-So when you entered 2 or more formula's, Ruby only showed the result of the last formula.
+Então, quando você entrou com 2 ou mais fórmulas, o Ruby exibiu apenas o resultado da última fórmula.
 
-Of course you have the power to control the screen ! Just type __puts__ before each formula
-(with a space in between). Puts means: *'put something on the screen'*.
+É claro, você tem o poder de controlar a tela! Apenas digite __puts__ antes de cada fórmula
+(com um espaço entre eles). Puts significa: *'coloque (put) alguma coisa na tela'*.
 
-Try this:
+Tente isso:
 
     puts 4 * 10
     puts 5 - 12
     puts 30 / 4
 
-Now remove the puts from the last formula and see what happens.
+Agora, remova o __puts__ da última fórmula e veja o que acontece.
