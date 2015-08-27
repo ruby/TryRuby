@@ -1,13 +1,13 @@
 ---
-lang:   EN
-title:  One Raises Its Hand
+lang:   PT-BR
+title:  Um Levanta a Mão
 answer: ^47$
-ok:     Okay
+ok:     Ok
 error:  
 ---
 
-A list of lottery numbers. Which one is the highest?
+Uma lista dos números da loteria. Qual é o maior?
 
-Try: 
+Tente: 
 
     [12, 47, 35].max
