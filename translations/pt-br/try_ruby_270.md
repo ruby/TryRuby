@@ -1,38 +1,38 @@
 ---
-lang:   EN
-title:  To (be) or not to (be)
-answer: 
-load:   poem = "My toast has flown from my hand\nAnd my toast has gone to the moon.\nYada yada yada\n"
-ok:     
+lang:   PT-BR
+title:  (Ser) ou não (ser)
+answer:
+load:   poema = "Minha torrada voou das minhas mãos\nE minha torrada foi para a lua.\nYada yada yada\n"
+ok:
 error:  
 ---
 
-One other little thing we haven't really talked about openly: method arguments.
-Remember when we changed the poem a little bit ? We used:  
-__poem.gsub("toast", "honeydew")__
-    
-The gsub method needs 2 arguments, which we passed to gsub by including two strings between
-parenthesis. _Arguments tell the method exactly what to do._
+Outra pequena coisa que nós não falamos de forma realmente aberta: argumentos de métodos.
+Lembra quando nós múdamos o poema um pouco? Nós usamos:
+__poema.gsub("torrada", "manga")__
 
-### Parenthesis
-Actually, most of the time Ruby doesn't mind if you omit the parenthesis. So this would have
-worked too:  
-__poem.gsub "toast", "honeydew"__
+O método gsub precisa de dois argumentos, que nós passamos para o gsub ao incluir duas strings
+entre parênteses. _Argumentos falam para o método exatamente o que fazer_
 
-We have already used another method with a parameter. Many times in fact, though it was not very
-obvious:
+### Parênteses
+Atualmente, na maior parte das vezes o Ruby não se importa se você omitir os parenteses. Então, Isto
+teria funcionado também:
+__poema.gsub "torrada", "manga"__
 
-    puts "Hello"
-    puts("Hello")
-    
-Yes __puts__ is also a method. Using puts with or without parenthesis is the same to Ruby, but the
-version without parenthesis is a bit easier to read. And it saves you valuable typing time !
+Nós já usamos outro método com parâmetro (ou argumento). Muitas vezes, de fato, isso não foi tão óbvio:
 
-> So I guess the conclusion is that you can do whatever you like with parenthesis as long as your
-> code reads nicely.
+    puts "Olá!"
+    puts("Olá!")
 
-### to (be) or not to (be)
-So if _to_ is a method and _be_ is an argument we now know the answer to this age old question.
+Sim, __puts__ também é um método. Usar puts com ou sem parênteses é a mesma coisa para o Ruby, mas a versão
+sem parênteses é um pouco mais fácil de ler. E isso economiza uma quantia valioza de seu tempo digitando !
+
+> Então eu acho que a conclusão é que você pode fazer o que você quiser com parêntesis desde que
+> a legibilidade do seu código seja boa.
+
+### (ser) ou não (ser)
+Então, se _to_ é o nome de um método e _ser_ é um argumento, nós sabemos a resposta para esta questão milenar.
+É realmente apenas uma questão de preferência de _to be_ ou _to(be)_.
 It is really just a matter of preference whether you want _to be_ or _to(be)_.
 
-Are you in the mood for more Shakespeare ? Read on.
+Você está no humor para mais Shakespeare? Leia.
