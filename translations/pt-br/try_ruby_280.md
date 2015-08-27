@@ -1,33 +1,33 @@
 ---
-lang:   EN
-title:  The Taming of the Shrew
-answer: ^tame
-ok:     Good good !
+lang:   PT-BR
+title:  A Megera Domada
+answer: ^megera
+ok:     Bom bom !
 error:  
 ---
 
-You totally know how to use Ruby now. I mean you've got down the essentials.
-You just need to keep learning more methods and try out more complex blocks.
+Agora você já sabe como usar o Ruby. Quero dizer, você já viu o essencial.
+Você só tem que continuar aprendendo mais métodos e tentar blocos mais complexos.
 
-But there's one side of Ruby we haven't settled. Making your own methods.
-__Ahem!__ Let's get it over with then.
+Mas tem um lado do Ruby que nós não mostramos. Escrever seus próprios métodos.
+__Aha!__ Vamos fazer isso então.
 
-Next to using Ruby's built in methods (like puts, sort, times) you can define
-your own methods. Why is that a good idea? Two reasons:
+Próximo a utilizar métodos que já vem com o Ruby (como puts, sort, times) você pode definir
+seus próprios métodos. Por que isso é uma boa idéia? Dois motivos:
 
-### To make your program shorter
-If you have to do the same thing in more than one part of your code it is easier
-to put that code in a separate method. Your code will be shorter.
+### Para fazer o seu programa ficar menor
+Se você tem que fazer a mesma coisa em mais de uma parte do seu código, é mais fácil
+colocar este código em um método separado. Seu código será menor
 
-### To make your code easier to read
-Suppose your program needs to do a lot of different things.
-You __could__ stuff all code into one long piece. But it would be very difficult to
-read and understand that code later.
+### Para tornar o seu código mais fácil de ler
+Suponha que o seu programa precise fazer um monte de coisas diferentes.
+Você __poderia__ colocar tudo em um pedaço longo de código. Mas isso tornaria díficil
+de ler e entender o seu código depois.
 
-Instead you should cut up your code in different methods and give each method an easy to
-understand English name. You will thank yourself later.
+Ao invés disso, você deve dividir seu código em diferentes métodos e dar a cada métodos
+um nome de fácil entendimento. Você irá agradecer a si mesmo depois.
 
-So how do we define a method ? Like this:
+Então, como definimos um método? Assim:
 
-    def tame( number_of_shrews )
+    def domar( numero_de_megeras )
     end
