@@ -1,13 +1,13 @@
 ---
-lang:   EN
-title:  Tucking a List Away
+lang:   PT-BR
+title:  Colocando Uma Lista de Distância
 answer: ^\[(\d+)(,\s*\d+){2,}\]$
-ok:     Saved!
+ok:     Salvo!
 error:  
 ---
 
-Good, good. But it's annoying to have to retype that list every time you need it, isn't it?
+Bom, bom. Mas é irritante ter que ficar digitando a lista toda vez que você precisar dela, não é?
 
-Let's save our numbers inside a ticket like so: 
+Vamos salvar os seus números dentro de um bilhete, assim:
 
     ticket = [12, 47, 35]
