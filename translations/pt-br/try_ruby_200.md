@@ -1,27 +1,27 @@
 ---
-lang:   EN
-title:  A Wee Blank Book
-answer: ^(splendid|quite_good|mediocre|quite_not_good|abyssmal)$
-load:   books = {}
-ok:     Yes that's a new review
-error:  Use one of splendid, quite_good, mediocre, quite_not_good, abyssmal. Don't forget the colon
+lang:   PT-BR
+title:  Um Pequenino Livro em Branco
+answer: ^(esplendido|muito_bom|mediocre|nao_tao_bom|lixo)$
+load:   livros = {}
+ok:     Sim, este precisa de uma análise
+error:  Use um dentre esplendido, muito_bom, mediocre, nao_tao_bom, lixo. Não esqueça os dois pontos.
 ---
 
-You've made an empty __hash__. A hash is like an array, only every one of its elements has a name.
+Você criou um __hash__ vazio. Um hash é como um array, porém cada um dos seus elementos tem um nome.
 
-We're going to stuff some miniature book reviews in our new hash. Here's our rating system:
+Nós iremos adicionar algumas análises de livrinhos ao nosso hash. Aqui está nosso sistema de classificação:
 
-- :splendid &rarr; a masterpiece
-- :quite\_good &rarr; enjoyed, sure, yes
-- :mediocre &rarr; equal parts great and terrible
-- :quite\_not\_good &rarr; notably bad
-- :abyssmal &rarr; steaming wreck
+- :esplendido &rarr; uma obra prima
+- :muito\_bom &rarr; gostei, é, gostei
+- :mediocre &rarr; tem partes boas e ruins
+- :nao\_tao\_bom &rarr; notavelmente ruim
+- :lixo &rarr; jamais recomendaria a alguém
 
-To rate a book, put the title in square brackets and put the rating after the equals. For example:
+Para classificar um livro, coloque o título entre colchetes e escreva a classificação após o sinal de igual. Por exemplo:
 
-    books["Gravitys Rainbow"] = :splendid
+    livros["Gravitys Rainbow"] = :esplendido
 
-> By now I think it is only fair to tell you that all lessons in TryRuby are separate from each other.
-> So if you go crazy typing book reviews here, you can only use 'em in this lesson.  
-> If you want to use your reviews in the next lesson you should copy/paste them.  
-> Don't worry about this too much, each lesson has plenty of predefined stuff for you to play around with.
+> Agora, acho que é justo lhe dizer que todas as lições do TryRuby são separadas uma das outras.
+> Então, se você sair escrevendo loucamente análises de livros aqui, você só poderá usa-las nessa lição.
+> Se você deseja usar as suas análises na próxima lição, você deve copia-las e cola-las.
+> Não se preocupe com isso, cada lição tem uma quantidade pré definida de coisas para você brincar.
