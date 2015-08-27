@@ -1,17 +1,17 @@
 ---
-lang:   EN
-title:  On Repeat
+lang:   PT-BR
+title:  Na repetição
 answer: (\w+)
-ok:     Nice to meet you.Nice to meet you.Nice to meet you.
+ok:     É um prazer conhece-lo.É um prazer conhece-lo.É um prazer conhece-lo.
 error:  
 ---
 
-Now, you're probably wondering what any of this is good for.
+Agora, você provavelmente está se perguntando qual é a utilidade disto.
 
-Well, I'm sure you've been to a website that screamed, __Hey, your password is too short!__
+Bem, eu tenho certeza que você já visitou alguma página que gritou: __"Hey, sua senha é muito curta!"__
 
-See, some programs use that simple __.length__ code.
+Viu? Alguns programas usam este simples  código __.length__.
 
-Watch this. Let's multiply your name by 5. 
+Veja isso. Vamos múltiplicar seu nome por 5.
 
     "Jimmy" * 5
