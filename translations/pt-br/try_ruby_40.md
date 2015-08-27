@@ -1,13 +1,14 @@
 ---
-lang:   EN
-title:  Counting the Letters
+lang:   PT-BR
+title:  Contando Letras
 answer: ^\d+$
-ok:     Yep. Length is also a 'method'
+ok:     Sim. Length também é um 'método'
 error:  
 ---
 
-You have used the reverse __method__ on your name! By enclosing your name in quotes, you made a string. Then you called the reverse method, which works on strings to flip all the letters backwards.
+Você já usou o __método__ reverse no seu nome! Ao colocar seu nome entre aspas, você criou uma string. Então você chamou o método reverse, que
+funciona com strings e inverte a posição de todas as letras, deixando a string de trás para frente.
 
-Now, let us see how many letters are in your name:
+Agora, vejamos quantas letras tem em seu nome:
 
     "Jimmy".length
