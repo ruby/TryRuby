@@ -1,28 +1,27 @@
 ---
-lang:   EN
-title:  More Bite-Size Reviews
+lang:   PT-BR
+title:  Mais Pequenos Pedaços de Análises
 answer: [3-9]
-load:   books = {"Gravitys Rainbow" => :splendid}
-ok:     See, the length method works on strings, array's and hashes.
+load:   livros = {"Gravitys Rainbow" => :esplendido}
+ok: Veja, o método length trabalha com strings, arrays e hashes
 error:
 ---
 
-Keep going, fill it up with reviews. And, if you want to see the whole list, just type: __puts books__
+Vá em frente, preencha a lista com análises. E, se você quiser ver toda a lista, apenas digite: __puts livros__
 
-Again, the ratings are: :splendid, :quite\_good, :mediocre, :quite\_not\_good and :abyssmal.
+Denovo, as classificações são: :esplendido, :muito\_bom, :mediocre, :nao\_tao\_bom e :lixo
 
-These ratings are not strings. When you place a colon in front of a simple word, you get a __symbol__.
-Symbols are cheaper than strings (in terms of computer memory.) If you use a word over and over in your program,
-use a symbol. Rather than having thousands of copies of that word in memory, the computer will store the symbol only
-__once__.
+Essas classificações não são strings. Quando você coloca dois pontos a frente de uma simples palavra, você obtém um __symbol__ (símbolo).
+Símbolos são mais baratos que strings (em termos de custo de memória). Se você usar uma palavra várias e várias vezes no seu programa,
+troque por um símbolo. Ao invés de ter milhares de cópias desta palavra na memória, o computador irá armazenar o símbolo apenas __uma vez__.
 
-More importantly, a symbol tells you that is not just any old word but has a meaning within your program.
+Mais importante, um símbolo diz a você que isso não é apenas uma palavra, mas algo que significa algo para o seu programa.
 
-Enter 2 more bookreviews, use __books.length__ to see how many reviews there are in the hash:
+Entre com mais duas análises de livros, use __livros.length__ para ver quantas análises já existem no hash:
 
-    books["The deep end"]  = :abyssmal
-    books["Living colors"] = :mediocre
-    
-    puts books
-    
-    puts books.length
+    livros["The deep end"]  = :lixo
+    livros["Living colors"] = :mediocre
+
+    puts livros
+
+    puts livros.length
