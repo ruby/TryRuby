@@ -1,16 +1,16 @@
 ---
-lang:   EN
-title:  Sadly, You Hate Toast Poetry
+lang:   PT-BR
+title:  Infelizmente, Você Odeia Poemas de Torradas
 answer: (toast){0}
 load:   prev
-ok:     Excellent
-error:  Still smells like toast to me
+ok:     Excelente
+error:  Continua cheirando a torrada para mim
 ---
 
-Look, it's okay. You don't have to like it. Hack it up, be my guest. Instead of toast, go for a
-melon or something. Try this to see the new poem:
+Olha, tudo bem. Você não tem que gostar idsso. Hackeie isso, seja meu convidado. Ao invés de torrada,
+vá para melão ou algo do tipo. Tente isso para ver o novo poema:
 
-    poem.gsub("toast", "honeydew")
+    poema.gsub("torrada", "manga")
 
-The __gsub__ method is short for global substitute. It replaces all occurences of "toast" with
-"honeydew".
+O método __gsub__ é abreviação para substituição global. Ele substitui todas as ocorrências de "torrada" para
+"manga"
