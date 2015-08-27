@@ -1,22 +1,22 @@
 ---
-lang:   EN
-title:  Boys are Different From Girls
+lang:   PT-BR
+title:  Garotos São Diferentes de Garotas
 answer: \[\]
-ok:     Great, that's an empty list
+ok:     Ótimo, esta é uma lista vazia
 error:  
 ---
 
-And numbers are different from strings.
+E números são diferentes de strings.
 
-While you can use methods on any object in Ruby, some methods only work on certain types of things.
-But you can always convert between different types using Ruby's "to" methods.
+Enquanto você pode usar métodos com qualquer objeto em Ruby, alguns métodos só funcionam com certos tipos de coisas.
+Mas você pode sempre converter diferentes tipos em Ruby usando os métodos "to".
 
-- __to_s__ converts things to __s__trings
-- __to_i__ converts things to __i__ntegers (numbers)
-- __to_a__ converts things to __a__rrays
+- __to_s__ converte coisas para __s__trings
+- __to_i__ converte coisas para __i__ntegers (números)
+- __to_a__ converte coisas para __a__rrays
 
-__What are arrays?!__
+__O que são arrays?!__
 
-They are lists. Type in a pair of brackets: 
+Eles são listas. Digite um par de colchetes:
 
     []
