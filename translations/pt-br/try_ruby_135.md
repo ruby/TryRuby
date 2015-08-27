@@ -1,34 +1,35 @@
 ---
-lang:   EN
-title:  Elemental
+lang:   PT-BR
+title:  Elemento
 answer: ^(12|35|47)$
 load:   ticket = [12, 47, 35]
 ok:     Ok
-error:  Almost
+error:  Quase
 ---
 
-So we stored our lotto numbers inside variable ticket. How to get 'em out again ?
+Então, nós guardamos os nossos números da loteria dentro de uma variável ticket. Como fazemos para
+coloca-los pra fora denovo?
 
-We already saw that we can get the highest number with __max__. Similarly you can
-get the __first__ or the __last__ element of the list.
-But what if you want a specific element ?
+Nós já vimos que nós podemos obter o mairor número com o método __max__. De forma similar, você pode obter
+o primeiro, __first__, ou o último, __last__, elemento da lista.
+Mas e se você quiser um elemento específico?
 
 ### [ ]
-Ruby uses the square brackets [ ] to target an element.
-The square brackets are very common in Ruby.
-They are like sights used to line up a target. Exactly.
-These brackets mean, "I am looking for ____" Ready, aim.
+Ruby usa colchetes [ ] para obter um elemento alvo.
+Os colchetes são muito comuns em Ruby.
+Eles são como miras usadas para alinhar ao alvo. Exatamente.
+Esses colchetes significam: "Eu estou olhando pelo ____". Pronto, mire.
 
-Let's get all of our lotto numbers:
+Vamos pegar todos os nossos números da loteria:
 
     puts ticket[0]
     puts ticket[1]
     puts ticket[2]
 
-Why do we use [0], [1], [2] ?
+Por que nós usamos [0], [1], [2] ?
 
-And not [1], [2] and [3] ? Is that some kind of Japanese Zen thing ?
-No, we computer people just like to begin counting from zero. It's not just a Ruby thing,
-this _zero based indexing_ is used in most programming languages.
+E não [1], [2] e [3] ? Isso é algum tipo de coisa zen japonesa ?
+Não, nós, pessoas-computador, apenas gostamos de contar começando do zero. Isso não é algo apenas do Ruby,
+este _índice com base zero_ é usado na maioria das linguagens de programação.
 
-> A little reminder: you can use the __Copy__ button to copy the example code to the editor.
+> Um pequeno lembrete: você pode usar o botão __Copy__ para copiar o exemplo para o editor.
