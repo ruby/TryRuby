@@ -1,21 +1,21 @@
 ---
-lang:   EN
-title:  Ringlets of Chained Methods
-answer: ^More still did (.+)
+lang:   PT-BR
+title:  Cachos de Métodos Encadeados
+answer: ^Mais ainda eu quero (.+)
 load:   prev
-ok:     Good show, my friend! The join method took that array of lines and put them together into a string.
+ok:     Bem mostrado, meu amigo! O método join pega este array de linhas e junta todas elas em uma string.
 error:  
 ---
 
-So what do you see? What happened there? You typed __poem.lines.reverse__ and what happened?
+Então, o que você vê? O que aconteceu aqui? Você digitou __poema.lines.reverse__ e o que aconteceu?
 
-Two things happened. You turned the poem into a list using lines.
-Lines decides the way the string is split up and converts it into an Array.
+Duas coisas aconteceram. Você tornou o poema em uma lista usando o método __lines__.
+__Lines__ decide a forma como a string será dividida e converte isso em um array.
 
-Then, you reversed that list. You had each line. You reversed them. That's it.
+Então, você inverteu esta lista. Você tinha cada linha. Você inverteu elas. É isso.
 
-Let's tack one more method on the end there:
+Vamos colocar mais um método ao final aqui:
 
-    puts poem.lines.reverse.join("\n")
+    puts poema.lines.reverse.join("\n")
 
-Combining methods like this is called _method chaining_.
+Combinando métodos desta forma é chamado de _encadeamento de métodos_.
