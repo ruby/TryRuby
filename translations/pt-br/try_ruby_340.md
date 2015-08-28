@@ -1,22 +1,21 @@
 ---
-lang:   EN
+lang:   PT-BR
 title:  Noble Kinsmen
 answer: ^The Two Noble Kinsmen$
-ok:     That's much better
+ok:     Assim é bem melhor
 error:  
 load:   prev
 ---
 
-Okay we now have a list of plays from the internet. The list was in the json format.
-Fortunately for us Ruby kindly provides a method to convert json data to a Ruby hash.
-The _get\_shakey_ method already did that for us.
+Ok, agora nós temos a lista de peças obtidas da internet. A lista está em formato json.
+Felizmente, para nós, o Ruby, gentilmente, fornece um método para converter json em Hash.
+O método _get\_shakey_ já faz isso para nós
 
-But since the structure of the json data is retained in the hash, it is still a bit difficult to read.
-Let us write a method to display the plays nicely.
+Mas, uma vez que a estrutura do json é convertida em um hash, ela se torna um pouco difícil de ler.
+Vamos então escrever um método para exibir as peças de forma legível.
 
-If you inspect the list of plays carefully you will see that it has a kind of nested
-structure. (This is actually quite common in data you get from the internet.)
-Looks like this:
+Se você olhar a lista de peças cuidadosamente, você verá que há um tipo de estrutura identada.
+Atualmente, isso é comum em dados que você obtém da internet. Parece como isso:
 
 <ul>
   <li>"William Shakespeare"
@@ -38,16 +37,16 @@ Looks like this:
   </li>
 </ul>
 
-To list the plays we first have to access the top "William Shakespeare" hash element by it's name.
-Next we have to __iterate__ through each element below it.
+Para listar as peças, primeiro nós temos que acessar o elemento do topo do hash, "William Shakespeare", pelo seu nome.
+Em seguida, temos que __iterar__ através de cada elemento abaixo deste.
 
-Ruby has a method for iterating. It is called __each__. We have seen it before when
-creating our book rating system.
+O Ruby tem um método para iterar. Ele é chamado de __each__ (significa cada). Nós já o vimos antes
+quando criamos nosso sistema de avaliação de livros.
 
-Everything that method __each__ returns is passed to a block:
+Tudo que o método __each__ retorna é passado para o bloco:
 
     s = get_shakey
-    
+
     s["William Shakespeare"].each { |key, val|
       puts val["title"]
     }
