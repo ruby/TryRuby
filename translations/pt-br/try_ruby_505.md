@@ -1,46 +1,46 @@
 ---
-lang:   EN
-title:  Your Own Turf
+lang:   PT-BR
+title:  Seu próprio gramado
 answer: Blurbalizer:
-ok:     My app created
+ok:     Meu app foi criado
 error:  
-load:   class Blurb;attr_accessor :content,:time,:mood;def initialize(mood, content="");@time=Time.now;@content=content[0..39];@mood=mood;end;end
+load:   class Blurb;attr_accessor :conteudo,:tempo,:humor;def initialize(humor, conteudo="");@tempo=Time.now;@conteudo=conteudo[0..39];@humor=humor;end;end
 ---
 
-Okay, let's wrap things up, kid. Here's the last chapter of the GRIPPING epic story of Try Ruby!
-Now that you've got a taste of how it all works, how are you going to use it around the house
-and in your grocer's freezer?
-You're a great person (one of my favorites), but you need guidance.
+Ok, vamos embrulhar as coisas, garoto. Este é o último capítulo da EMOCIONANTE e épica história do Try Ruby!
+Agora que você já sentiu o gostinho de como tudo funciona, como nós vamos usar isso em volta da casa e no freezer
+da sua mercearia?
+Você é uma grande pessoa (uma das minhas favoritas), mas você precisa de orientação.
 
-### Let's finish your app
-You have app entries, but no actual app.
-It still needs a title, someplace to store all Blurbs<sup>TM</sup> and a timeline in order to work.
+### Vamos finalizar seu app
+Seu app tem entradas, mas não está completo.
+Ele ainda precisa de um título, algum lugar para armazenar todos os Blurbs<sup>TM</sup> e uma timeline para funcionar adequadamente.
 
-Guess what, we're going to use another class. I've given all the code for the new class in one go.
-Just __take your time__ to study it.  
-I'm in no hurry, I'll wait for you in the next lesson.
+Tente advinhar, nós vamos usar outra classe. Eu estou lhe dando todo o código da nova classe de uma vez.
+Estude-a __no seu tempo__, sem pressa.
+Eu não estou com pressa, eu irei esperar você para a sua próxima lição.
 
     class Blurbalizer
-      def initialize(title)
-        @title  = title
-        @blurbs = [] # A fresh clean array
-                     # for storing Blurbs
+      def initialize(titulo)
+        @titulo  = titulo
+        @blurbs = [] # Um array fresquinho e limpo
+                     # para armazenar os Blurbs
       end
-      
-      def add_a_blurb(mood, content)
-        # The << means add to the end of the array
-        @blurbs << Blurb.new(mood, content)
+
+      def adicionar_um_blurb(humor, conteudo)
+        # O << significa adicionar ao array
+        @blurbs << Blurb.new(humor, conteudo)
       end
-      
-      def show_timeline
-        puts "Blurbify: #{@title} has #{@blurbs.count} Blurbs"
-        
+
+      def exibir_timeline
+        puts "Blurbify: #{@titulo} tem #{@blurbs.count} Blurbs"
+
         @blurbs.sort_by { |t|
-          t.time
+          t.tempo
         }.reverse.each { |t|
-          puts "#{t.content.ljust(40)} #{t.time}"
+          puts "#{t.conteudo.ljust(40)} #{t.tempo}"
         }
       end
     end
-    
-    myapp = Blurbalizer.new "The Big Blurb"
+
+    meuApp = Blurbalizer.new "O Grande Blurb"
