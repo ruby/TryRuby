@@ -1,33 +1,33 @@
 ---
-lang:   EN
-title:  Not a School Class, a Working Class
-answer: 
-ok:     
+lang:   PT-BR
+title:  Não Uma Classe de Escola, uma Classe Trabalhadora
+answer:
+ok:
 error:  
 ---
 
-You see, the empty curly braces {} is a shortcut for Hash.new. The new method is used to make objects
-of a certain class. Think "class" as in "working class" &mdash; a specific group of objects which
-are similar, have the same jobs, the same shirts.
-What use is a class ?
+Veja, as chaves vazias são um atalho para Hash.new. O método new é usado para criar objetos de uma determinada classe.
+Pense em "classe" como "classe trabalhadora", um grupo específico de objetos que são similares,
+tem o mesmo trabalho, e usam as mesmas roupas.
+O que uso é uma classe ?
 
 ### Blurbalizer<sup>TM</sup>
-You just had a brilliant idea for a new app. It is going to be __the__ next instant
-messaging platform. You want an app where people can send each other short messages. You call
-these messages Blurbs<sup>TM</sup>. A Blurb<sup>TM</sup> has a maximum length of just 40 characters. Let's do a mood setting too.
+Você acabou de ter uma brilhante idéia para um novo aplicativo. Ele será __a__ nova plataforma
+de mensagens instantâneas. Você quer um aplicativo onde as pessoas possam enviar curtas mensagens para as outras.
+Você chama isso de Blurbs<sup>TM</sup>. Os Blurbs<sup>TM</sup> permite o tamanho máximo de apenas 40 caracteres.
+Vamos fazer algumas configurações de humor também.
 
-<!---The Internet has really brought back stick people and smileys out of bankruptcy. __Emote!__-->
 
-### Where to start
-Well, you might store your Blurbs<sup>TM</sup> entries in a json file, right?
-But how would you keep track of the content of the entry and the time it was posted?
-And when you loaded the file, how would it look in Ruby?
-Would it be a Hash? Or an Array? Or an Array of Arrays? Or something else? 
+### Onde começar
+Bem, você deve armazenar seus Blurbs<sup>TM</sup> em um arquivo json, certo?
+Mas como você poderia manter o rastreamento do conteúdo e da hora em que foi postado?
+E quando o arquivo foi carregado, como isso ficaria no Ruby?
+Isto deveria ser um Hash? Ou um Array? Ou um Array de Arrays? Ou algo diferente?
 
 ### Class
-I really think you'll want to use a class. You are already familiar with many classes:
-Hash, Array, String.  
-Let's make a new class (returns no output):
+Eu realmente acho que você vai querer usar uma classe. Você já está familiarizado com várias classes:
+Hash, Array, String.
+Vamos criar uma nova classe (não tem retorno):
 
     class Blurb
     end
