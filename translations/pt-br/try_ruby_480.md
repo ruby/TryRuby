@@ -1,31 +1,30 @@
 ---
-lang:   EN
-title:  Quickening it Up
+lang:   PT-BR
+title:  Apressando as Coisas
 answer: ^\d{4}
-ok:     Noted
+ok:     Notável
 error:  
 ---
 
-Cool, you're app is awesome. Hey, let's make things a bit easier on you.
-You're not going to want to set the time like that every time you Blurb<sup>TM</sup>.
+Legal, seu app é sensacional. Ei, vamos tornar as coisas um pouco mais fáceis para você.
+Você não quer definir a hora desta forma toda vez que você postar um Blurb<sup>TM</sup>.
 
-You just want to type the content and set the mood, right?
+Você quer apenas digitar o conteúdo e definir o humor, certo?
 
-Let's add an __initialize__ method to our class. This method is called whenever a new Blurb<sup>TM</sup>
-is created.
-At the same time we can limit the length of the Blurb<sup>TM</sup> content to 40 characters.
+Vamos adicionar um método __initialize__ na nossa classe. Este método é chamado sempre que um novo Blurb<sup>TM</sup> é criado.
+Ao mesmo tempo, nós queremos limitar o tamanho do conteúdo do BLurb<sup>TM</sup> para apenas 40 caracteres.
 
     class Blurb
-      attr_accessor :content, :time, :mood
+      attr_accessor :conteudo, :tempo, :humor
 
-      def initialize(mood, content="")
-        @time    = Time.now
-        @content = content[0..39]
-        @mood    = mood
+      def initialize(humor, conteudo="")
+        @tempo    = Time.now
+        @conteudo = conteudo[0..39]
+        @humor    = humor
       end
     end
-    
-    Blurb.new.time
 
-(That parameter __content=""__ is there to make sure that we know content is a string,
-even if no content parameter is passed to the initialize method.)
+    Blurb.new.tempo
+
+(Este parâmetro conteudo=""__ está aqui para garantirmos que o conteúdo é uma string,
+mesmo se nenhum conteúdo for passado como parâmetro para o método initialize)
