@@ -1,28 +1,28 @@
 ---
-lang:   EN
-title:  You've Taught Your App to Reject Worthless Things
+lang:   PT-BR
+title:  Você Ensinou Seu App a Desprezar Coisas Sem Valor
 answer: Blurb:
-ok:     Blurb added
+ok:     Blurb adicionado
 error:  
-load:   class Blurb;attr_accessor :content,:time,:mood;def initialize(mood, content="");@time=Time.now;@content=content[0..39];@mood=mood;end;end;blurb1=Blurb.new(:sick,"Today Mount Hood Was Stolen!")
+load:   class Blurb;attr_accessor :conteudo,:tempo,:humor;def initialize(humor, conteudo="");@tempo=Time.now;@conteudo=conteudo[0..39];@humor=humor;end;end;blurb1=Blurb.new(:doente,"Hoje, Mount Hood foi roubado!")
 ---
 
-Did you see how inside the class we used the at-symbols (@time).
+Você viu como usamos os simbolos arroba dentro da classe (@tempo)?
 
-__Outside__ the class, we use accessors:
+__Fora__ da classe, nós usamos o acessor:
 
-> __blurb.time = Time.now__
+> __blurb.tempo = Time.now__
 
-but __inside__ we use the __object's variables__:
+mas __dentro__ nós usamos __a variável objeto__:
 
-> __@time = Time.now__
+> __@tempo = Time.now__
 
-They're the exact same thing, but expressed in two different places of your program.
+Eles são exatamente a mesma coisa, mas são representados em dois locais diferentes do programa.
 
-### Create another Blurb<sup>TM</sup>
-When a new Blurb<sup>TM</sup> is created, the initialize method is used to check for any
-arguments to new.
+### Crie outro Blurb<sup>TM</sup>
+Quando um novo Blurb<sup>TM</sup> é criado, o método initialize é usado para verificar
+por algum argumento para o new.
 
-Uh, we need two arguments:
+Uh, nós precisamos de dois argumentos:
 
-    Blurb2 = Blurb.new :confused, "I can not believe Mt. Hood was stolen!"
+    Blurb2 = Blurb.new :confuso, "Eu não posso acreditar que Mt. Hood foi roubado!"
