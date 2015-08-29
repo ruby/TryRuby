@@ -22,4 +22,4 @@ Para criar um Blurb<sup>TM</sup> e definir seu conteúdo:
 
     blurb1 = Blurb.new
     puts blurb1
-    blurb1.content = "Hoje, Mount Hood foi roubado!"
+    blurb1.conteudo = "Hoje, Mount Hood foi roubado!"
