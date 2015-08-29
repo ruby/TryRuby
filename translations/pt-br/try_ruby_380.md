@@ -1,34 +1,34 @@
 ---
-lang:   EN
-title:  And Now For the Startling Conclusion
-answer: is not equal to 100$
+lang:   PT-BR
+title:  E agora para a conclusão surpreendente
+answer: não é igual a 100$
 ok:     That's better
 error:  This can't be right
 ---
 
-Did you see the 2 equal signs in __'abc' == 'def'__?
+Você viu os dois sinais de igual em __'abc' == 'def'__ ?
 
-This __==__ means __is equal to__.
-The single equal sign that we have seen before means __assign a value to a variable__.
+Este __==__ significa __é igual a__.
+Um único sinal de igual que nós vimos antes significa __atribua o valor a variável__.
 
-To make it more confusing: you can use the assignment after an if method like this:
+Para tornar isto um pouco mais confuso, você pode usar a atribuição após um método if, por exemplo:
 
     a = 0
-    
+
     if a = 100
-      puts "Expression is true, but a is now: #{a}"
+      puts "A expressão é verdadeira, mas agora a é: #{a}"
     else
-      puts "#{a} is not equal to 100"
+      puts "#{a} não é igual a 100"
     end
 
-Change the = into == and see what happens.
+Troque o = por == e veja o que acontece.
 
-I can guarantee you that you will forget typing the second equal sign regularly. I also
-still forget it sometimes.
+Eu posso garantir que você irá esquecer de digitar o segundo sinal de igual regularmente. Eu também
+esqueço dele as vezes.
 
 ### else
-In the code above I have added an else expression. This part will be executed when the
-__if test-expression__ evaluates to false.
+No código acima eu adicionei o else a expressão. Esta parte será executada quando a
+__expressão teste do if__ retornar false.
 
-> There are more variations to this if-then-else theme. You can read more
-> <a href="http://www.ruby-doc.org/core/doc/syntax/control_expressions_rdoc.html" target="_blank">here</a>.
+> Existem mais variações para este tema if-then-else. Você pode ler mais
+> <a href="http://www.ruby-doc.org/core/doc/syntax/control_expressions_rdoc.html" target="_blank">aqui</a>.
