@@ -1,33 +1,34 @@
 ---
-lang:   EN
-title:  Summary #6 Which Means You've Come So Far
+lang:   PT-BR
+title:  Summary #6 Que Significa Que Você Foi Bem Longe
 answer: \{\}
 class:  stretcher chapmark
-ok:     Ok, that's an empty hash
+ok:     Ok, é um Hash vazio
 error:  
 ---
 
-You're a level six Ruby cleric. I mean what a great job you've done. Let's review:
+Você é um clérigo Ruby level 6. Quero dizer, que grande trabalho você fez. Vamos revisar:
 
+### Dados
+Você carregou alguns dados da internet,
+You loaded some data of the internet, percorreu uma estrutura de dados e selecionou um valor.
 
-### Data
-You loaded some data of the internet, traversed a data structure and selected values.
+### Iterando
+Você iterou todos os elementos de um hash e você encadeou alguns outros métodos.
 
-### Iterating
-You iterated all elements of a hash and you chained some more methods.
-
-### Pretty printing
-And if that wasn't enough, you formatted and printed some values in a way that is easy
-to read for humans. In fact __you made a real program !__
+### Imprimindo Bonito
+E como se isso não fosse o bastante, você formatou e imprimiu alguns valores de uma forma
+que é fácil para humanos ler. De fato, __você fez um programa real!__
 
 ### IF
-You learned to take control of your programs with __if__ and __else__ statements.
+Você aprendeu a tomar o controle dos seus programasa com declarações de __if__ e __else__.
 
-## So
-What could possibly be next? What could you possibly have to learn now?
-Ha, this is the best part. You've come such a long way that we're going
-to uncover classes. For two more short lessons and you're done.
+## Então
+O que é possível fazer em seguida? O que é possível que você ainda tenha que aprender agora?
+Ha! Esta é a melhor parte. Você
+Ha, this is the best part. Você percorreu um caminho tão grande que agora vamos revelar as classes.
+Apenas mais duas lições curtas, e acabou.
 
-Earlier, we created a hash like this: 
+Mais cedo, nós criamos um Hash desta forma:
 
     Hash.new
