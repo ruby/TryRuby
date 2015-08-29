@@ -1,31 +1,29 @@
 ---
-lang:   EN
-title:  Summary #8, The Hey-Relax-You-Did-Good Summary
-answer: 
+lang:   PT-BR
+title:  Sumário #8, O Sumário do Ei-Relaxa-Você-Foi-Bem
+answer:
 class:  stretcher chapmark
-ok:     
+ok:
 error:  
-load:   def ruby(f);puts "Go to www.ruby-lang.org to download Ruby";end;class K;attr_reader :rb;end;my_first_progam=K.new
+load:   def ruby(f);puts "Vá para www.ruby-lang.org para baixar o Ruby";end;class K;attr_reader :rb;end;my_first_progam=K.new
 ---
 
-This last section took a moment to wind down, to give you some pointers as to how you can use Ruby.
+Esta última sessão é um momento para relaxar, para lhe dar aluma direção sobre como você pode usar o Ruby.
 
-If you enjoyed yourself, you can continue with the <a href="/playground">TryRuby Playground</a>
-or download and install Ruby:
+Se você gostou, você pode continuar com o <a href="/playground">TryRuby Playground</a> ou baixar e instalar o Ruby:
 <a href="https://www.ruby-lang.org/en/downloads/" target="_blank">ruby-lang.org</a>
 
-Once you have Ruby installed, you can create a file, let say _my\_first\_progam.rb_, with a text
-editor, type some Ruby code and then run it by opening a command prompt and typing:
+Uma vez que você tenha o Ruby instalado, você poderá criar um arquivo, digamos _meu\_primeiro\_programa.rb_, usando um editor de texto,
+escrever algum código Ruby e então roda-lo. Para roda-lo abra o prompt de comando e digite:
 
-    ruby my_first_progam.rb
+    ruby meu_primeiro_programa.rb
 
-There are many (free) development tools available that combine an editor, file browser and a
-'ruby-runner'.
+Existem várias ferramentas (gratuitas) de desenvolvimento disponíveis para combinar um editor, explorador de arquivos
+e um 'ruby-runner'.
 
-## Celebrate
-You really deserve a double-layer cake with double-double frosting and a guy playing one of those guitars that's a double guitar.
-I mean you finished, you really did! No doubt about it, you're a __certified red-blooded smartiac!__
+## Comemore
+Você realmente merece comer um doblo de camada dupla, com duplo sorvete, enquanto um cara toca uma daquelas guitarras que na verdade são guitarras duplas.
+Quero dizer, você terminou. Você realmente terminou! Não há duvidas sobre isso, você é um __sangue-vermelho espertão certificado!__
 
-## More info
-There are a couple of articles on this website. They can give you some pointers on where to
-go from here.
+## Mais informações
+Existem um monte de ótimos artigos neste site. Eles podem lhe dar um norte sobre para onde ir a partir daqui.
