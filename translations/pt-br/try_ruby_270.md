@@ -25,14 +25,13 @@ Nós já usamos outro método com parâmetro (ou argumento). Muitas vezes, de fa
     puts("Olá!")
 
 Sim, __puts__ também é um método. Usar puts com ou sem parênteses é a mesma coisa para o Ruby, mas a versão
-sem parênteses é um pouco mais fácil de ler. E isso economiza uma quantia valioza de seu tempo digitando !
+sem parênteses é um pouco mais fácil de ler. E isso economiza seu valioso tempo digitando !
 
 > Então eu acho que a conclusão é que você pode fazer o que você quiser com parêntesis desde que
 > a legibilidade do seu código seja boa.
 
 ### (ser) ou não (ser)
-Então, se _to_ é o nome de um método e _ser_ é um argumento, nós sabemos a resposta para esta questão milenar.
+Então, se _to_ (ser) é o nome de um método e _ser_ é um argumento, nós sabemos a resposta para esta questão milenar.
 É realmente apenas uma questão de preferência de _to be_ ou _to(be)_.
-It is really just a matter of preference whether you want _to be_ or _to(be)_.
 
 Você está no humor para mais Shakespeare? Leia.

@@ -3,7 +3,7 @@ lang:   PT-BR
 title:  Ei, Sumário #1 Pronto
 answer: ^NoMethodError(.*)$
 class:  stretcher chapmark
-ok:     Não, não é possível inverter um número. Clique em __next__ para continuar
+ok:     Não, não é possível inverter um número. Clique em _next_ para continuar
 error:  
 ---
 
@@ -18,13 +18,12 @@ Números e strings são os objetos matemáticos e de texto do Ruby.
 
 ### Métodos
 Você usou métodos em inglês como reverse e length. E usou métodos simbólicos como o método
-de multiplicação: \*
+de multiplicação: \*.
 __Métodos significam ações!__
 
 Esta é a essência do seu aprendizado. Pegando coisas simples, brincando com elas e então tornando-as
 coisas novas.
-This is the essence of your learning. Taking simple things, toying with them and turning them into
-new things. Já se sente confortável? Tenho certeza que você está.
+Já se sente confortável? Tenho certeza que você está.
 
 ## Ok,
 vamos fazer algo desconfortável. Tente inverter um número:

@@ -15,7 +15,7 @@ Essas classificações não são strings. Quando você coloca dois pontos a fren
 Símbolos são mais baratos que strings (em termos de custo de memória). Se você usar uma palavra várias e várias vezes no seu programa,
 troque por um símbolo. Ao invés de ter milhares de cópias desta palavra na memória, o computador irá armazenar o símbolo apenas __uma vez__.
 
-Mais importante, um símbolo diz a você que isso não é apenas uma palavra, mas algo que significa algo para o seu programa.
+Mais importante, um símbolo diz a você que isso não é apenas uma palavra, mas algo que tem significado para o seu programa.
 
 Entre com mais duas análises de livros, use __livros.length__ para ver quantas análises já existem no hash:
 

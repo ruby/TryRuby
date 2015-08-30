@@ -12,7 +12,7 @@ Você só tem que continuar aprendendo mais métodos e tentar blocos mais comple
 Mas tem um lado do Ruby que nós não mostramos. Escrever seus próprios métodos.
 __Aha!__ Vamos fazer isso então.
 
-Próximo a utilizar métodos que já vem com o Ruby (como puts, sort, times) você pode definir
+Além de utilizar métodos que já vem com o Ruby (como puts, sort, times), você pode definir
 seus próprios métodos. Por que isso é uma boa idéia? Dois motivos:
 
 ### Para fazer o seu programa ficar menor

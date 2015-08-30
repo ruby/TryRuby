@@ -1,6 +1,6 @@
 ---
 lang:   PT-BR
-title:  Olá, Quem Está Ai? E Sumário #5 Waves Its Hat!
+title:  Olá, Quem Está Ai? E Sumário #5 Segura o Chapéu!
 answer:
 class:  stretcher chapmark
 ok:

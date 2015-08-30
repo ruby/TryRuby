@@ -1,7 +1,7 @@
 ---
 lang:   PT-BR
 title:  Pronto, Mire
-answer: ^\n.ti tae ot (.+)
+answer: ^\n.al-emoc (.+)
 load:   prev
 ok:     Ok, claro.  Então todo o poema foi invertido.
 error:  
@@ -9,4 +9,4 @@ error:
 
 Eis a questão: o que acontece quando nós invertemos todo o poema?
 
-    poem.reverse
+    poema.reverse
