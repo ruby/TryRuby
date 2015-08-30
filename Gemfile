@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-gem "opal",        :github => 'opal/opal'
-gem "opal-jquery", :github => 'opal/opal-jquery'
-gem 'opal-rspec',  :github => 'opal/opal-rspec'
+gem "opal", "~> 0.7.0"
+gem "opal-jquery"
+gem 'opal-rspec'
 
 gem "middleman", ">= 3.3.7"
 gem "middleman-livereload", ">= 3.1.0"
