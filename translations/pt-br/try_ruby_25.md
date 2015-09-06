@@ -10,4 +10,4 @@ Claro, computadores são práticos e rápidos para operações matemáticas. Vam
 
 Primeiro digite o seu nome, entre aspas, desta forma:
 
-    "Jimmy"
+    "Ricardo"

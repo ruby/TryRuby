@@ -2,12 +2,12 @@
 lang:   PT-BR
 title:  Elemento
 answer: ^(12|35|47)$
-load:   ticket = [12, 47, 35]
+load:   bilhete = [12, 47, 35]
 ok:     Ok
 error:  Quase
 ---
 
-Então, nós guardamos os nossos números da loteria dentro de uma variável ticket. Como fazemos para
+Então, nós guardamos os nossos números da loteria dentro de uma variável bilhete. Como fazemos para
 coloca-los pra fora denovo?
 
 Nós já vimos que nós podemos obter o mairor número com o método __max__. De forma similar, você pode obter
@@ -22,9 +22,9 @@ Esses colchetes significam: "Eu estou olhando pelo ____". Pronto, mire.
 
 Vamos pegar todos os nossos números da loteria:
 
-    puts ticket[0]
-    puts ticket[1]
-    puts ticket[2]
+    puts bilhete[0]
+    puts bilhete[1]
+    puts bilhete[2]
 
 Por que nós usamos [0], [1], [2] ?
 

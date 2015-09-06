@@ -19,7 +19,7 @@ Nós também aprendemos como criar arrays e recuperar itens de arrays.
 
 ### Variáveis
 Variáveis salvam a coisa e dão um nome pra ela. Você usou o símbolo de igual para isso. Por exemplo:
-ticket = [14, 37, 18].
+bilhete = [14, 37, 18].
 
 ### 2/8
 Ao todo, há oito seções. Você está a dois oitavos do caminho para fora daqui! Isto é algo simples,

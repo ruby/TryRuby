@@ -11,4 +11,4 @@ funciona com strings e inverte a posição de todas as letras, deixando a string
 
 Agora, vejamos quantas letras tem em seu nome:
 
-    "Jimmy".length
+    "Ricardo".length

@@ -12,10 +12,10 @@ O que falta melhorar? Nós poderiamos ter impresso os resultados de forma um pou
 o ano e alinhar títulos e anos.
 
 Isso significa imprimir vários valores em uma linha. O Ruby possui um jeito puro
-de fazer isso. É exatamente como imprimir uma string: __puts "Olá, meu nome é Jimmy"__.
-Mas, ao invés de utilizarmos o valor literal _Jimmy_, nós usaremos o valor da variável.
+de fazer isso. É exatamente como imprimir uma string: __puts "Olá, meu nome é Ricardo"__.
+Mas, ao invés de utilizarmos o valor literal _Ricardo_, nós usaremos o valor da variável.
 
-Em primeiro lugar, substitua __Jimmy__ por __#{}__. Se o Ruby ver o símbolo hash # segudio chaves {
+Em primeiro lugar, substitua __Ricardo__ por __#{}__. Se o Ruby ver o símbolo hash # segudio chaves {
 ele procurará por uma variável entre a abertura e o fechamento da chave }.
 Nós podemos usa-lo desta forma: __"Olá, meu nome é \#{nome}"__  
 

@@ -19,7 +19,7 @@ Nós iremos adicionar algumas análises de livrinhos ao nosso hash. Aqui está n
 
 Para classificar um livro, coloque o título entre colchetes e escreva a classificação após o sinal de igual. Por exemplo:
 
-    livros["Gravitys Rainbow"] = :esplendido
+    livros["O Arco-Íris da Gravidade"] = :esplendido
 
 > Agora, acho que é justo lhe dizer que todas as lições do TryRuby são separadas uma das outras.
 > Então, se você sair escrevendo loucamente análises de livros aqui, você só poderá usa-las nessa lição.

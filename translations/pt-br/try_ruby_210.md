@@ -2,7 +2,7 @@
 lang:   PT-BR
 title:  Mais Pequenos Pedaços de Análises
 answer: [3-9]
-load:   livros = {"Gravitys Rainbow" => :esplendido}
+load:   livros = {"O Arco-Íris da Gravidade" => :esplendido}
 ok: Veja, o método length trabalha com strings, arrays e hashes
 error:
 ---
@@ -19,8 +19,8 @@ Mais importante, um símbolo diz a você que isso não é apenas uma palavra, ma
 
 Entre com mais duas análises de livros, use __livros.length__ para ver quantas análises já existem no hash:
 
-    livros["The deep end"]  = :lixo
-    livros["Living colors"] = :mediocre
+    livros["Até o Fim"]  = :lixo
+    livros["Cores Vivas"] = :mediocre
 
     puts livros
 

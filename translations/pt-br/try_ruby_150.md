@@ -1,7 +1,7 @@
 ---
 lang:   PT-BR
 title:  Infelizmente, Você Odeia Poemas de Torradas
-answer: (toast){0}
+answer: (torrada){0}
 load:   prev
 ok:     Excelente
 error:  Continua cheirando a torrada para mim

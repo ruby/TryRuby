@@ -10,4 +10,4 @@ Bom, bom. Mas é irritante ter que ficar digitando a lista toda vez que você pr
 
 Vamos salvar os seus números dentro de um bilhete, assim:
 
-    ticket = [12, 47, 35]
+    bilhete = [12, 47, 35]

@@ -2,7 +2,7 @@
 lang:   PT-BR
 title:  Você é Áspero (Harsh)?
 answer: "mediocre"
-load:   livros = {"Gravitys Rainbow" => :esplendido, "The deep end" => :lixo, "Living colors" => :mediocre, "Bumblebees" => :mediocre}
+load:   livros = {"O Arco-Íris da Gravidade" => :esplendido, "Até o Fim" => :lixo, "Cores Vivas" => :mediocre, "Bumblebees" => :mediocre}
 ok:     Ótimo, wow! Você fez um scorecard das suas análises.
 error:  
 ---

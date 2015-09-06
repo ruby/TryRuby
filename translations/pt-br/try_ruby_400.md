@@ -11,7 +11,6 @@ Você é um clérigo Ruby level 6. Quero dizer, que grande trabalho você fez. V
 
 ### Dados
 Você carregou alguns dados da internet,
-You loaded some data of the internet, percorreu uma estrutura de dados e selecionou um valor.
 
 ### Iterando
 Você iterou todos os elementos de um hash e você encadeou alguns outros métodos.

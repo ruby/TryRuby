@@ -8,7 +8,7 @@ error:
 load:   prev;blurb2=Blurb.new :confuso, "Eu não posso acreditar que Mt. Hood foi roubado!"
 ---
 
-Aha! Você eestá aqui. E inteiro. Nós vamos continuar a fazer o seu app real, mas enquanto isso,
+Aha! Você está aqui. E inteiro. Nós vamos continuar a fazer o seu app real, mas enquanto isso,
 vamos revisar ok?
 
 ### Classes
