@@ -1,6 +1,6 @@
 ---
 lang:   PT-BR
-title:  Summary #6 Que Significa Que Você Foi Bem Longe
+title:  Sumário #6 Que Significa Que Você Foi Bem Longe
 answer: \{\}
 class:  stretcher chapmark
 ok:     Ok, é um Hash vazio
