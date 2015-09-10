@@ -5,7 +5,7 @@ answer:
 class:  stretcher chapmark
 ok:
 error:  
-load:   def ruby(f);puts "Vá para www.ruby-lang.org para baixar o Ruby";end;class K;attr_reader :rb;end;my_first_progam=K.new
+load:   def ruby(f);puts "Vá para www.ruby-lang.org para baixar o Ruby";end;class K;attr_reader :rb;end;meu_primeiro_programa=K.new
 ---
 
 Esta última sessão é um momento para relaxar, para lhe dar aluma direção sobre como você pode usar o Ruby.

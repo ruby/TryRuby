@@ -27,4 +27,4 @@ Vá em frente e tente um pouco, coisas como: poema.downcase ou poema.swapcase
 ## Pronto ?
 Quando se sentir pronto para continuar, digite:
 
-    books = {}
+    livros = {}

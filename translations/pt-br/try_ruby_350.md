@@ -8,7 +8,7 @@ load:   prev
 ---
 
 Agora, suponha que nós desejamos saber apenas os nomes e a quantidade de peças escritas
-por SHakespeare em um determinado ano.
+por Shakespeare em um determinado ano.
 
 O Ruby nos permite selecionar (__select__) valores do hash. O método __select__ usa um bloco
 para nos deixar definir o que selecionar, e retorna o que for encontrado.

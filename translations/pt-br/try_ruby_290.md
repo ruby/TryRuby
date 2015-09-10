@@ -20,6 +20,5 @@ Aqui está o código:
 
 > __P.S.__  
 > Se você não pegou o titulo deste capítulo.
-> If you don't get the title of this chapter.
 > <a href="http://en.wikipedia.org/wiki/Def_Leppard" target="_blank">Def Leppard</a>
 > é o nome de uma, famosa, banda inglesa de rock.

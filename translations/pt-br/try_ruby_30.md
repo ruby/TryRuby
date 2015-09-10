@@ -12,6 +12,6 @@ As aspas marcam o ínicio e o fim da string.
 
 Para inverter o seu nome, digite:
 
-    "Jimmy".reverse
+    "Ricardo".reverse
 
 (Não se esqueca do ponto!)
