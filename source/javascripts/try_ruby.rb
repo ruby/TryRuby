@@ -114,12 +114,12 @@ class TryRuby
     if language.empty?
       # Only English for now. Uncomment lines to get browser setting
       browserlang = `navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage || navigator.browserLanguage)`
-      case browserlang[0..1]
+      case browserlang.downcase
       when 'nl'
         language = 'nl'
       when 'es'
         language = 'es'
-      when 'pt-br'
+      when 'pt-br', 'pt'
         language = 'pt-br'
       else
         language = 'en'

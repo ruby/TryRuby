@@ -1,7 +1,7 @@
 ---
 lang:   PT-BR
 title:  Em Ruby, Def Leppard significa: defina o método Leppard
-answer: ^domada
+answer: ^domar
 ok:     Manso não é coxo
 error:  
 ---

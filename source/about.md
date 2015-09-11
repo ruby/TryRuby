@@ -40,6 +40,7 @@ and uses <a href="http://glyphicons.com/" target="_blank">Gyphicons</a>.
 ### Translations
 
 Spanish translation by _Jesus Gabriel y Galan_ & _Pablo García_  
+Brazilian Portuguese translation by _Ricardo da Verdade Silva_  
 Dutch translation by _Ivo Herweijer_  
 
 ### Privacy

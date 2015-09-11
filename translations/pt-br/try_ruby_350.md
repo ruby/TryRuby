@@ -3,7 +3,7 @@ lang:   PT-BR
 title:  Tudo junto agora
 answer: ^4$
 ok:     Sim, Shakespeare escreveu 4 peças em 1591
-error:  A resposta para o ano 1951 deve ser 4
+error:  A resposta para o ano 1591 deve ser 4
 load:   prev
 ---
 

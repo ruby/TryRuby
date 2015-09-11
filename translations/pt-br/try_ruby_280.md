@@ -1,7 +1,7 @@
 ---
 lang:   PT-BR
 title:  A Megera Domada
-answer: ^megera
+answer: ^domar
 ok:     Bom bom !
 error:  
 ---
