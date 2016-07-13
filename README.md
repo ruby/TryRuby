@@ -24,6 +24,11 @@ Clone this repo, and use bundler to get dependencies:
 
 The website is built using middleman. Livereload is enabled.
 
+Note: to install the 'eventmachine' gem a ruby development environment needs to
+be present. You may need to run something like:
+
+    $ sudo apt-get install ruby2.3-dev
+
 ## Run development website
 
     $ bundle exec middleman server
@@ -45,7 +50,7 @@ for more background information on how and why this website was created.
 
 ## The MIT License
 
-Copyright (C) 2014-2015 Ivo Herweijer
+Copyright (C) 2014-2016 Ivo Herweijer
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
