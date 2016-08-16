@@ -18,6 +18,7 @@ description: Learn to program in Ruby in 15 minutes
               <option value="nl">Nederlands</option>
               <option value="es">Espa&ntilde;ol</option>
               <option value="pt-br">Português do Brasil</option>
+              <option value="ja">日本語</option>
             </select>
           </div>
         </div>

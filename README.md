@@ -15,7 +15,8 @@ This website is partially based on OpalRb.org by _Adam Beynon_.
 ### Translations
 Spanish translation by _Jesus Gabriel y Galan_ & _Pablo García_  
 Dutch translation by _Ivo Herweijer_  
-Brazilian Portuguese translation by [_Ricardo da Verdade Silva_](https://github.com/ricardovsilva)
+Brazilian Portuguese translation by [_Ricardo da Verdade Silva_](https://github.com/ricardovsilva)<br>
+Japanese translation by _Koji Shimada_ & _Masayoshi Takahashi_
 
 ## Preparing
 Clone this repo, and use bundler to get dependencies:
