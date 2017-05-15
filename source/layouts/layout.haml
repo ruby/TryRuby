@@ -6,15 +6,15 @@
     %title= current_page.data.title || 'TryRuby'
     %meta{:name => "description", :content => "#{current_page.data.description || 'Learn programming with Ruby'}"}
 
-    = stylesheet_link_tag 'vendor/bootstrap', media: 'all'
+    = stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', media: 'all'
     = stylesheet_link_tag 'vendor/bootstrap-theme', media: 'all'
     = stylesheet_link_tag 'vendor/codemirror', media: 'all'
     = stylesheet_link_tag 'vendor/codemirror-solarized', media: 'all'
     = stylesheet_link_tag 'vendor/pygment_solarized_light', media: 'all'
     = stylesheet_link_tag 'application', media: 'all'
 
-    = javascript_include_tag 'vendor/jquery'
-    = javascript_include_tag 'vendor/bootstrap'
+    = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'
+    = javascript_include_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'
     = javascript_include_tag 'vendor/codemirror-compressed-4.8'
     = javascript_include_tag 'application'
 
