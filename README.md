@@ -41,13 +41,13 @@ Then visit `http://localhost:4567`.
     $ bundle exec rake publish
 
 Git branch 'gh-pages' now holds the publishable version of TryRuby, accessible
-via [easydatawarehousing.github.io/TryRuby/](http://easydatawarehousing.github.io/TryRuby/).
+via [easydatawarehousing.github.io/TryRuby/](https://easydatawarehousing.github.io/TryRuby/).
 
 ## Translators
 When adding a new translation: see the README file in /translations.
 
 ## Why
-See the website [TryRuby.nl](http://TryRuby.nl/articles/try-ruby-version-4/)
+See the website [try-ruby-version-4](https://easydatawarehousing.github.io/TryRuby/articles/try-ruby-version-4/)
 for more background information on how and why this website was created.
 
 ## The MIT License
