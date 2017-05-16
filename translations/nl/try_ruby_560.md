@@ -13,7 +13,7 @@ Hopelijk heb je een goede indruk gekregen hoe je Ruby in het echt kunt
 gebruiken.
 
 Als programmeren je aanspreekt zou je verder kunnen gaan met onze eigen
-<a href="/playground">TryRuby Playground</a>
+<a href="/TryRuby/playground">TryRuby Playground</a>
 of je kunt Ruby downloaden en installeren via:
 <a href="https://www.ruby-lang.org/en/downloads/" target="_blank">ruby-lang.org</a>
 

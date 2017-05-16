@@ -7,6 +7,7 @@ gem "middleman-livereload", "~> 3.4.6"
 gem "middleman-syntax"
 gem "middleman-sprockets"
 gem "middleman-blog"
+gem 'middleman-gh-pages'
 gem "redcarpet"
 gem 'therubyracer', :platforms => :ruby
 gem 'haml', "~> 4.0.7"

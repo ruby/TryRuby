@@ -137,7 +137,7 @@ class TryRuby
 
   # AJAX call to get lesson content. Update page when done
   def get_content_from_server(language)
-    HTTP.get("/try_ruby_#{language}.json") do |response|
+    HTTP.get("try_ruby_#{language}.json") do |response|
       # Handle ajax reponse
       if response.status_code == 200
         # Store items

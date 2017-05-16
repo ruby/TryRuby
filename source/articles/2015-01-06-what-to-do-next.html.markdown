@@ -9,7 +9,7 @@ the_summary: So, you finished the TryRuby lessons. Are you hungry for more ? Her
 So, you finished the TryRuby lessons. Are you hungry for more ?
 
 You can use the
-<a href="/playground">TryRuby Playground</a>
+<a href="/TryRuby/playground">TryRuby Playground</a>
 or download and install Ruby:
 <a href="https://www.ruby-lang.org/en/downloads/" target="_blank">ruby-lang/downloads</a>
 

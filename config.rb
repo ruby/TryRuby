@@ -1,5 +1,3 @@
-system "clear"
-
 require 'bundler'
 Bundler.require
 
@@ -39,9 +37,13 @@ after_configuration do
 end
 
 configure :development do
+  system "clear"
   set :debug_assets, true
   activate :livereload
 end
+
+activate :relative_assets
+set :relative_links, true
 
 configure :build do
   activate :minify_css

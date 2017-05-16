@@ -10,7 +10,7 @@ load:   def ruby(f);puts "www.ruby-lang.orgに行ってRubyをダウンロード
 
 この最後の章は幕を閉じ、Rubyをどう使えるかについていくつかのポインタを示すためにあります。
 
-ここまで楽しめたなら、<a href="/playground">TryRuby Playground</a>で続けることもできますし、
+ここまで楽しめたなら、<a href="/TryRuby/playground">TryRuby Playground</a>で続けることもできますし、
 Rubyをダウンロードしてインストールすることもできます。
 <a href="https://www.ruby-lang.org/ja/downloads/" target="_blank">ruby-lang.org</a>
 

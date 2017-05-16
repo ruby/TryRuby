@@ -38,9 +38,10 @@ Then visit `http://localhost:4567`.
 
 ## Publishing
 
-    $ bundle exec middleman build
+    $ bundle exec rake publish
 
-The `build` directory now holds a publishable version of TryRuby.
+Git branch 'gh-pages' now holds the publishable version of TryRuby, accessible
+via [easydatawarehousing.github.io/TryRuby/](http://easydatawarehousing.github.io/TryRuby/).
 
 ## Translators
 When adding a new translation: see the README file in /translations.
