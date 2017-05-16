@@ -8,7 +8,7 @@ description: Play around with Ruby programs
     <div id="tryruby-explanation">
       <h2 id="tryruby-title">TryRuby playground</h2>
       <div id="tryruby-content">
-        <iframe src="http://www.ruby-doc.org/core/Kernel.html" width="125%" height="740px">www.ruby-doc.org</iframe>
+        <iframe src="https://www.ruby-doc.org/core/Kernel.html" width="125%" height="740px">www.ruby-doc.org</iframe>
       </div>
 
       <p>In the Playground you can try any Ruby code you like.<br/>The Ruby documentation is included.</p>
