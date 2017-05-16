@@ -60,4 +60,4 @@ All source code for TryRuby (this website) is available on
 
 This website was created by Ivo Herweijer. I am a software developer and
 live The Netherlands. You can contact me via
-<a href="mailto:info@TryRuby.nl?Subject=TryRuby" target="_top">email</a>.
+<a href="https://github.com/easydatawarehousing/TryRuby/issues" target="_blank">GitHub</a>.
