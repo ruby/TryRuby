@@ -39,3 +39,5 @@ description: Play around with Ruby programs
     </div>
   </div>
 </div>
+
+<script>Opal.load('try_ruby');</script>

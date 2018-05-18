@@ -84,3 +84,5 @@ description: Learn to program in Ruby in 15 minutes
     </div>
   </div>
 </div>
+
+<script>Opal.load('try_ruby');</script>

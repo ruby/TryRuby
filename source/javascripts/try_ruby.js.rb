@@ -1,3 +1,7 @@
+require 'opal'
+require 'opal-parser'
+require 'opal-jquery'
+
 INITIAL_TRY_CODE = <<-RUBY
 3.times do
   print 'Welcome '
@@ -230,7 +234,9 @@ class TryRuby
     return if source.empty?
 
     # Add additional code if available
-    source = "#{@current_item.load_code}\n#{source}" if @loaded && @current_item && @current_item.load_code
+    if @loaded && @current_item && @current_item.load_code
+      source = "#{@current_item.load_code}\n#{source}"
+    end
 
     # Compile
     begin
@@ -356,8 +362,7 @@ class TryRuby
   end
 end
 
-# Start TryRuby when document is loaded and ready
-Document.ready? do
+def start_tryruby
   # Bind puts and print methods. Make sure they return a string, not an array
   def $stdout.puts(*strs)
     strs.each { |str| TryRuby.instance.print_to_output str}
@@ -372,3 +377,5 @@ Document.ready? do
   # Start TryRuby
   TryRuby.instance
 end
+
+start_tryruby
