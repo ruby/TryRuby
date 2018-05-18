@@ -16,6 +16,6 @@ Luego, has dado la vuelta a esa lista. Tenías cada una de las líneas. Les dist
 
 Añadamos un nuevo método al final de la cadena:
 
-    puts poema.lines.reverse.join("\n")
+    puts poema.lines.reverse.join
 
 Combinar métodos así se llama _encadenar métodos_.

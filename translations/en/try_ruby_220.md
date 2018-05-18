@@ -16,6 +16,6 @@ Then, you reversed that list. You had each line. You reversed them. That's it.
 
 Let's tack one more method on the end there:
 
-    puts poem.lines.reverse.join("\n")
+    puts poem.lines.reverse.join
 
 Combining methods like this is called _method chaining_.

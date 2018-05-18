@@ -15,6 +15,6 @@ linesは文字列を分解する方法を決定し、配列に変換します。
 
 では、さらにもう一つメソッドをつなげてみましょう。
 
-    puts poem.lines.reverse.join("\n")
+    puts poem.lines.reverse.join
 
 このようにメソッドをつなげていくことを、__メソッド連鎖__といいます。

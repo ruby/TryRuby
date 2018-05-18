@@ -17,7 +17,7 @@ Vervolgens heb je het array omgedraaid. Regel voor regel.
 
 We voegen nog één methode toe aan het einde:
 
-    puts vers.lines.reverse.join("\n")
+    puts vers.lines.reverse.join
 
 > Als we meerdere methodes op deze manier aan elkaar koppelen, als een soort
 > ketting van methoden, noemen we dit in het Engels: __method chaining__.

@@ -16,6 +16,6 @@ Então, você inverteu esta lista. Você tinha cada linha. Você inverteu elas. 
 
 Vamos colocar mais um método ao final aqui:
 
-    puts poema.lines.reverse.join("\n")
+    puts poema.lines.reverse.join
 
 Combinando métodos desta forma é chamado de _encadeamento de métodos_.
