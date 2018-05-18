@@ -21,7 +21,7 @@ device itself.
 These days, to deliver the service to a customer we really have to support multiple distribution
 channels:
 a website usable from a variety of computers and devices, plus a native app for each of the major
-platforms (Android, iOS, BlackBerry, Windows Phone, Ubuntu, Gecko).
+platforms (Android, iOS, Windows Phone).
 A lot of different technologies to learn!
 
 Life for software developers isn't that simple anymore. What are your options ?
@@ -32,9 +32,9 @@ Web browsers are getting more powerful every year. Giving you better control ove
 and feel of your website, regardless of the size or type of device used by your customer.
 
 But your customer will still need constant internet access to use your service. Fortunately
-the web browser can help us here as well. HTML R5 enabled web browsers support something called
-local storage, which you can use to make the customer think he/she is still connected to your
-service. When an internet connection becomes available again, you can sync changes.
+the web browser can help us here as well. HTML 5 enabled web browsers support something called
+local storage and service workers, which you can use to make the customer think he/she is still
+connected to your service. When an internet connection becomes available again, you can sync changes.
 I am not saying that this is easy to do, far from it, but it's do-able.
 
 One thing that can make life easier is to use <a href="http://opalrb.com/" target="_blank">Opal</a>.
@@ -51,8 +51,8 @@ to support. Native apps give you ultimate control over the look and feel off you
 You will also have better access to the sensors built into the device (movement, position, ...).
 
 Huge drawback to this approach is that every mobile platform uses a completely different development
-environment and programming language. You might need to learn about Java, Objective-C, C-Sharp and others.
+environment and programming language. You might need to learn about Java, Objective-C, Swift,
+C-Sharp and others.
 
-But you are in luck ! With <a href="http://www.rubymotion.com" target="_blank">RubyMotion</a>
-you can create native apps for iOS and Android using your favorite Ruby language.
-It is not free, but it will save you a lot of time !
+But you are in luck ! There are cross-platform tools available where you create you app once and
+distribute it to multiple mobile platforms.

@@ -6,7 +6,7 @@ author: Ivo Herweijer
 
 ### The MIT License
 
-Copyright (C) 2014-2017 Ivo Herweijer
+Copyright (C) 2014-2018 Ivo Herweijer
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -46,10 +46,10 @@ Japanese translation by _Koji Shimada_ & _Masayoshi Takahashi_
 
 ### Privacy
 
-TryRuby.nl only uses session cookies. These store language preference and last
-lesson visited. The webserver stores visit information in the Apache
-combined log format. This includes ip address and date/time.
-The webserver that TryRuby.nl runs on is physically located in The Netherlands.
+This website only uses session cookies. These store language preference and last
+lesson visited.
+You can find the privacy statement for the webserver this site is hosted on
+<a href="https://help.github.com/articles/github-privacy-statement/" target="_blank">here</a>.
 
 ### Source code
 

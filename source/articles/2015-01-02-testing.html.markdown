@@ -90,7 +90,7 @@ Each feature usually has many scenario's.
 ### Test tools and automation
 Ruby has one of the most advanced set of testing tools available anywhere.
 
-For supporting TDD style testing __rspec__ is very popular.
+For supporting TDD style testing both __rspec__ and __minitest__ are very popular.
 BDD style testing is often done with __cucumber__. Cucumber lets you translate functional
 requirements written in plain English into executable (!) tests for your Ruby code.
 

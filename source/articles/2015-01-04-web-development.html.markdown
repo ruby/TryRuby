@@ -37,10 +37,10 @@ There are several other Ruby web frameworks that are simpler and easier to learn
 
 - __Sinatra__  
   Popular: <a href="http://www.sinatrarb.com/" target="_blank">Sinatra</a>
+- __Hanami__  
+  Clever: <a href="http://hanamirb.org/" target="_blank">Hanami</a>
 - __Camping__  
-  Originally crafted by \_why (just like this website): <a href="http://camping.io/" target="_blank">Camping</a>
-- __Grape__  
-  Handy for creating webservices: <a href="http://intridea.github.io/grape/" target="_blank">Grape</a>
+  Originally crafted by \_why (just like this website): <a href="https://github.com/camping/camping" target="_blank">Camping</a>
 - __Ramaze__  
   Simple and few conventions: <a href="http://ramaze.net/" target="_blank">Ramaze</a>
 - __NyNy__  

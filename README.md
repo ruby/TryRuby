@@ -1,6 +1,6 @@
 # TryRuby R4
 
-This repo holds the source of the TryRuby.nl website. TryRuby is a website
+This repo holds the source of the TryRuby website. TryRuby is a website
 where you can learn the Ruby language. Starting from zero knowledge about
 programming you can learn the basics of Ruby in 56 short lessons.
 
@@ -52,7 +52,7 @@ for more background information on how and why this website was created.
 
 ## The MIT License
 
-Copyright (C) 2014-2017 Ivo Herweijer
+Copyright (C) 2014-2018 Ivo Herweijer
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

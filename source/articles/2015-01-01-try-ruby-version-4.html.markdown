@@ -8,7 +8,7 @@ the_summary: Some information about the history of TryRuby and the reasons for b
 ## History
 This is the fourth iteration of the TryRuby website.
 TryRuby was originally created by a famous Ruby enthusiast working under the nickname 'why
-the lucky stiff'. You can read more about him on
+the lucky stiff', a.k.a. \_Why. You can read more about him on
 <a href="http://en.wikipedia.org/wiki/Why_the_lucky_stiff" target="_blank">Wikipedia</a>.
 
 \_Why doesn't exist anymore, but TryRuby lives on. It was first recreated by Andrew McElroy
@@ -24,15 +24,8 @@ This fourth iteration of TryRuby was created for several reasons.
 - Lesson content also missed some important information (like __if__ statements)
 - All previous TryRuby versions consisted of an irb interpreter with a web front-end.
   Even though some security measures have been taken (isolating and restricting the irb process
-  and whitelisting input), this still sounds like a disastrously bad idea from a security
-  perspective!  
+  and whitelisting input), this still sounds like a bad idea from a security perspective!  
   TryRuby<sup>R4</sup> runs inside the web browser
-- TryRuby.org is embedded in a commercial venture. This doesn't seem in line with the
-  free spirit in which TryRuby was created
-- Since I have a C/C++ background and am switching to Ruby/Rails, I needed a small but significant
-  Ruby project for my resume.  
-  The original lesson content was brilliant stuff, so working on TryRuby was a most
-  enjoyable experience
 
 ### Changes
 By changing the TryRuby mechanics from running irb on a server, to running Opal in the web browser,
@@ -62,7 +55,3 @@ Your opinion is most welcome:
 - Add some self evaluation questions at the end of each chapter
 - Maybe remove the lessons about classes. It's a bit advanced for an absolute beginners
   course
-- I am hosting TryRuby<sup>R4</sup> using an .nl domain, simply because this was available and
-  is the cheapest option for me.  
-  TryRuby really ought to be part of RubyLang.org
-
