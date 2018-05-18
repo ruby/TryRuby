@@ -1,7 +1,7 @@
 %nav.navbar.navbar-default.opal-nav(role="navigation")
   .container
     .navbar-header
-      %a.navbar-brand(href="#{environment == :build ? '/TryRuby' : '/'}")
+      %a.navbar-brand(href="#{environment == :production ? '/TryRuby' : '/'}")
         TryRuby
         %sup= 'R4'
       %button.navbar-toggle(type="button" data-toggle="collapse" data-target="#opal-navbar")
@@ -12,14 +12,14 @@
     #opal-navbar.navbar-collapse.collapse
       %ul.nav.navbar-nav
         %li
-          %a(href="#{environment == :build ? '/TryRuby/articles' : '/articles'}")
+          %a(href="#{environment == :production ? '/TryRuby/articles' : '/articles'}")
             %span(class="glyphicon glyphicon-book" aria-hidden="true")
             Articles
         %li
-          %a(href="#{environment == :build ? '/TryRuby/playground' : '/playground'}")
+          %a(href="#{environment == :production ? '/TryRuby/playground' : '/playground'}")
             %span(class="glyphicon glyphicon-tower" aria-hidden="true")
             Playground
         %li
-          %a(href="#{environment == :build ? '/TryRuby/about' : '/about'}")
+          %a(href="#{environment == :production ? '/TryRuby/about' : '/about'}")
             %span(class="glyphicon glyphicon-info-sign" aria-hidden="true")
             About

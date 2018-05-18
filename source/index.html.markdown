@@ -1,6 +1,6 @@
 ---
 title: "TryRuby: Learn programming with Ruby"
-description: Learn to program in Ruby in 15 minutes
+description: Learn to program in Ruby in 30 minutes
 ---
 
 <div class="row">

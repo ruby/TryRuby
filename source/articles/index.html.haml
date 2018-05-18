@@ -5,5 +5,5 @@ title: "TryRuby Articles"
 .row
   .col-sm-12
     - blog.articles.each do |article|
-      %h2= link_to article.title, "#{environment == :build ? '/TryRuby' : ''}#{article.url}"
+      %h2= link_to article.title, "#{environment == :production ? '/TryRuby' : ''}#{article.url}"
       %p= article.data.the_summary
