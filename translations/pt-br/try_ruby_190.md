@@ -7,7 +7,7 @@ ok:     Excelente
 error:  Continua cheirando a torrada para mim
 ---
 
-Olha, tudo bem. Você não tem que gostar idsso. Hackeie isso, seja meu convidado. Ao invés de torrada,
+Olha, tudo bem. Você não tem que gostar disso. Hackeie isso, seja meu convidado. Ao invés de torrada,
 vá para melão ou algo do tipo. Tente isso para ver o novo poema:
 
     poema.gsub("torrada", "manga")
