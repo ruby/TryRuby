@@ -10,7 +10,7 @@ Try Ruby version 2 by _Andrew McElroy & David Miani_
 Try Ruby version 3 by _Eric Allam & Nick Walsh_  
 Try Ruby version 4 by _Ivo Herweijer_  
 
-This website is partially based on OpalRb.org by _Adam Beynon_.
+This website is partially based on OpalRb.com by _Adam Beynon_.
 
 ### Translations
 Spanish translation by _Jesus Gabriel y Galan_ & _Pablo García_  

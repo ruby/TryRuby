@@ -33,7 +33,7 @@ Try Ruby version 2 by _Andrew McElroy & David Miani_
 Try Ruby version 3 by _Eric Allam & Nick Walsh_  
 Try Ruby version 4 by _Ivo Herweijer_  
 
-This website is partially based on <a href="http://opalrb.org/" target="_blank">OpalRb.org</a>
+This website is partially based on <a href="http://opalrb.com/" target="_blank">OpalRb.com</a>
 by _Adam Beynon_,
 and uses <a href="http://glyphicons.com/" target="_blank">Gyphicons</a>.
 

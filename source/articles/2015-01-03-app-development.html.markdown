@@ -37,7 +37,7 @@ local storage, which you can use to make the customer think he/she is still conn
 service. When an internet connection becomes available again, you can sync changes.
 I am not saying that this is easy to do, far from it, but it's do-able.
 
-One thing that can make life easier is to use <a href="http://opalrb.org/" target="_blank">Opal</a>.
+One thing that can make life easier is to use <a href="http://opalrb.com/" target="_blank">Opal</a>.
 This means that you can run Ruby code in the webbrowser. Normally webbrowsers only run Javascript,
 but Opal cleverly translates your Ruby code to Javascript. This saves you having to learn Javascript.  
 It is also very handy to use the same language for both the front-end (webbrowser) and the back-end
