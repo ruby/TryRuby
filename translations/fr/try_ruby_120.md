@@ -1,18 +1,21 @@
 ---
 lang:   EN
-title:  Standing in Line
+title:  Faire la queue
 answer: ^\[(\d+)(,\s*\d+){3,}\]$
 ok:     Excellent
-error:  Try adding a fouth number to the list
+error:  Essaye d'ajouter un quatrième nombre à la liste
 ---
 
-Lists (arrays) store things __in some order__.
+Les listes (arrays) stockent des choses __dans un ordre indéfini__.
 
-Like standing in line for popcorn. You are behind someone and you wouldn't dream of pushing them aside,
-right? And the guy behind you, you've got a close eye on him, right?
+C'est un peu comme faire la queue pour acheter une baguette. Tu es
+derrière quelqu'un et ce sera impensable de les pousser pour passer
+devant, non? Et le mec derrière toi, tu gardes un oeil sur lui, juste au
+cas où ?
 
-Here's a list for you. Lottery numbers: 
+Voilà une liste pour toi. Des numéros de lotterie:
 
     [12, 47, 35]
 
-Try adding a number to this list: type a comma after 35 followed by a number. The space is optional.
+Essayes d'ajouter un nombre à cette liste: saisi une virgule après 35
+suivie d'un nombre. L'espace est facultatif.

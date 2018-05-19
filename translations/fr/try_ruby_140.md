@@ -1,13 +1,14 @@
 ---
 lang:   EN
-title:  Tucking a List Away
+title:  Ranger une liste proprement
 answer: ^\[(\d+)(,\s*\d+){2,}\]$
-ok:     Saved!
-error:  
+ok:     Sauvegardé!
+error:
 ---
 
-Good, good. But it's annoying to have to retype that list every time you need it, isn't it?
+Bien, bien. Cela dit c'est ennuyant d'avoir à retaper cette liste chaque
+fois que tu en as besoin, non ?
 
-Let's save our numbers inside a ticket like so: 
+Sauvegardons nos numéros dans un ticket comme ça:
 
     ticket = [12, 47, 35]

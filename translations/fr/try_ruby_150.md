@@ -1,12 +1,12 @@
 ---
 lang:   EN
-title:  Now Type Ticket
+title:  Maintenant entre ticket
 answer: \[(\d+(, )?){2,}\]
 load:   ticket = [12, 47, 35]
-ok:     Restored!
-error:  
+ok:     Réstoré!
+error:
 ---
 
-Now, type:
+Maintenant, saisi:
 
     ticket

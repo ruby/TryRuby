@@ -1,24 +1,27 @@
 ---
 lang:   EN
-title:  Saved, Tucked Away
+title:  Sauvegardé, rangé proprement
 answer: \[12, 35, 47\]
 load:   ticket = [12, 47, 35]
-ok:     You've sorted the list
-error:  
+ok:     Tu as organisé la liste en ordre
+error:
 ---
 
-You've hung on to your lotto numbers, tucking them away inside a __variable__ called ticket.
-But any other name, like _jimmyslist_, would have been fine to.
+Tu as gardé tes numéro de lotto en le rangeant dans une __variable__
+nommée ticket. Mais n'importe quel autre nom, comme _lalistedejimmy_,
+aurait aussi fait l'affaire.
 
-Programming, you will discover, is mostly about working with variables.
+Comme tu découvrira, la programmation c'est surtout jongler des
+variables.
 
-Let's put your lotto numbers in order, how about?
+Mettons les numéros de lotto dans l'ordre.
 
-Use: 
+Utilises:
 
     ticket.sort!
-    
-You had a list. You sorted the list. The ticket variable is now changed.  
-Did you notice that the _sort!_ method has a big, bright exclamation at the end?  
-A lot of times Ruby methods shout like that if they alter the variable for good.
-It's nothin special, just a mark.
+
+Tu avais une liste. Tu as organisé la liste dans l'ordre. La variable
+ticket a maintenant changé Est-ce que tu as remarqué que la methode
+_sort!_ a un gros point d'exclamation à la fin ? Souvent les methodes
+Ruby crient comme ça lorsqu'elle modifient une variable pour de bon.
+C'est rien de grave, juste une ponctuation.
