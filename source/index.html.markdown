@@ -8,10 +8,10 @@ description: Learn to program in Ruby in 30 minutes
 
     <div id="tryruby-lang-container">
       <div class="row">
-        <div class="col-md-2">
-          <button class="btn btn-default btn-sm" id="tryruby-lang-toggle"><span aria-hidden="true" class="glyphicon glyphicon-globe"></span></button>
+        <div class="col-md-3">
+          <button class="btn btn-default btn-sm" id="tryruby-lang-toggle"><span aria-hidden="true" class="glyphicon glyphicon-globe"></span> Language</button>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-9">
           <div class="hidden" id="tryruby-lang-hider">
             <select class="form-control" id="tryruby-lang-select">
               <option value="en">English</option>
@@ -27,7 +27,7 @@ description: Learn to program in Ruby in 30 minutes
     </div>
 
     <select id="tryruby-index" class="form-control"></select>
-  
+
     <div id="tryruby-explanation">
 
       <h2 id="tryruby-title">Got 30 minutes? Give Ruby a shot right now!</h2>
@@ -36,7 +36,7 @@ description: Learn to program in Ruby in 30 minutes
         <p>Ruby is a programming language from Japan which is revolutionizing software development.</p>
         <p>The beauty of Ruby is found in its balance between simplicity and power.</p>
         <p>You can type some Ruby code in the editor and use these buttons to navigate:</p>
-        
+
         <ul>
           <li><strong>Run</strong> &rarr; Executes the code in the editor</li>
           <li><strong>Copy</strong> &rarr; Copies the example code to the editor</li>
