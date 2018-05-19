@@ -38,7 +38,7 @@ I had to make some alterations to the TryRuby lesson content. Also updated some 
 - Removed mousehole stuff
 - Improved the feedback given to the user based on the program's output a bit
 - Added support for lesson content in multiple languages. The Spanish, Brazilian Portuguese,
-  Japanese, Russian, Ukrainian, Macedonian and Dutch translations are available.  
+  Japanese, Russian, Ukrainian, Macedonian, Dutch, Turkish and French translations are available.  
   __If YOU would like to add a translation to TryRuby you are most welcome !__
 - Added explanation of if/else statements
 - Changed the subject of the "Class" tutorials from building a blog (so last decade) to making an

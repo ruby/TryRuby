@@ -22,6 +22,7 @@ Ukrainian translation by [_Andrii Palchik_](https://github.com/andriipalchik)
 Macedonian translation by [_Violeta Pavleska_](https://github.com/violeta-p)  
 Chinese translation by [_Ye Junzhe_](https://github.com/McF4r) & [_Bitfox_](https://github.com/bitfoxtop) & [_Heng Li_](https://github.com/iheng)  
 Turkish translation by [_Ali Rıza Şahin_](https://github.com/ARS-coding)  
+French translation by _Olivier Lacan_
 
 Suggestions to improve translations are welcome.
 If you submit a pull request updating a translation please
@@ -77,7 +78,7 @@ for more background information on how and why this website was created.
 
 ## The MIT License
 
-Copyright (C) 2014-2019 Ivo Herweijer
+Copyright (C) 2014-2024 Ivo Herweijer
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
