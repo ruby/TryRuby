@@ -15,10 +15,11 @@ description: Learn to program in Ruby in 30 minutes
           <div class="hidden" id="tryruby-lang-hider">
             <select class="form-control" id="tryruby-lang-select">
               <option value="en">English</option>
-              <option value="nl">Nederlands</option>
               <option value="es">Espa&ntilde;ol</option>
-              <option value="pt-br">Português do Brasil</option>
+              <option value="fr">Français</option>
               <option value="ja">日本語</option>
+              <option value="nl">Nederlands</option>
+              <option value="pt-br">Português do Brasil</option>
             </select>
           </div>
         </div>
