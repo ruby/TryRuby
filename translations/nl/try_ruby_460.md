@@ -22,7 +22,7 @@ Een Blurb<sup>TM</sup> mag 40 tekens bevatten. Je kan er ook een stemming in opn
 ### Hoe ga je beginnen
 Je zou de Blurbs<sup>TM</sup> misschien op kunnen slaan in een json bestand.
 Maar hoe houd je dan bij wanneer de Blurb<sup>TM</sup> is gemaakt?
-En als je het bestand laad hoe ga je er dan mee om in Ruby? Stop je de Blurbs<sup>TM</sup>
+En als je het bestand laadt hoe ga je er dan mee om in Ruby? Stop je de Blurbs<sup>TM</sup>
 in een hash? Of een array? of een array van array's? Of nog iets anders?
 
 ### Klasse
