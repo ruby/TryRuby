@@ -11,7 +11,7 @@ error:
 Jettons un œil à ce qui s'est passé pendant ta deuxième minute:
 
 ### Erreurs
-Si tu essayes d'inverser un nombre ou de faire des choses bizzares, Ruby
+Si tu essayes d'inverser un nombre ou de faire des choses bizarres, Ruby
 te dira ce qui ne va pas.
 
 ### Listes
