@@ -8,7 +8,7 @@ error:
 
 Et les nombres sont différents des strings.
 
-Bien qu'il soit possible d'utiliser des methodes sur n'importe quel
+Bien qu'il soit possible d'utiliser des méthodes sur n'importe quel
 objet avec Ruby, certaines méthodes ne fonctionnent qu'avec certains
 types de choses. Mais il est toujours possible de passer d'un type à un
 autre avec les méthodes "to" to Ruby.
