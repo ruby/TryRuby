@@ -14,11 +14,11 @@ types de choses. Mais il est toujours possible de passer d'un type à un
 autre avec les méthodes "to" to Ruby.
 
 - __to_s__ convertit les choses en __s__trings
-- __to_i__ convertit les choses en __i__ntegers (nombres)
+- __to_i__ convertit les choses en __i__ntegers (nombres entiers)
 - __to_a__ convertit les choses en __a__rrays
 
-__Qu'est-ce qu'un array?!__
+__Qu'est-ce qu'un array ?!__
 
-Ce sont des listes. Saisi une paire de crochets:
+C'est une liste. Saisis une paire de crochets :
 
     []

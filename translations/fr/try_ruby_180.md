@@ -8,7 +8,7 @@ ok:     Est-ce que ça rime?
 error:
 ---
 
-Jettons un oeil à ce qui s'est passé pendant ta deuxième minute:
+Jettons un œil à ce qui s'est passé pendant ta deuxième minute:
 
 ### Erreurs
 Si tu essayes d'inverser un nombre ou de faire des choses bizzares, Ruby
@@ -29,6 +29,6 @@ pas si compliqué, non? Et il y a plein de bonnes choses à suivre.
 
 Changeons de direction pour un instant. J'ai mis un petit bout de poésie
 pour toi dans une certaine variable.
-Jette un oeil. Saisi:
+Jette un œil. Saisi:
 
     puts poem

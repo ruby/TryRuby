@@ -7,8 +7,8 @@ ok:     D'accord
 error:  Presque
 ---
 
-Donc nous avons stocké nos numéros de lotterie dans la variable ticket.
-Comment faire pour les retrouver?
+Donc nous avons stocké nos numéros de loterie dans la variable ticket.
+Comment faire pour les retrouver ?
 
 On a déjà vu qu'il est possible d'obtenir le numéro le plus élevé avec __max__.
 On peut également obtenir le premier (__first__) ou le dernier (__last__)
@@ -16,7 +16,7 @@ On peut également obtenir le premier (__first__) ou le dernier (__last__)
 Mais que faire si on a besoin d'un élement specifique de la liste?
 
 ### [ ]
-Ruby utilises des crochets droits [ ] pour viser un élement.
+Ruby utilise des crochets droits [ ] pour viser un élement.
 Les crochets droits sont très commun dans Ruby.
 Ce sont comme des lunettes de visée pour aligner une cible. Exactement.
 Ces crochets signifient, "Je cherche ____". Prêt, vises.

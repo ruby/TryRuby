@@ -7,16 +7,16 @@ ok:     Tu as organisé la liste en ordre
 error:
 ---
 
-Tu as gardé tes numéro de lotto en le rangeant dans une __variable__
+Tu as gardé tes numéro de lotto en les rangeant dans une __variable__
 nommée ticket. Mais n'importe quel autre nom, comme _lalistedejimmy_,
 aurait aussi fait l'affaire.
 
-Comme tu découvrira, la programmation c'est surtout jongler des
+Comme tu découvriras, la programmation c'est surtout jongler avec des
 variables.
 
 Mettons les numéros de lotto dans l'ordre.
 
-Utilises:
+Utilise:
 
     ticket.sort!
 

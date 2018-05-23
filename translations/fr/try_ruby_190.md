@@ -9,7 +9,7 @@ error:  Ça sent toujours la biscotte pour moi
 
 Eh, c'est pas grave. T'es pas obligé d'aimer ça. Laisses toi aller et
 améliore mon poème. Au lieu d'une biscotte, tu peux essayer un melon
-pourquoi pas. Essayes de voir ce nouveau poème:
+pourquoi pas. Essaie de voir ce nouveau poème:
 
     poem.gsub("toast", "honeydew")
 
