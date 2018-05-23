@@ -1,5 +1,5 @@
 ---
-lang:   EN
+lang:   FR
 title:  Sauvegardé, rangé proprement
 answer: \[12, 35, 47\]
 load:   ticket = [12, 47, 35]

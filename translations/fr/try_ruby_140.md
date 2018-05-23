@@ -1,5 +1,5 @@
 ---
-lang:   EN
+lang:   FR
 title:  Ranger une liste proprement
 answer: ^\[(\d+)(,\s*\d+){2,}\]$
 ok:     Sauvegardé!

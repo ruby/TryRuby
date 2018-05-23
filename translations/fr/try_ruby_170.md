@@ -1,5 +1,5 @@
 ---
-lang:   EN
+lang:   FR
 title:  Élementaire
 answer: ^(12|35|47)$
 load:   ticket = [12, 47, 35]

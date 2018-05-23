@@ -1,5 +1,5 @@
 ---
-lang:   EN
+lang:   FR
 title:  Le résumé #2 est arrivé
 answer: \w+
 class:  stretcher chapmark

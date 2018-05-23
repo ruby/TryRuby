@@ -1,5 +1,5 @@
 ---
-lang:   EN
+lang:   FR
 title:  Faire la queue
 answer: ^\[(\d+)(,\s*\d+){3,}\]$
 ok:     Excellent

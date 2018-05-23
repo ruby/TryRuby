@@ -1,5 +1,5 @@
 ---
-lang:   EN
+lang:   FR
 title:  Un d'entre eux lève la main
 answer: ^47$
 ok:     D'accord
