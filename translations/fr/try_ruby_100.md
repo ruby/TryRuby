@@ -1,6 +1,6 @@
 ---
 lang:   FR
-title:  Stop, t'es barge!
+title:  Stop, t'es barge !
 answer: ^\d{1,}$
 ok:     Seuls les strings peuvent être inversés
 error:
