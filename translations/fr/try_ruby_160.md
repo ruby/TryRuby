@@ -21,7 +21,7 @@ Utilises:
     ticket.sort!
 
 Tu avais une liste. Tu as organisé la liste dans l'ordre. La variable
-ticket a maintenant changé Est-ce que tu as remarqué que la methode
-_sort!_ a un gros point d'exclamation à la fin ? Souvent les methodes
+ticket a maintenant changé Est-ce que tu as remarqué que la méthode
+_sort!_ a un gros point d'exclamation à la fin ? Souvent les méthodes
 Ruby crient comme ça lorsqu'elle modifient une variable pour de bon.
 C'est rien de grave, juste une ponctuation.
