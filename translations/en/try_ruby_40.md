@@ -3,11 +3,11 @@ lang:   EN
 title:  Putting it differently
 answer: ^[0-9\.,-]{1,}$
 ok:     Well put
-error:  
+error:
 ---
 
 Did you notice that if you typed more than one formula you only saw the answer for the last one.
-What is going on ?
+What is going on?
 
 > To make this website easier to use I have told Ruby to copy the result of your program to the
 > output screen at the top. So when you type a formula you get to see the results.
@@ -15,7 +15,7 @@ What is going on ?
 
 So when you entered 2 or more formula's, Ruby only showed the result of the last formula.
 
-Of course you have the power to control the screen ! Just type __puts__ before each formula
+Of course you have the power to control the screen! Just type __puts__ before each formula
 (with a space in between). Puts means: *'put something on the screen'*.
 
 Try this:

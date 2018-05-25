@@ -4,8 +4,8 @@ title:  Of All the Summaries, #3 is Here Now
 answer: \{\}
 class:  stretcher chapmark
 load:   prev
-ok:     You've made an empty hash !
-error:  
+ok:     You've made an empty hash!
+error:
 ---
 
 ### Exclamations
@@ -24,7 +24,7 @@ methods is <a href="http://ruby-doc.org/core/classes/String.html" target="_blank
 
 Go ahead and try a few, such as: poem.downcase or poem.swapcase
 
-## Ready ?
+## Ready?
 When you feel ready to move on, type:
 
     books = {}
