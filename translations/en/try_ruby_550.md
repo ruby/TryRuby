@@ -2,13 +2,13 @@
 lang:   EN
 title:  It's All About Combining
 answer: :-
-ok:     Moody !
-error:  
+ok:     Moody!
+error:
 load:   prev
 ---
 
 Some beautiful things can be done with the simple parts of Ruby, especially when you combine them
-together into new things.  
+together into new things.
 Here we've got an app made of a class containing another class. And, actually, Ruby really does good
 with this kind of creature. It is called object oriented programming.
 
@@ -20,13 +20,13 @@ a _moodify_ method to the Blurb<sup>TM</sup> class and then use that method in t
 
     class Blurb
       attr_accessor :content, :time, :mood
-      
+
       def initialize(mood, content="")
         @time    = Time.now
         @content = content[0..39]
         @mood    = mood
       end
-      
+
       def moodify
         if    @mood == :sad
           return ":-("
@@ -39,20 +39,20 @@ a _moodify_ method to the Blurb<sup>TM</sup> class and then use that method in t
         ":-|"
       end
     end
-    
+
     class Blurbalizer
       def initialize(title)
         @title  = title
         @blurbs = []
       end
-      
+
       def add_a_blurb(mood, content)
         @blurbs << Blurb.new(mood, content)
       end
-      
+
       def show_timeline
         puts "Blurbalizer: #{@title} has #{@blurbs.count} Blurbs"
-        
+
         @blurbs.sort_by { |t|
           t.time
         }.reverse.each { |t|
@@ -60,5 +60,5 @@ a _moodify_ method to the Blurb<sup>TM</sup> class and then use that method in t
         }
       end
     end
-    
+
     myapp.show_timeline
