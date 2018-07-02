@@ -1,6 +1,6 @@
 ---
 lang:   EN
-title:  If only I new how to make a decision
+title:  If only I knew how to make a decision
 answer: 
 ok:     
 error:  
