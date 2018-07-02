@@ -3,7 +3,7 @@ lang:   EN
 title:  Standing in Line
 answer: ^\[(\d+)(,\s*\d+){3,}\]$
 ok:     Excellent
-error:  Try adding a fouth number to the list
+error:  Try adding a fourth number to the list
 ---
 
 Lists (arrays) store things __in some order__.
