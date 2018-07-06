@@ -6,7 +6,7 @@ ok:     Noted
 error:  
 ---
 
-Cool, you're app is awesome. Hey, let's make things a bit easier on you.
+Cool, your app is awesome. Hey, let's make things a bit easier on you.
 You're not going to want to set the time like that every time you Blurb<sup>TM</sup>.
 
 You just want to type the content and set the mood, right?
