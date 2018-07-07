@@ -200,7 +200,7 @@ of <code>lines</code>. By using lines, ruby will return each line of the poem.</
         <li><code>:quite_good</code> &#8594; enjoyed, sure, yes.</li>
         <li><code>:mediocre</code> &#8594; equal parts great and terrible.</li>
         <li><code>:quite_not_good</code> &#8594; notably bad.</li>
-        <li><code>:abyssmal</code> &#8594; steaming wreck.</li>
+        <li><code>:abysmal</code> &#8594; steaming wreck.</li>
     </ul>
     <p>To rate a book, put the title in square brackets and put the rating after the equals.</p>
     <p>For example: <code class="cmd">books["Gravity's Rainbow"] = :splendid</code></p>
@@ -211,7 +211,7 @@ of <code>lines</code>. By using lines, ruby will return each line of the poem.</
     <p>Keep going, fill it up with reviews. And, if you want to see the whole list,
        just type: <code>books</code></p>
     <p>Again, the ratings are: <code>:splendid</code>, <code>:quite_good</code>, <code>:mediocre</code>,
-       <code>:quite_not_good</code>, and <code>:abyssmal</code>.</p>
+       <code>:quite_not_good</code>, and <code>:abysmal</code>.</p>
     <p>These ratings are not strings. When you place a colon in front of a simple word, you get a
        <strong>symbol</strong>. Symbols are cheaper than strings (in terms of computer memory.) If
        you use a word over and over in your program, use a symbol. Rather than having thousands of

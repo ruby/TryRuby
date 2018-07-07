@@ -1,8 +1,8 @@
 ---
 lang:   EN
 title:  Wait, Did I Like Gravity's Rainbow?
-answer: ^(splendid|quite_good|mediocre|quite_not_good|abyssmal)$
-load:   books = {"Gravitys Rainbow" => :splendid, "The deep end" => :abyssmal, "Living colors" => :mediocre}
+answer: ^(splendid|quite_good|mediocre|quite_not_good|abysmal)$
+load:   books = {"Gravitys Rainbow" => :splendid, "The deep end" => :abysmal, "Living colors" => :mediocre}
 ok:     I liked it a lot
 error:  
 ---

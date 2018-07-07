@@ -201,7 +201,7 @@ convierte en un Array. (<strong>To a</strong>rray.) Diferentes métodos, como
         <li><code>:quite_good</code> &#8594; disfrutable, por supuesto que sí.</li>
         <li><code>:mediocre</code> &#8594; partes iguales de bueno y malo.</li>
         <li><code>:quite_not_good</code> &#8594; notablemente malo.</li>
-        <li><code>:abyssmal</code> &#8594; una perdida de tiempo.</li>
+        <li><code>:abysmal</code> &#8594; una perdida de tiempo.</li>
     </ul>
     <p>Para calificar un libro, pon el título entre corchetes y la calificación luego del signo igual.</p>
     <p>Por ejemplo: <code class="cmd">books["Gravity's Rainbow"] = :splendid</code></p>
@@ -212,7 +212,7 @@ convierte en un Array. (<strong>To a</strong>rray.) Diferentes métodos, como
     <p>Tú sigue, agrega mas críticas. Y, si quieres ver toda la lista,
        implemente escribe: <code>books</code></p>
     <p>De nuevo, las calificaciones son: <code>:splendid</code>, <code>:quite_good</code>, <code>:mediocre</code>,
-       <code>:quite_not_good</code>, and <code>:abyssmal</code>.</p>
+       <code>:quite_not_good</code>, and <code>:abysmal</code>.</p>
     <p>Estas calificaciones no son strings. Cuando colocas dos puntos frente a una palabra simple, obtienes un
        <strong>symbol</strong>. Los símbolos son más baratos que los strings (en términos de memoria de la computadora.) Si usas
        una palabra una y otra vez en un programa, usa un símbolo. En vez de tener miles de

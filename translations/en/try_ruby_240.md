@@ -1,10 +1,10 @@
 ---
 lang:   EN
 title:  A Wee Blank Book
-answer: ^(splendid|quite_good|mediocre|quite_not_good|abyssmal)$
+answer: ^(splendid|quite_good|mediocre|quite_not_good|abysmal)$
 load:   books = {}
 ok:     Yes that's a new review
-error:  Use one of splendid, quite_good, mediocre, quite_not_good, abyssmal. Don't forget the colon
+error:  Use one of splendid, quite_good, mediocre, quite_not_good, abysmal. Don't forget the colon
 ---
 
 You've made an empty __hash__. A hash is like an array, only every one of its elements has a name.
@@ -15,7 +15,7 @@ We're going to stuff some miniature book reviews in our new hash. Here's our rat
 - :quite\_good &rarr; enjoyed, sure, yes
 - :mediocre &rarr; equal parts great and terrible
 - :quite\_not\_good &rarr; notably bad
-- :abyssmal &rarr; steaming wreck
+- :abysmal &rarr; steaming wreck
 
 To rate a book, put the title in square brackets and put the rating after the equals. For example:
 

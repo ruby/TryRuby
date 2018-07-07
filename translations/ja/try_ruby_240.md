@@ -1,10 +1,10 @@
 ---
 lang:   JA
 title:  ちっちゃな空っぽの本
-answer: ^(splendid|quite_good|mediocre|quite_not_good|abyssmal)$
+answer: ^(splendid|quite_good|mediocre|quite_not_good|abysmal)$
 load:   books = {}
 ok:     新しい書評です
-error:  splendid、quite_good、mediocre、quite_not_good、abyssmalのいずれかを使ってください。また、コロンを忘れないでください
+error:  splendid、quite_good、mediocre、quite_not_good、abysmalのいずれかを使ってください。また、コロンを忘れないでください
 ---
 
 今作成したのは空の__ハッシュ__です。ハッシュは配列みたいなもので、各要素が名前を持つという点が異なります。
@@ -16,7 +16,7 @@ error:  splendid、quite_good、mediocre、quite_not_good、abyssmalのいずれ
 - :quite\_good &rarr; よい
 - :mediocre &rarr; よい部分とひどい部分が半々
 - :quite\_not\_good &rarr; よくない
-- :abyssmal &rarr; これはひどい
+- :abysmal &rarr; これはひどい
 
 書籍を評価するために、角かっこの中に書名を置き、イコールの後に評価結果を置きます。
 以下に例を示します。
