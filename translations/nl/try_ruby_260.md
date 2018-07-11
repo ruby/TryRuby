@@ -1,7 +1,7 @@
 ---
 lang:   NL
 title:  Eh, wat vond ik ook al weer van De regenboog?
-answer: ^(uitstekend|quite_good|mediocre|quite_not_good|abyssmal)$
+answer: ^(uitstekend|quite_good|mediocre|quite_not_good|abysmal)$
 load:   boeken = {"De regenboog" => :uitstekend, "Het puffertje" => :vreselijk, "Kleurenblind" => :matig}
 ok:     O ja, ik vond het een meesterwerk
 error:  

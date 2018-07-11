@@ -10,7 +10,7 @@ error:
 つづけて書評を増やしていきましょう。
 すべてのリストを確認するには、__puts books__ と入力します。
 
-繰り返しますが、評価体系は :splendid、:quite\_good、:mediocre、:quite\_not\_good、:abyssmal です。
+繰り返しますが、評価体系は :splendid、:quite\_good、:mediocre、:quite\_not\_good、:abysmal です。
 
 これらの評価は文字列ではありません。単語の前にコロンをつけると、それは__シンボル__になります。
 シンボルとは、コンピュータメモリの観点で、文字列よりもコストの安いものになります。
@@ -21,7 +21,7 @@ error:
 
 書評を2つ以上入力したら、__books.length__を使ってハッシュの中に何この書評があるかを確認してみてください。
 
-    books["The deep end"]  = :abyssmal
+    books["The deep end"]  = :abysmal
     books["Living colors"] = :mediocre
     
     puts books

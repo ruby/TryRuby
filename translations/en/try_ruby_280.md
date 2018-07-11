@@ -2,7 +2,7 @@
 lang:   EN
 title:  Are You Harsh?
 answer: "mediocre"
-load:   books = {"Gravitys Rainbow" => :splendid, "The deep end" => :abyssmal, "Living colors" => :mediocre, "Bumblebees" => :mediocre}
+load:   books = {"Gravitys Rainbow" => :splendid, "The deep end" => :abysmal, "Living colors" => :mediocre, "Bumblebees" => :mediocre}
 ok:     Great, wow! You've made a scorecard of your ratings
 error:  
 ---

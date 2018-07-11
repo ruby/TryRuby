@@ -1,8 +1,8 @@
 ---
 lang:   JA
 title:  待って。Gravity's Rainbowは好きでしたっけ？
-answer: ^(splendid|quite_good|mediocre|quite_not_good|abyssmal)$
-load:   books = {"Gravitys Rainbow" => :splendid, "The deep end" => :abyssmal, "Living colors" => :mediocre}
+answer: ^(splendid|quite_good|mediocre|quite_not_good|abysmal)$
+load:   books = {"Gravitys Rainbow" => :splendid, "The deep end" => :abysmal, "Living colors" => :mediocre}
 ok:     とても好きでした
 error:  
 ---
