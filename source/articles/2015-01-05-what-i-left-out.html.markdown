@@ -17,15 +17,15 @@ documentation, explain parts of your code or anything else you'd like.
 
 Single line comments
 
-    # This is a 1 line comment
-    # Another comment here
+    # A comment, this makes your code easier to read
+    x = 2 # comments can also be placed after a statement
 
 Multiline comments
 
     puts "Hello World"
     =begin
     This comment can span multiple lines. You denote the beginning and end of the
-    comment with the keywods =begin and =end
+    comment with the keywords =begin and =end at the start of separate newlines.
     =end
 
 ### Else-if
