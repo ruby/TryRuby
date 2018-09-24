@@ -11,6 +11,23 @@ the_summary: TryRuby is a Ruby course for beginners. Its not possible to tell yo
 TryRuby is a Ruby course for beginners. Its not possible to tell you everything about Ruby in
 15 minutes. Here is an overview of some of the things that I have left out.
 
+### Comments
+To add text to your Ruby file, you can do so with comments. Comments can be used for
+documentation, explain parts of your code or anything else you'd like.
+
+Single line comments
+
+    # A comment, this makes your code easier to read
+    x = 2 # comments can also be placed after a statement
+
+Multiline comments
+
+    puts "Hello World"
+    =begin
+    This comment can span multiple lines. You denote the beginning and end of the
+    comment with the keywords =begin and =end at the start of separate newlines.
+    =end
+
 ### Else-if
 There is an __elsif__ statement so you can do this:
 
