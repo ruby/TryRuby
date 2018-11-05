@@ -1,13 +1,13 @@
 ---
-lang:   EN
-title:  One Raises Its Hand
+lang:   RU
+title:  Первый поднимает руку
 answer: ^47$
-ok:     Okay
+ok:     Хорошо
 error:  
 ---
 
-A list of lottery numbers. Which one is the highest?
+Список номеров лотерейных билетов. А какой номер максимальный?
 
-Try: 
+Попробуйте: 
 
     [12, 47, 35].max

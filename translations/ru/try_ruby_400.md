@@ -1,24 +1,24 @@
 ---
-lang:   EN
-title:  All together now
+lang:   RU
+title:  Все вместе
 answer: ^4$
-ok:     Yes, Shakespeare wrote 4 plays in 1591
-error:  Answer for the year 1591 should be 4
+ok:     Ага, Шекспир написал 4 пьесы в 1591
+error:  Ответ должен быть 4.
 load:   prev
 ---
 
-Now suppose we only want to know the names and number of plays written by Shakespeare
-in a certain year.
+Теперь предположим, что мы хотим знать имена и количество пьес, написанных Шекспиром
+в течение определенного года.
 
-Ruby lets us __select__ values from a hash. The select method uses a block to let us
-define what to select and returns what it found.
+Ruby позволяет нам выводить значения из словаря. Метод select использует блок, который позволяет нам
+определить, что выбрать и вернуть найденное.
 
-We can then use the results returned by __select__ in the __each__ method as before by
-simply adding it after the select block. This is another example of method chaining, which we saw
-earlier when reversing a poem.
+Затем мы можем использовать результаты, возвращаемые __select__ в методе __each__, как и раньше,
+просто добавляя его после блока выбора. Это еще один пример цепочки методов, который мы видели
+раньше, когда делали стихотворение задом наперед.
 
-I have prepared the __count\_plays__ method for you. See if you can find out how many plays
-were written by Shakespeare in the year __1591__. Try this:
+Я подготовил метод __count\_plays__ для вас. Посморим, сможете ли
+вы посчитать количество пьесс, написанных Шекспиром в 1591:
 
     def count_plays(year)
       s = get_shakey
@@ -33,9 +33,9 @@ were written by Shakespeare in the year __1591__. Try this:
     
     puts count_plays(0)
 
-Did you notice that I chained the count method at the end of the each method. This gives
-us a return value for the __count\_plays__ method.
+Вы заметили, что я добавил метод count в самом конце всего метода. Так мы получим 
+возвращаемое значение метода __count\_plays__.
 
-There is another possibility for chaining here. See that loney line __s = get_shakey__.
-You could add the __["William Shakespeare"].select { |k, v|__ at the end of get_shakey
-(no dot needed in this case).
+Есть и другой способ выстраивания цепочки. Видите одинокую строчку __s = get_shakey__.
+Вы можете добавить __["William Shakespeare"].select { |k, v|__ в конец get_shakey
+(не обязательно здесь).

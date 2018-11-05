@@ -1,24 +1,24 @@
 ---
-lang:   EN
-title:  Saved, Tucked Away
+lang:   RU
+title:  Сохранен и спрятан
 answer: \[12, 35, 47\]
 load:   ticket = [12, 47, 35]
-ok:     You've sorted the list
+ok:     Вы отсортировали список!
 error:  
 ---
 
-You've hung on to your lotto numbers, tucking them away inside a __variable__ called ticket.
-But any other name, like _jimmyslist_, would have been fine to.
+Вы положили список номеров в __переменную__, называющуюся ticket.
+Но любое любое другое имя, такое как _jimmyslist_, по-прежнему свободно.
 
-Programming, you will discover, is mostly about working with variables.
+Занимаясь программированием, Вы заметите, что основная работа связана с переменными
 
-Let's put your lotto numbers in order, how about?
+А давайте упорядочим список лотерейных билетов?
 
-Use: 
+Используйте: 
 
     ticket.sort!
     
-You had a list. You sorted the list. The ticket variable is now changed.  
-Did you notice that the _sort!_ method has a big, bright exclamation at the end?  
-A lot of times Ruby methods shout like that if they alter the variable for good.
-It's nothin special, just a mark.
+У Вас есть список. Вы отсортировали список. Переменная ticket изменилась.
+А Вы заметили, что у метода __sort!__ на конце стоит восклицательный знак?
+Так Ruby сообщает нам, что переменная ticket будет изменена.
+Ничего необычного, просто запомните!

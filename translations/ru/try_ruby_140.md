@@ -1,13 +1,13 @@
 ---
-lang:   EN
-title:  Tucking a List Away
+lang:   RU
+title:  Спрячем список
 answer: ^\[(\d+)(,\s*\d+){2,}\]$
-ok:     Saved!
+ok:     Сохранено!
 error:  
 ---
 
-Good, good. But it's annoying to have to retype that list every time you need it, isn't it?
+Хорошо, хорошо. Но недобно же набирать каждый раз, когда он может понадобиться, не так ли?
 
-Let's save our numbers inside a ticket like so: 
+Давайте сохраним наши номера лотейного билета вот так: 
 
     ticket = [12, 47, 35]

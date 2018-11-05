@@ -1,31 +1,28 @@
 ---
-lang:   EN
-title:  Me hungry
-answer: ^Me not hungry.$
-ok:     Yes
-error:  No way am I hungry at 10 AM!
+lang:   RU
+title:  Я голоден
+answer: ^Я не голоден.$
+ok:     Да
+error:  Без вариантов, я голоден в 10 утра!
 ---
 
-Okay, this is coming along wonderfully. This is simple stuff for you, but keep in mind that you
-didn't know __any Ruby whatsoever__ just fifteen minutes ago!
+Это прекрасно, но имей ввиду, что ты не знал Ruby всего 15 минут назад!
 
-Last step. Let's tie it all together, you know? Let's make it chime together like a very nice set
-of glistening chimes on the beach in the maginificent sunlight!
-
-We'll define two methods first and then take a decision:
+Давай теперь объединим все наши полученные навыки:
+Давайте определим 2 метода: 
 
     def hungry?(time_of_day_in_hours)
-      puts "Me hungry."
+      puts "Я голоден."
       true
     end
 
     def eat_an(what)
-      puts "Me eat #{what}.\n"
+      puts "Я ем #{what}.\n"
     end
 
-    eat_an 'apple' if hungry?(14)
+    eat_an 'яблоко' if hungry?(14)
 
-    eat_an 'apple' if hungry?(10)
+    eat_an 'яблоко' if hungry?(10)
 
-Now see if you can change the method __hungry?__ to display __"Me not hungry"__ and returning false
-when the time is less than 12.
+Видете, что метод __hungry?__ отображает __"Me not hungry"__ и возвращает false
+когда времени меньше 10.

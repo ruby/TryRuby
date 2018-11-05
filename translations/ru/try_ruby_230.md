@@ -1,30 +1,31 @@
 ---
-lang:   EN
-title:  Of All the Summaries, #3 is Here Now
+lang:   Ru
+title:  Итоги #3 Здесь и сейчас
 answer: \{\}
 class:  stretcher chapmark
 load:   prev
-ok:     You've made an empty hash!
+ok:     Вы создали пустой словарь!
 error:
 ---
 
-### Exclamations
-Methods may have exclamations (and also question marks) in their name.
-These are just there to better explain what their function is. No big deal.
+### Восклицательный знак
+Методы могут иметь восклицательные знаки(и также вопросительные) в своем имени.
+Они для более понятного объяснения, что они делают. Ничего страшного.
 
-### String manipulation
-Search and change strings
+### Манипуляции со строками
+Поиск и изменение строк
 
-### Chaining
-Chaining methods lets you get a lot more done. Break up a poem, reverse it, reassemble it:
+### Цепочки
+Цепочки методов позволяют сделать намного больше. Разбить стихотворение, развернуть его, воссоединить в строку:
 __poem.lines.reverse.join__
 
-At this point, you may want to tinker with the poem a bit more. A complete list of all the String
-methods is <a href="http://ruby-doc.org/core/classes/String.html" target="_blank">here</a>.
 
-Go ahead and try a few, such as: poem.downcase or poem.swapcase
+На этом этапе, Вы можете посмотреть про ВСЕ методы для строк <a href="http://ruby-doc.org/core/classes/String.html" target="_blank">тут</a>.
 
-## Ready?
+Вернитесь и попробуйте например это:
+poem.downcase или poem.swapcase
+
+## Готовы?
 When you feel ready to move on, type:
 
     books = {}

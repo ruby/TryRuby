@@ -1,33 +1,33 @@
 ---
-lang:   EN
-title:  Summary #6 Which Means You've Come So Far
+lang:   RU
+title:  Итоги #6 Что значит издалека?
 answer: \{\}
 class:  stretcher chapmark
-ok:     Ok, that's an empty hash
+ok:     Ага, это пустой словарь
 error:
 ---
 
 You're a level six Ruby cleric. I mean what a great job you've done. Let's review:
 
 
-### Data
-You loaded some data of the internet, traversed a data structure and selected values.
+### Данные
+Ты загрузил немного данных из интернета и огранизовал их в структуру.
 
-### Iterating
-You iterated all elements of a hash and you chained some more methods.
+### Iterating (шагание)
+Вы прошли по все элементам словаря, а также создали цепочку методов
 
-### Pretty printing
-And if that wasn't enough, you formatted and printed some values in a way that is easy
-to read for humans. In fact __you made a real program!__
+### Красивый вывод
+И если этого недостаточно, то вы научились делать красивый вывод.
+Это ведь настоящая программа!
 
-### IF
-You learned to take control of your programs with __if__ and __else__ statements.
+### Если(IF)
+Научились использовать if и else
 
-## So
-What could possibly be next? What could you possibly have to learn now?
-Ha, this is the best part. You've come such a long way that we're going
-to uncover classes. For two more short lessons and you're done.
+## И так
+Что может быть дальше? Что вы, возможно, должны узнать сейчас?
+Ха, это лучшая часть. Вы прошли столь долгий путь, что мы собираемся
+изучить классы. Еще два коротких урока, и все готово.
 
-Earlier, we created a hash like this:
+Ранее мы создавали словарь так:
 
     Hash.new

@@ -1,20 +1,18 @@
 ---
-lang:   EN
-title:  The Stuff Apps are Made of
+lang:   RU
+title:  Приложения делаются
 answer: 
 ok:     
 error:  
 ---
 
-You've opened up a new Blurb<sup>TM</sup> class. What is your blog entry made of?
-The content, sure. Also, a time when the Blurb<sup>TM</sup> was posted. And a mood.
+Мы открыли новый Blurb<sup>TM</sup> класс. Чем наполнен ваш блог?
+Верно, контентом. Также временем, когда Blurb<sup>TM</sup> был опубликован. И оценкой.
 
-Okay, so you've got the first line of the class, here's the rest:
+Хорошо, так что у вас есть первая строка класса, вот и все:
 
     class Blurb
       attr_accessor :content, :time, :mood
     end
 
-Class names always begin with a capital letter.
-
-(Still no output)
+Имена классов всегда с большой буквы.

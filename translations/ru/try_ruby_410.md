@@ -1,25 +1,25 @@
 ---
-lang:   EN
-title:  All's Well That Ends Well
-answer: All's Well That Ends Well
+lang:   RU
+title:  Все хорошо, что хорошо кончается
+answer: Все хорошо, что хорошо кончается
 ok:     True
-error:  Use 1605 as the second parameter
+error:  Используйте 1605 как 2 параметр
 load:   prev
 ---
 
-Okay, we got some data from the internet, we selected what we wanted and printed it out.
-What is left to improve? We could print the results a bit prettier. Like add the year
-and align titles and years.
+Хорошо, мы получили некоторые данные из Интернета, мы выбрали то, что хотели, и распечатали это.
+Что нужно улучшить? Мы могли бы напечатать результаты немного красивее. Как добавить год
+и выровнять названия и годы?
 
-This means printing several values on one line. Ruby has a neat way of doing
-that. It is just like printing a string like: __puts "Hi, my name is Jimmy"__.
-But instead of the literal value _Jimmy_ we use the value of a variable.
+Это значит требуется печать нескольких значений на одной строке. Ruby имеет удобный способ сделать
+это. Это похоже на печать строки типа: __puts «Привет, меня зовут Джимми» __.
+Но вместо буквенного значения _Джимми_ мы используем значение переменной.
 
-First replace __Jimmy__ with __#{}__. If Ruby sees a hash symbol # followed by a curly brace {
-it looks for a variable between the first brace and the following closing brace }.
-So we can use this: __"Hi, my name is \#{name}"__.
+Сначала замените __Джимми__ на __#{}__. Если Ruby видит символ #, а за ним символ {,
+то это означает,что до символа } идет имя переменной. 
+Так, мы можем использовать: __"Привет, меня зовут \#{name}"__.
 
-Let's change our code a bit
+Изменим наш код немного:
 
     def print_plays(year_from, year_to)
       get_shakey["William Shakespeare"]
@@ -32,9 +32,9 @@ Let's change our code a bit
     end
     print_plays(1600, 1605)
 
-I have added __.ljust(30)__ to the title. This way the title is _left justified_ with a minimum
-length of 30 characters so the years align nicely.
+Я добавил __.ljust(30)__ к заголовку. В таком случает заголовок _имеет отстум_ минимум
+30 символов. Так год выглядит опрятнее =)
 
-See if you can change the ouput of the program so that it shows the plays like this: __1600 -> As You Like It__
-
-__All's Well That Ends Well?__ Hey we're not done yet, but the end is in sight!
+Посмотрите, изменится ли выход программы так, чтобы она показывала такие игры: 1600 -> Как вам нравится
+Все хорошо, что хорошо кончается? 
+Эй, мы еще не закончили, но конец близок!

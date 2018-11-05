@@ -1,28 +1,28 @@
 ---
-lang:   EN
-title:  You've Taught Your App to Reject Worthless Things
+lang:   RU
+title:  Вы научили ваше приложение отвергать бесполезные вещи
 answer: Blurb:
-ok:     Blurb added
+ok:     Blurb добавлен
 error:  
 load:   class Blurb;attr_accessor :content,:time,:mood;def initialize(mood, content="");@time=Time.now;@content=content[0..39];@mood=mood;end;end;blurb1=Blurb.new(:sick,"Today Mount Hood Was Stolen!")
 ---
 
-Did you see how inside the class we used the at-symbols (@time).
+Вы заметили, что мы используем символ собаки" внутри класса? (@time).
 
-__Outside__ the class, we use accessors:
+__Снаружи__ класса мы используем аксессоры:
 
 > __blurb.time = Time.now__
 
-but __inside__ we use the __object's variables__:
+но __внутри__ мы используем __переменные объекта__:
 
 > __@time = Time.now__
 
-They're the exact same thing, but expressed in two different places of your program.
+Это одно и тоже, но может использоваться в разных местах вашей программы.
 
-### Create another Blurb<sup>TM</sup>
-When a new Blurb<sup>TM</sup> is created, the initialize method is used to check for any
-arguments to new.
+### Создадим другой Blurb<sup>TM</sup>
+Когда другой Blurb<sup>TM</sup> создан, метод инициализации используется для проверки любого
+аргументы к методу new.
 
-Uh, we need two arguments:
+Ох, нужно еще 2 аргумента:
 
-    Blurb2 = Blurb.new :confused, "I can not believe Mt. Hood was stolen!"
+    Blurb2 = Blurb.new :confused, "Не могу поверить, Маунт-Худ был украден!"

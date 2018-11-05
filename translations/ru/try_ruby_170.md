@@ -1,34 +1,32 @@
 ---
-lang:   EN
-title:  Elemental
+lang:   RU
+title:  Элементы
 answer: ^(12|35|47)$
 load:   ticket = [12, 47, 35]
-ok:     Ok
-error:  Almost
+ok:     Хорошо
+error:  Почти
 ---
 
-So we stored our lotto numbers inside variable ticket. How to get 'em out again?
+Мы сохранили номера в переменную, а как их получить обратно ?
 
-We already saw that we can get the highest number with __max__. Similarly you can
-get the __first__ or the __last__ element of the list.
-But what if you want a specific element?
+Мы уже видели, как мы можем получить максимальный элемент, используя метод __max__. Также Вы можете
+получить __first__(первый) или __last__(последний) элемент списка.
+А что если Вы хотите получить какой-то конкретный элемент?
 
 ### [ ]
-Ruby uses the square brackets [ ] to target an element.
-The square brackets are very common in Ruby.
-They are like sights used to line up a target. Exactly.
-These brackets mean, "I am looking for ____" Ready, aim.
+Ruby использует [ ], чтобы нацелиться на элемент.
+Квадратные скобки очень распространены в Ruby.
+Они означают: "Я ищу ____ ", Готов, целься! 
 
-Let's get all of our lotto numbers:
+Давайте получим все номера из списка:
 
     puts ticket[0]
     puts ticket[1]
     puts ticket[2]
 
-Why do we use [0], [1], [2]?
+Почему мы используем [0], [1], [2]?
 
-And not [1], [2] and [3]? Is that some kind of Japanese Zen thing?
-No, we computer people just like to begin counting from zero. It's not just a Ruby thing,
-this _zero based indexing_ is used in most programming languages.
+А не [1], [2] and [3]? Это какой-то японский дзен?
+Нет, во многих языках программирования отсчет идет с нуля. Это не только особенность Ruby.
 
-> A little reminder: you can use the __Copy__ button to copy the example code to the editor.
+> Небольшое напоминание: Вы можете использовать кнопку copy.

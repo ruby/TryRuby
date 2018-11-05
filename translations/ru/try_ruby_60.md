@@ -1,16 +1,16 @@
 ---
-lang:   EN
-title:  Say Your Name Backwards
+lang:   RU
+title:  Скажи свое имя наоборот
 answer: \w+
-ok:     dooG
+ok:     !отурК
 error:  
 ---
 
-A string is a set of characters the computer can process. Imagine the letters are on a string of
-laundry line and the quotes are clothespins holding the ends. The quotes mark the beginning and end.
+Строка представляет собой набор символов, которые компьютер может обрабатывать. Представьте, что буквы, находящиеся в строке, - это 
+белье на верёвке, а кавычки - прищепки, держащие концы этой веревки. Кавычки обозначают начало и конец.
 
-To reverse your name, type: 
+Чтобы получить имя задом наперед, наберите: 
 
-    "Jimmy".reverse
+    "Джими".reverse
 
-(Don't forget the dot!)
+(И не забудьте про про точку!)

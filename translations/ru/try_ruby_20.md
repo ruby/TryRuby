@@ -2,18 +2,18 @@
 lang:   RU
 title:  Использование редактора
 answer: ^\d{1,}$
-ok:     Отлично! You did a bit of math. See how the answer popped out?
-error:  Type 2 + 6 in the editor
+ok:     Отлично! Вы немного попрактиковались в математике. Видите полученный результат?
+error:  Наберите 2 + 6 в редакторе
 ---
 
-The editor window at the bottom is where you type your Ruby code, hit the __Run__ button and
-watch it run!
+Набирайте свой код на Ruby в окне редактора снизу, затем нажмите кнопку __Run__ и посмотрите его работу!
 
-For example, try typing some math. Like:
+Например, попробуем посчитать простое выражение:
 
     2 + 6
 
-The output of your program should show itself at the output window at the top.
-There should also be a line that tells you how well you did.
+Результат вашей программы должен отображаться в окне вывода вверху.
+На следующей строке будет отображаться, настолько хорошо Вы справились.
 
-> Alternatively you can hit the __Copy__ button to copy the example code to the editor.
+
+> Также Вы можете нажать кнопку __Copy__, чтобы скопировать код из примера в редактор.

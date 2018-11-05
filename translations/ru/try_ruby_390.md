@@ -1,22 +1,22 @@
 ---
-lang:   EN
-title:  Noble Kinsmen
-answer: ^The Two Noble Kinsmen$
-ok:     That's much better
+lang:   RU
+title:  Благородные родственники
+answer: ^Два благородных родственника$
+ok:     Так намного лучше.
 error:  
 load:   prev
 ---
 
-Okay we now have a list of plays from the internet. The list was in the json format.
-Fortunately for us Ruby kindly provides a method to convert json data to a Ruby hash.
-The _get\_shakey_ method already did that for us.
+Итак, теперь у нас есть список пьес из Интернета. Список был в формате json.
+К счастью для нас Ruby любезно предоставляет метод преобразования данных json в словарь Ruby.
+Метод _get \ _shakey_ сделалает это за нас.
 
-But since the structure of the json data is retained in the hash, it is still a bit difficult to read.
-Let us write a method to display the plays nicely.
+Но так как структура json-данных сохраняется в словаре, ее все-таки трудно читать.
+Давайте напишем метод для показа игр.
 
-If you inspect the list of plays carefully you will see that it has a kind of nested
-structure. (This is actually quite common in data you get from the internet.)
-Looks like this:
+Если вы внимательно изучите список пьес, вы увидите, что у него есть своего рода вложенный
+состав. (Это действительно довольно распространено в данных, которые вы получаете из Интернета.)
+Выглядит так:
 
 <ul>
   <li>"William Shakespeare"
@@ -38,13 +38,13 @@ Looks like this:
   </li>
 </ul>
 
-To list the plays we first have to access the top "William Shakespeare" hash element by it's name.
-Next we have to __iterate__ through each element below it.
+Чтобы перечислить пьесы, нам сначала нужно получить доступ к верхнему элементу словаря «Уильям Шекспир» по его названию.
+Затем мы должны __iterate("шагать")__ по каждому элементу за ним.
 
-Ruby has a method for iterating. It is called __each__. We have seen it before when
-creating our book rating system.
+Ruby имеет метод для итерации. Он называется __each__. Мы видели это раньше, когда
+создавая нашу систему рейтинга книг.
 
-Everything that method __each__ returns is passed to a block:
+Все, что возвращает метод __each__, передается блоку:
 
     s = get_shakey
     

@@ -1,33 +1,33 @@
 ---
-lang:   EN
-title:  The Taming of the Shrew
-answer: ^tame
-ok:     Good good!
+lang:  RU
+title:  Укрощение строптивого
+answer:  tame
+ok:    Хорошо, хорошо!
 error:
 ---
 
-You totally know how to use Ruby now. I mean you've got down the essentials.
-You just need to keep learning more methods and try out more complex blocks.
+Вы уже знаете, как использовать Ruby. Я имею в виду, что ты уже постиг основы.
+Далее тебе нужно изучить больше методов и попробовать более сложные блоки.
 
-But there's one side of Ruby we haven't settled. Making your own methods.
-__Ahem!__ Let's get it over with then.
+Но мы кое-что еще не обсудили. Создание собственных методов.
+__Гм!__ Давайте займемся этим.
 
-Next to using Ruby's built in methods (like puts, sort, times) you can define
-your own methods. Why is that a good idea? Two reasons:
+В то время, как Ruby имеет встроенные методы (такие, как puts, sort, times), вы можете определить
+свои собственные методы. Зачем? Вот 2 причины.
 
-### To make your program shorter
-If you have to do the same thing in more than one part of your code it is easier
-to put that code in a separate method. Your code will be shorter.
+### Сделать свою программу короче
+Если вы используете одно и тоже более чем в одном месте кода, то будет намного проще, если
+выделить это в новый метод. Это сделает код короче.
 
-### To make your code easier to read
-Suppose your program needs to do a lot of different things.
-You __could__ stuff all code into one long piece. But it would be very difficult to
-read and understand that code later.
+### Сделать свой код более читаемым
+Предположим, что ваша программа должна делать много разных вещей.
+Вы __можете__ записать весь код в один длинный кусок. Но было бы очень сложно
+прочитать и понять этот код позже.
 
-Instead you should cut up your code in different methods and give each method an easy to
-understand English name. You will thank yourself later.
+Вместо этого вы должны разбить свой код на методы и дать каждому из них
+понятное английское имя. Вы поблагодарите себя позже.
 
-So how do we define a method? Like this:
+Итак, как мы определяем метод? Вот так:
 
     def tame( number_of_shrews )
     end

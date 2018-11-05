@@ -1,27 +1,27 @@
 ---
-lang:   EN
-title:  Hello, Who's There? And Summary #5 Waves Its Hat!
+lang:   RU
+title:  Кто здесь? Итоги #5 Снимите шляпу!
 answer:
 class:  stretcher chapmark
 ok:
 error:
 ---
 
-Well done, well done, well done, well done!
+Отлично, Отлично, Отлично!
 
-Truly, truly, truly, truly, truuuuuuuuly!
+Круто! Круто! Круууууто! 
 
-Here's the last few minutes of your life in review:
+Вот что мы еще узнали:
 
-### Methods
-Methods can be defined with __def__ and have a name. Methods make your program shorter
-and easier to read.
+### Методы
+Методы могут быть определены с помощью __def__ и у них есть имя. Методы
+делают вашу программу короче и проще для чтения.
 
-### Parameters
-Methods can have parameters.
+### Параметры
+У методов могут быть параметры
 
-### Return values
-Methods (almost) always return a value.
+### Возвращаемое значение
+Методы зачастую возвращают какое-то значение
 
-## Now
-To (be) or not to (be) is not a question to you anymore. Are you ready for some more Shakespeare?
+## А сейчас
+Готовы почитать немного Шекспира?

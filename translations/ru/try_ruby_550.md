@@ -1,22 +1,23 @@
 ---
-lang:   EN
-title:  It's All About Combining
+lang:   RU
+title:  Это все про комбинирование
 answer: :-
-ok:     Moody!
+ok:     Угрюмо!
 error:
 load:   prev
 ---
 
-Some beautiful things can be done with the simple parts of Ruby, especially when you combine them
-together into new things.
-Here we've got an app made of a class containing another class. And, actually, Ruby really does good
-with this kind of creature. It is called object oriented programming.
+Некоторые интересные вещи можно сделать с помощью простых частей Ruby, особенно когда вы их объединяете
+вместе в нечно новое.
 
-We have arrived at the __last programming excercise__ of TryRuby. If you want, you can add some
-more features to Blurbalizer<sup>TM</sup>.
+Здесь у нас есть приложение, состоящее из класса, содержащего другой класс.
+Это называется объектно-ориентированное программирование (ООП)
 
-Maybe you want to print the mood as a smiley in the __show_timeline__ method. You could add
-a _moodify_ method to the Blurb<sup>TM</sup> class and then use that method in the _show\_timeline_ method:
+Мы приступаем к  __последнему заданию__ на TryRuby. Если хотите, то можете добавить
+больше интересного в Blurbalizer<sup>TM</sup>.
+
+Может вы захотите выводить улыбающийся смайлик в методе __show_timeline__. Вы должны добавить
+_модифицированный_ метод в класс Blurb<sup>TM</sup> и затем использовать это в методе _show\_timeline_:
 
     class Blurb
       attr_accessor :content, :time, :mood
@@ -32,10 +33,10 @@ a _moodify_ method to the Blurb<sup>TM</sup> class and then use that method in t
           return ":-("
         elsif @mood == :happy
           return ":-)"
-        # Add other moods here
+        # Добавь другой смайлик сюда
         end
 
-        # The default mood
+        # Смайлик по умолчанию
         ":-|"
       end
     end
@@ -51,7 +52,7 @@ a _moodify_ method to the Blurb<sup>TM</sup> class and then use that method in t
       end
 
       def show_timeline
-        puts "Blurbalizer: #{@title} has #{@blurbs.count} Blurbs"
+        puts "Blurbalizer: #{@title} содержит #{@blurbs.count} Blurbs"
 
         @blurbs.sort_by { |t|
           t.time

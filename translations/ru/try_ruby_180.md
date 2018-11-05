@@ -1,31 +1,31 @@
 ---
-lang:   EN
-title:  Summary #2 is Upon Us
+lang:   RU
+title:  Итоги #2 Что тут у нас?
 answer: \w+
 class:  stretcher chapmark
-load:   poem = "My toast has flown from my hand\nAnd my toast has gone to the moon.\nBut when I saw it on television,\nPlanting our flag on Halley's comet,\nMore still did I want to eat it.\n"
-ok:     Does it rhyme?
+load:   poem = "Мой тост вылетел из моей руки. \nИ мой тост отправился на луну. \nНо когда я увидел это по телевизору, \nЗаправляя наш флаг на комету Галлея, \nПосле того, как я все-таки захотел съесть его\n"
+ok:     В рифму?
 error:
 ---
 
-Now, look how your second minute went:
+Сейчас посмотрим.
 
-### Errors
-If you try to reverse a number or do anything fishy, Ruby will tell you so.
+### Ошибки
+Если вы попробуйте сделать число наоборот или другое что-то странное, Ruby скажет об этом.
 
-### Arrays
-Arrays are lists for storing things in some order.
-We also know how to create array's and get items from array's.
+### Массивы
+Массивы - это списки, хранящие элементы в определенной последовательности.
+Мы уже знаем, как создать массив и получить элементы из него.
 
-### Variables
-Variables save a thing and give it a name. You used the equals sign to do this. Like:
+### Переменные
+Переменные сохраняют значения и дают им имена. Мы используем символ равенства, 
+чтобы проделать это. Как тут:
 ticket = [14, 37, 18].
 
 ### 2/8
-In all there are eight sections. You are two-eighths of the way there! This is simple stuff,
-don't you think? Good stuff up ahead.
+Всего тут 8 разделов. 2 уже позади! Не так-то и сложно, да?
 
-Let's change directions for a moment. I've stuffed a bit of poetry for you in a certain variable.
-Take a look. Type:
+Давайте немного сменим направление. Я практиковался в поэзии на и положил 
+результат в переменную poem. Взгляните. Наберите:
 
     puts poem

@@ -1,19 +1,19 @@
 ---
-lang:   EN
-title:  Quickening it Up
+lang:   RU
+title:  Ускоряемся
 answer: ^\d{4}
-ok:     Noted
+ok:     Запомнили :)
 error:  
 ---
 
-Cool, your app is awesome. Hey, let's make things a bit easier on you.
-You're not going to want to set the time like that every time you Blurb<sup>TM</sup>.
+Круто, новое приложение потрясающее. Хей, давай немного упростим?
+Вы всегда хотите ставить время вашему Blurb<sup>TM</sup> так?.
 
-You just want to type the content and set the mood, right?
+Вы всего лишь хотите писать контент?
 
-Let's add an __initialize__ method to our class. This method is called whenever a new Blurb<sup>TM</sup>
-is created.
-At the same time we can limit the length of the Blurb<sup>TM</sup> content to 40 characters.
+Добавим метод __иницализации__ в наш класс. Этот метод будет всегда вызываться, когда новый Blurb<sup>TM</sup>
+создается.
+Также мы можем установить максимальную длину Blurb<sup>TM</sup> контента в 40 символов.
 
     class Blurb
       attr_accessor :content, :time, :mood
@@ -27,5 +27,4 @@ At the same time we can limit the length of the Blurb<sup>TM</sup> content to 40
     
     Blurb.new.time
 
-(That parameter __content=""__ is there to make sure that we know content is a string,
-even if no content parameter is passed to the initialize method.)
+(Этот параметр __content=""__ используется, чтобы было известно, что это строка и никакой другой параметр не мог инициализировать его.)

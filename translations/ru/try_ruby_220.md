@@ -1,21 +1,21 @@
 ---
-lang:   EN
-title:  Ringlets of Chained Methods
+lang:   RU
+title:  Еще немного методов
 answer: ^More still did (.+)
 load:   prev
-ok:     Good show, my friend! The join method took that array of lines and put them together into a string.
+ok:     Отлично, мой друг! Метод join взял строки из этого массива и соединил их в строку.
 error:  
 ---
 
-So what do you see? What happened there? You typed __poem.lines.reverse__ and what happened?
+Что Вы видите? Что произошло? Вы набрали __poem.lines.reverse__ и что случилось?
 
-Two things happened. You turned the poem into a list using lines.
-Lines decides the way the string is split up and converts it into an Array.
+Два события произшло. Первое: вы разбили стихотворения на строки, используя метод lines, 
+и получили массив из них.
 
-Then, you reversed that list. You had each line. You reversed them. That's it.
+Затем Вы развернули этот лист задом наперед. Вот и все!
 
-Let's tack one more method on the end there:
+Давайте добавим еще один метод в конец:
 
     puts poem.lines.reverse.join
 
-Combining methods like this is called _method chaining_.
+Комбинирование методов называется: цепочка методов.

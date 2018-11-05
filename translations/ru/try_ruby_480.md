@@ -1,24 +1,24 @@
 ---
-lang:   EN
-title:  Accessors Are the Dangling Limbs
+lang:   
+title:  Аксессоры это обособленные элементы
 answer: Blurb:
-ok:     My first Blurb
+ok:     Мой первый Blurb
 error:  
 load:   class Blurb;attr_accessor :content,:time,:mood;end
 ---
 
-Hey, good class, man. You've got a new Blurb<sup>TM</sup> class.
+Привет. У тебя есть новый Blurb<sup>TM</sup> класс.
 
-In the class definition, you used a method called attr\_accessor.
-There are many __attr__ibute methods like this which add little settings to classes.
-These attributes are just variables attached to a class.
+В определении класса вы использовали метод, называющийся attr\_accessor(аксессор).
+вообще много атрибутов класса, которые так или иначе его меняют.
+Атрибуты - это всего лишь переменные связанные с классом.
 
-Think of it this way. A class is like a person. That star-shaped human thing out there.
-And the attributes are the dangling limbs, the different parts that make up a body and
-other people can shake hands with.
+Думайте так. Класс - это человек. Это звездное человеческое существо.
+А атрибуты - это его конечности, разные части собираются в тело, а 
+а другие люди могут взять этого человека за руку и поздороваться.
 
-### Now
-To create a Blurb<sup>TM</sup> and set the content:
+### Сейчас
+Чтобы создать Blurb<sup>TM</sup> и наполнить данными:
 
     blurb1 = Blurb.new
     puts blurb1

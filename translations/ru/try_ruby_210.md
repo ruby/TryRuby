@@ -1,17 +1,15 @@
 ---
-lang:   EN
-title:  Too Much Reversal
+lang:   RU
+title:  Сликом много слов наоборот
 answer: ^\["More still did (.+)
 load:   prev
-ok:     Yes, almost what we want
+ok:     Да, то что нужно!
 error:  
 ---
 
-So the whole poem's been turned backwards, letter-by-letter. I really wanted to just reverse the lines though.
-Move the last line up to first and the first line down to last.
+Что ж, все стихотворение стало задом наперед. Слово за словом! Но я хочу всего лишь сделать это для строк.
+Переместим первую строку в конец, а последнюю в начало.
 
-Backwards, but not __that__ backwards.
-
-Here's how:
+Теперь делаем так:
 
     poem.lines.reverse

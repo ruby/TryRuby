@@ -1,25 +1,24 @@
 ---
-lang:   EN
-title:  If only I knew how to make a decision
+lang:   RU
+title:  Если бы я знал, как принять решение
 answer: 
 ok:     
 error:  
 ---
 
-Decision making, in real life this can be a real problem. Not for us though.
-Ruby makes it very easy to make decisions.
+Делать выбор в жизни бывает трудно, но не в Ruby. Тут есть удобные способы принять решение.
 
     if 1 < 2
-      puts "It is true: 1 is less than 2"
+      puts "Это правда: 1 меньше 2"
     end
 
-The key word here is __if__. If can be placed before a method or after a method, like so:
+Ключевое слово __if(если)__. If может быть поставлен и до, и после метода. Как тут:
 
-    puts "It is true: 1 is less than 2" if 1 < 2
+    puts "Это правда: 1 меньше 2" if 1 < 2
 
-__If__ is a method that requires one parameter. That parameter can be any expression that you
-want to test. The outcome of the expression must be either __true__ or __false__.
-Here are a couple of expressions with their outcomes:
+__If__ это метод, который требует 1 параметр. Этим параметром может быть любое выражение, которое
+вы хотите проверить. Результат выражения  __true(правда)__ or __false(ложь)__.
+Вот немного примеров:
 
     5     <= 10     # => true
     'abc' == 'def'  # => false
@@ -32,5 +31,5 @@ Here are a couple of expressions with their outcomes:
                     # comparison of String with
                     # Numeric failed
 
-The _if expression_ can take many forms. It can compare literal values (1 < 2),
-variables (a < 1) and the return value of a method ('xyz'.empty?).
+_if выражение_ может иметь много видов: сравнивать значения (1 < 2),
+переменные (a < 1) и возвращаемые значения методов('xyz'.empty?).

@@ -1,15 +1,13 @@
 ---
-lang:   EN
-title:  Are You Harsh?
+lang:   RU
+title:  А ты суров?
 answer: "mediocre"
 load:   books = {"Gravitys Rainbow" => :splendid, "The deep end" => :abysmal, "Living colors" => :mediocre, "Bumblebees" => :mediocre}
-ok:     Great, wow! You've made a scorecard of your ratings
-error:  
+ok:     Отлчно, круто! Вы создали таблицу своих оценок
 ---
 
-So are you giving out harsh, unfair reviews? Let's keep score with a new hash __ratings__:
-
-Then, okay, now let's count up your reviews. Just stay with me. Type:
+Так вы выдаете суровые, несправедливые отзывы? Давайте посчитаем их в новом словаре __ratings__:
+Следуй за мной. Набери:
 
     ratings = Hash.new {0}
     
@@ -19,9 +17,9 @@ Then, okay, now let's count up your reviews. Just stay with me. Type:
     
     puts ratings
 
-The straight line in the code is the pipe character, probably located right above the Enter key
-on your keyboard.
+Прямой линией в коде является символ pipe , вероятно, расположенный над клавишей Enter
+на клавиатуре.
 
-That _+= 1_ line means: increase the value by 1.
+Эта строка _ + = 1_ означает: увеличить значение на 1.
 
-Don't worry if you don't understand everything that is going on here. It will be revealed later.
+Не беспокойтесь, если вы не понимаете все, что здесь происходит. Это будет показано позже.

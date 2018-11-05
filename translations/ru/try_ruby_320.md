@@ -1,38 +1,34 @@
 ---
-lang:   EN
-title:  To (be) or not to (be)
+lang:  RU
+title:  Быть или не быть
 answer:
-load:   poem = "My toast has flown from my hand\nAnd my toast has gone to the moon.\nYada yada yada\n"
+load:  poem = "Мой тост вылетел из моей руки\n И мой тост отправился на Луну. \n Ура, Ура, Ура \n"
 ok:
 error:
 ---
 
-One other little thing we haven't really talked about openly: method arguments.
-Remember when we changed the poem a little bit? We used:
-__poem.gsub("toast", "honeydew")__
+Одна маленькая деталь, которую мы не обсудили - это аргументы методов. Помните,
+как мы меняли содержимое поэмы, используя этот метод:
+__poem.gsub("тост", "медовик")__
 
-The gsub method needs 2 arguments, which we passed to gsub by including two strings between
-parenthesis. _Arguments tell the method exactly what to do._
+Метод gsub требует 2 аргумента, которые мы вставили как строки между двух круглых
+скобок. Аргументы сообщают методу, что именно ему делать.
 
-### Parenthesis
-Actually, most of the time Ruby doesn't mind if you omit the parenthesis. So this would have
-worked too:
+### Круглые скобки
+На самом деле, в большинстве случаев Ruby не против, если вы опустите скобки. Таким образом, это
+тоже сработает:
+
 __poem.gsub "toast", "honeydew"__
 
-We have already used another method with a parameter. Many times in fact, though it was not very
-obvious:
+Мы также уже использовали и другой метод с параметром. Много раз. Но это не так очевидно.
 
     puts "Hello"
     puts("Hello")
 
-Yes __puts__ is also a method. Using puts with or without parenthesis is the same to Ruby, but the
-version without parenthesis is a bit easier to read. And it saves you valuable typing time!
+Ага, __puts__ тоже метод. Использование puts с круглыми скобками или без Ruby не важно, но
+вариант без скобок проще читать и немного экономит время набора кода!
 
-> So I guess the conclusion is that you can do whatever you like with parenthesis as long as your
-> code reads nicely.
+> Поэтому я предполагаю, что вывод состоит в том, что вы можете делать все, что угодно, с круглыми скобками, пока
+> код читается красиво.
 
-### to (be) or not to (be)
-So if _to_ is a method and _be_ is an argument we now know the answer to this age old question.
-It is really just a matter of preference whether you want _to be_ or _to(be)_.
-
-Are you in the mood for more Shakespeare? Read on.
+Хотите немного Шекспира? Читайте дальше.

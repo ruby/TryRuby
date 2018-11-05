@@ -1,27 +1,27 @@
 ---
-lang:   EN
-title:  Putting it differently
+lang:   RU
+title:  Выводим результат иначе
 answer: ^[0-9\.,-]{1,}$
-ok:     Well put
+ok:     Отлично!
 error:
 ---
 
-Did you notice that if you typed more than one formula you only saw the answer for the last one.
-What is going on?
+Вы заметили, что если Вы набираете более одного выражения, выводится результат только последнего.
+Что же происходит?
 
-> To make this website easier to use I have told Ruby to copy the result of your program to the
-> output screen at the top. So when you type a formula you get to see the results.
-> __But only the last result.__ And only if the output is still empty.
+> Для более удобного использования этого сайта, я указал Ruby копировать результат вашей программы
+> в поле вывода вверху. Так когда Вы набираете выражение, результат выводится на экран.
+> __Но только последний результат.__ И только если до этого ничего не выводилось
 
-So when you entered 2 or more formula's, Ruby only showed the result of the last formula.
+Так когда Вы вводите несколько выражений, Ruby показывает результат только последнего
 
-Of course you have the power to control the screen! Just type __puts__ before each formula
-(with a space in between). Puts means: *'put something on the screen'*.
+Конечно, Вам хочется увидеть результат всех! Добавьте __puts__ перед каждым выражением
+(разделяя пробелом). __Puts__ означает: *'вывести что-то на экран'*.
 
-Try this:
+Попробуйте:
 
     puts 4 * 10
     puts 5 - 12
     puts 30 / 4
 
-Now remove the puts from the last formula and see what happens.
+А теперь удалите __puts__ из последней формулы и посмотрите, что произойдет.

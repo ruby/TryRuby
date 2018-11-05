@@ -1,12 +1,12 @@
 ---
-lang:   EN
-title:  Ready, Aim
-answer: ^\n.ti tae ot (.+)
+lang:   RU
+title:  Готов, целься!
+answer: ^\nоге ьтсеъс ыботЧ (.+)
 load:   prev
-ok:     Okay, sure.  So the whole poem has been turned backwards.
+ok:     Конечно, все стихотворение развернуло задом наперед.
 error:  
 ---
 
-Here's a question: what happens when we reverse this whole poem? 
+Вот вопрос, что произойдет:
 
     poem.reverse

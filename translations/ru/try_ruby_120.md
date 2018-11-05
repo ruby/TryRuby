@@ -1,18 +1,19 @@
+
 ---
-lang:   EN
+lang:   RU
 title:  Standing in Line
 answer: ^\[(\d+)(,\s*\d+){3,}\]$
-ok:     Excellent
-error:  Try adding a fourth number to the list
+ok:     Прекрасно!
+error:  Попробуйте добавить четвертое число в массив.
 ---
 
-Lists (arrays) store things __in some order__.
+Списки (массивы) хранят элементы __в определенной последовательности__.
 
-Like standing in line for popcorn. You are behind someone and you wouldn't dream of pushing them aside,
-right? And the guy behind you, you've got a close eye on him, right?
+Похоже на очередь за попкорном. Вы стоите за кем-то и не пытаетесь его оттолкнуть или передвинуть, верно?
+Также человек за Вами 
 
-Here's a list for you. Lottery numbers: 
+Вот список для Вас. Номера лотерейных билетов: 
 
     [12, 47, 35]
 
-Try adding a number to this list: type a comma after 35 followed by a number. The space is optional.
+Попробуйте добавить число в массив. Наберите запятую и число после 35. Пробел не обязательно.

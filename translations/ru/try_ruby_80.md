@@ -1,17 +1,17 @@
 ---
-lang:   EN
-title:  On Repeat
+lang:   RU
+title:  На повторе
 answer: (\w+)
-ok:     Nice to meet you.Nice to meet you.Nice to meet you.
+ok:     Рад Вас видеть. Рад Вас видеть. Рад Вас видеть.
 error:  
 ---
 
-Now, you're probably wondering what any of this is good for.
+Сейчас Вам, наверное, интересно, зачем это нужно.
 
-Well, I'm sure you've been to a website that screamed, __Hey, your password is too short!__
+Что ж, я уверен, Вы хоть раз замечали на сайте надпись: __Эй, твой пароль слишком короткий!__
 
-See, some programs use that simple __.length__ code.
+Смотрите, некоторые программы используют код __.length__.
 
-Watch this. Let's multiply your name by 5. 
+А теперь рассмотрим это. Давайте выведем Ваше имя 5 раз
 
-    "Jimmy" * 5
+    "Джими" * 5

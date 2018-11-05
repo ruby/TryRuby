@@ -1,19 +1,19 @@
 ---
-lang:   EN
-title:  Hashes as Pairs
+lang:   RU
+title:  Словари это пары
 answer: ^\[".*"\]
 load:   prev
-ok:     You found the keys
+ok:     Вы нашли ключи
 error:  
 ---
 
-Keep in mind that hashes won't keep things in order. That's not their job. It'll just pair up
-two things: a __key__ and a __value__.
+Помните, что словари не хранят элементы в последовательности. Это не их задача.
+Они создают пару: ключ(key) : значение(value) 
 
-In your reviews, the book's title is the key and the rating is the value.
+В ваших отзывах, название книги - это ключь, а оценка - значение.
 
-If you want to just see the titles of all the books you've reviewed:
+Если вы зотите увидеть все названия книг, введите:
 
     books.keys
 
-You can also try this with .values instead of .keys.
+Также попробуйте использовать .values вместо .keys.

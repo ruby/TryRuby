@@ -1,15 +1,16 @@
 ---
-lang:   EN
-title:  Stop, You're Barking Mad!
+lang:   RU
+title:  Остановись, ты сумасшедший! 
 answer: ^\d{1,}$
-ok:     Only strings can be reversed
+ok:     Только строки могут быть развернуты задом наперед
 error:  
 ---
 
-You can't reverse the number forty. I guess you can hold your monitor up to the mirror, but reversing a number just doesn't make sense.
+Ты не можешь развернуть число задом наперед.  Я думаю, Вы, конечно можете держать монитор перед зерколом, но разворачивание числа просто не имеет смысла.
 
-Ruby has tossed an error message. Ruby is telling you there is no method reverse for numbers.
+Ruby выведет число с ошибкой. Ruby говорит Вам, что не существует метода reverse для чисел.
 
-Maybe if you turn the number into a string first:
+
+Но можно попробовать преобразовать число 40 в строку для начала:
 
     40.to_s.reverse

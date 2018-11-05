@@ -1,24 +1,24 @@
 ---
-lang:   EN
+lang:   RU
 title:  More Bite-Size Reviews
 answer: [3-9]
 load:   books = {"Gravitys Rainbow" => :splendid}
-ok:     See, the length method works on strings, array's and hashes.
+ok:     Метод length работает на строках, словарях и массивах.
 error:
 ---
 
-Keep going, fill it up with reviews. And, if you want to see the whole list, just type: __puts books__
+Продолжайте, заполните его обзорами. И, если вы хотите увидеть весь список, просто введите: __puts books__
 
-Again, the ratings are: :splendid, :quite\_good, :mediocre, :quite\_not\_good and :abysmal.
+Опять же, возможные оценки: :splendid, :quite\_good, :mediocre, :quite\_not\_good and :abysmal.
 
-These ratings are not strings. When you place a colon in front of a simple word, you get a __symbol__.
-Symbols are cheaper than strings (in terms of computer memory.) If you use a word over and over in your program,
-use a symbol. Rather than having thousands of copies of that word in memory, the computer will store the symbol only
-__once__.
+Эти оценки не являются строками. Когда вы помещаете двоеточие перед простым словом, вы получаете __символ__.
+Символы дешевле строк (с точки зрения компьютерной памяти). Если вы используете слово снова и снова в своей программе,
+используйте символ. Вместо того, чтобы иметь тысячи копий этого слова в памяти, компьютер будет хранить только символ
+__один раз__.
 
-More importantly, a symbol tells you that is not just any old word but has a meaning within your program.
+Что еще более важно, символ говорит вам, что это не просто старое слово, но и имеет смысл в вашей программе.
 
-Enter 2 more bookreviews, use __books.length__ to see how many reviews there are in the hash:
+Введите еще 2 отзыва, используйте __books.length__, чтобы узнать, сколько отзывов в словаре:
 
     books["The deep end"]  = :abysmal
     books["Living colors"] = :mediocre

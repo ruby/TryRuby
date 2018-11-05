@@ -1,22 +1,22 @@
 ---
-lang:   EN
-title:  Boys are Different From Girls
+lang:   RU
+title:  Мальчики отличаются от девочек
 answer: \[\]
-ok:     Great, that's an empty list
+ok:     Отлично. Это пустой список.
 error:  
 ---
 
-And numbers are different from strings.
+И числа отличаются от строк.
 
-While you can use methods on any object in Ruby, some methods only work on certain types of things.
-But you can always convert between different types using Ruby's "to" methods.
+В то время как Вы использование методов применимо ко всем типам, некоторые методы работают только с определенными типами данных.
+Но Вы всего можете преобразовать один тип в другой, используя методы вида "to"
 
-- __to_s__ converts things to __s__trings
-- __to_i__ converts things to __i__ntegers (numbers)
-- __to_a__ converts things to __a__rrays
+- __to_s__ преобразует в строки
+- __to_i__ преобразует в число
+- __to_a__ преобразует в массив
 
-__What are arrays?!__
+__Что такое массив?!__
 
-They are lists. Type in a pair of brackets: 
+Массив - это всего лишь список. Наберите 2 квадратные скобки:
 
     []

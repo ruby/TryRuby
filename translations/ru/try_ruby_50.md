@@ -1,13 +1,13 @@
 ---
-lang:   EN
-title:  Say Your Name
+lang:   RU
+title:  Скажи свое имя!
 answer: [a-zA-Z]{1,1}
-ok:     Perfect, you've formed a string from the letters of your name
+ok:     Отлично, Вы сформировали строку из букв Вашего имени.
 error:  
 ---
 
-Sure, computers are handy and fast for math. Let's move on. Want to see your name reversed?
+Конечно, компьютеры удобны для расчетов. Но давайте попробуем что-то еще. А хотите вывести свое имя задом наперед?
 
-First type your first name in quotes like this:
+Для начала наберите свое имя в кавычка как тут:
 
-    "Jimmy"
+    "Джим"

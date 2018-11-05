@@ -1,12 +1,12 @@
 ---
-lang:   EN
-title:  The Ripened Fruit of Your Own Creation
+lang:   RU
+title:  Плод вашего собственного творения
 answer: ^Tamed a shrew
-ok:     That'll show those shrews
+ok:     Это все!
 error:  
 load:   def tame(number_of_shrews);number_of_shrews.times{puts "Tamed a shrew"};end;
 ---
 
-A new method is born. Let us use it now: 
+Новый метод рожден. Попробуем его использовать:
 
     tame 5

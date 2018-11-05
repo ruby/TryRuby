@@ -1,34 +1,33 @@
 ---
-lang:   EN
-title:  And Now For the Startling Conclusion
-answer: is not equal to 100$
-ok:     That's better
-error:  This can't be right
+lang:   RU
+title:  И напоследок 
+answer: не равно 100$
+ok:     Так лучше
+error:  Это не правильно
 ---
 
-Did you see the 2 equal signs in __'abc' == 'def'__?
+Видите двойное равно __'abc' == 'def'__?
 
-This __==__ means __is equal to__.
-The single equal sign that we have seen before means __assign a value to a variable__.
+Это __==__ означает __проверка на равенство__.
+Одиночное равно используется для присваивания значения переменной.
 
-To make it more confusing: you can use the assignment after an if method like this:
+Чтобы немного вас запутать: вы можете использовать присваивание как аргумент метода if:
 
     a = 0
     
     if a = 100
-      puts "Expression is true, but a is now: #{a}"
+      puts "Выражение верно, но а сейчас : #{a}"
     else
-      puts "#{a} is not equal to 100"
+      puts "#{a} не равно 100"
     end
 
-Change the = into == and see what happens.
+Поменяйте = на == и посмотрите, что произойдет.
 
-I can guarantee you that you will forget typing the second equal sign regularly. I also
-still forget it sometimes.
+Я вам гарантирую, что вы будете часто забывать поставить двойное равенстсво.
 
-### else
-In the code above I have added an else expression. This part will be executed when the
-__if test-expression__ evaluates to false.
+### Иначе(else)
+В коде я использовал else, это выполняется в случае
+__if тестовое_выражение__ вычисляется как ложь(false).
 
-> There are more variations to this if-then-else theme. You can read more
-> <a href="http://www.ruby-doc.org/core/doc/syntax/control_expressions_rdoc.html" target="_blank">here</a>.
+> Больше информаци вы можете подчерпнуть 
+> <a href="http://www.ruby-doc.org/core/doc/syntax/control_expressions_rdoc.html" target="_blank">здесь</a>.
