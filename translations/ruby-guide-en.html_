@@ -66,7 +66,7 @@
     <div class="answer">\"(\d+)\"</div>
 </div>
 <div class="stretcher">
-    <h3>Boys are Different From Girls</h3>
+    <h3>Apples are Different From Oranges</h3>
     <p>And numbers are different from strings. While you can use methods on any object
     in Ruby, some methods only work on certain types of things. But you can always
     convert between different types using Ruby's "to" methods.</p>

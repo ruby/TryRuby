@@ -1,9 +1,9 @@
 ---
 lang:   EN
-title:  Boys are Different From Girls
+title:  Apples are Different From Oranges
 answer: \[\]
 ok:     Great, that's an empty list
-error:  
+error:
 ---
 
 And numbers are different from strings.
@@ -17,6 +17,6 @@ But you can always convert between different types using Ruby's "to" methods.
 
 __What are arrays?!__
 
-They are lists. Type in a pair of brackets: 
+They are lists. Type in a pair of brackets:
 
     []
