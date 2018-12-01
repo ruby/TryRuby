@@ -30,3 +30,7 @@ page.
 
 You probably should not translate Blurb and Blurbalizer. But feel free to
 translate the Blurb content.
+
+## Reference
+For future reference the original content of TryRuby (version 2)
+is included. See `ruby-guide-en.html_` and `ruby-guide-es.html_`.

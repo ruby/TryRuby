@@ -43,6 +43,9 @@ Then visit `http://localhost:4567`.
 Git branch 'gh-pages' now holds the publishable version of TryRuby, accessible
 via [easydatawarehousing.github.io/TryRuby/](https://easydatawarehousing.github.io/TryRuby/).
 
+A [fork](https://github.com/ruby/TryRuby) of this repository is used for the website
+that [Ruby-lang.org](https://www.ruby-lang.org) links to.
+
 ## Translators
 When adding a new translation: see the README file in /translations.
 
