@@ -1,8 +1,9 @@
 source 'https://rubygems.org'
 
-gem "opal", "~> 0.10.5"
+gem "opal", "~> 0.11.4"
+gem "opal-sprockets"
 gem "opal-jquery"
-gem "middleman", "~> 4.2.1"
+gem "middleman"
 gem "middleman-livereload"
 gem "middleman-syntax"
 gem "middleman-sprockets"
