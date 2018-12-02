@@ -18,6 +18,12 @@ Dutch translation by _Ivo Herweijer_
 Brazilian Portuguese translation by [_Ricardo da Verdade Silva_](https://github.com/ricardovsilva)<br>
 Japanese translation by _Koji Shimada_ & _Masayoshi Takahashi_
 
+Suggestions to improve translations are welcome.
+If you submit a pull request updating a translation please
+only change the files in folder _translations_,
+not the json files in folder _source_.
+These files will be updated automatically by the build/publish task.
+
 ## Preparing
 Clone this repo, and use bundler to get dependencies:
 

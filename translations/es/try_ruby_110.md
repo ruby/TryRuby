@@ -1,6 +1,6 @@
 ---
 lang:   ES
-title:  Los Chicos son diferentes de las Chicas
+title:  Las Naranjas son diferentes de las Manzanas
 answer: \[\]
 ok:     Genial, eso es una lisa vacía
 error:  
