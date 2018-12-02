@@ -3,7 +3,7 @@ lang:   NL
 title:  De schakels van de ketting
 answer: ^More still did (.+)
 load:   prev
-ok:     Goed gedaan gast! De join methode heeft dat array weer aan elkaar geplakt.
+ok:     Goed gedaan hoor! De join methode heeft dat array weer aan elkaar geplakt.
 error:  
 ---
 

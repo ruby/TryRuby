@@ -6,7 +6,7 @@ ok:     Ja, dat is een mooie nieuwe, maar nog lege, lijst
 error:  
 ---
 
-Jongens zijn anders dan meisjes. En nummers zijn anders dan strings.
+Appels zijn anders dan peren. En nummers zijn anders dan strings.
 
 Alle Ruby objecten hebben methoden, maar sommige methoden werken alleen voor
 specifieke objecten.
