@@ -5,18 +5,31 @@ where you can learn the Ruby language. Starting from zero knowledge about
 programming you can learn the basics of Ruby in 56 short lessons.
 
 ## Credits
-Try Ruby version 1 by _why the lucky stiff_  
-Try Ruby version 2 by _Andrew McElroy & David Miani_  
-Try Ruby version 3 by _Eric Allam & Nick Walsh_  
-Try Ruby version 4 by _Ivo Herweijer_  
+Try Ruby version 1 by _why the lucky stiff_
+Try Ruby version 2 by _Andrew McElroy & David Miani_
+Try Ruby version 3 by _Eric Allam & Nick Walsh_
+Try Ruby version 4 by _Ivo Herweijer_
 
 This website is partially based on OpalRb.com by _Adam Beynon_.
 
 ### Translations
-Spanish translation by _Jesus Gabriel y Galan_ & _Pablo García_  
-Dutch translation by _Ivo Herweijer_  
+Spanish translation by _Jesus Gabriel y Galan_ & _Pablo García_
+Dutch translation by _Ivo Herweijer_
 Brazilian Portuguese translation by [_Ricardo da Verdade Silva_](https://github.com/ricardovsilva)<br>
 Japanese translation by _Koji Shimada_ & _Masayoshi Takahashi_
+French translation by _Olivier Lacan_
+
+To add a translation:
+- duplicate the `translations/en` directory and name the new directory
+  with the appropriate [ISO 639-1 code][iso] for the language new
+  language.
+- translate all Markdown files within your new translation directory.
+- duplicate `source/try_ruby_en.json`, replace `en` with your new
+  language code, and translate all lesson titles inside the file.
+- add a reference to your Markdown translation directory and JSON file
+  inside of `collector.rb` so that they can be loaded.
+- submit a Pull Request with a branch named after your translation
+  language.
 
 Suggestions to improve translations are welcome.
 If you submit a pull request updating a translation please
@@ -80,3 +93,5 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+[iso]: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes

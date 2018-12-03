@@ -45,7 +45,7 @@ class Collector
 
     def collect_sources
       return if @sources.empty?
-    
+
       #@markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, extensions = {})
       @markdown = Redcarpet::Markdown.new(HTMLWithPants, extensions = {})
 
@@ -138,6 +138,7 @@ class MiddlemanCollector < Middleman::Extension
       Collector.new('translations/es/try_ruby_*.md', 'source/try_ruby_es.json').collect
       Collector.new('translations/pt-br/try_ruby_*.md', 'source/try_ruby_pt-br.json').collect
       Collector.new('translations/ja/try_ruby_*.md', 'source/try_ruby_ja.json').collect
+      Collector.new('translations/fr/try_ruby_*.md', 'source/try_ruby_fr.json').collect
 
       # TODO: add any new translations here
 

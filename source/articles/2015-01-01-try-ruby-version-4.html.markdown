@@ -12,11 +12,11 @@ the lucky stiff', a.k.a. \_Why. You can read more about him on
 <a href="http://en.wikipedia.org/wiki/Why_the_lucky_stiff" target="_blank">Wikipedia</a>.
 
 \_Why doesn't exist anymore, but TryRuby lives on. It was first recreated by Andrew McElroy
-and David Miani. Next Eric Allam and Nick Walsh took over (Codeschool/EnvyLabs,
+and David Miani. Next Eric Allam and Nick Walsh took over (Envy Labs/Code School,
 available via <a href="http://tryruby.org/" target="_blank">TryRuby.org</a>).
 
 ### Why_
-This fourth iteration of TryRuby was created for several reasons. 
+This fourth iteration of TryRuby was created for several reasons.
 
 - The lesson content was getting a bit dated. For instance the stuff about reading and writing
   disk files does not really belong in an entry level course these days. Writing blog software
@@ -24,7 +24,7 @@ This fourth iteration of TryRuby was created for several reasons.
 - Lesson content also missed some important information (like __if__ statements)
 - All previous TryRuby versions consisted of an irb interpreter with a web front-end.
   Even though some security measures have been taken (isolating and restricting the irb process
-  and whitelisting input), this still sounds like a bad idea from a security perspective!  
+  and whitelisting input), this still sounds like a bad idea from a security perspective!
   TryRuby<sup>R4</sup> runs inside the web browser
 
 ### Changes
@@ -39,7 +39,7 @@ I had to make some alterations to the TryRuby lesson content. Also updated some 
 - Removed mousehole stuff
 - Improved the feedback given to the user based on the program's output a bit
 - Added support for lesson content in multiple languages. The Spanish, Brazilian Portuguese,
-  Japanese and Dutch translations are available.  
+  Japanese and Dutch translations are available.
   __If YOU would like to add a translation to TryRuby you are most welcome !__
 - Added explanation of if/else statements
 - Changed the subject of the "Class" tutorials from building a blog (so last decade) to making an
