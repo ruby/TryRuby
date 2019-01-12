@@ -4,7 +4,7 @@ title:  Итоги #3 Здесь и сейчас
 answer: \{\}
 class:  stretcher chapmark
 load:   prev
-ok:     Вы создали пустой словарь!
+ok:     Вы создали пустой hash (словарь)!
 error:
 ---
 
@@ -26,6 +26,6 @@ __poem.lines.reverse.join__
 poem.downcase или poem.swapcase
 
 ## Готовы?
-When you feel ready to move on, type:
+Когда вы будете готовы двигаться дальше, наберите:
 
     books = {}

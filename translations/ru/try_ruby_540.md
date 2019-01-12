@@ -1,6 +1,6 @@
 ---
 lang:   RU
-title:  Про что это Blurd?
+title:  Про что это Blurb?
 answer: Today
 ok:     Ок!
 error:

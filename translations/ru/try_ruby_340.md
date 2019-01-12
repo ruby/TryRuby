@@ -1,8 +1,8 @@
 ---
 lang:   RU
-title:  В Ruby, Def Leppard означает: определить метод Leppard
+title:  В Ruby, Def Leppard означает: определить метод Leppard *
 answer: ^tame
-ok:     Не хромой
+ok:     Tame is not lame
 error:  
 ---
 

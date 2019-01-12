@@ -1,7 +1,7 @@
 ---
 lang:   RU
 title:  Сликом много слов наоборот
-answer: ^\["More still did (.+)
+answer: ^\["После того, как я (.+)
 load:   prev
 ok:     Да, то что нужно!
 error:  

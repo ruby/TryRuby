@@ -7,7 +7,7 @@ ok:     Ага, это пустой словарь
 error:
 ---
 
-You're a level six Ruby cleric. I mean what a great job you've done. Let's review:
+Вы 6-го уровня Ruby клирик. Я имею ввиду, что проделана отличная работа. Давайте подведем итоги:
 
 
 ### Данные

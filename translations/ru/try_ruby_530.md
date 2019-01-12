@@ -1,6 +1,6 @@
 ---
 lang:   RU
-title:  Your Own Turf
+title:  Ваш собственный сад
 answer: Blurbalizer:
 ok:     Приложение создано
 error:  

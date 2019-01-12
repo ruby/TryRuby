@@ -7,8 +7,7 @@ ok:
 error:  
 ---
 
-This last lesson was a bit longer. You've probably used up three minutes learning about:
-
+Этот урок был немного длиннее. Вы, вероятно, потратили на три минуты больше на его изучение:
 ### Словари
 Самый простой пример словаря: __{}__
 

@@ -14,10 +14,10 @@ If you enjoyed yourself, you can continue with the <a href="/TryRuby/playground"
 or download and install Ruby:
 <a href="https://www.ruby-lang.org/en/downloads/" target="_blank">ruby-lang.org</a>
 
-Once you have Ruby installed, you can create a file, let say _my\_first\_progam.rb_, with a text
+Once you have Ruby installed, you can create a file, let say _my\_first\_program.rb_, with a text
 editor, type some Ruby code and then run it by opening a command prompt and typing:
 
-    ruby my_first_progam.rb
+    ruby my_first_program.rb
 
 There are many (free) development tools available that combine an editor, file browser and a
 'ruby-runner'.
@@ -27,5 +27,5 @@ You really deserve a double-layer cake with double-double frosting and a guy pla
 I mean you finished, you really did! No doubt about it, you're a __certified red-blooded smartiac!__
 
 ## More info
-There are a couple of articles on this website. They can give you some pointers on where to
+There are a couple of <a href="/articles">articles</a> on this website. They can give you some pointers on where to
 go from here.

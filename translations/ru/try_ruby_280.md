@@ -2,12 +2,12 @@
 lang:   RU
 title:  А ты суров?
 answer: "mediocre"
-load:   books = {"Gravitys Rainbow" => :splendid, "The deep end" => :abysmal, "Living colors" => :mediocre, "Bumblebees" => :mediocre}
+load:   books = {"Война и мир" => :splendid, "Отцы и дети" => :abysmal, "Идиот" => :mediocre, "Евгений Онегин" => :amazing}
 ok:     Отлчно, круто! Вы создали таблицу своих оценок
 ---
 
-Так вы выдаете суровые, несправедливые отзывы? Давайте посчитаем их в новом словаре __ratings__:
-Следуй за мной. Набери:
+Вы выдаете суровые, несправедливые отзывы? Давайте посчитаем их в новом hash __ratings__:
+Следуя за мной, наберите:
 
     ratings = Hash.new {0}
     
