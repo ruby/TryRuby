@@ -1,7 +1,7 @@
 ---
 lang:   EN
 title:  It's All About Combining
-answer: :-
+answer: :-|
 ok:     Moody!
 error:
 load:   prev

@@ -1,7 +1,7 @@
 ---
 lang:   RU
 title:  Все хорошо, что хорошо кончается
-answer: Все хорошо, что хорошо кончается
+answer: All's Well That Ends Well
 ok:     Верно
 error:  Используйте 1605 как 2 параметр
 load:   prev

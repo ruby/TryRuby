@@ -1,7 +1,7 @@
 ---
 lang:   RU
 title:  Это все про комбинирование
-answer: :-
+answer: :-|
 ok:     Угрюмо!
 error:
 load:   prev

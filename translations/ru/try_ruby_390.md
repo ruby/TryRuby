@@ -1,7 +1,7 @@
 ---
 lang:   RU
 title:  Благородные родственники
-answer: ^Два благородных родственника$
+answer: ^The Two Noble Kinsmen$
 ok:     Так намного лучше.
 error:  
 load:   prev
