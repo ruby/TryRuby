@@ -1,5 +1,5 @@
 ---
-lang:   
+lang:   RU
 title:  Аксессоры это обособленные элементы
 answer: Blurb:
 ok:     Мой первый Blurb
