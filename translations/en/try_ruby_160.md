@@ -8,7 +8,7 @@ error:
 ---
 
 You've hung on to your lotto numbers, tucking them away inside a __variable__ called ticket.
-But any other name, like _jimmyslist_, would have been fine to.
+But any other name, like _jimmyslist_, would have been fine too.
 
 Programming, you will discover, is mostly about working with variables.
 
