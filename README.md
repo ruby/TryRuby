@@ -50,9 +50,6 @@ Then visit `http://localhost:4567`.
 Git branch 'gh-pages' now holds the publishable version of TryRuby, accessible
 via [ruby.github.io/TryRuby/](https://ruby.github.io/TryRuby/).
 
-A [fork](https://github.com/ruby/TryRuby) of this repository is used for the website
-that [Ruby-lang.org](https://www.ruby-lang.org) links to.
-
 ## Translators
 When adding a new translation: see the README file in /translations.
 
