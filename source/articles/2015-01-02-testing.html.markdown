@@ -65,9 +65,7 @@ be. In other words what does the client, paying your bills, want.
 This involves the client and the developer speaking the same language. A language also known as
 plain English. BDD uses a fixed layout to write down _user stories_.
 
-Here is an example copied from the
-<a href="https://github.com/cucumber/cucumber/wiki/Background" target="_blank">Cucumber</a>
-documentation:
+Here is an example from <a href="https://docs.cucumber.io/" target="_blank">Cucumber</a>:
 
 > __Feature:__ Multiple site support  
 > &nbsp;&nbsp;__As a__ Mephisto site owner  

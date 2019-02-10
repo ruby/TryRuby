@@ -12,8 +12,7 @@ the lucky stiff', a.k.a. \_Why. You can read more about him on
 <a href="http://en.wikipedia.org/wiki/Why_the_lucky_stiff" target="_blank">Wikipedia</a>.
 
 \_Why doesn't exist anymore, but TryRuby lives on. It was first recreated by Andrew McElroy
-and David Miani. Next Eric Allam and Nick Walsh took over (Codeschool/EnvyLabs,
-available via <a href="http://tryruby.org/" target="_blank">TryRuby.org</a>).
+and David Miani. Next Eric Allam and Nick Walsh took over (Codeschool/EnvyLabs).
 
 ### Why_
 This fourth iteration of TryRuby was created for several reasons. 

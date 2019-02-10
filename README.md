@@ -14,10 +14,10 @@ This website is partially based on OpalRb.com by _Adam Beynon_.
 
 ### Translations
 Spanish translation by _Jesus Gabriel y Galan_ & _Pablo García_  
-Dutch translation by _Ivo Herweijer_  
-Brazilian Portuguese translation by [_Ricardo da Verdade Silva_](https://github.com/ricardovsilva)<br>
-Japanese translation by _Koji Shimada_ & _Masayoshi Takahashi_
-Russian translation by [_Alexander Nikolaev_](https://github.com/startaper)<br>
+Dutch translation by [_Ivo Herweijer_](https://github.com/easydatawarehousing)  
+Brazilian Portuguese translation by [_Ricardo da Verdade Silva_](https://github.com/ricardovsilva)  
+Japanese translation by _Koji Shimada_ & _Masayoshi Takahashi_  
+Russian translation by [_Alexander Nikolaev_](https://github.com/startaper)  
 
 Suggestions to improve translations are welcome.
 If you submit a pull request updating a translation please
@@ -48,7 +48,7 @@ Then visit `http://localhost:4567`.
     $ bundle exec rake publish
 
 Git branch 'gh-pages' now holds the publishable version of TryRuby, accessible
-via [easydatawarehousing.github.io/TryRuby/](https://easydatawarehousing.github.io/TryRuby/).
+via [ruby.github.io/TryRuby/](https://ruby.github.io/TryRuby/).
 
 A [fork](https://github.com/ruby/TryRuby) of this repository is used for the website
 that [Ruby-lang.org](https://www.ruby-lang.org) links to.
@@ -57,12 +57,12 @@ that [Ruby-lang.org](https://www.ruby-lang.org) links to.
 When adding a new translation: see the README file in /translations.
 
 ## Why
-See the website [try-ruby-version-4](https://easydatawarehousing.github.io/TryRuby/articles/try-ruby-version-4/)
+See the website [try-ruby-version-4](https://ruby.github.io/TryRuby/articles/try-ruby-version-4/)
 for more background information on how and why this website was created.
 
 ## The MIT License
 
-Copyright (C) 2014-2018 Ivo Herweijer
+Copyright (C) 2014-2019 Ivo Herweijer
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
