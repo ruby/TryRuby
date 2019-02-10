@@ -1,7 +1,7 @@
 ---
 lang:   EN
 title:  Standing in Line
-answer: ^\[(\d+)(,\s*\d+){3,}\]$
+answer: ^\[([-\.\d]+)(\s*,\s*[-\d\.]+){3,}\]$
 ok:     Excellent
 error:  Try adding a fourth number to the list
 ---

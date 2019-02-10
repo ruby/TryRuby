@@ -1,7 +1,7 @@
 ---
 lang:   NL
 title:  In de rij
-answer: ^\[(\d+)(,\s*\d+){3,}\]$
+answer: ^\[([-\.\d]+)(\s*,\s*[-\d\.]+){3,}\]$
 ok:     Bingo
 error:  Probeer een vierde getal toe te voegen
 ---

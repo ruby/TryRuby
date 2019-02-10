@@ -1,7 +1,7 @@
 ---
 lang:   ES
 title:  En la cola
-answer: ^\[(\d+)(,\s*\d+){3,}\]$
+answer: ^\[([-\.\d]+)(\s*,\s*[-\d\.]+){3,}\]$
 ok:     Excelente
 error:  Prueba a añadir un cuarto número a la lista
 ---

@@ -1,7 +1,7 @@
 ---
 lang:   PT-BR
 title:  Ficando na Fila
-answer: ^\[(\d+)(,\s*\d+){3,}\]$
+answer: ^\[([-\.\d]+)(\s*,\s*[-\d\.]+){3,}\]$
 ok:     Excelente
 error:  Tente incluir um quarto número na lista
 ---
