@@ -1,7 +1,7 @@
 ---
 lang:   RU
 title:  Я голоден
-answer: ^Я не голоден.$
+answer: ^Я не голоден
 ok:     Да
 error:  Без вариантов, я голоден в 10 утра!
 ---
@@ -12,12 +12,12 @@ error:  Без вариантов, я голоден в 10 утра!
 Давайте определим 2 метода: 
 
     def hungry?(time_of_day_in_hours)
-      puts "Я голоден."
+      puts "Я голоден"
       true
     end
 
     def eat_an(what)
-      puts "Я ем #{what}.\n"
+      puts "Я ем #{what}\n"
     end
 
     eat_an 'яблоко' if hungry?(14)

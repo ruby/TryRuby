@@ -1,7 +1,7 @@
 ---
 lang:   NL
 title:  Ik ben hongerig
-answer: ^Ik ben niet hongerig.$
+answer: ^Ik ben niet hongerig
 ok:     Klopt
 error:  Om 10 uur heb ik nog geen trek !
 ---
@@ -14,12 +14,12 @@ Laatste stap van dit onderdeel. We laten nu alles samenwerken als één soepele 
 Eerst definiëren we twee methoden. Dan nemen we een beslissing:
 
     def hongerig?(tijdstip_in_uren)
-      puts "Ik ben hongerig."
+      puts "Ik ben hongerig"
       true
     end
     
     def eet_een(wat)
-      puts "Ik eet een #{wat}.\n"
+      puts "Ik eet een #{wat}\n"
     end
     
     eet_een 'appel' if hongerig?(14)

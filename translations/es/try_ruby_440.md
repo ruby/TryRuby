@@ -1,7 +1,7 @@
 ---
 lang:   ES
 title:  Tengo hambre
-answer: ^No tengo hambre.$
+answer: ^No tengo hambre
 ok:     Sí
 error:  ¡ No es posible tener hambre a las 10 AM !
 ---
@@ -13,12 +13,12 @@ Ultimo paso. Juntémoslo todo, ¿de acuerdo? Hagamoslo repicar todo como un conj
 Definamos dos métodos y luego tomaremos una decisión:
 
     def hambre?(hora_del_dia)
-      puts "Tengo hambre."
+      puts "Tengo hambre"
       true
     end
     
     def come(que)
-      puts "Me como un #{que}.\n"
+      puts "Me como un #{que}\n"
     end
     
     come 'manzana' if hambre?(14)

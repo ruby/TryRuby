@@ -1,7 +1,7 @@
 ---
 lang:   EN
 title:  Me hungry
-answer: ^Me not hungry.$
+answer: ^Me not hungry
 ok:     Yes
 error:  No way am I hungry at 10 AM!
 ---
@@ -15,12 +15,12 @@ of glistening chimes on the beach in the maginificent sunlight!
 We'll define two methods first and then take a decision:
 
     def hungry?(time_of_day_in_hours)
-      puts "Me hungry."
+      puts "Me hungry"
       true
     end
 
     def eat_an(what)
-      puts "Me eat #{what}.\n"
+      puts "Me eat #{what}\n"
     end
 
     eat_an 'apple' if hungry?(14)
