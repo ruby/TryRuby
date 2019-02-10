@@ -1,7 +1,7 @@
 ---
 lang:   NL
 title:  Je hebt samenvatting 1 bereikt
-answer: ^NoMethodError(.*)$
+answer: NoMethodError|undefined
 class:  stretcher chapmark
 ok:     Nee, nummers kan je niet omdraaien. Klik 'next'
 error:  

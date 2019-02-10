@@ -1,7 +1,7 @@
 ---
 lang:   RU
 title:  Подводим итоги #1 Уже
-answer: ^NoMethodError(.*)$
+answer: NoMethodError|undefined
 class:  stretcher chapmark
 ok:     Неа, нельзя использовать метод reverse с числом. Жми 'next'
 error:  

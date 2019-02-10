@@ -1,7 +1,7 @@
 ---
 lang:   JA
 title:  このくらいで要約（その1）にしましょう
-answer: ^NoMethodError(.*)$
+answer: NoMethodError|undefined
 class:  stretcher chapmark
 ok:     いいえ、数を逆さまにはできません。'Next'を押してください
 error:  
