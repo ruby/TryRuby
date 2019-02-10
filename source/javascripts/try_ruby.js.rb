@@ -125,6 +125,8 @@ class TryRuby
         language = 'es'
       when 'pt-br', 'pt'
         language = 'pt-br'
+      when 'ru'
+        language = 'ru'
       else
         language = 'en'
       end
