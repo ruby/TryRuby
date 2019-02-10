@@ -4,7 +4,7 @@ title:  A Wee Blank Book
 answer: ^(splendid|quite_good|mediocre|quite_not_good|abysmal)$
 load:   books = {}
 ok:     Yes that's a new review
-error:  Use one of splendid, quite_good, mediocre, quite_not_good, abysmal. Don't forget the colon
+error:  Use one of splendid, quite_good, mediocre, quite_not_good, abysmal.<br/>Don't forget the colon
 ---
 
 You've made an empty __hash__. A hash is like an array, only every one of its elements has a name.

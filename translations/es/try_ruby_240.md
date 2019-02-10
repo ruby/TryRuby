@@ -4,7 +4,7 @@ title:  Un Diminuto Libro En Blanco
 answer: ^(esplendido|muy_bueno|mediocre|malo|abismal)$
 load:   libros = {}
 ok:     Sí, eso es una nueva reseña
-error:  Usa uno de :esplendido, :muy_bueno, :mediocre, :malo, :abismal. No te olvides los dos puntos.
+error:  Usa uno de :esplendido, :muy_bueno, :mediocre, :malo, :abismal.<br/>No te olvides los dos puntos.
 ---
 
 Has creado un __hash__ vacío. Un hash es como un array, salvo que cada uno de sus elementos tiene un nombre.

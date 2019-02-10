@@ -4,7 +4,7 @@ title:  Пустой hash
 answer: ^(splendid|quite_good|mediocre|quite_not_good|abysmal)$
 load:   books = {}
 ok:     Вот и новый отзыв.
-error:  Используйте один из: splendid, quite_good, mediocre, quite_not_good, abysmal. Не забывайте про двоеточие.
+error:  Используйте один из: splendid, quite_good, mediocre, quite_not_good, abysmal.<br/>Не забывайте про двоеточие.
 ---
 
 Мы создали пустой __hash__. Hash - это как массив, только у каждого элемента есть имя.

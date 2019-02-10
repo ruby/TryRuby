@@ -3,7 +3,7 @@ lang:   ES
 title:  Tirabuzón de Métodos en Cadena
 answer: ^More still did (.+)
 load:   prev
-ok:     Bien hecho, amigo mío. El método join cogió el array de líneas y las puso juntas en un string.
+ok:     Bien hecho, amigo mío.<br/>El método join cogió el array de líneas y las puso juntas en un string.
 error:  
 ---
 

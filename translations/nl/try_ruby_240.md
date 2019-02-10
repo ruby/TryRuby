@@ -4,7 +4,7 @@ title:  Een boekenlijst
 answer: ^(uitstekend|best_goed|matig|best_wel_slecht|vreselijk)$
 load:   boeken = {}
 ok:     Dank je voor je boekverslag
-error:  Gebruik: uitstekend, best_goed, matig, best_wel_slecht of vreselijk. Vergeet de dubbele punt niet
+error:  Gebruik: uitstekend, best_goed, matig, best_wel_slecht of vreselijk.<br/>Vergeet de dubbele punt niet
 ---
 
 Je hebt net een lege haspel gemaakt. Een wat ?

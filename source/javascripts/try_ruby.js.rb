@@ -20,8 +20,8 @@ class TryRubyItem
     @chapter      = values["chapter"]
     answer        = decode_uri(values["answer"])
     @answer       = answer && !answer.empty? ? Regexp.new(answer, 'mi') : nil
-    @ok           = decode_uri(values["ok"])
-    @error        = decode_uri(values["error"])
+    @ok           = decode_uri(values["ok"]).split('<br/>')
+    @error        = decode_uri(values["error"]).split('<br/>')
     @text         = decode_uri(values["text"])
     load_code     = values["load_code"]
     @load_code    = load_code && !load_code.empty? ? decode_uri(load_code) : nil
@@ -57,12 +57,12 @@ class Editor
     `#@native.focus()`
   end
 
-  def mark_ok(line_index)
-    `#@native.markText({line: line_index, ch: 0}, {line: line_index, ch: 99}, {className: "tryruby-output-green"})`
+  def mark_ok(line_from, line_to)
+    `#@native.markText({line: line_from, ch: 0}, {line: line_to, ch: 99}, {className: "tryruby-output-green"})`
   end
 
-  def mark_error(line_index)
-    `#@native.markText({line: line_index, ch: 0}, {line: line_index, ch: 99}, {className: "tryruby-output-red"})`
+  def mark_error(line_from, line_to)
+    `#@native.markText({line: line_from, ch: 0}, {line: line_to, ch: 99}, {className: "tryruby-output-red"})`
   end
 end
 
@@ -332,12 +332,19 @@ class TryRuby
 
     # Check if output matches the defined answer regexp
     # and print status message
+    print_to_output("\n")
+    from = count_lines
+
     if !value_to_check.empty? && value_to_check.chomp.match(@current_item.answer)
-      print_to_output("\n#{@current_item.ok}")
-      @output.mark_ok(count_lines)
+      @current_item.ok.each do |line|
+        print_to_output(line)
+      end
+      @output.mark_ok(from, count_lines)
     else
-      print_to_output("\n#{@current_item.error}")
-      @output.mark_error(count_lines)
+      @current_item.error.each do |line|
+        print_to_output(line)
+      end
+      @output.mark_error(from, count_lines)
     end
   end
 

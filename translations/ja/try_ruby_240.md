@@ -4,7 +4,7 @@ title:  ちっちゃな空っぽの本
 answer: ^(splendid|quite_good|mediocre|quite_not_good|abysmal)$
 load:   books = {}
 ok:     新しい書評です
-error:  splendid、quite_good、mediocre、quite_not_good、abysmalのいずれかを使ってください。また、コロンを忘れないでください
+error:  splendid、quite_good、mediocre、quite_not_good、abysmal<br/>のいずれかを使ってください。また、コロンを忘れないでください
 ---
 
 今作成したのは空の__ハッシュ__です。ハッシュは配列みたいなもので、各要素が名前を持つという点が異なります。

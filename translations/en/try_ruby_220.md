@@ -3,7 +3,7 @@ lang:   EN
 title:  Ringlets of Chained Methods
 answer: ^More still did (.+)
 load:   prev
-ok:     Good show, my friend! The join method took that array of lines and put them together into a string.
+ok:     Good show, my friend!<br/>The join method took that array of lines and put them together into a string.
 error:  
 ---
 

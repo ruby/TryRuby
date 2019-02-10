@@ -4,7 +4,7 @@ title:  Um Pequenino Livro em Branco
 answer: ^(esplendido|muito_bom|mediocre|nao_tao_bom|lixo)$
 load:   livros = {}
 ok:     Sim, este precisa de uma análise
-error:  Use um dentre esplendido, muito_bom, mediocre, nao_tao_bom, lixo. Não esqueça os dois pontos.
+error:  Use um dentre esplendido, muito_bom, mediocre, nao_tao_bom, lixo.<br/>Não esqueça os dois pontos.
 ---
 
 Você criou um __hash__ vazio. Um hash é como um array, porém cada um dos seus elementos tem um nome.

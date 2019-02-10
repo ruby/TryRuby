@@ -34,3 +34,9 @@ translate the Blurb content.
 ## Reference
 For future reference the original content of TryRuby (version 2)
 is included. See `ruby-guide-en.html_` and `ruby-guide-es.html_`.
+
+## Tips
+
+- You can use `<br/>` in the _ok_ and _error_ responses to split
+  the response over multiple lines.
+  Please limit line length to 80 characters
