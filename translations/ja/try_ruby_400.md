@@ -29,8 +29,8 @@ selectメソッドから返ったリストを使い、__each__メソッドを呼
           puts val["title"]
         }.count
     end
-    
-    puts count_plays(0)
+
+    puts count_plays(1591)
 
 countメソッドをeachメソッドの終わりにつなげていることに気づきましたか？
 この値が__count\_plays__メソッドの戻り値になります。
