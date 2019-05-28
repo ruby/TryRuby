@@ -138,6 +138,9 @@ class TryRuby
     # Update language select list
     Element.find('#tryruby-lang-select').value = language
 
+    # Update lang attribute
+    Element.find('html').attr('lang', language)
+
     language
   end
 
@@ -281,6 +284,7 @@ class TryRuby
   # Handle change language event
   def do_change_lang
     language = Element.find('#tryruby-lang-select').value
+    Element.find('html').attr('lang', language)
     set_cookie('tryruby_nl_language', language)
     get_content_from_server(language)
   end
