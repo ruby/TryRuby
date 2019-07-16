@@ -11,7 +11,7 @@ load:   def get_shakey;JSON.parse("{\"William Shakespeare\": {\"1\": {\"title\":
 Это классно, но сейчас эпоха интернета, а значит можно использовать эти данные.
 
 Много, много веб-сайтов в сети, а значит у всех них можно запросить информацию. Например:
-эта ссылка даст вам  все последнии <a href="http://news.google.com/news/section?q=ruby&output=rss" target="_blank">Новости из Гугла</a>
+эта ссылка даст вам  все последние <a href="http://news.google.com/news/section?q=ruby&output=rss" target="_blank">Новости из Гугла</a>
 о Ruby.
 
 Ваш браузер скорее всего отобразит это красиво. Но если вы посмотрите на исходный код,
