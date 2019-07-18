@@ -36,6 +36,6 @@ were written by Shakespeare in the year __1591__. Try this:
 Did you notice that I chained the count method at the end of the each method. This gives
 us a return value for the __count\_plays__ method.
 
-There is another possibility for chaining here. See that loney line __s = get_shakey__.
+There is another possibility for chaining here. See that lonely line __s = get_shakey__.
 You could add the __["William Shakespeare"].select { |k, v|__ at the end of get_shakey
 (no dot needed in this case).
