@@ -23,7 +23,7 @@ load:   class Blurb;attr_accessor :content,:time,:mood;def initialize(mood, cont
       def initialize(title)
         @title  = title
         @blurbs = [] # Пустой массив
-                     # для зранения Blurbs
+                     # для хранения Blurbs
       end
       
       def add_a_blurb(mood, content)
