@@ -16,7 +16,7 @@ load:   prev;class Blurbalizer;attr_reader :title;def initialize(title);@title=t
 но добавь еще свой сам.
 
 Мы больше не создаем Blurbs<sup>TM</sup> напрямую, но мы используем метод add\_a\_blurb из класса 
-Blurbalizer<sup>TM</sup>. Теперь мы можем быть увререны, что все наши Blurbs<sup>TM</sup> хранятся в 
+Blurbalizer<sup>TM</sup>. Теперь мы можем быть уверены, что все наши Blurbs<sup>TM</sup> хранятся в
 объекте myapp.
 
     myapp.add_a_blurb :moody, "Добавь Blurb сюда"
