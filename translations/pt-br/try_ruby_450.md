@@ -24,8 +24,7 @@ Você aprendeu a tomar o controle dos seus programasa com declarações de __if_
 
 ## Então
 O que é possível fazer em seguida? O que é possível que você ainda tenha que aprender agora?
-Ha! Esta é a melhor parte. Você
-Ha, this is the best part. Você percorreu um caminho tão grande que agora vamos revelar as classes.
+Ha! Esta é a melhor parte. Você percorreu um caminho tão grande que agora vamos revelar as classes.
 Apenas mais duas lições curtas, e acabou.
 
 Mais cedo, nós criamos um Hash desta forma:
