@@ -21,4 +21,4 @@ build a scorecard:
 __books.values.each { |rate| ratings[rate] += 1 }__
 
 ### Next
-In the next lesson we will delve al little bit deeper into methods.
+In the next lesson we will delve a little bit deeper into methods.
