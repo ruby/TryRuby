@@ -11,7 +11,7 @@ You're a level six Ruby cleric. I mean what a great job you've done. Let's revie
 
 
 ### Data
-You loaded some data of the internet, traversed a data structure and selected values.
+You loaded some data off the internet, traversed a data structure and selected values.
 
 ### Iterating
 You iterated all elements of a hash and you chained some more methods.
