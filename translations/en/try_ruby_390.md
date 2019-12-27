@@ -38,7 +38,7 @@ Looks like this:
   </li>
 </ul>
 
-To list the plays we first have to access the top "William Shakespeare" hash element by it's name.
+To list the plays we first have to access the top "William Shakespeare" hash element by its name.
 Next we have to __iterate__ through each element below it.
 
 Ruby has a method for iterating. It is called __each__. We have seen it before when
