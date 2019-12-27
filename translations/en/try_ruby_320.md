@@ -12,10 +12,10 @@ Remember when we changed the poem a little bit? We used:
 __poem.gsub("toast", "honeydew")__
 
 The gsub method needs 2 arguments, which we passed to gsub by including two strings between
-parenthesis. _Arguments tell the method exactly what to do._
+parentheses. _Arguments tell the method exactly what to do._
 
-### Parenthesis
-Actually, most of the time Ruby doesn't mind if you omit the parenthesis. So this would have
+### Parentheses
+Actually, most of the time Ruby doesn't mind if you omit the parentheses. So this would have
 worked too:
 __poem.gsub "toast", "honeydew"__
 
@@ -25,10 +25,10 @@ obvious:
     puts "Hello"
     puts("Hello")
 
-Yes __puts__ is also a method. Using puts with or without parenthesis is the same to Ruby, but the
-version without parenthesis is a bit easier to read. And it saves you valuable typing time!
+Yes __puts__ is also a method. Using puts with or without parentheses is the same to Ruby, but the
+version without parentheses is a bit easier to read. And it saves you valuable typing time!
 
-> So I guess the conclusion is that you can do whatever you like with parenthesis as long as your
+> So I guess the conclusion is that you can do whatever you like with parentheses as long as your
 > code reads nicely.
 
 ### to (be) or not to (be)
