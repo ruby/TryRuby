@@ -16,7 +16,7 @@ Symbols are cheaper than strings (in terms of computer memory.) If you use a wor
 use a symbol. Rather than having thousands of copies of that word in memory, the computer will store the symbol only
 __once__.
 
-More importantly, a symbol tells you that is not just any old word but has a meaning within your program.
+More importantly, a symbol tells you that it is not just any old word but has a meaning within your program.
 
 Enter 2 more bookreviews, use __books.length__ to see how many reviews there are in the hash:
 
