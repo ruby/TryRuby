@@ -8,7 +8,7 @@ load:   def get_shakey;JSON.parse("{\"William Shakespeare\": {\"1\": {\"title\":
 ---
 
 So far we have been running programs that only use things that we have typed ourselves.
-Which is nice, I mean that _Odelaying_ was epic, but this the internet era so it is about
+Which is nice, I mean that _Odelaying_ was epic, but this is the internet era so it is about
 time we included the rest of the world in our programming efforts.
 
 Many, many, many websites are available that you can ask for information. For instance
