@@ -7,7 +7,7 @@ error:
 load:   class Blurb;attr_accessor :content,:time,:mood;def initialize(mood, content="");@time=Time.now;@content=content[0..39];@mood=mood;end;end;blurb1=Blurb.new(:sick,"Today Mount Hood Was Stolen!")
 ---
 
-Вы заметили, что мы используем символ собаки" внутри класса? (@time).
+Вы заметили, что мы используем символ "собаки" внутри класса? (@time).
 
 __Снаружи__ класса мы используем аксессоры:
 
@@ -21,7 +21,7 @@ __Снаружи__ класса мы используем аксессоры:
 
 ### Создадим другой Blurb<sup>TM</sup>
 Когда другой Blurb<sup>TM</sup> создан, метод инициализации используется для проверки любого
-аргументы к методу new.
+аргумента к методу new.
 
 Ох, нужно еще 2 аргумента:
 
