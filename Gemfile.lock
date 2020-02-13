@@ -113,7 +113,7 @@ GEM
     parser (2.3.3.1)
       ast (~> 2.2)
     public_suffix (3.0.3)
-    rack (2.0.6)
+    rack (2.0.8)
     rack-livereload (0.3.17)
       rack
     rake (12.3.1)
