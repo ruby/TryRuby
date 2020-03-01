@@ -1,5 +1,5 @@
 ## Copyright (C)
-Try Ruby version 4 Russian version, 2018-2019, _Alexander Nikolaev_  
+Try Ruby version 4 Russian version, 2018-2020, _Alexander Nikolaev_ & _Theogen Ratkin_
 
 ## The MIT License
 Permission is hereby granted, free of charge, to any person obtaining a copy
