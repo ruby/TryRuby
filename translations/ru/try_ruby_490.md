@@ -4,10 +4,10 @@ title:  Объект, этот аккуратный маленький паке�
 answer: Blurb:
 ok:     Blurb обновлен
 error:  
-load:   prev;blurb1=Blurb.new;blurb1.content="Today Mount Hood Was Stolen!"
+load:   prev;blurb1=Blurb.new;blurb1.content="Сегодня была украдена гора Худ!"
 ---
 
-А теперь поменяй атрибуты нашего Blurb<sup>TM</sup>:
+А теперь установите время и настроение нашего Blurb<sup>TM</sup>:
 
     blurb1.time = Time.now
     blurb1.mood = :sick
