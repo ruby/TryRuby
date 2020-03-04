@@ -21,9 +21,9 @@ Eu mudei o nosso método um pouco, assim ele irá retornar um valor para você. 
 ### Retorno (Return)
 E, uma vez que você está ficando avançado e capaz aqui, mais uma dica:
 você pode omitir a palavra __return__ da última linha do método.
-O Ruby irá automáticamente retornar o valor da última variada usada dentro do método.
+O Ruby irá automagicamente retornar o valor da última variável usada dentro do método.
 
 Assim, nós podemos mudar a última linha para apenas __numero\_de\_megeras__.
 
 Mas, uma vez que o método __.times__ também retorna o _numero\_de\_megeras_ nós podemos
-remover a última linha inteira. De fato, nosso método original já fazia o que nós queriamos!
+remover a última linha inteira. De fato, nosso método original já fazia o que nós queríamos!

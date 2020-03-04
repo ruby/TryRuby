@@ -14,7 +14,7 @@ __puts bilhete[1]__.
 
 Para um hash isso funciona da mesma forma, exceto que nós não usaremos um número para recuperar um elemento (mas sim um nome).
 
-Então, se você quiser olhar uma de suas análises antigas, denovo, coloque o título entre colchetes (mas dessa vez sem o sinal de igual).
+Então, se você quiser olhar uma de suas análises antigas, de novo, coloque o título entre colchetes (mas dessa vez sem o sinal de igual).
 Desta forma:
 
     puts livros["O Arco-Íris da Gravidade"]

@@ -9,7 +9,7 @@ error:
 
 Vá em frente, preencha a lista com análises. E, se você quiser ver toda a lista, apenas digite: __puts livros__
 
-Denovo, as classificações são: :esplendido, :muito\_bom, :mediocre, :nao\_tao\_bom e :lixo
+De novo, as classificações são: :esplendido, :muito\_bom, :mediocre, :nao\_tao\_bom e :lixo
 
 Essas classificações não são strings. Quando você coloca dois pontos a frente de uma simples palavra, você obtém um __symbol__ (símbolo).
 Símbolos são mais baratos que strings (em termos de custo de memória). Se você usar uma palavra várias e várias vezes no seu programa,

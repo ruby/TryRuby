@@ -7,8 +7,8 @@ error:  Use 1605 como segundo parâmetro
 load:   prev
 ---
 
-Ok, nós pegamos alguns dados da internet, nós selecionamos o que nós queriamos e imprimimos na tela.
-O que falta melhorar? Nós poderiamos ter impresso os resultados de forma um pouco mais bonita. Como adicionar
+Ok, nós pegamos alguns dados da internet, nós selecionamos o que nós queríamos e imprimimos na tela.
+O que falta melhorar? Nós poderíamos ter impresso os resultados de forma um pouco mais bonita. Como adicionar
 o ano e alinhar títulos e anos.
 
 Isso significa imprimir vários valores em uma linha. O Ruby possui um jeito puro
