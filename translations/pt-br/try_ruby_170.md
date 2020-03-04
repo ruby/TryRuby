@@ -8,7 +8,7 @@ error:  Quase
 ---
 
 Então, nós guardamos os nossos números da loteria dentro de uma variável bilhete. Como fazemos para
-coloca-los pra fora de novo?
+colocá-los pra fora de novo?
 
 Nós já vimos que nós podemos obter o maior número com o método __max__. De forma similar, você pode obter
 o primeiro, __first__, ou o último, __last__, elemento da lista.
