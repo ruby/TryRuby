@@ -2,7 +2,7 @@
 lang:   PT-BR
 title:  Diga o seu nome de trás para frente
 answer: \w+
-ok:     dooG
+ok:     moB
 error:  
 ---
 

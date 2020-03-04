@@ -7,7 +7,7 @@ ok:     Você ordenou a lista
 error:  
 ---
 
-Você escreveu seus números de loteria, guardou-os dentro de uma __variavel__ chamada bilhete.
+Você escreveu seus números de loteria, guardou-os dentro de uma __variável__ chamada bilhete.
 Mas qualquer outro nome, como _listadoricardo_, teria funcionado também.
 
 Programar, você descobrirá, é em boa parte trabalhar com variáveis.
