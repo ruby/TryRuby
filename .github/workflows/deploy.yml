@@ -17,7 +17,9 @@ jobs:
         with:
           ruby-version: 2.6
       - name: Install dependencies
-        run: bundle install
+        run: |
+          gem install bundler -v 2.1.4
+          bundle install
       - name: Build
         run: bundle exec middleman build
       - name: Deploy
