@@ -3,7 +3,7 @@ lang:   EN
 title:  More Bite-Size Reviews
 answer: [3-9]
 load:   books = {"Gravitys Rainbow" => :splendid}
-ok:     See, the length method works on strings, array's and hashes.
+ok:     See, the length method works on strings, arrays and hashes.
 error:
 ---
 
