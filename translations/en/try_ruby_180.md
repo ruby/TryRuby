@@ -15,7 +15,7 @@ If you try to reverse a number or do anything fishy, Ruby will tell you so.
 
 ### Arrays
 Arrays are lists for storing things in some order.
-We also know how to create array's and get items from array's.
+We also know how to create arrays and get items from arrays.
 
 ### Variables
 Variables save a thing and give it a name. You used the equals sign to do this. Like:
