@@ -1,11 +1,11 @@
 ---
 lang:   NL
 title:  Samenvatting 8, De Hee-Relax-Goed gedaan Samenvatting
-answer: 
+answer:
 class:  stretcher chapmark
 ok:     
 error:  
-load:   def ruby(f);puts "Ga naar www.ruby-lang.org om Ruby te downloaden";end;class K;attr_reader :rb;end;mijn_eerste_progamma=K.new
+load:   def ruby(f);puts "Ga naar www.ruby-lang.org om Ruby te downloaden";end;class K;attr_reader :rb;end;mijn_eerste_programma=K.new
 ---
 
 Dit laatste gedeelte was best inspannend. Je kunt nu even uitrusten.
@@ -18,12 +18,12 @@ of je kunt Ruby downloaden en installeren via:
 <a href="https://www.ruby-lang.org/en/downloads/" target="_blank">ruby-lang.org</a>
 
 Als je Ruby hebt geïnstalleerd op je computer kan je een tekstbestand maken,
-bijvoorbeeld: _mijn\_eerste\_progamma.rb_.
+bijvoorbeeld: _mijn\_eerste\_programma.rb_.
 
 Met een text editor zet je er wat Ruby code in.  
 Je voert het uit door een commando venster te openen en dit in te voeren:
 
-    ruby mijn_eerste_progamma.rb
+    ruby mijn_eerste_programma.rb
 
 Er zijn ook allerlei tools beschikbaar die een tekst editor bevatten en de Ruby
 code meteen kunnen uitvoeren.
