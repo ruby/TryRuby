@@ -1,9 +1,5 @@
 ## Copyright (C)
-Try Ruby version 1 English version, 2008,      _why the lucky stiff_  
-Try Ruby version 2 English version, 2009-2013, _Andrew McElroy & David Miani_  
-Try Ruby version 3 English version, 2013 ?,    _Eric Allam & Nick Walsh_  
-Try Ruby version 4 English version, 2014-2015, _Ivo Herweijer_  
-Try Ruby version 4 Russian version, 2018-2019, _Alexander Nikolaev_  
+Try Ruby version 4 Russian version, 2018-2020, _Alexander Nikolaev_ & _Theogen Ratkin_
 
 ## The MIT License
 Permission is hereby granted, free of charge, to any person obtaining a copy
