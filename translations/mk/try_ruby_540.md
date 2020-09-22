@@ -12,7 +12,7 @@ load:   prev;class Blurbalizer;attr_reader :title;def initialize(title);@title=t
 > Во Blurbalizer<sup>TM</sup> има два __методи__ (add\_a\_blurb and show\_timeline).
 > Ти можеш да користиш метод надвор од класата, на ист начин како што направивме со accessors.
 
-Време е да почнеме да ја користиме Blurbalizer<sup>TM</sup>. Јас веќе вчивав (анг. loaded) неколку 
+Време е да почнеме да ја користиме Blurbalizer<sup>TM</sup>. Јас веќе вчитав (анг. loaded) неколку 
 Blurbs<sup>TM</sup> за тебе, но чувствувај се слободно да додадеш твои нови.
 
 Ние сега не креираме Blurbs<sup>TM</sup> директно, туку користиме add\_a\_blurb __метод__ од 

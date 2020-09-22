@@ -12,7 +12,7 @@ load:   def get_shakey;JSON.parse("{\"William Shakespeare\": {\"1\": {\"title\":
 остатокот од светот во нашите напори за програмирање.
 
 Многу, многу, многу веб страни се достапни за да ги прашаш за одредени информации. На пример,
-следниот линк ќе ти ги даде сите моментални <a href="http://news.google.com/news/section?q=ruby&output=rss" target="_blank">новости на Google</a> поврзани со Руби.
+следниот линк ќе ти ги даде сите моментални <a href="http://news.google.com/news/section?q=ruby&output=rss" target="_blank">новости на Google</a> поврзани со Ruby.
 
 Твојот веб прелистувач најверојатно ќе ти ги прикаже во средена верзија за тебе. 
 Ако погледнеш во изворот (type: control-U)
