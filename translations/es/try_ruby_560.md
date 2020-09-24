@@ -10,7 +10,7 @@ load:   def ruby(f);puts "Ve a www.ruby-lang.org para descargar Ruby";end;class 
 
 Esta última sección se tomó un momento para relajarse, y darte algunas pistas de cómo puedes usar Ruby.
 
-Si has disfrutado, puedes seguir con la zona de juegos <a href="/TryRuby/playground">TryRuby Playground</a>
+Si has disfrutado, puedes seguir con la zona de juegos <a href="/playground">TryRuby Playground</a>
 o descargarte e instalar Ruby:
 <a href="https://www.ruby-lang.org/en/downloads/" target="_blank">ruby-lang.org</a>
 
