@@ -20,6 +20,7 @@ description: Learn to program in Ruby in 30 minutes
               <option value="pt-br">Português do Brasil</option>
               <option value="ja">日本語</option>
               <option value="ru">Русский</option>
+              <option value="ua">Українська</option>
             </select>
           </div>
         </div>
