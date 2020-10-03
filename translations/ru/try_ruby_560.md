@@ -10,7 +10,7 @@ load:   def ruby(f);puts "Go to www.ruby-lang.org to download Ruby";end;class K;
 
 Этот последний раздел потребовался, чтобы дать вам несколько указаний о том, как вы можете использовать Ruby.
 
-Если вам понравилось, то можете продолжить в <a href="/TryRuby/playground">TryRuby Playground</a>
+Если вам понравилось, то можете продолжить в <a href="/playground">TryRuby Playground</a>
 или скачать и установить Ruby:
 <a href="https://www.ruby-lang.org/en/downloads/" target="_blank">ruby-lang.org</a>
 
@@ -24,5 +24,5 @@ load:   def ruby(f);puts "Go to www.ruby-lang.org to download Ruby";end;class K;
 Я имею в виду, что ты закончил, ты действительно сделал это! Не сомневайтесь в этом!
 
 ## Больше информации
-На этом сайте есть еще <a href="/articles">статьи</a>, в которых вы можете почерпнуть что-то полезное
+На этом сайте есть еще <a href="/TryRuby/articles">статьи</a>, в которых вы можете почерпнуть что-то полезное
 для себя

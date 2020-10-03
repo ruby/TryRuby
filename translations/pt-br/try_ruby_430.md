@@ -2,8 +2,8 @@
 lang:   PT-BR
 title:  E agora para a conclusão surpreendente
 answer: não é igual a 100$
-ok:     That's better
-error:  This can't be right
+ok:     Isso é melhor
+error:  Isso não pode estar certo
 ---
 
 Você viu os dois sinais de igual em __'abc' == 'def'__ ?

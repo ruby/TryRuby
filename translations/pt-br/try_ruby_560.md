@@ -8,9 +8,9 @@ error:
 load:   def ruby(f);puts "Vá para www.ruby-lang.org para baixar o Ruby";end;class K;attr_reader :rb;end;meu_primeiro_programa=K.new
 ---
 
-Esta última sessão é um momento para relaxar, para lhe dar aluma direção sobre como você pode usar o Ruby.
+Esta última sessão é um momento para relaxar, para lhe dar alguma direção sobre como você pode usar o Ruby.
 
-Se você gostou, você pode continuar com o <a href="/TryRuby/playground">TryRuby Playground</a> ou baixar e instalar o Ruby:
+Se você gostou, você pode continuar com o <a href="/playground">TryRuby Playground</a> ou baixar e instalar o Ruby:
 <a href="https://www.ruby-lang.org/en/downloads/" target="_blank">ruby-lang.org</a>
 
 Uma vez que você tenha o Ruby instalado, você poderá criar um arquivo, digamos _meu\_primeiro\_programa.rb_, usando um editor de texto,
@@ -22,7 +22,7 @@ Existem várias ferramentas (gratuitas) de desenvolvimento disponíveis para com
 e um 'ruby-runner'.
 
 ## Comemore
-Você realmente merece comer um doblo de camada dupla, com duplo sorvete, enquanto um cara toca uma daquelas guitarras que na verdade são guitarras duplas.
+Você realmente merece comer um bolo de camada dupla, com duplo sorvete, enquanto um cara toca uma daquelas guitarras que na verdade são guitarras duplas.
 Quero dizer, você terminou. Você realmente terminou! Não há duvidas sobre isso, você é um __sangue-vermelho espertão certificado!__
 
 ## Mais informações

@@ -3,7 +3,7 @@ lang:   PT-BR
 title:  Ei, Sumário #1 Pronto
 answer: NoMethodError|undefined
 class:  stretcher chapmark
-ok:     Não, não é possível inverter um número. Clique em _next_ para continuar
+ok:     Não, não é possível inverter um número. Clique em __next__ para continuar
 error:  
 ---
 
