@@ -44,6 +44,7 @@ Brazilian Portuguese translation by _Ricardo da Verdade Silva_
 Dutch translation by _Ivo Herweijer_  
 Japanese translation by _Koji Shimada_ & _Masayoshi Takahashi_  
 Russian translation by _Alexander Nikolaev_  
+Ukrainian translation by _Andrii Palchik_
 
 ### Privacy
 
