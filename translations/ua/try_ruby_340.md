@@ -18,4 +18,4 @@ error:
     end
 
 > __P.S.__  
-> Якщо ти не знаєш цю назву, Def Leppard це відома Британська рок-група. <a href="http://en.wikipedia.org/wiki/Def_Leppard" target="_blank">Def Leppard</a>
+> Якщо ти не знаєш цю назву, Def Leppard це відома Британська рок-група <a href="http://en.wikipedia.org/wiki/Def_Leppard" target="_blank">Def Leppard</a>

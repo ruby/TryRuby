@@ -7,10 +7,7 @@ error:
 load:   prev
 ---
 
-Отже, тепер у нас є список п'єс з Інтернету. Список був в форматі json. На щастя для нас Ruby люб'язно надає метод перетворення даних json на словник Ruby. Метод _get\_shakey_ зробив це за нас..
-
-But since the structure of the json data is retained in the hash, it is still a bit difficult to read.
-Let us write a method to display the plays nicely.
+Отже, тепер у нас є список п'єс з Інтернету. Список був в форматі json. На щастя для нас Ruby люб'язно надає метод перетворення даних json на словник Ruby. Метод _get\_shakey_ зробив це за нас.
 
 Але оскільки структура json-даних зберігається в словнику, її трохи важко читати. Тож ми напишемо метод для показу п'єс.
 
