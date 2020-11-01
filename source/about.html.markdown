@@ -44,7 +44,7 @@ Brazilian Portuguese translation by _Ricardo da Verdade Silva_
 Dutch translation by _Ivo Herweijer_  
 Japanese translation by _Koji Shimada_ & _Masayoshi Takahashi_  
 Russian translation by _Alexander Nikolaev_  
-Ukrainian translation by _Andrii Palchik_
+Ukrainian translation by _Andrii Palchik_  
 
 ### Privacy
 
@@ -56,7 +56,7 @@ You can find the privacy statement for the webserver this site is hosted on
 ### Source code
 
 All source code for TryRuby (this website) is available on
-<a href="https://github.com/ruby/tryruby" target="_blank">GitHub</a>.
+<a href="https://github.com/ruby/TryRuby" target="_blank">GitHub</a>.
 
 ### Contact
 
