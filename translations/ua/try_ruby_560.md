@@ -1,7 +1,7 @@
 ---
 lang:   UA
 title:  Підсумки #8 Розслабся, ти добре постарався!
-answer:
+answer: 
 class:  stretcher chapmark
 ok:     
 error:  
@@ -10,7 +10,7 @@ load:   def ruby(f);puts "Go to www.ruby-lang.org to download Ruby";end;class K;
 
 Цей останній розділ потрібен, щоб дати тобі кілька вказівок про те, як ти можеш використовувати Ruby.
 
-Якщо тобі сподобалося, то можеш продовжити в <a href="/TryRuby/playground">TryRuby Playground</a>
+Якщо тобі сподобалося, то можеш продовжити в <a href="/playground">TryRuby Playground</a>
 або завантажити та встановити Ruby:
 <a href="https://www.ruby-lang.org/en/downloads/" target="_blank">ruby-lang.org</a>
 
