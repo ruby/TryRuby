@@ -45,6 +45,7 @@ Dutch translation by _Ivo Herweijer_
 Japanese translation by _Koji Shimada_ & _Masayoshi Takahashi_  
 Russian translation by _Alexander Nikolaev_  
 Ukrainian translation by _Andrii Palchik_  
+Macedonian translation by _Violeta Pavleska_  
 
 ### Privacy
 

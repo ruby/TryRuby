@@ -19,6 +19,7 @@ Brazilian Portuguese translation by [_Ricardo da Verdade Silva_](https://github.
 Japanese translation by _Koji Shimada_ & _Masayoshi Takahashi_  
 Russian translation by [_Alexander Nikolaev_](https://github.com/startaper)  
 Ukrainian translation by [_Andrii Palchik_](https://github.com/andriipalchik)  
+Macedonian translation by [_Violeta Pavleska_](https://github.com/violeta-p)  
 
 Suggestions to improve translations are welcome.
 If you submit a pull request updating a translation please
