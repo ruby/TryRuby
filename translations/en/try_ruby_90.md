@@ -10,7 +10,7 @@ error:
 Let's look at what you've learned in the first minute.
 
 ### The editor
-Typing code into the editor and clicking on run gives you an answer in the ouput window.
+Typing code into the editor and clicking on run gives you an answer in the output window.
 (Almost) all code gives an answer.
 
 ### Numbers and strings
