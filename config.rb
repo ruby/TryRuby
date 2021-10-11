@@ -47,7 +47,7 @@ set :relative_links, true
 
 configure :build do
   activate :minify_css
-  activate :minify_javascript
+  activate :minify_javascript, compressor: -> { Terser.new }, ignore: ->(i) { i.end_with? 'try_ruby.js' }
 end
 
 Haml::TempleEngine.disable_option_validator!

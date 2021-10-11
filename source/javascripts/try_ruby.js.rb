@@ -18,19 +18,15 @@ class TryRubyItem
     @step         = key.to_i
     @title        = values["title"]
     @chapter      = values["chapter"]
-    answer        = decode_uri(values["answer"])
+    answer        = values["answer"]
     @answer       = answer && !answer.empty? ? Regexp.new(answer, 'mi') : nil
-    @ok           = decode_uri(values["ok"]).split('<br/>')
-    @error        = decode_uri(values["error"]).split('<br/>')
-    @text         = decode_uri(values["text"])
+    @ok           = values["ok"].split('<br/>')
+    @error        = values["error"].split('<br/>')
+    @text         = values["text"]
     load_code     = values["load_code"]
-    @load_code    = load_code && !load_code.empty? ? decode_uri(load_code) : nil
+    @load_code    = load_code && !load_code.empty? ? load_code : nil
     @saved_editor = ''
     @saved_output = ''
-  end
-
-  def decode_uri(value)
-    dec = `decodeURIComponent(value)`
   end
 
   def update_current_edit(current_editor_value, current_output_value)
