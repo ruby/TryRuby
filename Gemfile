@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-gem "opal", "~> 0.11.4"
+gem "opal", "~> 1.2"
 gem "opal-sprockets"
-gem "opal-jquery"
-gem "middleman" # 4.3 gives error on sass, wait till sprockets 4 is available
+gem "opal-jquery", ">= 0.4.6"
+gem "middleman"
 gem "middleman-livereload"
 gem "middleman-syntax"
 gem "middleman-sprockets"
@@ -12,3 +12,5 @@ gem 'middleman-gh-pages'
 gem "redcarpet"
 gem 'haml'
 gem 'sass'
+gem 'webrick'
+gem 'terser'

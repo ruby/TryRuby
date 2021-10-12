@@ -1,5 +1,5 @@
 require 'redcarpet'
-require 'uri'
+require 'json'
 
 class HTMLWithPants < Redcarpet::Render::HTML
   include Redcarpet::Render::SmartyPants
@@ -52,12 +52,17 @@ class Collector
       # Open all source files, parse and convert to json
       # Generating a new sequence of id's starting with one
       # This allows for easy renumbering of source files
-      output = "{\n"
+      output = {}
       @sources.each_with_index do |f, idx|
-        output += ",\n" if idx > 0
-        output += read_parse_file(f, idx + 1)
+        output[idx + 1] = read_parse_file(f, idx + 1)
       end
-      output += "\n}"
+
+      # Encode output as a JSON file
+      output = JSON.generate(output)
+      
+      # Add new lines between examples - this won't break examples as they
+      # can't contain unescaped quotes
+      output.gsub!('},"', %/},\n"/)
 
       # Overwrite output file
       File.open(@target_path, 'w') do |f|
@@ -99,19 +104,19 @@ class Collector
           }
 
           line.match(/^answer:\s+(.*)/) { |m|
-            answer = URI.escape(m[1].strip)
+            answer = m[1].strip
           }
 
           line.match(/^ok:\s+(.*)/) { |m|
-            ok = URI.escape(m[1].strip)
+            ok = m[1].strip
           }
 
           line.match(/^error:\s+(.*)/) { |m|
-            error = URI.escape(m[1].strip)
+            error = m[1].strip
           }
 
           line.match(/^load:\s+(.*)/) { |m|
-            load_code = URI.escape(m[1].strip)
+            load_code = m[1].strip
           }
         else
           text += line
@@ -123,7 +128,16 @@ class Collector
     end
 
     def convert(lang, step, title, chapter, answer, ok, error, text, load_code)
-      "  \"#{step}\": {\"lang\": \"#{lang}\", \"title\": \"#{title}\", \"chapter\": \"#{chapter}\", \"answer\": \"#{answer}\", \"ok\": \"#{ok}\", \"error\": \"#{error}\", \"text\": \"#{URI.escape(@markdown.render(text))}\", \"load_code\": \"#{load_code}\"}"
+      {
+        lang: lang,
+        title: title,
+        chapter: chapter,
+        answer: answer,
+        ok: ok,
+        error: error,
+        text: text,
+        load_code: load_code
+      }
     end
 end
 
