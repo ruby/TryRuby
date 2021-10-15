@@ -1,4 +1,5 @@
 require 'opal'
+require 'opal/full'
 require 'opal-parser'
 require 'opal-jquery'
 
@@ -60,6 +61,10 @@ class Editor
   def mark_error(line_from, line_to)
     `#@native.markText({line: line_from, ch: 0}, {line: line_to, ch: 99}, {className: "tryruby-output-red"})`
   end
+
+  def on(event, &block)
+    `#@native.on(#{event}, #{block})`
+  end
 end
 
 # The TryRuby application
@@ -83,17 +88,34 @@ class TryRuby
 
     # Create editors
     @output = Editor.new :output, lineNumbers: false, mode: 'text', readOnly: true, styleSelectedText: true
-    @editor = Editor.new :editor, lineNumbers: false, mode: 'ruby', tabMode: 'shift', theme: 'tomorrow-night-eighties'
+    @editor = Editor.new :editor, lineNumbers: false, mode: 'ruby', tabMode: 'shift', tabSize: 2, theme: 'tomorrow-night-eighties'
 
     # Bind run button
     Element.find('#btn_run').on(:click)   { do_run }
 
-    # Is this the playground ? If so -> exit
+    # Is this the playground ? If so, run code specific
+    # to the playground and exit before the tutorial buttons
+    # are initialized.
     if Element.find('#tryruby-title').html.match(/playground/i)
-      @editor.value = INITIAL_TRY_CODE.strip
+      initialize_playground
       return
     end
     
+    initialize_tutorial
+  end
+
+  def initialize_playground
+    @playground = true
+
+    code = get_code_from_url
+    @editor.value = code || INITIAL_TRY_CODE.strip
+
+    Element.find('#btn_copy_url').on(:click)  { do_copy_url }
+    Window.on('hashchange') { on_hash_change }
+    @editor.on('change') { on_editor_change }
+  end
+
+  def initialize_tutorial
     # Bind rest of buttons
     Element.find('#btn_copy').on(:click)  { do_copy }
     Element.find('#btn_next').on(:click)  { do_next }
@@ -247,8 +269,8 @@ class TryRuby
 
     # Compile
     begin
-      code = Opal.compile(source, :source_map_enabled => false)
-    rescue => err
+      code = Opal.compile(source)
+    rescue Exception => err
       log_error err
     end
 
@@ -291,6 +313,34 @@ class TryRuby
     get_content_from_server(language)
   end
 
+  # Playground methods
+  def get_code_from_url
+    hash = $$.decodeURIComponent($$[:location][:hash].gsub('+', ' '))
+
+    hash['#code='.size..-1] if hash.start_with?('#code=')
+  end
+
+  def do_copy_url
+    $$.navigator.clipboard.writeText(gen_url)
+  end
+
+  def gen_url
+    prefix = $$[:document][:location].toString.split("#").first
+    suffix = "#code=" + $$.encodeURIComponent(@editor.value)
+    suffix = suffix.gsub("%20", "+")
+
+    prefix + suffix
+  end
+
+  def on_hash_change
+    @editor.value = get_code_from_url
+  end
+
+  def on_editor_change
+    $$[:window][:history].replaceState(nil, '', gen_url)
+  end
+  # End of playground methods
+
   def get_code_fragment(str)
     # Let jQuery find the first code fragment in tryruby-content
     code = Element.find('#tryruby-content code').html.strip
@@ -322,37 +372,38 @@ class TryRuby
   # Code has already been compiled into js
   def eval_code(js_code)
     retval = nil
+    error = nil
 
     begin
       retval = `eval(js_code)`
       retval = retval ? retval.to_s : ''
       print_to_output(retval) if @output_buffer.length == 0 && !retval.empty?
     rescue => err
-      retval = "#{err}"
-      print_to_output(retval)
+      error = err
+      log_error(err)
     end
 
     # Do not check the answer if there is no regexp matcher
-    return if !@current_item || !@current_item.answer
+    if @current_item && @current_item.answer
+      # Get last line of output
+      value_to_check = @output_buffer.length > 0 && !@output_buffer.last.empty? ? @output_buffer.last.chomp : ''
 
-    # Get last line of output
-    value_to_check = @output_buffer.length > 0 && !@output_buffer.last.empty? ? @output_buffer.last.chomp : ''
+      # Check if output matches the defined answer regexp
+      # and print status message
+      print_to_output("\n")
+      from = count_lines
 
-    # Check if output matches the defined answer regexp
-    # and print status message
-    print_to_output("\n")
-    from = count_lines
-
-    if !value_to_check.empty? && value_to_check.chomp.match(@current_item.answer)
-      @current_item.ok.each do |line|
-        print_to_output(line)
+      if !value_to_check.empty? && value_to_check.chomp.match(@current_item.answer)
+        @current_item.ok.each do |line|
+          print_to_output(line)
+        end
+        @output.mark_ok(from, count_lines)
+      else
+        @current_item.error.each do |line|
+          print_to_output(line)
+        end
+        @output.mark_error(from, count_lines)
       end
-      @output.mark_ok(from, count_lines)
-    else
-      @current_item.error.each do |line|
-        print_to_output(line)
-      end
-      @output.mark_error(from, count_lines)
     end
   end
 
@@ -368,7 +419,16 @@ class TryRuby
   end
 
   def log_error(err)
-    print_to_output "#{err}\n\n#{`err.stack`}"
+    # Beautify the backtrace a little bit    
+    backtrace = err.backtrace
+    backtrace = backtrace.select { |i| i.include? '<anonymous>' }
+    backtrace = backtrace.map { |i| i.gsub(/.*(<anonymous>)/, '\1') }
+    backtrace = ["(file)"] if backtrace.empty?
+    err.set_backtrace(backtrace)
+
+    from = count_lines
+    print_to_output err.full_message
+    @output.mark_error(from, count_lines)
   end
 
   def print_to_output(str, term = "\n")
@@ -378,15 +438,9 @@ class TryRuby
 end
 
 def start_tryruby
-  # Bind puts and print methods. Make sure they return a string, not an array
-  def $stdout.puts(*strs)
-    strs.each { |str| TryRuby.instance.print_to_output str}
-    strs.last
-  end
-
-  def $stdout.print(*strs)
-    strs.each { |str| TryRuby.instance.print_to_output(str, "")}
-    strs.last
+  # Bind puts and print methods.
+  $stdout.write_proc = $stderr.write_proc = ->(str) do
+    TryRuby.instance.print_to_output str, ""
   end
 
   # Start TryRuby
