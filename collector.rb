@@ -135,7 +135,7 @@ class Collector
         answer: answer,
         ok: ok,
         error: error,
-        text: text,
+        text: @markdown.render(text),
         load_code: load_code
       }
     end
