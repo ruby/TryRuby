@@ -30,8 +30,11 @@ description: Play around with Ruby programs
         <div id="editor" class="well" style="padding:0"></div>
 
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-8">
             <button type="button" id="btn_run" class="btn btn-primary btn-block">Run <span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
+          </div>
+          <div class="col-md-4">
+            <button type="button" id="btn_copy_url"  class="btn btn-default btn-block"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> Copy URL</button>
           </div>
         </div>
       </div>
@@ -40,4 +43,7 @@ description: Play around with Ruby programs
   </div>
 </div>
 
-<script>Opal.load('try_ruby');</script>
+<script>
+Opal.loaded(OpalLoaded || []);
+Opal.require('try_ruby');
+</script>
