@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem "opal", "~> 1.3a"
+gem "opal", "~> 1.3"
 gem "opal-sprockets"
 gem "opal-jquery", ">= 0.4.6"
 gem "middleman"
