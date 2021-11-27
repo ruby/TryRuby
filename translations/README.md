@@ -8,7 +8,7 @@ When adding a new translation:
 - Copy the files from translations/en to the new sub-directory
 - Add the new language to collector.rb (~ line 140)
 - Translate
-- If you are running `bundle exec middleman server`, Middleman/livereload
+- If you are running `bin/middleman server`, Middleman/livereload
   should notice any changes to translations and refresh the webpage for you,
   available on `http://localhost:4567`
 - Update the README file for the new translation, replacing all names in
