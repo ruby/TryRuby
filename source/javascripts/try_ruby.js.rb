@@ -5,6 +5,7 @@ require 'native'
 require 'promise'
 require 'browser/setup/full'
 require 'browser/cookies'
+require 'browser/form_data'
 
 # Container for individual lessons
 class TryRubyItem
@@ -334,9 +335,10 @@ class TryRuby
 
   # Playground methods
   def get_code_from_url
-    hash = $$.decodeURIComponent($$[:location][:hash].gsub('+', ' '))
+    hash = $document.location.fragment.to_s
+    hash = Browser::FormData.decode(hash.gsub('+', ' '))
 
-    hash['#code='.size..-1] if hash.start_with?('#code=')
+    hash.delete_prefix("#code=") if hash.start_with?('#code=')
   end
 
   def do_copy_url
@@ -381,7 +383,6 @@ class TryRuby
     @updating = true
     title_element.inner_html = item.title
     $document.at_css('#tryruby-content').inner_html = item.text
-    $document.at_css('#tryruby-answer').inner_html  = item.answer
     @editor.value = item.saved_editor if @editor
     @output.value = item.saved_output if @output
     @current_copycode = get_code_fragment(item.text)
