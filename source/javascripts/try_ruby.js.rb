@@ -1,13 +1,10 @@
 require 'opal'
 require 'opal/full'
 require 'opal-parser'
-require 'opal-jquery'
-
-INITIAL_TRY_CODE = <<-RUBY
-3.times do
-  print 'Welcome '
-end
-RUBY
+require 'native'
+require 'promise'
+require 'browser/setup/full'
+require 'browser/cookies'
 
 # Container for individual lessons
 class TryRubyItem
@@ -69,6 +66,20 @@ end
 
 # The TryRuby application
 class TryRuby
+  INITIAL_TRY_CODE = <<~RUBY
+    3.times do
+      print 'Welcome '
+    end
+  RUBY
+
+  def self.start
+    # Bind puts and print methods.
+    $stdout.write_proc = $stderr.write_proc = ->(str) do
+      instance.print_to_output str, ""
+    end
+
+    instance
+  end
 
   def self.instance
     @instance ||= self.new
@@ -84,24 +95,22 @@ class TryRuby
     @updating         = false
 
     # Stop if this is not a TryRuby enabled page
-    return if Element.find('#tryruby-title').empty?
+    return unless title_element
 
     # Create editors
     @output = Editor.new :output, lineNumbers: false, mode: 'text', readOnly: true, styleSelectedText: true
     @editor = Editor.new :editor, lineNumbers: false, mode: 'ruby', tabMode: 'shift', tabSize: 2, theme: 'tomorrow-night-eighties'
 
     # Bind run button
-    Element.find('#btn_run').on(:click)   { do_run }
+    $document.on(:click, '#btn_run') { do_run }
 
-    # Is this the playground ? If so, run code specific
-    # to the playground and exit before the tutorial buttons
-    # are initialized.
-    if Element.find('#tryruby-title').html.match(/playground/i)
+    # Is this the playground? If so, run code specific to the playground without
+    # setting up the tutorial buttons.
+    if title_element.inner_text.match(/playground/i)
       initialize_playground
-      return
+    else
+      initialize_tutorial
     end
-    
-    initialize_tutorial
   end
 
   def initialize_playground
@@ -110,19 +119,18 @@ class TryRuby
     code = get_code_from_url
     @editor.value = code || INITIAL_TRY_CODE.strip
 
-    Element.find('#btn_copy_url').on(:click)  { do_copy_url }
-    Window.on('hashchange') { on_hash_change }
-    @editor.on('change') { on_editor_change }
+    $document.on(:click, '#btn_copy_url') { do_copy_url }
+    $window.on(:hashchange) { on_hash_change }
+    @editor.on(:change) { on_editor_change }
   end
 
   def initialize_tutorial
-    # Bind rest of buttons
-    Element.find('#btn_copy').on(:click)  { do_copy }
-    Element.find('#btn_next').on(:click)  { do_next }
-    Element.find('#btn_back').on(:click)  { do_back }
-    Element.find('#btn_clear').on(:click) { do_clear }
-    Element.find('#tryruby-lang-toggle').on(:click) { do_show_lang }
-    Element.find('#tryruby-lang-select').on(:change) { do_change_lang }
+    $document.on(:click, '#btn_copy') { do_copy }
+    $document.on(:click, '#btn_next') { do_next }
+    $document.on(:click, '#btn_back') { do_back }
+    $document.on(:click, '#btn_clear') { do_clear }
+    $document.on(:click, '#tryruby-lang-toggle') { do_show_lang }
+    $document.on(:change, '#tryruby-lang-select') { do_change_lang }
 
     # Get language from cookie and start AJAX request to get content
     get_content_from_server(get_language)
@@ -133,7 +141,7 @@ class TryRuby
     language = get_cookie('tryruby_nl_language')
 
     # No cookie -> user browser settings to determine language
-    if language.empty?
+    if !language
       # Only English for now. Uncomment lines to get browser setting
       browserlang = `navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage || navigator.browserLanguage)`
       case browserlang.downcase
@@ -160,46 +168,54 @@ class TryRuby
     end
 
     # Update language select list
-    Element.find('#tryruby-lang-select').value = language
+    $document.at_css('#tryruby-lang-select').value = language
 
     # Update lang attribute
-    Element.find('html').attr('lang', language)
+    $document.at_css('html').attr('lang', language)
 
     language
   end
 
-  # AJAX call to get lesson content. Update page when done
+  # Ajax call to get lesson content and update the page.
   def get_content_from_server(language)
-    HTTP.get("try_ruby_#{language}.json") do |response|
-      # Handle ajax reponse
-      if response.status_code == 200
-        # Store items
-        @items = {}
-        response.json.each do |k, v|
-          @items[k.to_i] = TryRubyItem.new(k, v)
-        end
-        @loaded = true
+    Browser::HTTP.get("try_ruby_#{language}.json") do
+      on :success do |response|
+        TryRuby.instance.update_json(response.json)
+      end
 
-        # Update 'load code'
-        update_load_prev
-
-        # Fill index select-box
-        create_index
-
-        # If session cookie found goto last step and update page
-        switch_to_last_used
-      else
-        puts "\nWhoops ! Loading the tutorial failed (status = #{response.status_code}).\nPlease reload the page."
+      on :failure do |response|
+        puts "\nWhoops! Loading the tutorial failed " \
+             "(status = #{response.status_code}).\n" \
+             "Please reload the page."
       end
     end
   end
 
-  # Add the 'load' Ruby code from the previous lessen to the current one
-  # if load code starts with prev
+  def update_json(items)
+    @items = {}
+    items.each do |k, v|
+      @items[k.to_i] = TryRubyItem.new(k, v)
+    end
+    @loaded = true
+
+    update_load_prev
+
+    # Fill index select-box
+    create_index
+
+    # If session cookie found, go to last step and update page
+    switch_to_last_used
+  end
+
+  # Add the 'load' Ruby code from the previous lesson to the current one
+  # if load code starts with 'prev'.
   def update_load_prev
     prev_code = ''
+
     @items.each do |key, item|
-      item.load_code = prev_code + item.load_code[4..999999] if item.load_code && !item.load_code.empty? && item.load_code[0..3] == 'prev'
+      if item.load_code && !item.load_code.empty? && item.load_code[0..3] == 'prev'
+        item.load_code = prev_code + item.load_code[4..999999]
+      end
       prev_code = item.load_code
     end
   end
@@ -207,24 +223,22 @@ class TryRuby
   # Collect all lessons to create the lesson-index for displaying on the page
   def create_index
     index = ''
+
     @items.each do |key, item|
-      index += "<option value=\"#{key}\">#{item.chapter == 'Y' ? '' : '&nbsp;&nbsp;&nbsp;'}#{item.title}</option>\n"
+      value = item.chapter == 'Y' ? '' : '&nbsp;&nbsp;&nbsp;'
+      index += "<option value=\"#{key}\">#{value}#{item.title}</option>\n"
     end
-  
-    Element.find('#tryruby-index').html = index
-    Element.find('#tryruby-index').on(:change) { do_goto }
+
+    $document.at_css('#tryruby-index').inner_html = index
+    $document.on(:change, '#tryruby-index') { do_goto }
   end
 
   def get_cookie(key)
-    cookie = `document.cookie`
-    return '' if !cookie || cookie.empty?
-    value = cookie.match(Regexp.new("#{key}=(.*?)($|;|,(?! ))"))
-    return value[1].strip if value
-    ''
+    Browser::Cookies.new(`document`)[key]
   end
 
   def set_cookie(key, value)
-    `document.cookie = key + '=' + value`
+    Browser::Cookies.new(`document`)[key] = JSON.dump(value)
   end
 
   def switch_to_last_used
@@ -232,7 +246,7 @@ class TryRuby
 
     update_screen(get_step_content(last_step > 0 ? last_step : 1, '', ''))
 
-    if last_step <= 1
+    if last_step <= 1 && @editor
       @editor.value = INITIAL_TRY_CODE.strip
       do_run
     end
@@ -250,17 +264,22 @@ class TryRuby
   # Handle change index event
   def do_goto
     return if @updating
-    new_value = Element.find('#tryruby-index').value.to_i
-    update_screen(get_step_content(new_value, @editor.value, @output.value)) if new_value >= 0
+
+    new_value = $document.at_css('#tryruby-index').value.to_i
+    if new_value >= 0
+      update_screen(get_step_content(new_value, @editor.value, @output.value))
+    end
   end
 
   # Handle click run button
   def do_run
+    return unless @output
+
     @output_buffer = []
     @output.value = ''
     @editor.focus
     source = @editor.value.strip
-    return if source.empty?
+    return unless source
 
     # Add additional code if available
     if @loaded && @current_item && @current_item.load_code
@@ -302,13 +321,13 @@ class TryRuby
 
   # Handle click language button
   def do_show_lang
-    Element.find('#tryruby-lang-hider').toggle_class('hidden')
+    $document.at_css('#tryruby-lang-hider').toggle_class('hidden')
   end
 
   # Handle change language event
   def do_change_lang
-    language = Element.find('#tryruby-lang-select').value
-    Element.find('html').attr('lang', language)
+    language = $document.at_css('#tryruby-lang-select').value
+    $document["html"]["lang"] = language
     set_cookie('tryruby_nl_language', language)
     get_content_from_server(language)
   end
@@ -342,29 +361,39 @@ class TryRuby
   # End of playground methods
 
   def get_code_fragment(str)
-    # Let jQuery find the first code fragment in tryruby-content
-    code = Element.find('#tryruby-content code').html.strip
-    return code.gsub("&lt;", "<").gsub("&gt;", ">").gsub("&amp;", "&")
+    $document
+      .at_css('#tryruby-content code')
+      &.inner_html
+      .to_s
+      .strip
+      .gsub("&lt;", "<")
+      .gsub("&gt;", ">")
+      .gsub("&amp;", "&")
+  end
+
+  def title_element
+    $document.at_css("#tryruby-title")
   end
 
   def update_screen(item)
     return if !item
+
     @updating = true
-    Element.find('#tryruby-title').html   = item.title
-    Element.find('#tryruby-content').html = item.text
-    Element.find('#tryruby-answer').html  = item.answer
-    @editor.value                         = item.saved_editor
-    @output.value                         = item.saved_output
-    @current_copycode                     = get_code_fragment(item.text)
+    title_element.inner_html = item.title
+    $document.at_css('#tryruby-content').inner_html = item.text
+    $document.at_css('#tryruby-answer').inner_html  = item.answer
+    @editor.value = item.saved_editor if @editor
+    @output.value = item.saved_output if @output
+    @current_copycode = get_code_fragment(item.text)
 
     # Set index to current item
     step = item.step.to_s
-    Element.find("#tryruby-index").value  = step
+    $document.at_css("#tryruby-index").value  = step
 
     # Set session cookie to store progress
     set_cookie('tryruby_nl_step', step)
 
-    @editor.focus
+    @editor.focus if @editor
     @updating = false
   end
 
@@ -419,7 +448,7 @@ class TryRuby
   end
 
   def log_error(err)
-    # Beautify the backtrace a little bit    
+    # Beautify the backtrace a little bit
     backtrace = err.backtrace
     backtrace = backtrace.select { |i| i.include? '<anonymous>' }
     backtrace = backtrace.map { |i| i.gsub(/.*(<anonymous>)/, '\1') }
@@ -437,14 +466,4 @@ class TryRuby
   end
 end
 
-def start_tryruby
-  # Bind puts and print methods.
-  $stdout.write_proc = $stderr.write_proc = ->(str) do
-    TryRuby.instance.print_to_output str, ""
-  end
-
-  # Start TryRuby
-  TryRuby.instance
-end
-
-start_tryruby
+TryRuby.start
