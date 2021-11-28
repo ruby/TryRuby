@@ -42,8 +42,3 @@ description: Play around with Ruby programs
     </div>
   </div>
 </div>
-
-<script>
-Opal.loaded(OpalLoaded || []);
-Opal.require('try_ruby');
-</script>

@@ -87,8 +87,3 @@ description: Learn to program in Ruby in 30 minutes
     </div>
   </div>
 </div>
-
-<script>
-Opal.loaded(OpalLoaded || []);
-Opal.require('try_ruby');
-</script>
