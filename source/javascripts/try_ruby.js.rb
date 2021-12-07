@@ -142,8 +142,7 @@ class TryRuby
     language = get_cookie('tryruby_nl_language')
 
     # No cookie -> user browser settings to determine language
-    if !language
-      # Only English for now. Uncomment lines to get browser setting
+    unless language
       browserlang = `navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage || navigator.browserLanguage)`
       case browserlang.downcase
       when 'nl'
@@ -172,7 +171,7 @@ class TryRuby
     $document.at_css('#tryruby-lang-select').value = language
 
     # Update lang attribute
-    $document.at_css('html').attr('lang', language)
+    $document.root.attr('lang', language)
 
     language
   end
@@ -328,7 +327,7 @@ class TryRuby
   # Handle change language event
   def do_change_lang
     language = $document.at_css('#tryruby-lang-select').value
-    $document["html"]["lang"] = language
+    $document.root['lang'] = language
     set_cookie('tryruby_nl_language', language)
     get_content_from_server(language)
   end
@@ -346,11 +345,10 @@ class TryRuby
   end
 
   def gen_url
-    prefix = $$[:document][:location].toString.split("#").first
-    suffix = "#code=" + $$.encodeURIComponent(@editor.value)
-    suffix = suffix.gsub("%20", "+")
+    prefix = $document.location.uri.split("#").first
+    suffix = Browser::FormData.build_query(code: @editor.value).gsub("%20", "+")
 
-    prefix + suffix
+    "#{prefix}##{suffix}"
   end
 
   def on_hash_change
@@ -358,7 +356,7 @@ class TryRuby
   end
 
   def on_editor_change
-    $$[:window][:history].replaceState(nil, '', gen_url)
+    $window.history.replace(gen_url)
   end
   # End of playground methods
 
@@ -383,6 +381,7 @@ class TryRuby
     @updating = true
     title_element.inner_html = item.title
     $document.at_css('#tryruby-content').inner_html = item.text
+    $document.at_css('#tryruby-answer').inner_html = item.answer
     @editor.value = item.saved_editor if @editor
     @output.value = item.saved_output if @output
     @current_copycode = get_code_fragment(item.text)

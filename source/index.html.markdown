@@ -49,6 +49,8 @@ description: Learn to program in Ruby in 30 minutes
 
         <h3>Click on <strong>Next</strong> to start learning.</h3>
       </div>
+
+      <div id="tryruby-answer" style="display:none"></div>
     </div>
   </div>
 
