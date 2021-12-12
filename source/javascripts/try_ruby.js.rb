@@ -381,7 +381,7 @@ class TryRuby
     @updating = true
     title_element.inner_html = item.title
     $document.at_css('#tryruby-content').inner_html = item.text
-    $document.at_css('#tryruby-answer').inner_html = item.answer
+    $document.at_css('#tryruby-answer')&.inner_html = item.answer
     @editor.value = item.saved_editor if @editor
     @output.value = item.saved_output if @output
     @current_copycode = get_code_fragment(item.text)
