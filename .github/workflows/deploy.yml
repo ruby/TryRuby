@@ -21,7 +21,7 @@ jobs:
           gem install bundler -v 2.1.4
           bundle install
       - name: Build
-        run: bundle exec middleman build
+        run: bin/middleman build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

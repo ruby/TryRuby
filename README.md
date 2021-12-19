@@ -41,13 +41,13 @@ be present. You may need to run something like:
 
 ## Run development website
 
-    $ bundle exec middleman server
+    $ bin/middleman server
 
 Then visit `http://localhost:4567`.
 
 ## Publishing
 
-    $ bundle exec rake publish
+    $ bin/rake publish
 
 Git branch 'gh-pages' now holds the publishable version of TryRuby, accessible
 via [try.ruby-lang.org/](https://try.ruby-lang.org/).
