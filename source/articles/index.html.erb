@@ -1,0 +1,12 @@
+---
+title: "TryRuby Articles"
+---
+
+<div class="row">
+  <div class="col-lg-8">
+    <% blog.articles.each do |article| %>
+      <h2><%= link_to article.title, article.url %></h2>
+      <p><%= article.data.the_summary %></p>
+    <% end %>
+  </div>
+</div>

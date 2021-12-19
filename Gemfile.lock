@@ -152,7 +152,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  haml
   middleman
   middleman-blog
   middleman-gh-pages

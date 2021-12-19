@@ -8,13 +8,10 @@ activate :collector
 
 set :markdown_engine, :redcarpet
 
-set :markdown, :layout_engine => :haml,
-               :fenced_code_blocks => true,
-               :lax_html_blocks => true,
-               :smartypants => true
-
-# Prevent code blocks indentation problem
-set :haml, { ugly: true }
+set :markdown,
+    fenced_code_blocks: true,
+    lax_html_blocks: true,
+    smartypants: true
 
 activate :syntax
 activate :sprockets
@@ -45,9 +42,10 @@ end
 activate :relative_assets
 set :relative_links, true
 
-configure :build do
-  activate :minify_css
-  activate :minify_javascript, compressor: -> { Terser.new }, ignore: ->(i) { i.end_with? 'try_ruby.js' }
-end
+activate :minify_css
 
-Haml::TempleEngine.disable_option_validator!
+configure :build do
+  activate :minify_javascript,
+           compressor: -> { Terser.new },
+           ignore: ->(i) { i.end_with? "try_ruby.js" }
+end

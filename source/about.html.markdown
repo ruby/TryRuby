@@ -34,8 +34,12 @@ Try Ruby version 3 by _Eric Allam & Nick Walsh_
 Try Ruby version 4 by _Ivo Herweijer_  
 
 This website is partially based on <a href="http://opalrb.com/" target="_blank">OpalRb.com</a>
-by _Adam Beynon_,
-and uses <a href="http://glyphicons.com/" target="_blank">Gyphicons</a>.
+by _Adam Beynon_.
+
+Fox illustration by _\_why the lucky stiff_.
+
+Language icon [by Ionicons](https://github.com/ionic-team/ionicons) under the
+MIT license.
 
 ### Translations
 

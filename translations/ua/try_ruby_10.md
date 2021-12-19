@@ -17,9 +17,5 @@ Ruby – це мова програмування з Японії, яка ств
 - __Copy__ &rarr; Вставити/скопіювати приклад коду в редактор
 - __Next__ &rarr; Перейти до наступного уроку
 - __Back__ &rarr; Повернутися до попереднього уроку
-- __Clear__ &rarr; Очистити редактор
 
-Використовуй кнопку 'world' button <span aria-hidden="true" class="glyphicon glyphicon-globe"></span>
-щоб змінити мову TryRuby.
-
-### Натисни __Next__ для початку навчання.
+<div class="foxes">Натисни <strong>Next</strong> для початку навчання.</div>
