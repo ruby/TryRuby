@@ -27,6 +27,15 @@ only change the files in folder _translations_,
 not the json files in folder _source_.
 These files will be updated automatically by the build/publish task.
 
+## Docker
+You can deploy the website using docker by running the following commands:
+```
+# creating the image
+docker build -f Dockerfile . -t tryruby
+# running the image, you can access tryruby on http://localhost:9099
+docker run -p 9099:80 -d tryruby:latest
+```
+
 ## Preparing
 Clone this repo, and use bundler to get dependencies:
 
