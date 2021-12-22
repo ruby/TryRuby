@@ -2,7 +2,7 @@ require 'opal'
 require 'opal/full'
 require 'opal-parser'
 require 'native'
-require 'promise'
+require 'promise/v2'
 require 'browser/setup/full'
 require 'browser/cookies'
 require 'browser/form_data'
@@ -156,7 +156,7 @@ class TryRuby
 
   def get_language
     # Pref stored in a cookie ?
-    language = get_cookie('tryruby_nl_language')
+    language = get_cookie('tryruby_language')
 
     # No cookie -> user browser settings to determine language
     unless language
@@ -181,7 +181,7 @@ class TryRuby
       end
 
       # Set session cookie to store language
-      set_cookie('tryruby_nl_language', language)
+      set_cookie('tryruby_language', language)
     end
 
     # Update lang attribute
@@ -248,15 +248,15 @@ class TryRuby
   end
 
   def get_cookie(key)
-    Browser::Cookies.new(`document`)[key]
+    $document.cookies[key]
   end
 
   def set_cookie(key, value)
-    Browser::Cookies.new(`document`)[key] = JSON.dump(value)
+    $document.cookies[key] = value
   end
 
   def switch_to_last_used
-    last_step = get_cookie('tryruby_nl_step').to_i
+    last_step = get_cookie('tryruby_step').to_i
 
     update_screen(get_step_content(last_step > 0 ? last_step : 1, '', ''))
 
@@ -337,8 +337,7 @@ class TryRuby
     language = event.target.data["change-lang"]
 
     $document.root['lang'] = language
-    set_cookie('tryruby_nl_language', language)
-
+    set_cookie('tryruby_language', language)
     get_content_from_server(language)
   end
 
@@ -401,7 +400,7 @@ class TryRuby
     $document.at_css("#tryruby-index").value  = step
 
     # Set session cookie to store progress
-    set_cookie('tryruby_nl_step', step)
+    set_cookie('tryruby_step', step)
 
     @editor.focus if @editor
     @updating = false
