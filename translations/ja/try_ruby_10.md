@@ -1,10 +1,10 @@
 ---
 lang:   JA
 title:  30分ありますか? 今すぐRubyを試しましょう!
-answer: 
+answer:
 class:  stretcher chapmark
-ok:     
-error:  
+ok:
+error:
 ---
 
 Rubyは日本発のプログラミング言語で、ソフトウェア開発に革命をもたらしています。
@@ -17,10 +17,5 @@ Rubyの美しさはシンプルさと力強さの調和にあります。
 - __Copy__ &rarr; 例のコードをエディタにコピーする
 - __Next__ &rarr; 次のレッスンに進む
 - __Back__ &rarr; 前のレッスンに戻る
-- __Clear__ &rarr; エディタをクリアする
 
-
-上の'地球'ボタン<span aria-hidden="true" class="glyphicon glyphicon-globe"></span>で
-TryRubyの言語を切り替えられます。
-
-### __Next__ をクリックして学習をはじめましょう
+<div class="foxes"><strong>Next</strong> をクリックして学習をはじめましょう</div>

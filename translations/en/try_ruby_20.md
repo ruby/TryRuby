@@ -13,7 +13,7 @@ For example, try typing some math. Like:
 
     2 + 6
 
-The output of your program should show itself at the output window at the top.
+The output of your program should show itself in the output window.
 There should also be a line that tells you how well you did.
 
 > Alternatively you can hit the __Copy__ button to copy the example code to the editor.

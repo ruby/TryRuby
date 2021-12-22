@@ -1,10 +1,10 @@
 ---
 lang:   EN
 title:  Got 30 minutes? Give Ruby a shot right now!
-answer: 
+answer:
 class:  stretcher chapmark
-ok:     
-error:  
+ok:
+error:
 ---
 
 Ruby is a programming language from Japan which is revolutionizing
@@ -18,9 +18,5 @@ You can type some Ruby code in the editor and use these buttons to navigate:
 - __Copy__ &rarr; Copies the example code to the editor
 - __Next__ &rarr; Allows you to go to the next lesson
 - __Back__ &rarr; Allows you to return to the previous lesson
-- __Clear__ &rarr; Clears the editor
 
-Use the 'world' button <span aria-hidden="true" class="glyphicon glyphicon-globe"></span>
-above to change TryRuby's language.
-
-### Click on __Next__ to start learning.
+<div class="foxes">Click on <strong>Next</strong> to start learning.</div>
