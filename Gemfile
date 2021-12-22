@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "opal", "~> 1.3"
+gem "opal", "~> 1.4a"
 gem "opal-sprockets"
 gem "opal-browser"
 gem "middleman"
