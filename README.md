@@ -33,7 +33,7 @@ You can deploy the website using docker by running the following commands:
 # creating the image
 docker build -f Dockerfile . -t tryruby
 # running the image, you can access tryruby on http://localhost:9099
-docker run -p 9099:80 -d tryruby:latest
+docker run -p 9099:4567 -d tryruby:latest
 ```
 
 ## Preparing
