@@ -416,7 +416,7 @@ class TryRuby
       retval = `eval(js_code)`
       retval = retval ? retval.to_s : ''
       print_to_output(retval) if @output_buffer.length == 0 && !retval.empty?
-    rescue => err
+    rescue Exception => err
       error = err
       log_error(err)
     end
