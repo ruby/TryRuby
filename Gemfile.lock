@@ -98,7 +98,7 @@ GEM
     opal-browser (0.3.3)
       opal (>= 1.0, < 2.0)
       paggio (>= 0.3.0)
-    opal-sprockets (1.0.2)
+    opal-sprockets (1.0.3)
       opal (>= 1.0, < 2.0)
       sprockets (~> 4.0)
       tilt (>= 1.4)
