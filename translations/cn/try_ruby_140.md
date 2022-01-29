@@ -1,13 +1,12 @@
 ---
-lang:   EN
+lang:   CN
 title:  Tucking a List Away
 answer: ^\[(\d+)(,\s*\d+){2,}\]$
 ok:     Saved!
 error:  
 ---
 
-Good, good. But it's annoying to have to retype that list every time you need it, isn't it?
-不错，不错
-Let's save our numbers inside a ticket like so: 
+不错，不错。但你并不想在每次你需要用到它的时候都重新打一遍，对吧？
+让我们把数字: 
 
     ticket = [12, 47, 35]
