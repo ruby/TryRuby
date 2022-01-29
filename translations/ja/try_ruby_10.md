@@ -1,4 +1,4 @@
----
+⁄---
 lang:   JA
 title:  30分ありますか? 今すぐRubyを試しましょう!
 answer:
