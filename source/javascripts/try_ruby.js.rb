@@ -65,6 +65,105 @@ class Editor
   end
 end
 
+class RubyEngine
+  def run(source, instance)
+  end
+
+  class OpalEngine < RubyEngine
+    def name
+      "Opal #{Opal::VERSION}"
+    end
+
+    def run(source, writer)
+      # Compile
+      js_code = Opal.compile(source)
+
+      # Bind puts and print methods.
+      $stdout.write_proc = $stderr.write_proc = ->(str) do
+        writer.print_to_output str, ""
+      end
+
+      # Run
+      retval = nil
+      error = nil
+
+      retval = `eval(js_code)`
+      yield(retval ? retval.to_s : '')
+      $stdout.write_proc = $stderr.write_proc = nil
+    end
+  end
+
+  class CRubyEngine < RubyEngine
+
+    def initialize(ruby_wasm_url, version)
+      @ruby_wasm_url = ruby_wasm_url
+      @version = version
+    end
+
+    def name
+      "CRuby #{@version}"
+    end
+
+    def wasm_module
+      return @module if @module
+      %x{
+        #{@module} = (async function() {
+          const response = await fetch(#{@ruby_wasm_url});
+          const buffer = await response.arrayBuffer();
+          return await WebAssembly.compile(buffer);
+        })();
+      }
+      @module
+    end
+
+    def run(source, writer)
+      %x{
+        async function instantiateVM() {
+          const $WASI = window["WASI"].WASI;
+          const $WasmFs = window["WasmFs"].WasmFs;
+          const $RubyVM = window["ruby-wasm-wasi"].RubyVM;
+
+          const wasmFs = new $WasmFs();
+          const originalWriteSync = wasmFs.fs.writeSync.bind(wasmFs.fs);
+          const textDecoder = new TextDecoder("utf-8");
+          wasmFs.fs.writeSync = (fd, buffer, offset, length, position) => {
+            const text = textDecoder.decode(buffer);
+            if (fd == 1 || fd == 2) {
+              #{writer.print_to_output(`text`, "")};
+            }
+            return originalWriteSync(fd, buffer, offset, length, position);
+          };
+
+          const vm = new $RubyVM();
+          const wasi = new $WASI({
+            bindings: { ...$WASI.defaultBindings, fs: wasmFs.fs },
+          });
+          const imports = { wasi_snapshot_preview1: wasi.wasiImport };
+          vm.addToImports(imports);
+          const wasmInstance = await WebAssembly.instantiate(await #{wasm_module}, imports);
+          await vm.setInstance(wasmInstance);
+          wasi.setMemory(wasmInstance.exports.memory);
+          vm.initialize();
+          return vm;
+        }
+
+        instantiateVM()
+        .then((vm) => { #{yield `vm.eval(source).toString()`} })
+        .catch((err) => { #{writer.log_error(`err`)} })
+      }
+    end
+  end
+
+  ENGINES = {
+    opal: OpalEngine.new,
+    cruby: CRubyEngine.new(
+      "https://cdn.jsdelivr.net/npm/ruby-wasm-wasi@0.1.2/dist/ruby.wasm",
+      "3.2.0dev"
+    ),
+  }
+end
+
+
 # The TryRuby application
 class TryRuby
   INITIAL_TRY_CODE = <<~RUBY
@@ -73,12 +172,9 @@ class TryRuby
     end
   RUBY
 
-  def self.start
-    # Bind puts and print methods.
-    $stdout.write_proc = $stderr.write_proc = ->(str) do
-      instance.print_to_output str, ""
-    end
+  DEFAULT_RUBY_ENGINE = :opal
 
+  def self.start
     instance
   end
 
@@ -118,6 +214,8 @@ class TryRuby
       theme: 'tomorrow-night-eighties',
     )
 
+    @engine = RubyEngine::ENGINES[DEFAULT_RUBY_ENGINE]
+
     # Bind run button
     $document.on(:click, '#btn_run') { do_run }
 
@@ -143,6 +241,8 @@ class TryRuby
     $document.on(:click, '#btn_copy_url') { do_copy_url }
     $window.on(:hashchange) { on_hash_change }
     @editor.on(:change) { on_editor_change }
+
+    create_engine_options
   end
 
   def initialize_tutorial
@@ -247,6 +347,20 @@ class TryRuby
     $document.on(:change, '#tryruby-index') { do_goto }
   end
 
+  def create_engine_options
+    options = ''
+
+    RubyEngine::ENGINES.each do |key, engine|
+      options += "<option value=\"#{key}\" #{key == DEFAULT_RUBY_ENGINE ? "selected" : ""}>#{engine.name}</option>\n"
+    end
+
+    engine_element = $document.at_css('#tryruby-engine')
+    engine_element.inner_html = options
+    $document.on(:change, '#tryruby-engine') {
+      @engine = RubyEngine::ENGINES[engine_element.value]
+    }
+  end
+
   def get_cookie(key)
     $document.cookies[key]
   end
@@ -300,15 +414,8 @@ class TryRuby
       source = "#{@current_item.load_code}\n#{source}"
     end
 
-    # Compile
-    begin
-      code = Opal.compile(source)
-    rescue Exception => err
-      log_error err
-    end
-
     # Run
-    eval_code code
+    eval_code source
   end
 
   # Handle click copy button
@@ -408,18 +515,19 @@ class TryRuby
 
   # Run the user's Ruby code
   # Code has already been compiled into js
-  def eval_code(js_code)
-    retval = nil
-    error = nil
-
+  def eval_code(source)
     begin
-      retval = `eval(js_code)`
-      retval = retval ? retval.to_s : ''
-      print_to_output(retval) if @output_buffer.length == 0 && !retval.empty?
+      @engine.run(source, self) do |retval|
+        show_result(retval)
+      end
     rescue Exception => err
-      error = err
       log_error(err)
+      show_result(nil)
     end
+  end
+
+  def show_result(retval)
+    print_to_output(retval) if @output_buffer.length == 0 && !retval.empty?
 
     # Do not check the answer if there is no regexp matcher
     if @current_item && @current_item.answer

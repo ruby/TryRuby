@@ -36,6 +36,13 @@ description: Play around with Ruby programs
         Copy URL
       </button>
 
+      <select
+        id="tryruby-engine"
+        class="form-select mx-3 w-50"
+        aria-controls="output"
+      >
+      </select>
+
       <button
         id="btn_run"
         type="button"
