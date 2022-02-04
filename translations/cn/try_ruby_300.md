@@ -1,16 +1,14 @@
 ---
-lang:   EN
-title:  Have you got the time?
+lang:   CN
+title:  你有时间吗?
 answer: ^[0-9]$
-ok:     You timed it just right!
-error:  Run the block 0 to 9 times
+ok:     次数对了
+error:  让这些块运行0次到9次
 ---
 
-As we saw in the first example with a block (when counting ratings) we can pass a value to the block. Which
-values are __passed__ is determined by the method that is running the block.
+从第一个运用块的例子我们可以看到（在数评分时），我们可以给块传值。传什么值由控制块的方法来决定。
 
-The values that are __received__ by the block are placed in the variable name at the beginning of the block,
-between two pipe symbols: |
+块中__收到（received）__的值被放在块开头的在两个管道符号之间的变量名中: |
 
 Let's try that with this block:
 
@@ -18,6 +16,6 @@ Let's try that with this block:
       puts time
     }
 
-Here, method __.times__ sends a value to variable __|time|__. But note that variable time is only known within the block.
+这里，方法 __.times__ 给变量__|time|__传了一个值。但是注意这个变量仅在块中有效。
 
-> Did you notice that you can split code over multiple lines. This makes it a bit easier to read.
+> 你可以尝试把代码分成几段，可以有助于你理解。

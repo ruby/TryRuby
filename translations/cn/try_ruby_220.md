@@ -1,21 +1,21 @@
 ---
-lang:   EN
-title:  Ringlets of Chained Methods
+lang:   CN
+title:  链式方法的小环
 answer: ^More still did (.+)
 load:   prev
-ok:     Good show, my friend!<br/>The join method took that array of lines and put them together into a string.
+ok:     好样的，我的朋友！<br/>join方法把那个数组的行数放在一起，变成一个字符串。
 error:  
 ---
 
-So what do you see? What happened there? You typed __poem.lines.reverse__ and what happened?
+那么你看到了什么？那里发生了什么？你输入了__poem.lines.reverse__，发生了什么？
 
-Two things happened. You turned the poem into a list using lines.
-Lines decides the way the string is split up and converts it into an Array.
+发生了两件事。你用lines把诗变成了一个列表。
+Lines 决定了字符串被分割的方式，并将其转换为一个数组。
 
-Then, you reversed that list. You had each line. You reversed them. That's it.
+然后，你反转了这个列表。每一行都是。你反转了它们。就这样了。
 
-Let's tack one more method on the end there:
+让我们再把一个方法放在最后：
 
     puts poem.lines.reverse.join
 
-Combining methods like this is called _method chaining_.
+像这样的方法组合被称为_方法链_。

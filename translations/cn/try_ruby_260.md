@@ -1,20 +1,20 @@
 ---
-lang:   EN
-title:  Wait, Did I Like Gravity's Rainbow?
+lang:   CN
+title:  等等，我喜欢Gravity's Rainbow吗?
 answer: ^(splendid|quite_good|mediocre|quite_not_good|abysmal)$
 load:   books = {"Gravitys Rainbow" => :splendid, "The deep end" => :abysmal, "Living colors" => :mediocre}
-ok:     I liked it a lot
+ok:     我超级喜欢
 error:  
 ---
 
-One great thing about Ruby is that names are often reused, which means fewer names you need to remember.
+Ruby的优点之一是名字经常被重复使用。
+多亏了这个，必须要记住的名字变少了。
 
-Remember how we retrieved items from an array using a number:  
-__puts ticket[1]__.
+还记得从数组中提取元素的时候，像__puts ticket[1]__那样需要使用数值吗?
 
-For a hash this works the same way, except we don't use a number to get an element but a name.
+哈希也可以用同样的方法提取元素。但是，使用名字而不是数值。
 
-So, if you'd like to look up one of your old reviews, again put the title in the square. But leave off the equals.
-Just like this:
+假设你想检查旧的书评。在括号里输入书名。但把等号去了。
+如下所示：
 
     puts books["Gravitys Rainbow"]

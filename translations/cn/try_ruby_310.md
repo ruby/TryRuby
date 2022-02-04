@@ -1,24 +1,24 @@
 ---
-lang:   EN
-title:  Now Arriving at Summary #4
+lang:   CN
+title:  现在到了总结#4
 answer: 
 class:  stretcher chapmark
 ok:     
 error:  
 ---
 
-This last lesson was a bit longer. You've probably used up three minutes learning about:
+这最后一课稍微长一点。你可能已经用了三分钟的时间来学习:
 
-### Hashes
-The little dictionary with the curly pages: __{}__
+###哈希
+带有卷页的小字典:__{}__
 
-### Symbols
-Tiny, efficient code words with a colon, like: __:splendid__
+###符号
+带有冒号的微小、高效的代码，比如:__:splendid__
 
-### Blocks
-Chunks of code which can be tacked on to many of Ruby's methods. Here's the code you used to
-build a scorecard:  
+###块
+可以添加到许多Ruby方法中的代码块。这是你用过的代码
+建立一个记分卡:
 __books.values.each { |rate| ratings[rate] += 1 }__
 
-### Next
-In the next lesson we will delve a little bit deeper into methods.
+###下一节
+下一课我们将更深入地探讨方法。

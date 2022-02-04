@@ -1,5 +1,5 @@
 ---
-lang:   EN
+lang:   CN
 title:  Noble Kinsmen
 answer: ^The Two Noble Kinsmen$
 ok:     That's much better
@@ -29,7 +29,7 @@ Looks like this:
       </li>
       <li>"2"
       <ul>
-        <li>"title": "The Taming of the Shrew"</li>
+        <li>"title": "The Taming of the= Shrew"</li>
         <li>"finished": 1591</li>
       </ul>
       </li>

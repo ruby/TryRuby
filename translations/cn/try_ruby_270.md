@@ -1,19 +1,19 @@
 ---
-lang:   EN
-title:  Hashes as Pairs
+lang:   CN
+title:  哈希是成对的
 answer: ^\[".*"\]
 load:   prev
-ok:     You found the keys
+ok:     你找到键（keys）了
 error:  
 ---
 
-Keep in mind that hashes won't keep things in order. That's not their job. It'll just pair up
-two things: a __key__ and a __value__.
+记住哈希并不会把储存的东西排好序，那不是它的工作，它只会把东西配对。
+两个东西：__键__ 与__值__
 
-In your reviews, the book's title is the key and the rating is the value.
+在你的评论中，书名是键，书评是值
 
-If you want to just see the titles of all the books you've reviewed:
+如果你想看你评论过的书的题目:
 
     books.keys
 
-You can also try this with .values instead of .keys.
+你可以方法换成.values

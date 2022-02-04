@@ -1,5 +1,5 @@
 ---
-lang:   EN
+lang:   CN
 title:  To (be) or not to (be)
 answer:
 load:   poem = "My toast has flown from my hand\nAnd my toast has gone to the moon.\nYada yada yada\n"
@@ -7,32 +7,29 @@ ok:
 error:
 ---
 
-One other little thing we haven't really talked about openly: method arguments.
-Remember when we changed the poem a little bit? We used:
+一个还没有认真探讨的东西：方法参数
+还记得我们怎么修改那首诗的吗：
 __poem.gsub("toast", "honeydew")__
 
-The gsub method needs 2 arguments, which we passed to gsub by including two strings between
-parentheses. _Arguments tell the method exactly what to do._
+gsub方法需要两个参数，这两个参数即为括号中的那两个字符串。
 
-### Parentheses
-Actually, most of the time Ruby doesn't mind if you omit the parentheses. So this would have
-worked too:
+### 括号
+实际上，Ruby不是很在意你去掉括号，这样也可以运行:
 __poem.gsub "toast", "honeydew"__
 
-We have already used another method with a parameter. Many times in fact, though it was not very
-obvious:
+实际上我们已经用了好多次一个带着括号的方法，很显然:
 
     puts "Hello"
     puts("Hello")
 
-Yes __puts__ is also a method. Using puts with or without parentheses is the same to Ruby, but the
-version without parentheses is a bit easier to read. And it saves you valuable typing time!
+是的__puts__ 是的__puts__ 是一个方法，加不加括号对Ruby来说一样，但是
+不加括号使代码更易读，并且节省时间
 
-> So I guess the conclusion is that you can do whatever you like with parentheses as long as your
-> code reads nicely.
+>所以我想结论是，你可以用括号做任何你喜欢的事，只要你
+>代码读起来很好。
 
 ### to (be) or not to (be)
-So if _to_ is a method and _be_ is an argument we now know the answer to this age old question.
-It is really just a matter of preference whether you want _to be_ or _to(be)_.
+所以如果 _to_ 是一个方法 _be_ 是一个参数，我们现在知道这个古老问题的答案了
+这只是单纯的个人喜好问题_to be_ or _to(be)_.
 
-Are you in the mood for more Shakespeare? Read on.
+还想要更多的莎士比亚作平吗，继续读。

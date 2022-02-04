@@ -1,30 +1,30 @@
 ---
-lang:   EN
-title:  Of All the Summaries, #3 is Here Now
+lang:   CN
+title:  这里是摘要(三)
 answer: \{\}
 class:  stretcher chapmark
 load:   prev
-ok:     You've made an empty hash!
+ok:     创建了空hash!
 error:
 ---
 
-### Exclamations
-Methods may have exclamations (and also question marks) in their name.
-These are just there to better explain what their function is. No big deal.
+### 感叹号
+方法的名称中可能有感叹号(也有问号)。
+这些只是为了更好地解释它们的功能。没什么大不了的。
 
-### String manipulation
-Search and change strings
+### 字符串操作
+搜索和更改字符串
 
-### Chaining
-Chaining methods lets you get a lot more done. Break up a poem, reverse it, reassemble it:
+### 链接
+链接方法可以让您完成更多的工作。将一首诗分解，倒写，重新组合:
 __poem.lines.reverse.join__
 
-At this point, you may want to tinker with the poem a bit more. A complete list of all the String
-methods is <a href="http://ruby-doc.org/core/classes/String.html" target="_blank">here</a>.
+你还想再弄点诗吗?
+string的所有方法列表在<a href="http://ruby-doc.org/core/classes/String.html" target="_blank">这里</a>.
 
-Go ahead and try a few, such as: poem.downcase or poem.swapcase
+试试看这些吧: poem.downcase or poem.swapcase
 
-## Ready?
-When you feel ready to move on, type:
+## 准备好了?
+准备好继续的话，输入:
 
     books = {}

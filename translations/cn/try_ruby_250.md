@@ -1,24 +1,25 @@
 ---
-lang:   EN
-title:  More Bite-Size Reviews
+lang:   CN
+title:  更多的评论
 answer: [3-9]
 load:   books = {"Gravitys Rainbow" => :splendid}
-ok:     See, the length method works on strings, arrays and hashes.
+ok:     看到了吧，length方法不仅可以用于字符串，还可以用于数组和散列。
 error:
 ---
 
-Keep going, fill it up with reviews. And, if you want to see the whole list, just type: __puts books__
+继续增加书评吧。
+要查看完整的列表，输入__puts books__。
 
-Again, the ratings are: :splendid, :quite\_good, :mediocre, :quite\_not\_good and :abysmal.
+再重复一遍，评价体系是:splendid、:quite_good、:mediocre、:quite_not\ _good、:abysmal。
 
-These ratings are not strings. When you place a colon in front of a simple word, you get a __symbol__.
-Symbols are cheaper than strings (in terms of computer memory.) If you use a word over and over in your program,
-use a symbol. Rather than having thousands of copies of that word in memory, the computer will store the symbol only
-__once__.
+这些评价不是一串文字。在单词前面加冒号的话，那个就变成了__符号__。
+从计算机存储器的角度来看，符号比字符串成本更低。
+如果你在程序中不断重复使用相同的单词，你就应该使用符号。
+不是在内存上有那个单词的数千个副本，而是计算机只存储符号__一次__。
 
-More importantly, a symbol tells you that it is not just any old word but has a meaning within your program.
+更重要的是，用符号来表示它会告诉电脑这不仅仅是一个单词，而是在程序中有意义的。
 
-Enter 2 more bookreviews, use __books.length__ to see how many reviews there are in the hash:
+如果输入了两个以上的书评，请使用__books.length__确认哈希中有哪些书评：
 
     books["The deep end"]  = :abysmal
     books["Living colors"] = :mediocre

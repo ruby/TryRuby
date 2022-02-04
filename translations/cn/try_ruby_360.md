@@ -1,13 +1,13 @@
 ---
-lang:   EN
-title:  Give and take
+lang:   CN
+title:  奉献与索取
 answer: \d+
-ok:     Right on. Bravo.
+ok:     不错。好样的。
 error:
 ---
 
-Most methods do not only want some parameters as input, but will also __give something back__.
-I have changed our method a bit so it will return a value to you. Try it:
+大多数方法不仅需要一些参数作为输入，而且也会__返回__一些东西。
+我对我们的方法做了一些改变，所以它将返回一个值给你。试试吧：
 
     def tame( number_of_shrews )
       number_of_shrews.times {
@@ -18,12 +18,11 @@ I have changed our method a bit so it will return a value to you. Try it:
 
     puts tame(3)
 
-### Return
-And, since you're getting so advanced and capable here, one other tip:
-you can omit the word __return__ from the last line of the method.
-Ruby will automagically return the last value that was used inside the method.
+### 返回
+那么，既然你在这里变得如此高阶和能干，给你提示。
+你可以在方法的最后一行省略__return__这个词。
+Ruby将自动返回方法中最后使用的值。
 
-So we can change the last line to just: __number\_of\_shrews__.
+所以我们修改最后一行为: __number\_of\_shrews__.
 
-But since method __.times__ also returns the _number\_of\_shrews_ we can
-remove the entire last line. So in fact our original method already did what we wanted all along!
+但是既然方法__.times__ 也返回 _number\_of\_shrews_ 我么可以省去最后一整行，所以我们最初的方法已经做到了我们一直想做的事情。

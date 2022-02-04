@@ -1,12 +1,12 @@
 ---
-lang:   EN
-title:  Ready, Aim
+lang:   CN
+title:  摆好姿势，瞄准
 answer: ^\n.ti tae ot (.+)
 load:   prev
-ok:     Okay, sure.  So the whole poem has been turned backwards.
+ok:     好的,当然。所以整首诗被倒着写了。
 error:  
 ---
 
-Here's a question: what happens when we reverse this whole poem? 
+有一个问题:当我们逆置整首诗会发生什么？
 
     poem.reverse

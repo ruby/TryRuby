@@ -1,18 +1,18 @@
 ---
-lang:   EN
-title:  A Tally
+lang:   CN
+title:  一个统计
 answer: \w+
 ok:     Yodelay!
 error:
 ---
 
-One of the amazing new things we've just used is a __block__. We're going to explore these more
-in this and the next lesson. But, basically, a block is a bit of Ruby code surrounded by curly
-braces.
+我们刚刚使用的一个美妙的新东西是__块（block）__。我们将进一步探讨这些问题
+在这一课和下一课。但是，基本上，块是由花括号包围的一小段Ruby代码
+括号。
 
-Let's try another block:
+试一试另一个块:
 
     5.times { print "Odelay! " }
 
-Blocks are always attached to methods. Like the __times__ method, which takes the block and runs
-the code over and over. (In our example: five times.)
+块总是附加到方法上。比如__times__方法，这个块将
+一遍又一遍地运行代码。(在这个例子中，它将运行五次。)

@@ -1,27 +1,28 @@
 ---
-lang:   EN
-title:  A Wee Blank Book
+lang:   CN
+title:  一本空白的小书
 answer: ^(splendid|quite_good|mediocre|quite_not_good|abysmal)$
 load:   books = {}
-ok:     Yes that's a new review
-error:  Use one of splendid, quite_good, mediocre, quite_not_good, abysmal.<br/>Don't forget the colon
+ok:     是的，这是一个新的评论
+error:  splendid, quite_good, mediocre, quite_not_good, abysmal.<br/>请使用其中之一。另外，不要忘记冒号。
 ---
 
-You've made an empty __hash__. A hash is like an array, only every one of its elements has a name.
+现在制作的是空的__哈希（hash）__。哈希就像数组一样，不同之处在于每个元素都有自己的名字。
 
-We're going to stuff some miniature book reviews in our new hash. Here's our rating system:
+我们要在新的哈希中塞进一些简易的书评
+评价体系如下。
 
-- :splendid &rarr; a masterpiece
-- :quite\_good &rarr; enjoyed, sure, yes
-- :mediocre &rarr; equal parts great and terrible
-- :quite\_not\_good &rarr; notably bad
-- :abysmal &rarr; steaming wreck
+- :splendid &rarr; 大师之作
+- :quite\_good &rarr; 很享受，啊对
+- :mediocre &rarr; 半好半坏
+- :quite\_not\_good &rarr; 特别差
+- :abysmal &rarr; 热气腾腾的残骸
 
-To rate a book, put the title in square brackets and put the rating after the equals. For example:
+要给一本书评分，把书名放在方括号里，把评分放在等号后面。比如说：
 
     books["Gravitys Rainbow"] = :splendid
 
-> By now I think it is only fair to tell you that all lessons in TryRuby are separate from each other.
-> So if you go crazy typing book reviews here, you can only use 'em in this lesson.  
-> If you want to use your reviews in the next lesson you should copy/paste them.  
-> Don't worry about this too much, each lesson has plenty of predefined stuff for you to play around with.
+> 现在我想应该告诉你，TryRuby的所有课程都是相互独立的。
+> 所以，如果你在这里疯狂地输入书评，你只能在这一课中使用它们。 
+> 如果你想在下一课使用你的评论，你应该复制/粘贴它们。 
+> 不要太担心这个，每一课都有很多预定义的东西供你玩耍。

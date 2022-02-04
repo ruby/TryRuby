@@ -1,27 +1,27 @@
 ---
-lang:   EN
-title:  Hello, Who's There? And Summary #5 Waves Its Hat!
+lang:   CN
+title:  你好，谁在那里？摘要#5挥舞着它的帽子!
 answer:
 class:  stretcher chapmark
 ok:
 error:
 ---
 
-Well done, well done, well done, well done!
+做得好，做得好，做得好，做得好!
 
-Truly, truly, truly, truly, truuuuuuuuly!
+真正的，真正的，真正的，真正的，真真真真真真真的！
 
-Here's the last few minutes of your life in review:
+这里是你生命中上几分钟的回顾。
 
-### Methods
-Methods can be defined with __def__ and have a name. Methods make your program shorter
-and easier to read.
+### 方法
+方法可以用__def__来定义，并且有一个名字。方法使你的程序更短
+而且更容易阅读。
 
-### Parameters
-Methods can have parameters.
+### 参数
+方法可以有参数。
 
-### Return values
-Methods (almost) always return a value.
+### 返回值
+方法（几乎）总是返回一个值。
 
-## Now
-To (be) or not to (be) is not a question to you anymore. Are you ready for some more Shakespeare?
+## 现在
+To (be) or not to (be) 不再是一个问题了。准备好看更多的莎士比亚了吗？

@@ -1,33 +1,35 @@
 ---
-lang:   EN
-title:  The Taming of the Shrew
+lang:   CN
+title:  驯悍记
 answer: ^tame
-ok:     Good good!
+ok:     不错不错
 error:
 ---
 
-You totally know how to use Ruby now. I mean you've got down the essentials.
-You just need to keep learning more methods and try out more complex blocks.
+你现在完全知道如何使用Ruby。我的意思是你已经掌握了基本的东西。
+你只需要继续学习更多的方法和尝试更复杂的块。
 
-But there's one side of Ruby we haven't settled. Making your own methods.
-__Ahem!__ Let's get it over with then.
+但是Ruby还有一个方面我们还没有解决。制作你自己的方法。
+_Ahem!__让我们把它完成吧。
 
-Next to using Ruby's built in methods (like puts, sort, times) you can define
-your own methods. Why is that a good idea? Two reasons:
+除了使用Ruby的内置方法（如puts, sort, times），你还可以定义
+你可以定义你自己的方法。为什么这是个好主意？有两个原因。
 
-### To make your program shorter
-If you have to do the same thing in more than one part of your code it is easier
-to put that code in a separate method. Your code will be shorter.
+### 让你的程序更短
+如果你必须在你的代码的多个部分做同样的事情，那么把这些代码放在一个单独的方法中会比较容易。
+把这些代码放在一个单独的方法中。你的代码会更短。
 
-### To make your code easier to read
-Suppose your program needs to do a lot of different things.
-You __could__ stuff all code into one long piece. But it would be very difficult to
-read and understand that code later.
+### 为了使你的代码更容易阅读
+假设你的程序需要做很多不同的事情。
+你可以__把所有的代码塞进一个长的部分。但这将是非常困难的
+阅读和理解这些代码。
 
-Instead you should cut up your code in different methods and give each method an easy to
-understand English name. You will thank yourself later.
+相反，你应该把你的代码切割成不同的方法，并给每个方法一个容易理解的
+的英文名称。你以后会感谢自己的。
 
-So how do we define a method? Like this:
+那么，我们如何定义一个方法呢？就像这样。
 
     def tame( number_of_shrews )
     end
+
+
