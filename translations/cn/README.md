@@ -1,5 +1,5 @@
 ## Copyright (C)
-Try Ruby version 1 Chinese version, 2022 _Ye Junzhe_
+Try Ruby version 4 Chinese version, 2022 _Ye Junzhe_
 
 ## The MIT License
 Permission is hereby granted, free of charge, to any person obtaining a copy
