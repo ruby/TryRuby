@@ -1,6 +1,6 @@
 ---
 lang:   CN
-title:  把清单藏起来
+title:  把清单保存起来
 answer: ^\[(\d+)(,\s*\d+){2,}\]$
 ok:     保存成功!
 error:  
