@@ -1,7 +1,7 @@
 ---
 lang:   UA
 title:  Скажи своє ім'я навпаки
-answer: \w+
+answer: .+
 ok:     оводуЧ
 error:  
 ---

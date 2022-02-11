@@ -1,7 +1,7 @@
 ---
 lang:   RU
 title:  На повторе
-answer: (\w+)
+answer: (.+)
 ok:     Рад Вас видеть. Рад Вас видеть. Рад Вас видеть.
 error:  adfadsfadsf
 ---
