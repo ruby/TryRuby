@@ -1,0 +1,26 @@
+name: Run RSpec
+
+on:
+  push: {},
+  pull_request: {}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.0"
+      - name: Install dependencies
+        run: |
+          gem install bundler -v 2.1.4
+          bundle install
+      - name: Build
+        run: bundle exec rake
+        env:
+          SIMPLIFIED_RUN: "1"
+
