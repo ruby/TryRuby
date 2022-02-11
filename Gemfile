@@ -13,3 +13,10 @@ gem "redcarpet"
 gem "sass"
 gem "webrick"
 gem "terser"
+
+group :test do
+  gem "rspec"
+  gem "capybara"
+  gem "cuprite"
+  gem "puma"
+end

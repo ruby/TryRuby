@@ -22,14 +22,14 @@ load:   class Blurb;attr_accessor :content,:time,:mood;def initialize(mood, cont
       def initialize(title)
         @title  = title
         @blurbs = [] # Порожній масив
-                     # для зберігання Blurbs
+                     # для зберігання Blurbs
       end
-
+    
       def add_a_blurb(mood, content)
         # The << means add to the end of the array
         @blurbs << Blurb.new(mood, content)
       end
-
+    
       def show_timeline
         puts "Blurbify: #{@title} has #{@blurbs.count} Blurbs"
 
@@ -40,5 +40,5 @@ load:   class Blurb;attr_accessor :content,:time,:mood;def initialize(mood, cont
         }
       end
     end
-
+    
     myapp = Blurbalizer.new "The Big Blurb"

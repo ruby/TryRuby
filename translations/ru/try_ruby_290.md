@@ -1,7 +1,7 @@
 ---
 lang:   RU
 title:  Подсчет
-answer: \w+
+answer: .+
 ok:     Ура!
 error:
 ---

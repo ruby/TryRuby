@@ -1,7 +1,7 @@
 ---
 lang:   MK
 title:  Сѐ е добро штом добро ќе заврши
-answer: Сѐ е добро штом добро ќе заврши
+answer: All's Well That Ends Well
 ok:     True
 error:  Стави 1605 како втор параметар
 load:   prev

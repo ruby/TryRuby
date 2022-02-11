@@ -1,7 +1,7 @@
 ---
 lang:   UA
 title:  Підрахунок
-answer: \w+
+answer: .+
 ok:     Будьмо!
 error:
 ---
