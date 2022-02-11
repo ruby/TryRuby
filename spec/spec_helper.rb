@@ -24,6 +24,7 @@ Capybara.register_driver(:cuprite) do |app|
     browser_options: { 'no-sandbox': nil },
     inspector: ENV['INSPECTOR'],
     headless: !ENV['NO_HEADLESS'],
+    timeout: 20,
     url_blacklist: [
       "https://www.ruby-doc.org/", # It is quite a heavy website iframed on playground
                                    # and for testing, we don't need it to be present.
