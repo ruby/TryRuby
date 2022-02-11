@@ -155,7 +155,7 @@ class MiddlemanCollector < Middleman::Extension
       Collector.new('translations/ru/try_ruby_*.md', 'source/try_ruby_ru.json').collect
       Collector.new('translations/ua/try_ruby_*.md', 'source/try_ruby_ua.json').collect
       Collector.new('translations/mk/try_ruby_*.md', 'source/try_ruby_mk.json').collect
-      Collector.new('translations/cn/try_ruby_*.md', 'source/try_ruby_cn.json').collect
+      Collector.new('translations/zh/try_ruby_*.md', 'source/try_ruby_zh.json').collect
       
       # TODO: add any new translations here
 
