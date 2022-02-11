@@ -1,7 +1,7 @@
 ---
 lang:   ZH
 title:  我们有一个惊人的结论
-answer: 与100$不相等
+answer: is not equal to 100$
 ok:     这样好多了
 error:  这肯定不对
 ---

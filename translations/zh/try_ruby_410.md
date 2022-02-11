@@ -1,7 +1,7 @@
 ---
 lang:   ZH
 title:  一切都是美好的结局 
-answer: 一切都是美好的结局 
+answer: All's Well That Ends Well
 ok:     True
 error:  把1605作为第二个参数
 load:   prev
