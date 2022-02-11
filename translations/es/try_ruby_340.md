@@ -1,7 +1,7 @@
 ---
 lang:   ES
 title:  En Ruby, Def Leppard significa: define el método Leppard
-answer: ^Domé
+answer: ^domar
 ok:     Domar no es aburrido
 error:  
 ---

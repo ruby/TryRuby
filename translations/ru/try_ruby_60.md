@@ -1,7 +1,7 @@
 ---
 lang:   RU
 title:  Скажи свое имя наоборот
-answer: \w+
+answer: .+
 ok:     !отурК
 error:  
 ---

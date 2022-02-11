@@ -1,7 +1,7 @@
 ---
 lang:   UA
 title:  Все добре, що добре закінчується
-answer: Все добре, що добре закінчується
+answer: All's Well That Ends Well
 ok:     True
 error:  Використовуй 1605 як другий параметр
 load:   prev

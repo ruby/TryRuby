@@ -1,7 +1,7 @@
 ---
 lang:   UA
 title:  Шляхетні родичі
-answer: ^Два шляхетні родичі$
+answer: ^The Two Noble Kinsmen$
 ok:     Так значно краще
 error:  
 load:   prev
