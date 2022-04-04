@@ -74,6 +74,10 @@ class RubyEngine
       "Opal #{Opal::VERSION}"
     end
 
+    def engine_id
+      "opal"
+    end
+
     def run(source, writer)
       # Compile
       js_code = Opal.compile(source)
@@ -102,6 +106,10 @@ class RubyEngine
 
     def name
       "CRuby #{@version}"
+    end
+
+    def engine_id
+      "cruby-#{@version}"
     end
 
     def wasm_module
@@ -154,13 +162,15 @@ class RubyEngine
     end
   end
 
-  ENGINES = {
-    opal: OpalEngine.new,
-    cruby: CRubyEngine.new(
+  ENGINES = [
+    OpalEngine.new,
+    CRubyEngine.new(
       "https://cdn.jsdelivr.net/npm/ruby-wasm-wasi@0.1.2/dist/ruby.wasm",
       "3.2.0dev"
     ),
-  }
+  ].each_with_object({}) do |engine, hash|
+    hash[engine.engine_id] = engine
+  end
 end
 
 
@@ -214,8 +224,6 @@ class TryRuby
       theme: 'tomorrow-night-eighties',
     )
 
-    @engine = RubyEngine::ENGINES[DEFAULT_RUBY_ENGINE]
-
     # Bind run button
     $document.on(:click, '#btn_run') { do_run }
 
@@ -235,8 +243,9 @@ class TryRuby
   def initialize_playground
     @playground = true
 
-    code = get_code_from_url
+    code, selected_engine = get_state_from_url
     @editor.value = code || INITIAL_TRY_CODE.strip
+    update_engine(selected_engine || DEFAULT_RUBY_ENGINE)
 
     $document.on(:click, '#btn_copy_url') { do_copy_url }
     $window.on(:hashchange) { on_hash_change }
@@ -246,6 +255,7 @@ class TryRuby
   end
 
   def initialize_tutorial
+    @engine = RubyEngine::ENGINES[DEFAULT_RUBY_ENGINE]
     $document.on(:click, '#btn_copy') { do_copy }
     $document.on(:click, '#btn_next') { do_next }
     $document.on(:click, '#btn_back') { do_back }
@@ -351,14 +361,22 @@ class TryRuby
     options = ''
 
     RubyEngine::ENGINES.each do |key, engine|
-      options += "<option value=\"#{key}\" #{key == DEFAULT_RUBY_ENGINE ? "selected" : ""}>#{engine.name}</option>\n"
+      options += "<option value=\"#{key}\" #{key == @engine.engine_id ? "selected" : ""}>#{engine.name}</option>\n"
     end
 
     engine_element = $document.at_css('#tryruby-engine')
     engine_element.inner_html = options
     $document.on(:change, '#tryruby-engine') {
-      @engine = RubyEngine::ENGINES[engine_element.value]
+      update_engine(engine_element.value)
+      $window.history.replace(gen_url)
     }
+  end
+
+  def update_engine(engine)
+    @engine = RubyEngine::ENGINES.fetch(engine) do
+      STDERR.puts "Selected engine id '#{engine}' is unknown. Fallback to default engine '#{DEFAULT_RUBY_ENGINE}'."
+      RubyEngine::ENGINES[DEFAULT_RUBY_ENGINE]
+    end
   end
 
   def get_cookie(key)
@@ -449,11 +467,10 @@ class TryRuby
   end
 
   # Playground methods
-  def get_code_from_url
+  def get_state_from_url
     hash = $document.location.fragment.to_s
-    hash = Browser::FormData.decode(hash.gsub('+', ' '))
-
-    hash.delete_prefix("#code=") if hash.start_with?('#code=')
+    hash = Browser::FormData.parse_query(hash.gsub('+', ' '))
+    [hash['code'], hash['engine']]
   end
 
   def do_copy_url
@@ -462,13 +479,14 @@ class TryRuby
 
   def gen_url
     prefix = $document.location.uri.split("#").first
-    suffix = Browser::FormData.build_query(code: @editor.value).gsub("%20", "+")
+    suffix = Browser::FormData.build_query(code: @editor.value, engine: @engine.engine_id).gsub("%20", "+")
 
     "#{prefix}##{suffix}"
   end
 
   def on_hash_change
-    @editor.value = get_code_from_url
+    @editor.value, engine = get_state_from_url
+    update_engine(engine) if engine
   end
 
   def on_editor_change
