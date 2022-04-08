@@ -9,14 +9,14 @@ description: Play around with Ruby programs
     <div id="tryruby-content">
       <div class="playground-iframe-wrapper">
         <iframe
-          src="https://www.ruby-doc.org/core/Kernel.html"
-        >www.ruby-doc.org</iframe>
+          src="https://docs.ruby-lang.org/en/master/"
+        >Ruby Documentation</iframe>
       </div>
 
       <p>
         In the Playground you can try any Ruby code you like.<br />
         The
-        <a href="https://www.ruby-doc.org/core/Kernel.html" target="_blank">Ruby documentation</a>
+        <a href="https://docs.ruby-lang.org/en/master/" target="_blank">Official Ruby documentation</a>
         is included.
       </p>
     </div>
