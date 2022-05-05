@@ -14,7 +14,7 @@ load:   prev;class Blurbalizer;attr_reader :title;def initialize(title);@title=t
 
 是时候使用Blurbalizer<sup>TM</sup>了。我已经预载了一些Blurb，你可以自己创建你的。
 
-我们不直接穿件Blurbs<sup>TM</sup>，而是通过Blurbalizer<sup>TM</sup>类中的
+我们不直接创建Blurbs<sup>TM</sup>，而是通过Blurbalizer<sup>TM</sup>类中的
 add\_a\_blurb __方法__ 。这样我们可以确保所有的Blurbs<sup>TM</sup被储存在
 myapp 对象中。
 
