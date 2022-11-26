@@ -1,178 +1,7 @@
-require 'opal'
-require 'opal/full'
-require 'opal-parser'
-require 'native'
-require 'promise/v2'
-require 'browser/setup/full'
-require 'browser/cookies'
-require 'browser/form_data'
-
-# Container for individual lessons
-class TryRubyItem
-  attr_reader   :lang, :step, :title, :chapter, :answer, :ok, :error, :text, :saved_editor, :saved_output
-  attr_accessor :load_code
-
-  def initialize(key, values)
-    @lang         = values["lang"]
-    @step         = key.to_i
-    @title        = values["title"]
-    @chapter      = values["chapter"]
-    answer        = values["answer"]
-    @answer       = answer && !answer.empty? ? Regexp.new(answer, 'mi') : nil
-    @ok           = values["ok"].split('<br/>')
-    @error        = values["error"].split('<br/>')
-    @text         = values["text"]
-    load_code     = values["load_code"]
-    @load_code    = load_code && !load_code.empty? ? load_code : nil
-    @saved_editor = ''
-    @saved_output = ''
-  end
-
-  def update_current_edit(current_editor_value, current_output_value)
-    @saved_editor = current_editor_value
-    @saved_output = current_output_value
-  end
-end
-
-# Wrapper for CodeMirror objects
-class Editor
-  def initialize(dom_id, options)
-    @native = `CodeMirror(document.getElementById(dom_id), #{options.to_n})`
-  end
-
-  def value=(str)
-    `#@native.setValue(str)`
-  end
-
-  def value
-    `#@native.getValue()`
-  end
-
-  def focus
-    `#@native.focus()`
-  end
-
-  def mark_ok(line_from, line_to)
-    `#@native.markText({line: line_from, ch: 0}, {line: line_to, ch: 99}, {className: "tryruby-output-green"})`
-  end
-
-  def mark_error(line_from, line_to)
-    `#@native.markText({line: line_from, ch: 0}, {line: line_to, ch: 99}, {className: "tryruby-output-red"})`
-  end
-
-  def on(event, &block)
-    `#@native.on(#{event}, #{block})`
-  end
-end
-
-class RubyEngine
-  def run(source, instance)
-  end
-
-  class OpalEngine < RubyEngine
-    def name
-      "Opal #{Opal::VERSION}"
-    end
-
-    def engine_id
-      "opal"
-    end
-
-    def run(source, writer)
-      # Compile
-      js_code = Opal.compile(source)
-
-      # Bind puts and print methods.
-      $stdout.write_proc = $stderr.write_proc = ->(str) do
-        writer.print_to_output str, ""
-      end
-
-      # Run
-      retval = nil
-      error = nil
-
-      retval = `eval(js_code)`
-      yield(retval ? retval.to_s : '')
-      $stdout.write_proc = $stderr.write_proc = nil
-    end
-  end
-
-  class CRubyEngine < RubyEngine
-
-    def initialize(ruby_wasm_url, version)
-      @ruby_wasm_url = ruby_wasm_url
-      @version = version
-    end
-
-    def name
-      "CRuby #{@version}"
-    end
-
-    def engine_id
-      "cruby-#{@version}"
-    end
-
-    def wasm_module
-      return @module if @module
-      %x{
-        #{@module} = (async function() {
-          const response = await fetch(#{@ruby_wasm_url});
-          const buffer = await response.arrayBuffer();
-          return await WebAssembly.compile(buffer);
-        })();
-      }
-      @module
-    end
-
-    def run(source, writer)
-      %x{
-        async function instantiateVM() {
-          const $WASI = window["WASI"].WASI;
-          const $WasmFs = window["WasmFs"].WasmFs;
-          const $RubyVM = window["ruby-wasm-wasi"].RubyVM;
-
-          const wasmFs = new $WasmFs();
-          const originalWriteSync = wasmFs.fs.writeSync.bind(wasmFs.fs);
-          const textDecoder = new TextDecoder("utf-8");
-          wasmFs.fs.writeSync = (fd, buffer, offset, length, position) => {
-            const text = textDecoder.decode(buffer);
-            if (fd == 1 || fd == 2) {
-              #{writer.print_to_output(`text`, "")};
-            }
-            return originalWriteSync(fd, buffer, offset, length, position);
-          };
-
-          const vm = new $RubyVM();
-          const wasi = new $WASI({
-            bindings: { ...$WASI.defaultBindings, fs: wasmFs.fs },
-          });
-          const imports = { wasi_snapshot_preview1: wasi.wasiImport };
-          vm.addToImports(imports);
-          const wasmInstance = await WebAssembly.instantiate(await #{wasm_module}, imports);
-          await vm.setInstance(wasmInstance);
-          wasi.setMemory(wasmInstance.exports.memory);
-          vm.initialize();
-          return vm;
-        }
-
-        instantiateVM()
-        .then((vm) => { #{yield `vm.eval(source).toString()`} })
-        .catch((err) => { #{writer.log_error(`err`)} })
-      }
-    end
-  end
-
-  ENGINES = [
-    OpalEngine.new,
-    CRubyEngine.new(
-      "https://cdn.jsdelivr.net/npm/ruby-wasm-wasi@0.1.2/dist/ruby.wasm",
-      "3.2.0dev"
-    ),
-  ].each_with_object({}) do |engine, hash|
-    hash[engine.engine_id] = engine
-  end
-end
-
+require 'dependencies'
+require 'editor'
+require 'lesson'
+require 'ruby_engine'
 
 # The TryRuby application
 class TryRuby
@@ -318,7 +147,7 @@ class TryRuby
   def update_json(items)
     @items = {}
     items.each do |k, v|
-      @items[k.to_i] = TryRubyItem.new(k, v)
+      @items[k.to_i] = Lesson.new(k, v)
     end
     @loaded = true
 
@@ -601,4 +430,4 @@ class TryRuby
   end
 end
 
-TryRuby.start
+$window.on("dom:load") { TryRuby.start }

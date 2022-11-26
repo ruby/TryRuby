@@ -26,9 +26,9 @@ Capybara.register_driver(:cuprite) do |app|
     headless: !ENV['NO_HEADLESS'],
     timeout: 20,
     url_blacklist: [
-      "https://www.ruby-doc.org/", # It is quite a heavy website iframed on playground
-                                   # and for testing, we don't need it to be present.
-                                   # This should spare us from random test failures.
+      "https://docs.ruby-lang.org/", # It is quite a heavy website iframed on playground
+                                     # and for testing, we don't need it to be present.
+                                     # This should spare us from random test failures.
     ],
   )
 end

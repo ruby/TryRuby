@@ -1,0 +1,8 @@
+require 'opal'
+require 'opal/full'
+require 'opal-parser'
+require 'native'
+require 'promise/v2'
+require 'browser/setup/full'
+require 'browser/cookies'
+require 'browser/form_data'

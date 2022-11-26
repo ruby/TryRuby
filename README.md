@@ -28,6 +28,11 @@ only change the files in folder _translations_,
 not the json files in folder _source_.
 These files will be updated automatically by the build/publish task.
 
+## Frontend website
+The TryRuby is kind of unique in a way, that it is a frontend application created
+in Ruby with [Opal](https://opalrb.com/). The source code for this application is
+located in `app` directory.
+
 ## Docker
 You can deploy the website using docker by running the following commands:
 ```

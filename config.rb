@@ -28,13 +28,13 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 
 after_configuration do
+  sprockets.append_path "#{__dir__}/app"
   Opal.paths.each do |p|
     sprockets.append_path p
   end
 end
 
 configure :development do
-  system "clear"
   set :debug_assets, true
   activate :livereload
 end
@@ -46,6 +46,5 @@ activate :minify_css
 
 configure :build do
   activate :minify_javascript,
-           compressor: -> { Terser.new },
-           ignore: ->(i) { i.end_with? "try_ruby.js" }
+           compressor: -> { Terser.new }
 end
