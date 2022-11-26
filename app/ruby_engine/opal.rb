@@ -1,7 +1,7 @@
 class RubyEngine
   class Opal < RubyEngine
     def name
-      "Opal #{Opal::VERSION}"
+      "Opal #{::Opal::VERSION}"
     end
 
     def engine_id
