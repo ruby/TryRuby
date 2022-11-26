@@ -6,6 +6,8 @@ class RubyEngine
     raise NotImplementedError
   end
 
+  # When you update the engines, ensure that they are tested correctly.
+  # Update the engine list also in spec/playground_spec.
   ENGINES = [
     Opal.new,
     CRubyWASI.new(
