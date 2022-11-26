@@ -1,3 +1,7 @@
+# There is some kind of incompatibility between Capybara and Opal::Builder
+# in prefork mode. Let's investigate it later.
+ENV['OPAL_PREFORK_DISABLE'] = '1'
+
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
