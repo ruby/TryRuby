@@ -468,7 +468,7 @@ class TryRuby
 
   # Playground methods
   def get_state_from_url
-    hash = $document.location.fragment.to_s
+    hash = $document.location.fragment.to_s.delete_prefix('#')
     hash = Browser::FormData.parse_query(hash.gsub('+', ' '))
     [hash['code'], hash['engine']]
   end
