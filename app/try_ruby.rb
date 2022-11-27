@@ -412,15 +412,18 @@ class TryRuby
   end
 
   def log_error(err)
-    # Beautify the backtrace a little bit
-    backtrace = err.backtrace
-    backtrace = backtrace.select { |i| i.include? '<anonymous>' }
-    backtrace = backtrace.map { |i| i.gsub(/.*(<anonymous>)/, '\1') }
-    backtrace = ["(file)"] if backtrace.empty?
-    err.set_backtrace(backtrace)
+    unless err.is_a? String
+      # Beautify the backtrace a little bit
+      backtrace = err.backtrace
+      backtrace = backtrace.select { |i| i.include? '<anonymous>' }
+      backtrace = backtrace.map { |i| i.gsub(/.*(<anonymous>)/, '\1') }
+      backtrace = ["(file)"] if backtrace.empty?
+      err.set_backtrace(backtrace)
+      err = err.full_message
+    end
 
     from = count_lines
-    print_to_output err.full_message
+    print_to_output err
     @output.mark_error(from, count_lines)
   end
 
