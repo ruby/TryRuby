@@ -113,7 +113,7 @@ GEM
     mini_portile2 (2.8.0)
     minitest (5.16.3)
     nio4r (2.5.8)
-    nokogiri (1.13.9)
+    nokogiri (1.13.10)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     opal (1.6.0)
@@ -139,7 +139,7 @@ GEM
     public_suffix (5.0.0)
     puma (6.0.0)
       nio4r (~> 2.0)
-    racc (1.6.0)
+    racc (1.6.1)
     rack (2.2.4)
     rack-livereload (0.3.17)
       rack
