@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "opal", "~> 1.4a", git: "https://github.com/opal/opal", ref: "hmdne/fix-builder-dup"
+gem "opal", "~> 1.7"
 gem "opal-browser"
 gem "middleman"
 gem "middleman-livereload"
