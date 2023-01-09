@@ -1,3 +1,6 @@
+require 'opal/full'
+require 'opal-parser'
+
 class RubyEngine
   class Opal < RubyEngine
     def name
