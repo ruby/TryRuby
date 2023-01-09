@@ -1,6 +1,11 @@
 require 'bundler'
 Bundler.require
 
+# Build Opal part with Tilt, with our customized pipeline
+require 'opal-config'
+
+set :rb, builder: OpalBuilder.new
+
 # Enable the collector extension, used to create
 # try_ruby_<language>.json  files
 require 'collector'
@@ -14,7 +19,6 @@ set :markdown,
     smartypants: true
 
 activate :syntax
-activate :sprockets
 
 activate :blog do |blog|
   blog.publish_future_dated = true
@@ -27,14 +31,7 @@ activate :directory_indexes
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 
-after_configuration do
-  Opal.paths.each do |p|
-    sprockets.append_path p
-  end
-end
-
 configure :development do
-  system "clear"
   set :debug_assets, true
   activate :livereload
 end
@@ -46,6 +43,5 @@ activate :minify_css
 
 configure :build do
   activate :minify_javascript,
-           compressor: -> { Terser.new },
-           ignore: ->(i) { i.end_with? "try_ruby.js" }
+           compressor: -> { Terser.new }
 end

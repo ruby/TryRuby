@@ -1,0 +1,8 @@
+require 'opal'
+require 'native'
+require 'promise/v2'
+require 'browser/setup/mini'
+require 'browser/cookies'
+require 'browser/http'
+require 'browser/location'
+require 'browser/history'

@@ -3,3 +3,5 @@ build/*
 .idea
 .ruby-version
 .sass-cache
+tmp
+app/application.js
