@@ -10,13 +10,15 @@ RSpec.describe "Tutorial", type: :feature, js: true do
       before :each do
         find(:css, "#language-menu-toggle").click
         find(:css, %'[data-change-lang="#{language}"]').click
+
+        wait_for_language_load(language)
       end
 
       dataset = language_dataset(language)
 
       it "displays a correct title on the first page of the tutorial" do
         page.should have_content(dataset["1"]["title"])
-        the_cookie_of_step_should_be 1
+        the_cookie_of_step.should be == 1
       end
 
       steps = {
@@ -46,10 +48,9 @@ RSpec.describe "Tutorial", type: :feature, js: true do
         it "has a working step #{step} (#{data["title"]})" do
           find(:css, %'#tryruby-index [value="#{step}"]').select_option
 
-          # TODO: Find a better way to watch for initialization
-          sleep 0.3
+          wait_for_updating_to_finish
 
-          the_cookie_of_step_should_be step
+          the_cookie_of_step.should be == step
 
           special = steps[step] || {}
 
@@ -65,8 +66,7 @@ RSpec.describe "Tutorial", type: :feature, js: true do
             else raise
             end
 
-            click_button("Run")
-            wait_for_execution
+            wait_for_execution { click_button("Run") }
 
             case special[:output]
             when nil then find_all(:css, ".tryruby-output-green").count.should be >= 1
@@ -76,7 +76,7 @@ RSpec.describe "Tutorial", type: :feature, js: true do
 
           unless step == 56
             click_button("Next")
-            the_cookie_of_step_should_be step + 1
+            the_cookie_of_step.should be == step + 1
           end
         end
       end

@@ -13,8 +13,7 @@ RSpec.describe "Playground", type: :feature, js: true do
         playground_test = -> msg, result, ruby do
           it msg do
             set_code ruby
-            click_button "Run"
-            wait_for_execution
+            wait_for_execution { click_button "Run" }
             code(:output).chomp.should be == result
           end
         end

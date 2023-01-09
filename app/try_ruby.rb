@@ -12,6 +12,7 @@ class TryRuby
       print 'Welcome '
     end
   RUBY
+  INITIAL_TRY_RESULT = 'Welcome ' * 3
 
   DEFAULT_RUBY_ENGINE = "opal-ww-1.7.1"
 
@@ -65,6 +66,8 @@ class TryRuby
     else
       initialize_tutorial
     end
+
+    @execution_iteration = 0
   end
 
   def initialize_menu
@@ -225,7 +228,7 @@ class TryRuby
 
     if last_step <= 1 && @editor
       @editor.value = INITIAL_TRY_CODE.strip
-      do_run
+      @output.value = INITIAL_TRY_RESULT
     end
   end
 
@@ -369,10 +372,23 @@ class TryRuby
       @engine.run(source, self) do |retval|
         show_result(retval)
       end.__await__
+      # Here, __await__ is a special Opal instruction
+      # that can be kind of translated to how `await`
+      # instruction in JavaScript works. In short, a
+      # run function _may be_ an async function, which
+      # means it returns a promise and we want to wait
+      # until it's executed. This is so that we can
+      # capture the exception and increase the counter
+      # below.
     rescue Exception => err
       log_error(err)
       show_result(nil)
     end
+
+    # This is for the tests, so that we can be sure
+    # all execution steps are done, so we can read
+    # the final result.
+    @execution_iteration += 1
   end
 
   def show_result(retval)
