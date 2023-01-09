@@ -392,7 +392,7 @@ class TryRuby
   end
 
   def show_result(retval)
-    print_to_output(retval) if @output_buffer.length == 0 && !retval.empty?
+    print_to_output(retval) if @output_buffer.length == 0 && retval && !retval.empty?
 
     # Do not check the answer if there is no regexp matcher
     if @current_item && @current_item.answer

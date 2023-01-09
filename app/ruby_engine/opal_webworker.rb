@@ -81,6 +81,8 @@ class RubyEngine
         super()
       end
 
+      attr_writer :writer
+
       def upload_opal_await(engine)
         engine.loading("downloading ruby") { upload_script_await("opal") }
         engine.loading("downloading ruby extras") { upload_script_await("opal/full") }
@@ -93,7 +95,7 @@ class RubyEngine
       end
 
       def eval_ruby_await(ruby)
-        send_await(:eval, "var out = eval(Opal.compile(#{ruby.to_json})); out === Opal.nil ? '' : out.$to_s();")
+        send_await(:eval, "var out = eval(Opal.compile(#{ruby.to_json})); (out == null || out === Opal.nil) ? '' : out.$to_s();")
       end
 
       def prepare_stdio_await
@@ -126,7 +128,7 @@ class RubyEngine
       end
 
       def handle_error(err)
-        # @writer.log_error err
+        @writer.log_error err
       end
     end
 
@@ -144,6 +146,7 @@ class RubyEngine
 
     def run(source)
       worker = OpalWorker.new(@version)
+      worker.writer = @writer
 
       worker.upload_opal_await(self)
 
@@ -152,12 +155,14 @@ class RubyEngine
         worker.prepare_stdio_await
       end
 
-      yield(worker.eval_ruby_await(source))
+      retval = worker.eval_ruby_await(source)
 
       # Ensure the errors arrive
       worker.send_await(:nop)
 
       worker.close
+
+      yield(retval)
     end
   end
 end

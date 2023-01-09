@@ -12,7 +12,7 @@ class RubyEngine
   def run_with_writer(source, writer, &block)
     @writer = writer
     @dots = 0
-    run(source, &block)
+    run(source, &block).__await__
   end
 
   # Display a message while a block is being executed
