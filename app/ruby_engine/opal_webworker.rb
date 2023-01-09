@@ -83,6 +83,7 @@ class RubyEngine
 
       def upload_opal_await
         upload_script_await("opal")
+        upload_script_await("opal/full")
         upload_script_await("opal-parser")
       end
 
@@ -92,7 +93,7 @@ class RubyEngine
       end
 
       def eval_ruby_await(ruby)
-        send_await(:eval, "var out = eval(Opal.compile(#{ruby.to_json})); out === Opal.nil ? '' : out.$inspect();")
+        send_await(:eval, "var out = eval(Opal.compile(#{ruby.to_json})); out === Opal.nil ? '' : out.$to_s();")
       end
 
       def prepare_stdio_await(writer)
@@ -113,7 +114,7 @@ class RubyEngine
           error_handler = proc do |err|
             backtrace = err.backtrace
             backtrace = backtrace.select { |i| i.include? '<anonymous>' }
-            backtrace = backtrace.map { |i| i.gsub(/.*(<anonymous>)/, '\1') }
+            backtrace = backtrace.map { |i| i.gsub(/.*(<anonymous>)/, '\\1') }
             backtrace = ["(file)"] if backtrace.empty?
             err.set_backtrace(backtrace)
             err = err.full_message
@@ -126,7 +127,7 @@ class RubyEngine
       end
 
       def handle_error(err)
-        @writer.log_error err
+        # @writer.log_error err
       end
     end
 
@@ -135,7 +136,7 @@ class RubyEngine
     end
 
     def name
-      "Opal(WebWorker) #{@version}"
+      "Opal #{@version}"
     end
 
     def engine_id

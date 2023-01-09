@@ -46,6 +46,9 @@ RSpec.describe "Tutorial", type: :feature, js: true do
         it "has a working step #{step} (#{data["title"]})" do
           find(:css, %'#tryruby-index [value="#{step}"]').select_option
 
+          # TODO: Find a better way to watch for initialization
+          sleep 0.3
+
           the_cookie_of_step_should_be step
 
           special = steps[step] || {}
@@ -63,6 +66,7 @@ RSpec.describe "Tutorial", type: :feature, js: true do
             end
 
             click_button("Run")
+            wait_for_execution
 
             case special[:output]
             when nil then find_all(:css, ".tryruby-output-green").count.should be >= 1

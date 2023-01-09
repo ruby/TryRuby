@@ -1,3 +1,5 @@
+# await: true
+
 require 'dependencies'
 require 'editor'
 require 'lesson'
@@ -11,7 +13,7 @@ class TryRuby
     end
   RUBY
 
-  DEFAULT_RUBY_ENGINE = :opal
+  DEFAULT_RUBY_ENGINE = "opal-ww-1.7.1"
 
   def self.start
     instance
@@ -366,7 +368,7 @@ class TryRuby
     begin
       @engine.run(source, self) do |retval|
         show_result(retval)
-      end
+      end.__await__
     rescue Exception => err
       log_error(err)
       show_result(nil)
