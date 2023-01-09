@@ -369,7 +369,7 @@ class TryRuby
   # Code has already been compiled into js
   def eval_code(source)
     begin
-      @engine.run(source, self) do |retval|
+      @engine.run_with_writer(source, self) do |retval|
         show_result(retval)
       end.__await__
       # Here, __await__ is a special Opal instruction
@@ -448,6 +448,10 @@ class TryRuby
   def print_to_output(str, term = "\n")
     @output_buffer << str.to_s + term
     @output.value = @output_buffer.join
+  end
+
+  def output=(text)
+    @output.value = text
   end
 end
 

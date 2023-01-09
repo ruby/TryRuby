@@ -1,4 +1,4 @@
-# await: *await*
+# await: *await*, loading
 
 require 'base64'
 require 'json'
@@ -81,10 +81,10 @@ class RubyEngine
         super()
       end
 
-      def upload_opal_await
-        upload_script_await("opal")
-        upload_script_await("opal/full")
-        upload_script_await("opal-parser")
+      def upload_opal_await(engine)
+        engine.loading("downloading ruby") { upload_script_await("opal") }
+        engine.loading("downloading ruby extras") { upload_script_await("opal/full") }
+        engine.loading("downloading ruby compiler") { upload_script_await("opal-parser") }
       end
 
       def upload_script_await(name)
@@ -96,8 +96,7 @@ class RubyEngine
         send_await(:eval, "var out = eval(Opal.compile(#{ruby.to_json})); out === Opal.nil ? '' : out.$to_s();")
       end
 
-      def prepare_stdio_await(writer)
-        @writer = writer
+      def prepare_stdio_await
         eval_ruby_await <<~RUBY
           $stdout.write_proc = $stderr.write_proc = ->(str) do
             `postMessage(["stdout", str])`
@@ -143,11 +142,15 @@ class RubyEngine
       "opal-ww-#{@version}"
     end
 
-    def run(source, writer)
+    def run(source)
       worker = OpalWorker.new(@version)
-      worker.upload_opal_await
-      worker.prepare_error_handler_await
-      worker.prepare_stdio_await(writer)
+
+      worker.upload_opal_await(self)
+
+      loading("preparing ruby") do
+        worker.prepare_error_handler_await
+        worker.prepare_stdio_await
+      end
 
       yield(worker.eval_ruby_await(source))
 

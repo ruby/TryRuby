@@ -1,10 +1,29 @@
+# await: true
+
 # require 'ruby_engine/opal'
 require 'ruby_engine/opal_webworker'
 require 'ruby_engine/cruby_wasi'
 
 class RubyEngine
-  def run(source, instance)
+  def run(source)
     raise NotImplementedError
+  end
+
+  def run_with_writer(source, writer, &block)
+    @writer = writer
+    @dots = 0
+    run(source, &block)
+  end
+
+  # Display a message while a block is being executed
+  def loading(part = nil)
+    # Debug option:
+    # @writer.output = "*** Loading... #{"(#{part})" if part}"
+    @dots += 1
+    @writer.output = "*** Loading#{"." * @dots}"
+    result = yield.__await__
+    @writer.output = ""
+    result
   end
 
   # When you update the engines, ensure that they are tested correctly.

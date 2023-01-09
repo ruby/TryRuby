@@ -1,4 +1,4 @@
-# await: *await*
+# await: *await*, loading
 
 require 'await'
 
@@ -58,40 +58,55 @@ class RubyEngine
       end
     end
 
-    def run(source, writer)
-      CRubyWASI.inject_scripts.await
+    def run(source)
+      `var $WASI, $WasmFs, $RubyVM`
+      wasmInstance, wasmModule, vm, wasi, imports = nil
 
-      %x{
-        const $WASI = window["WASI"].WASI;
-        const $WasmFs = window["WasmFs"].WasmFs;
-        const $RubyVM = window["ruby-wasm-wasi"].RubyVM;
+      loading("downloading scripts") { CRubyWASI.inject_scripts.await }
 
-        const wasmFs = new $WasmFs();
-        const originalWriteSync = wasmFs.fs.writeSync.bind(wasmFs.fs);
-        const textDecoder = new TextDecoder("utf-8");
-        wasmFs.fs.writeSync = (fd, buffer, offset, length, position) => {
-          const text = textDecoder.decode(buffer);
-          if (fd == 1 || fd == 2) {
-            #{writer.print_to_output(`text`, "")};
-          }
-          return originalWriteSync(fd, buffer, offset, length, position);
-        };
+      loading("early load") do
+        `$WASI = window["WASI"].WASI`
+        `$WasmFs = window["WasmFs"].WasmFs`
+        `$RubyVM = window["ruby-wasm-wasi"].RubyVM`
 
-        const vm = new $RubyVM();
-        const wasi = new $WASI({
+        wasmFs = `new $WasmFs()`
+        originalWriteSync = `wasmFs.fs.writeSync.bind(wasmFs.fs)`
+        textDecoder = `new TextDecoder("utf-8")`
+        %x{
+          wasmFs.fs.writeSync = (fd, buffer, offset, length, position) => {
+            const text = textDecoder.decode(buffer);
+            if (fd == 1 || fd == 2) {
+              #{@writer.print_to_output(`text`, "")};
+            }
+            return originalWriteSync(fd, buffer, offset, length, position);
+          };
+        }
+
+        vm = `new $RubyVM()`
+        wasi = `new $WASI({
           bindings: { ...$WASI.defaultBindings, fs: wasmFs.fs },
-        });
-        const imports = { wasi_snapshot_preview1: wasi.wasiImport };
-        vm.addToImports(imports);
-        const wasmInstance = await WebAssembly.instantiate(#{wasm_module.await}, imports);
-        await vm.setInstance(wasmInstance);
-        wasi.setMemory(wasmInstance.exports.memory);
-        vm.initialize();
-      }
+        })`
+        imports = `{ wasi_snapshot_preview1: wasi.wasiImport }`
+        `vm.addToImports(imports)`
+      end
+
+      loading("downloading ruby") do
+        wasmModule = wasm_module.await
+      end
+
+      loading("instantiating") do
+        wasmInstance = `WebAssembly.instantiate(wasmModule, imports)`.await
+      end
+
+      loading("initializing") do await
+        `vm.setInstance(wasmInstance)`.await
+        `wasi.setMemory(wasmInstance.exports.memory)`
+        `vm.initialize()`
+      end
 
       yield `vm.eval(source).toString()`
     rescue JS::Error => err
-      writer.log_error(err)
+      @writer.log_error(err)
     end
   end
 end

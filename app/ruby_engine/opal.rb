@@ -11,7 +11,7 @@ class RubyEngine
       "opal"
     end
 
-    def run(source, writer)
+    def run(source)
       # Compile
       js_code = ::Opal.compile(source)
 
