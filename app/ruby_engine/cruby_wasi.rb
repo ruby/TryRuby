@@ -6,8 +6,8 @@ class RubyEngine
   class CRubyWASI < RubyEngine
     REQUIRED_SCRIPTS = [
       {
-        src: "https://cdn.jsdelivr.net/npm/ruby-wasm-wasi@0.1.2/dist/index.umd.js",
-        integrity: "sha256-cPmKu5S3jkz5j0NnceapOfiWkzhBQqiBovOLjeYXwA0=",
+        src: "https://cdn.jsdelivr.net/npm/ruby-head-wasm-wasi@0.5.0/dist/index.umd.js",
+        integrity: "sha256-EVJ2qiXD74E5qZpFm9MMNqOf5Buo+P2VQKiqOzOKGpg=",
         crossorigin: "anonymous"
       },
       {
