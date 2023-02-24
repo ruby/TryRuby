@@ -30,4 +30,4 @@ Te garantizo que se te olvidará teclear el segundo símbolo de igual con bastan
 En el código de arriba he añadido una expresión else. Esta es la parte que se ejecutará cuando la __expresión del if__ se evalua a false.
 
 > Hay más variantes de este if-then-else. Puedes leer más
-> <a href="http://www.ruby-doc.org/core/doc/syntax/control_expressions_rdoc.html" target="_blank">aquí</a>.
+> <a href="http://www.ruby-doc.org/core/syntax/control_expressions_rdoc.html" target="_blank">aquí</a>.

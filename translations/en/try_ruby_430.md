@@ -31,4 +31,4 @@ In the code above I have added an else expression. This part will be executed wh
 __if test-expression__ evaluates to false.
 
 > There are more variations to this if-then-else theme. You can read more
-> <a href="http://www.ruby-doc.org/core/doc/syntax/control_expressions_rdoc.html" target="_blank">here</a>.
+> <a href="http://www.ruby-doc.org/core/syntax/control_expressions_rdoc.html" target="_blank">here</a>.

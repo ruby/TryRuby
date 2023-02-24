@@ -33,4 +33,4 @@ In de voorbeeld code staat ook een __else__. Deze hoort bij de __if__. De regel
 na de _else_ zal worden uitgevoerd als de _if test uitdrukking_ niet waar is.
 
 > Er zijn nog meer variaties op dit als-dan-anders thema. Lees er meer over in de Ruby
-> <a href="http://www.ruby-doc.org/core/doc/syntax/control_expressions_rdoc.html" target="_blank">documentatie</a>.
+> <a href="http://www.ruby-doc.org/core/syntax/control_expressions_rdoc.html" target="_blank">documentatie</a>.

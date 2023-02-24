@@ -30,4 +30,4 @@ error:  这肯定不对
 __if test-expression__ 判定为假的时候执行
 
 > if-then-else有很多变种，详情请见：
-> <a href="http://www.ruby-doc.org/core/doc/syntax/control_expressions_rdoc.html" target="_blank">here</a>.
+> <a href="http://www.ruby-doc.org/core/syntax/control_expressions_rdoc.html" target="_blank">here</a>.
