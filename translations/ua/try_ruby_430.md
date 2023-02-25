@@ -27,4 +27,4 @@ error:  Так не може бути
 ### Інакше (else)
 У коді я використав else, що виконується у разі якщо __if тестовий_вираз__ обчислюється як брехня (false).
 
-> Більше інформації ти можеш отримати <a href="http://www.ruby-doc.org/core/doc/syntax/control_expressions_rdoc.html" target="_blank">тут.</a>
+> Більше інформації ти можеш отримати <a href="http://www.ruby-doc.org/core/syntax/control_expressions_rdoc.html" target="_blank">тут.</a>

@@ -31,4 +31,4 @@ No código acima eu adicionei o else a expressão. Esta parte será executada qu
 __expressão teste do if__ retornar false.
 
 > Existem mais variações para este tema if-then-else. Você pode ler mais
-> <a href="http://www.ruby-doc.org/core/doc/syntax/control_expressions_rdoc.html" target="_blank">aqui</a>.
+> <a href="http://www.ruby-doc.org/core/syntax/control_expressions_rdoc.html" target="_blank">aqui</a>.

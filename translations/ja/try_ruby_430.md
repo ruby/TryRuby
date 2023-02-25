@@ -32,4 +32,4 @@ __==__は__等しい__という意味になります。
 この箇所は__if テストする式__がfalseと評価した際に実行されることになります。
 
 > このif-then-elseの書き方には、もっとたくさんのバリエーションがあります。
-> 詳しく知りたい方は<a href="http://www.ruby-doc.org/core/doc/syntax/control_expressions_rdoc.html" target="_blank">ここ</a>を読んでください。
+> 詳しく知りたい方は<a href="http://www.ruby-doc.org/core/syntax/control_expressions_rdoc.html" target="_blank">ここ</a>を読んでください。

@@ -30,4 +30,4 @@ error:  Это неправильно
 __if тестовое_выражение__ вычисляется как ложь(false).
 
 > Больше информации вы можете почерпнуть
-> <a href="http://www.ruby-doc.org/core/doc/syntax/control_expressions_rdoc.html" target="_blank">здесь</a>.
+> <a href="http://www.ruby-doc.org/core/syntax/control_expressions_rdoc.html" target="_blank">здесь</a>.
