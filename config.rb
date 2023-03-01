@@ -28,6 +28,7 @@ end
 
 activate :directory_indexes
 
+set :build_dir, '_site' # for GitHub Pages
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 
