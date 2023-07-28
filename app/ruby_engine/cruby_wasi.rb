@@ -74,8 +74,8 @@ class RubyEngine
         textDecoder = `new TextDecoder("utf-8")`
         %x{
           wasmFs.fs.writeSync = (fd, buffer, offset, length, position) => {
-            const text = textDecoder.decode(buffer);
             if (fd == 1 || fd == 2) {
+              const text = textDecoder.decode(buffer);
               #{@writer.print_to_output(`text`, "")};
             }
             return originalWriteSync(fd, buffer, offset, length, position);
