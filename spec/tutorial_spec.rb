@@ -16,11 +16,6 @@ RSpec.describe "Tutorial", type: :feature, js: true do
 
       dataset = language_dataset(language)
 
-      it "displays a correct title on the first page of the tutorial" do
-        page.should have_content(dataset["1"]["title"])
-        the_cookie_of_step.should be == 1
-      end
-
       steps = {
         1 => {pass: true},
         12 => {code: "[12, 47, 35, 1]"},
@@ -79,6 +74,11 @@ RSpec.describe "Tutorial", type: :feature, js: true do
             the_cookie_of_step.should be == step + 1
           end
         end
+      end
+
+      it "displays a correct title on the first page of the tutorial" do
+        page.should have_content(dataset["1"]["title"])
+        the_cookie_of_step.should be == 1
       end
     end
   end
