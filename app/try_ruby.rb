@@ -397,14 +397,14 @@ class TryRuby
     # Do not check the answer if there is no regexp matcher
     if @current_item && @current_item.answer
       # Get last line of output
-      value_to_check = @output_buffer.length > 0 && !@output_buffer.last.empty? ? @output_buffer.last.chomp : ''
+      value_to_check = @output_buffer.join.rstrip.lines.last
 
       # Check if output matches the defined answer regexp
       # and print status message
       print_to_output("\n")
       from = count_lines
 
-      if !value_to_check.empty? && value_to_check.chomp.match(@current_item.answer)
+      if value_to_check && !value_to_check.empty? && value_to_check.match(@current_item.answer)
         @current_item.ok.each do |line|
           print_to_output(line)
         end
