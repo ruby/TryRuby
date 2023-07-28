@@ -1,7 +1,7 @@
 ---
 lang:   RU
 title:  А ты суров?
-answer: "mediocre"
+answer: :mediocre
 load:   books = {"Война и мир" => :splendid, "Отцы и дети" => :abysmal, "Идиот" => :mediocre, "Евгений Онегин" => :amazing}
 ok:     Отлично, круто! Вы создали таблицу своих оценок
 ---

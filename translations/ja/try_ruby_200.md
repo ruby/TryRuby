@@ -1,7 +1,7 @@
 ---
 lang:   JA
 title:  構えて、狙って
-answer: ^\n.ti tae ot (.+)
+answer: dnah ym morf nwolf sah tsaot yM
 load:   prev
 ok:     オーケー。詩全体が逆順に変わりました。
 error:  

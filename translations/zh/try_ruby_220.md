@@ -1,7 +1,7 @@
 ---
 lang:   ZH
 title:  链式方法的小环
-answer: ^More still did (.+)
+answer: My toast has flown from my hand
 load:   prev
 ok:     好样的，我的朋友！<br/>join方法把那个数组的行数放在一起，变成一个字符串。
 error:  

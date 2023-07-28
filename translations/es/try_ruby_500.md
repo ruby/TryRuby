@@ -24,6 +24,6 @@ A la misma vez podemos limitar la longitud del contenido del Blurb<sup>TM</sup> 
       end
     end
     
-    Blurb.new.tiempo
+    Blurb.new(:sick).tiempo
 
 (Ese parámetro __contenido=""__ está ahí para asegurarnos de que tenemos un string como contenido, aunque no le pasemos nada al método initialize).

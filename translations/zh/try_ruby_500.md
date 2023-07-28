@@ -25,7 +25,7 @@ error:
       end
     end
     
-    Blurb.new.time
+    Blurb.new(:sick).time
 
 (参数 __content=""__ 是为了确保即使没有content参数被传入初始化方法中，
 content也是字符串。)

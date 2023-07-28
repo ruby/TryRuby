@@ -1,7 +1,7 @@
 ---
 lang:   EN
 title:  Ringlets of Chained Methods
-answer: ^More still did (.+)
+answer: My toast has flown from my hand
 load:   prev
 ok:     Good show, my friend!<br/>The join method took that array of lines and put them together into a string.
 error:  

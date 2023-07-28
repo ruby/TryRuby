@@ -24,7 +24,7 @@ Ao mesmo tempo, nós queremos limitar o tamanho do conteúdo do BLurb<sup>TM</su
       end
     end
 
-    Blurb.new.tempo
+    Blurb.new(:sick).tempo
 
 (Este parâmetro conteudo=""__ está aqui para garantirmos que o conteúdo é uma string,
 mesmo se nenhum conteúdo for passado como parâmetro para o método initialize)

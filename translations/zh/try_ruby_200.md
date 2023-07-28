@@ -1,7 +1,7 @@
 ---
 lang:   ZH
 title:  摆好姿势，瞄准
-answer: ^\n.ti tae ot (.+)
+answer: dnah ym morf nwolf sah tsaot yM
 load:   prev
 ok:     好的,当然。所以整首诗被倒着写了。
 error:  

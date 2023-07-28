@@ -1,7 +1,7 @@
 ---
 lang:   MK
 title:  Прстени од врзување на методи
-answer: ^More still did (.+)
+answer: My toast has flown from my hand
 load:   prev
 ok:     Добра претстава, мој пријателе!<br/>join методот ја зеде низата од редици стихови и ги спои сите заедно во стринг.
 error:  

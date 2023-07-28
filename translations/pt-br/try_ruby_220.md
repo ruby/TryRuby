@@ -1,7 +1,7 @@
 ---
 lang:   PT-BR
 title:  Cachos de Métodos Encadeados
-answer: ^Mais ainda eu quero (.+)
+answer: Minha torrada voou da minha mão
 load:   prev
 ok:     Bem mostrado, meu amigo!<br/>O método join pega este array de linhas e junta todas elas em uma string.
 error:  

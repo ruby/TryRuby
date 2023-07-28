@@ -1,7 +1,7 @@
 ---
 lang:   ZH
 title:  你标准很高?
-answer: "mediocre"
+answer: :mediocre
 load:   books = {"Gravitys Rainbow" => :splendid, "The deep end" => :abysmal, "Living colors" => :mediocre, "Bumblebees" => :mediocre}
 ok:     不错，你已经为你的书评做了一个评分卡了
 error:  
