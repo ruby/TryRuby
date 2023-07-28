@@ -102,6 +102,8 @@ class RubyEngine
         `vm.setInstance(wasmInstance)`.await
         `wasi.setMemory(wasmInstance.exports.memory)`
         `vm.initialize()`
+        set_external_encoding = "Encoding.default_external = Encoding::UTF_8"
+        `vm.eval(set_external_encoding)`
       end
 
       yield `vm.eval(source).toString()`
