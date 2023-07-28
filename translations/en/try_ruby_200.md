@@ -1,7 +1,7 @@
 ---
 lang:   EN
 title:  Ready, Aim
-answer: ^\n.ti tae ot (.+)
+answer: dnah ym morf nwolf sah tsaot yM
 load:   prev
 ok:     Okay, sure.  So the whole poem has been turned backwards.
 error:  

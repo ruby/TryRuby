@@ -1,7 +1,7 @@
 ---
 lang:   ES
 title:  Tirabuzón de Métodos en Cadena
-answer: ^More still did (.+)
+answer: My toast has flown from my hand
 load:   prev
 ok:     Bien hecho, amigo mío.<br/>El método join cogió el array de líneas y las puso juntas en un string.
 error:  

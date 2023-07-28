@@ -74,8 +74,8 @@ class RubyEngine
         textDecoder = `new TextDecoder("utf-8")`
         %x{
           wasmFs.fs.writeSync = (fd, buffer, offset, length, position) => {
-            const text = textDecoder.decode(buffer);
             if (fd == 1 || fd == 2) {
+              const text = textDecoder.decode(buffer);
               #{@writer.print_to_output(`text`, "")};
             }
             return originalWriteSync(fd, buffer, offset, length, position);
@@ -102,11 +102,18 @@ class RubyEngine
         `vm.setInstance(wasmInstance)`.await
         `wasi.setMemory(wasmInstance.exports.memory)`
         `vm.initialize()`
+        set_external_encoding = "Encoding.default_external = Encoding::UTF_8"
+        `vm.eval(set_external_encoding)`
       end
 
       yield `vm.eval(source).toString()`
     rescue JS::Error => err
-      @writer.log_error(err)
+      raise err
+    end
+
+    def exception_to_string(err)
+      # "...: undefined method `reverse' for 40:Integer (NoMethodError)\n (Exception)\n"
+      super(err).sub(/\s+\(Exception\)\s*\z/, '')
     end
   end
 end

@@ -1,7 +1,7 @@
 ---
 lang:   UA
 title:  Ти суворий критик?
-answer: "mediocre"
+answer: :mediocre
 load:   books = {"Фарбований Лис" => :splendid, "Сутінки. Сага." => :abysmal, "Хоббіт" => :mediocre, "Голодні ігри" => :mediocre}
 ok:     Ти створив свій власний рейтинг книжок
 error:  

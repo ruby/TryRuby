@@ -26,7 +26,7 @@ Dan kunnen we ook meteen instellen dat de maximale Blurb<sup>TM</sup> tekst leng
       end
     end
     
-    Blurb.new.tijd
+    Blurb.new(:sick).tijd
 
 (Parameter __tekst=""__ zorgt er voor dat we zeker weten dat _tekst_ een string is.
 Ook als _Blurb.new_ wordt aangeroepen zonder parameters.)

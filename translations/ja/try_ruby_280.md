@@ -1,7 +1,7 @@
 ---
 lang:   JA
 title:  辛辣な書評をつけてしまった？
-answer: "mediocre"
+answer: :mediocre
 load:   books = {"Gravitys Rainbow" => :splendid, "The deep end" => :abysmal, "Living colors" => :mediocre, "Bumblebees" => :mediocre}
 ok:     やった！すごいです。評価のスコアカードを作成しました
 error:  

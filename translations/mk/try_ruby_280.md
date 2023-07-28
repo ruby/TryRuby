@@ -1,7 +1,7 @@
 ---
 lang:   MK
 title:  Дали си строг при оценувањето на книгите?
-answer: "mediocre"
+answer: :mediocre
 load:   books = {"Gravitys Rainbow" => :splendid, "The deep end" => :abysmal, "Living colors" => :mediocre, "Bumblebees" => :mediocre}
 ok:     Одлично, браво! Ти само што направи карта со твои оцени.
 error:  

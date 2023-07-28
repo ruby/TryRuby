@@ -14,7 +14,7 @@ class TryRuby
   RUBY
   INITIAL_TRY_RESULT = 'Welcome ' * 3
 
-  DEFAULT_RUBY_ENGINE = "opal-ww-1.7.1"
+  DEFAULT_RUBY_ENGINE = "cruby-3.2.0"
 
   def self.start
     instance
@@ -397,14 +397,14 @@ class TryRuby
     # Do not check the answer if there is no regexp matcher
     if @current_item && @current_item.answer
       # Get last line of output
-      value_to_check = @output_buffer.length > 0 && !@output_buffer.last.empty? ? @output_buffer.last.chomp : ''
+      value_to_check = @output_buffer.join.rstrip.lines.last
 
       # Check if output matches the defined answer regexp
       # and print status message
       print_to_output("\n")
       from = count_lines
 
-      if !value_to_check.empty? && value_to_check.chomp.match(@current_item.answer)
+      if value_to_check && !value_to_check.empty? && value_to_check.match(@current_item.answer)
         @current_item.ok.each do |line|
           print_to_output(line)
         end
@@ -431,13 +431,7 @@ class TryRuby
 
   def log_error(err)
     unless err.is_a? String
-      # Beautify the backtrace a little bit
-      backtrace = err.backtrace
-      backtrace = backtrace.select { |i| i.include? '<anonymous>' }
-      backtrace = backtrace.map { |i| i.gsub(/.*(<anonymous>)/, '\1') }
-      backtrace = ["(file)"] if backtrace.empty?
-      err.set_backtrace(backtrace)
-      err = err.full_message
+      err = @engine.exception_to_string(err)
     end
 
     from = count_lines

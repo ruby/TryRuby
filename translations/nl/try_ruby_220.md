@@ -1,7 +1,7 @@
 ---
 lang:   NL
 title:  De schakels van de ketting
-answer: ^More still did (.+)
+answer: My toast has flown from my hand
 load:   prev
 ok:     Goed gedaan hoor!<br/>De join methode heeft dat array weer aan elkaar geplakt.
 error:  

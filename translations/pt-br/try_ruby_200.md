@@ -1,7 +1,7 @@
 ---
 lang:   PT-BR
 title:  Pronto, Mire
-answer: ^\n.al-emoc (.+)
+answer: oãm ahnim ad uoov adarrot ahniM
 load:   prev
 ok:     Ok, claro.  Então todo o poema foi invertido.
 error:  

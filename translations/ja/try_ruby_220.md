@@ -1,7 +1,7 @@
 ---
 lang:   JA
 title:  メソッドをつなげる
-answer: ^More still did (.+)
+answer: My toast has flown from my hand
 load:   prev
 ok:     いい感じですね！joinメソッドは、配列の各要素をつなげて、一つの文字列にしました。
 error:  

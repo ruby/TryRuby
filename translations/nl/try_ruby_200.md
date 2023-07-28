@@ -1,7 +1,7 @@
 ---
 lang:   NL
 title:  Ready, Aim
-answer: ^\n.ti tae ot (.+)
+answer: dnah ym morf nwolf sah tsaot yM
 load:   prev
 ok:     Lijkt wel Latijn
 error:  

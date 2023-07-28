@@ -1,7 +1,7 @@
 ---
 lang:   MK
 title:  Подготвен, нишани
-answer: ^\n.ti tae ot (.+)
+answer: dnah ym morf nwolf sah tsaot yM
 load:   prev
 ok:     Во ред. Целата поема е прикажана во обратен редослед.
 error:  

@@ -1,7 +1,7 @@
 ---
 lang:   ES
 title:  ¿Eres severo?
-answer: "mediocre"
+answer: :mediocre
 load:	libros = {"El Arco Iris de Gravedad" => :esplendido, "El fin profundo" => :abismal, "Colores vivientes" => :mediocre, "Abejorros" => :mediocre}
 ok:     ¡Genial! Has hecho un marcador de puntuaciones.
 error:  

@@ -25,7 +25,7 @@ __initialize__メソッドをクラスに追加しましょう。
       end
     end
     
-    Blurb.new.time
+    Blurb.new(:sick).time
 
 （引数の__content=""__という部分は、内容が文字列であると確認するためにあります。
 こう書くことで、たとえcontent部分の引数が与えられなったとしても空文字が渡されます。）

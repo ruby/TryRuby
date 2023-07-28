@@ -1,7 +1,7 @@
 ---
 lang:   NL
 title:  Hoe streng ben jij?
-answer: "matig"
+answer: :matig
 load:   boeken = {"De regenboog" => :uitstekend, "Het puffertje" => :vreselijk, "Kleurenblind" => :matig, "Bloemetjes en bijtjes" => :matig}
 ok:     Wow! Je hebt een scorelijst gemaakt.
 error:  
