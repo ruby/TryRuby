@@ -9,6 +9,16 @@ class RubyEngine
     raise NotImplementedError
   end
 
+  def exception_to_string(err)
+    # Beautify the backtrace a little bit
+    backtrace = err.backtrace
+    backtrace = backtrace.select { |i| i.include? '<anonymous>' }
+    backtrace = backtrace.map { |i| i.gsub(/.*(<anonymous>)/, '\1') }
+    backtrace = ["(file)"] if backtrace.empty?
+    err.set_backtrace(backtrace)
+    err.full_message
+  end
+
   def run_with_writer(source, writer, &block)
     @writer = writer
     @dots = 0

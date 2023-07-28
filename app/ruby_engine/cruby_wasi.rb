@@ -106,7 +106,12 @@ class RubyEngine
 
       yield `vm.eval(source).toString()`
     rescue JS::Error => err
-      @writer.log_error(err)
+      raise err
+    end
+
+    def exception_to_string(err)
+      # "...: undefined method `reverse' for 40:Integer (NoMethodError)\n (Exception)\n"
+      super(err).sub(/\s+\(Exception\)\s*\z/, '')
     end
   end
 end

@@ -431,13 +431,7 @@ class TryRuby
 
   def log_error(err)
     unless err.is_a? String
-      # Beautify the backtrace a little bit
-      backtrace = err.backtrace
-      backtrace = backtrace.select { |i| i.include? '<anonymous>' }
-      backtrace = backtrace.map { |i| i.gsub(/.*(<anonymous>)/, '\1') }
-      backtrace = ["(file)"] if backtrace.empty?
-      err.set_backtrace(backtrace)
-      err = err.full_message
+      err = @engine.exception_to_string(err)
     end
 
     from = count_lines
