@@ -3,7 +3,7 @@ lang:   DE
 title:  Zusammenfassung #2 ist da
 answer: \w+
 class:  stretcher chapmark
-load:   poem = "Mein Toast ist mir aus der Hand geflogen\nUnd mein Toast ist zum Mond geflogen.\nAber als ich es im Fernsehen sah,\nUnsere Flagge auf dem Halleyschen Kometen setzend,\nNoch mehr wollte ich ihn essen.\n"
+load:   poem = "Mein Toast ist mir aus der Hand geflogen\nUnd mein Toast ist zum Mond geflogen.\nAber als ich es im Fernsehen sah,\nUnsere Flagge auf dem Halleyschen Kometen setzend,\nNoch mehr wollte ich es essen.\n"
 ok:     Reimt es sich?
 error:
 ---
@@ -15,8 +15,9 @@ Wenn du versuchst, eine Nummer umzudrehen oder irgendetwas Merkwürdiges zu tun,
 wird Ruby dich darauf hinweisen.
 
 ### Arrays
-Arrays are lists for storing things in some order.
-We also know how to create arrays and get items from arrays.
+Arrays sind Listen, in denen Dinge in einer bestimmten Reihenfolge gespeichert 
+werden.
+Wir wissen auch, wie man Arrays erstellt und Elemente aus Arrays abruft.
 
 ### Variablen
 Variablen speichern eine Sache und geben ihr einen Namen. Dazu hast du das 

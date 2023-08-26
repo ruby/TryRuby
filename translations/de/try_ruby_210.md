@@ -1,17 +1,19 @@
 ---
-lang:   EN
+lang:   DE
 title:  Too Much Reversal
-answer: ^\["More still did (.+)
+answer: ^\["Noch mehr wollte (.+)
 load:   prev
-ok:     Yes, almost what we want
+ok:     Ja, fast so, wie wir es wollen
 error:  
 ---
 
-So the whole poem's been turned backwards, letter-by-letter. I really wanted to just reverse the lines though.
-Move the last line up to first and the first line down to last.
+Das ganze Gedicht wurde also Buchstabe für Buchstabe umgedreht. Dabei wollte 
+ich eigentlich nur die Zeilen umkehren.
+Verschiebe die letzte Zeile nach oben an den Anfang und die erste Zeile nach 
+unten an das Ende.
 
-Backwards, but not __that__ backwards.
+Rückwärts, aber nicht __so__ rückwärts.
 
-Here's how:
+So geht's:
 
     poem.lines.reverse

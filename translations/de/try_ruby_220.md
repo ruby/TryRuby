@@ -1,21 +1,26 @@
 ---
-lang:   EN
-title:  Ringlets of Chained Methods
-answer: My toast has flown from my hand
+lang:   DE
+title:  Ringelreihen aus verketteten Methoden
+answer: Mein Toast ist mir aus der Hand geflogen
 load:   prev
-ok:     Good show, my friend!<br/>The join method took that array of lines and put them together into a string.
+ok:     Gute Arbeit, mein Freund!<br/>Die join-Methode hat das Array von Zeilen genommen und sie zu einem String zusammengefügt.
 error:  
 ---
 
-So what do you see? What happened there? You typed __poem.lines.reverse__ and what happened?
+Was also hast du gesehen? Was ist da passiert? Du hast __poem.lines.reverse__ 
+eingegeben und was ist passiert?
 
-Two things happened. You turned the poem into a list using lines.
-Lines decides the way the string is split up and converts it into an Array.
+Zwei Dinge sind passiert. Du hast das Gedicht in eine Liste umgewandelt, indem 
+du 'lines' benutzt hast.
+'Lines' entscheidet über die Art der Aufteilung des Strings und konvertiert ihn 
+in ein Array.
 
-Then, you reversed that list. You had each line. You reversed them. That's it.
+Dann hast du diese Liste umgedreht. Du hattest die einzelnen Zeilen. Du hast 
+sie umgedreht. Das war's.
 
-Let's tack one more method on the end there:
+Lass uns am Ende noch eine weitere Methode hinzufügen:
 
     puts poem.lines.reverse.join
 
-Combining methods like this is called _method chaining_.
+Das Kombinieren von Methoden auf diese Weise wird als _Methodenverkettung_ 
+bezeichnet.

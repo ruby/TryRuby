@@ -1,12 +1,12 @@
 ---
-lang:   EN
-title:  Ready, Aim
-answer: dnah ym morf nwolf sah tsaot yM
+lang:   DE
+title:  Fertig, Zielen
+answer: negolfeg dnaH red sua rim tsi tsaoT nieM
 load:   prev
-ok:     Okay, sure.  So the whole poem has been turned backwards.
+ok:     Okay, ja.  Das ganze Gedicht ist also umgedreht worden.
 error:  
 ---
 
-Here's a question: what happens when we reverse this whole poem? 
+Hier eine Frage: Was passiert, wenn wir dieses ganze Gedicht umkehren? 
 
     poem.reverse

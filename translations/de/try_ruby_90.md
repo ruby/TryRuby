@@ -3,7 +3,7 @@ lang:   DE
 title:  Hey, schon die Zusammenfassung #1
 answer: NoMethodError|undefined
 class:  stretcher chapmark
-ok:     Nö, es ist nicht möglich, eine Nummer umzukehren. Klick auf 'weiter'
+ok:     Nö, es ist nicht möglich, eine Nummer umzukehren. Klick auf 'Next'
 error:  
 ---
 
@@ -23,7 +23,8 @@ symbolische Methoden wie die Multiplikationsmethode: \*
 __Methoden bedeuten Aktion!__
 
 Das ist die Essenz deines Lernens. Mit einfachen Dingen zu spielen und sie in 
-neue Dinge zu verwandeln. Fühlst du dich schon wohl? Ich verspreche dir, das bist du.
+neue Dinge zu verwandeln. Fühlst du dich schon wohl? Ich verspreche dir, es ist 
+so.
 
 ## Okay,
 lass uns etwas Unangenehmes tun. Versuche, eine Nummer umzudrehen:

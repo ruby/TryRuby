@@ -1,30 +1,33 @@
 ---
-lang:   EN
-title:  Of All the Summaries, #3 is Here Now
+lang:   DE
+title:  Von allen Zusammenfassungen ist #3 jetzt hier
 answer: \{\}
 class:  stretcher chapmark
 load:   prev
-ok:     You've made an empty hash!
+ok:     Du hast einen leeren Hash gemacht!
 error:
 ---
 
-### Exclamations
-Methods may have exclamations (and also question marks) in their name.
-These are just there to better explain what their function is. No big deal.
+### Ausrufe
+Methoden können Ausrufezeichen (und auch Fragezeichen) in ihrem Namen haben.
+Die sind nur dazu da, um ihre Funktion besser zu erklären. Nichts Besonderes.
 
-### String manipulation
-Search and change strings
+### String Manipulation
+Suche und ändere Strings
 
 ### Chaining
-Chaining methods lets you get a lot more done. Break up a poem, reverse it, reassemble it:
+Mit der Verkettung von Methoden können Sie viel mehr erreichen. Zerlege das 
+Gedicht, drehe es um und setze es wieder zusammen:
 __poem.lines.reverse.join__
 
-At this point, you may want to tinker with the poem a bit more. A complete list of all the String
-methods is <a href="http://ruby-doc.org/core/classes/String.html" target="_blank">here</a>.
+An dieser Stelle möchtest du vielleicht noch ein wenig an dem Gedicht 
+herumspielen. Eine vollständige Liste aller String Methoden ist
+<a href="http://ruby-doc.org/core/classes/String.html" target="_blank">hier 
+(auf Englisch)</a>.
 
-Go ahead and try a few, such as: poem.downcase or poem.swapcase
+Probier doch mal ein paar aus, zum Beispiel: poem.downcase oder poem.swapcase
 
-## Ready?
-When you feel ready to move on, type:
+## Bereit?
+Wenn du dich bereit fühlst, weiterzumachen, tippe:
 
     books = {}
