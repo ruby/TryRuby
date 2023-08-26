@@ -1,12 +1,12 @@
 ---
 lang:   EN
-title:  Now Type Ticket
+title:  Jetzt Ticket eintippen
 answer: \[(\d+(, )?){2,}\]
 load:   ticket = [12, 47, 35]
-ok:     Restored!
+ok:     Wiederhergestellt!
 error:  
 ---
 
-Now, type:
+Jetzt tippe:
 
     ticket

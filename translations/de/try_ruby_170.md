@@ -1,34 +1,39 @@
 ---
-lang:   EN
-title:  Elemental
+lang:   DE
+title:  Elementar
 answer: ^(12|35|47)$
 load:   ticket = [12, 47, 35]
 ok:     Ok
-error:  Almost
+error:  Fast
 ---
 
-So we stored our lotto numbers inside variable ticket. How to get 'em out again?
+Wir haben also unsere Nummern in der Variable 'ticket' gespeichert. Wie 
+bekommen wir sie wieder raus?
 
-We already saw that we can get the highest number with __max__. Similarly you can
-get the __first__ or the __last__ element of the list.
-But what if you want a specific element?
+Wir haben bereits gesehen, dass wir mit __max__ die höchste Nummer ermitteln 
+können. So ähnlich kannst du auch
+das erste (__first__) oder das letzte (__last__) Element der Liste abrufen.
+Aber was, wenn du ein bestimmtes Element willst?
 
 ### [ ]
-Ruby uses the square brackets [ ] to target an element.
-The square brackets are very common in Ruby.
-They are like sights used to line up a target. Exactly.
-These brackets mean, "I am looking for ____" Ready, aim.
+Ruby verwendet die eckigen Klammern [ ], um ein Element auszuwählen.
+Die eckigen Klammern kommen in Ruby sehr häufig vor.
+Sie sind wie ein Visier, mit dem man ein Ziel anvisieren kann. Ganz genau.
+Diese Klammern bedeuten: "Ich suche nach ____". Fertig, zielen.
 
-Let's get all of our lotto numbers:
+Holen wir uns alle unsere Lottozahlen:
 
     puts ticket[0]
     puts ticket[1]
     puts ticket[2]
 
-Why do we use [0], [1], [2]?
+Warum benutzen wir [0], [1], [2]?
 
-And not [1], [2] and [3]? Is that some kind of Japanese Zen thing?
-No, we computer people just like to begin counting from zero. It's not just a Ruby thing,
-this _zero based indexing_ is used in most programming languages.
+Und nicht [1], [2] und [3]? Ist das so eine Art japanisches Zen-Ding?
+Nein, wir Computerleute fangen einfach gerne bei Null an zu zählen. Das ist 
+nicht nur eine Ruby Sache,
+diese _nullbasierte Indizierung_ wird in den meisten Programmiersprachen 
+verwendet.
 
-> A little reminder: you can use the __Copy__ button to copy the example code to the editor.
+> Eine kurze Erinnerung: Du kannst den Button __Copy__ benutzen, um den 
+Beispielcode in den Editor zu kopieren.

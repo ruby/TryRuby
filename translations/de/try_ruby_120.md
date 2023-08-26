@@ -1,18 +1,20 @@
 ---
-lang:   EN
-title:  Standing in Line
+lang:   DE
+title:  In einer Schlange stehen
 answer: ^\[([-\.\d]+)(\s*,\s*[-\d\.]+){3,}\]$
-ok:     Excellent
-error:  Try adding a fourth number to the list
+ok:     Ausgezeichnet
+error:  Versuche, eine vierte Nummer in die Liste einzufügen
 ---
 
-Lists (arrays) store things __in some order__.
+Listen (Arrays) speichern Dinge __in einer Reihenfolge__.
 
-Like standing in line for popcorn. You are behind someone and you wouldn't dream of pushing them aside,
-right? And the guy behind you, you've got a close eye on him, right?
+Wie beim Schlange stehen für Popcorn. Du stehst hinter jemandem und würdest 
+nicht im Traum daran denken, ihn zur Seite zu schieben, oder? Und den Typ, der 
+hinter dir steht, behältst du genau im Auge, richtig?
 
-Here's a list for you. Lottery numbers: 
+Hier ist eine Liste für dich. Lottozahlen: 
 
     [12, 47, 35]
 
-Try adding a number to this list: type a comma after 35 followed by a number. The space is optional.
+Versuche, eine Nummer zu dieser Liste hinzuzufügen: Gib ein Komma nach 35 ein, 
+gefolgt von einer Nummer. Das Leerzeichen ist optional.

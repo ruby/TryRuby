@@ -1,22 +1,24 @@
 ---
-lang:   EN
-title:  Apples are Different From Oranges
+lang:   DE
+title:  Äpfel sind etwas anderes als Orangen
 answer: \[\]
-ok:     Great, that's an empty list
+ok:     Super, das ist eine leere Liste
 error:
 ---
 
-And numbers are different from strings.
+Und Nummern sind etwas anderes als Strings.
 
-While you can use methods on any object in Ruby, some methods only work on certain types of things.
-But you can always convert between different types using Ruby's "to" methods.
+Während du in Ruby Methoden auf jedes Objekt anwenden kannst, funktionieren 
+einige Methoden nur auf bestimmte Arten von Objekten.
+Du kannst aber immer zwischen verschiedenen Typen konvertieren, indem du die 
+"to"-Methoden von Ruby verwendest.
 
-- __to_s__ converts things to __s__trings
-- __to_i__ converts things to __i__ntegers (numbers)
-- __to_a__ converts things to __a__rrays
+- __to_s__ konvertiert Sachen in __S__trings
+- __to_i__ konvertiert Sachen in __I__nteger (Nummern)
+- __to_a__ konvertiert Sachen in __A__rrays
 
-__What are arrays?!__
+__Was sind Arrays?!__
 
-They are lists. Type in a pair of brackets:
+Das sind Listen. Tippe ein Paar von Klammern ein:
 
     []

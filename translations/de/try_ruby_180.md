@@ -1,31 +1,34 @@
 ---
-lang:   EN
-title:  Summary #2 is Upon Us
+lang:   DE
+title:  Zusammenfassung #2 ist da
 answer: \w+
 class:  stretcher chapmark
-load:   poem = "My toast has flown from my hand\nAnd my toast has gone to the moon.\nBut when I saw it on television,\nPlanting our flag on Halley's comet,\nMore still did I want to eat it.\n"
-ok:     Does it rhyme?
+load:   poem = "Mein Toast ist mir aus der Hand geflogen\nUnd mein Toast ist zum Mond geflogen.\nAber als ich es im Fernsehen sah,\nUnsere Flagge auf dem Halleyschen Kometen setzend,\nNoch mehr wollte ich ihn essen.\n"
+ok:     Reimt es sich?
 error:
 ---
 
-Now, look how your second minute went:
+Schau, wie deine zweite Minute gelaufen ist:
 
-### Errors
-If you try to reverse a number or do anything fishy, Ruby will tell you so.
+### Fehler
+Wenn du versuchst, eine Nummer umzudrehen oder irgendetwas Merkwürdiges zu tun, 
+wird Ruby dich darauf hinweisen.
 
 ### Arrays
 Arrays are lists for storing things in some order.
 We also know how to create arrays and get items from arrays.
 
-### Variables
-Variables save a thing and give it a name. You used the equals sign to do this. Like:
+### Variablen
+Variablen speichern eine Sache und geben ihr einen Namen. Dazu hast du das 
+Gleichheitszeichen verwendet. So wie:
 ticket = [14, 37, 18].
 
 ### 2/8
-In all there are eight sections. You are two-eighths of the way there! This is simple stuff,
-don't you think? Good stuff up ahead.
+Insgesamt gibt es acht Abschnitte. Du hast zwei Achtel des Weges geschafft! Das 
+ist doch ganz einfach, findest du nicht auch? Es kommt noch mehr Gutes.
 
-Let's change directions for a moment. I've stuffed a bit of poetry for you in a certain variable.
-Take a look. Type:
+Lass uns für einen Moment die Richtung wechseln. Ich habe ein wenig Poesie für 
+dich in eine bestimmte Variable gestopft.
+Schau es dir an. Tippe:
 
     puts poem

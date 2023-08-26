@@ -1,13 +1,13 @@
 ---
-lang:   EN
-title:  One Raises Its Hand
+lang:   DE
+title:  Einer hebt die Hand
 answer: ^47$
 ok:     Okay
 error:  
 ---
 
-A list of lottery numbers. Which one is the highest?
+Eine Liste von Lottozahlen. Welche ist die höchste?
 
-Try: 
+Versuch es: 
 
     [12, 47, 35].max

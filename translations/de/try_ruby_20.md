@@ -1,19 +1,21 @@
 ---
-lang:   EN
-title:  Using the editor
+lang:   DE
+title:  Den Editor benutzen
 answer: ^\d{1,}$
-ok:     Good! You did a bit of math. See how the answer popped out?
-error:  Type 2 + 6 in the editor
+ok:     Gut! Du hast ein bisschen gerechnet. Siehst du, wie die Antwort herauskommt?
+error:  Tippe 2 + 6 in den Editor
 ---
 
-The editor window at the bottom is where you type your Ruby code, hit the __Run__ button and
-watch it run!
+Gib im Editor deinen Ruby-Code ein, klicke auf den Button __Run__ und siehe, 
+wie er läuft!
 
-For example, try typing some math. Like:
+Versuche zum Beispiel, etwas Mathe zu tippen. Wie:
 
     2 + 6
 
-The output of your program should show itself in the output window.
-There should also be a line that tells you how well you did.
+Die Ausgabe deines Programms sollte im Ausgabefenster zu sehen sein.
+Es sollte auch eine Zeile geben, die dir sagt, wie gut du die Aufgabe gelöst 
+hast.
 
-> Alternatively you can hit the __Copy__ button to copy the example code to the editor.
+> Alternativ kannst du auch auf den Button __Copy__ klicken, um den 
+Beispielcode in den Editor zu kopieren.

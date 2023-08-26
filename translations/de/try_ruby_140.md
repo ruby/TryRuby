@@ -1,13 +1,14 @@
 ---
-lang:   EN
-title:  Tucking a List Away
+lang:   DE
+title:  Eine Liste wegstecken
 answer: ^\[(\d+)(,\s*\d+){2,}\]$
-ok:     Saved!
+ok:     Gespeichert!
 error:  
 ---
 
-Good, good. But it's annoying to have to retype that list every time you need it, isn't it?
+Gut, gut. Aber es ist lästig, diese Liste jedes Mal neu eingeben zu müssen, 
+wenn man sie braucht, nicht wahr?
 
-Let's save our numbers inside a ticket like so: 
+Speichern wir unsere Nummern in einem Ticket wie folgt: 
 
     ticket = [12, 47, 35]
