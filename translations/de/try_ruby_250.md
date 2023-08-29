@@ -1,24 +1,30 @@
 ---
-lang:   EN
-title:  More Bite-Size Reviews
+lang:   DE
+title:  Mehr Kurzbewertungen
 answer: [3-9]
 load:   books = {"Gravitys Rainbow" => :splendid}
-ok:     See, the length method works on strings, arrays and hashes.
+ok:     Siehst du, die length-Methode funktioniert bei Strings, Arrays und Hashes.
 error:
 ---
 
-Keep going, fill it up with reviews. And, if you want to see the whole list, just type: __puts books__
+Mach weiter, fülle sie mit Bewertungen. Und wenn du die ganze Liste sehen 
+willst, tippe einfach: __puts books__
 
-Again, the ratings are: :splendid, :quite\_good, :mediocre, :quite\_not\_good and :abysmal.
+Noch einmal, die Bewertungen sind: :splendid, :quite\_good, :mediocre, 
+:quite\_not\_good und :abysmal.
 
-These ratings are not strings. When you place a colon in front of a simple word, you get a __symbol__.
-Symbols are cheaper than strings (in terms of computer memory.) If you use a word over and over in your program,
-use a symbol. Rather than having thousands of copies of that word in memory, the computer will store the symbol only
-__once__.
+Diese Bewertungen sind keine Strings. Wenn du einen Doppelpunkt vor ein 
+einfaches Wort setzt, erhältst du ein __Symbol__. Symbole sind sparsamer als 
+Strings (in Bezug auf den Computerspeicher). Wenn du ein Wort immer wieder in 
+deinem Programm benutzt, verwende ein Symbol. Anstatt Tausende von Kopien 
+dieses Wortes im Speicher zu haben, speichert der Computer das Symbol nur 
+__einmal__.
 
-More importantly, a symbol tells you that it is not just any old word but has a meaning within your program.
+Noch wichtiger ist, ein Symbol zeigt dir, dass es nicht irgendein Wort ist, 
+sondern eine Bedeutung innerhalb deines Programms hat.
 
-Enter 2 more bookreviews, use __books.length__ to see how many reviews there are in the hash:
+Gib 2 weitere Buchrezensionen ein, verwende __books.length__, um zu sehen, wie 
+viele Rezensionen der Hash enthält:
 
     books["The deep end"]  = :abysmal
     books["Living colors"] = :mediocre

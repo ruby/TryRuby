@@ -1,23 +1,26 @@
 ---
-lang:   EN
-title:  Have you got the time?
+lang:   DE
+title:  Hast du die Zeit?
 answer: ^[0-9]$
-ok:     You timed it just right!
-error:  Run the block 0 to 9 times
+ok:     Du hast genau das richtige Timing!
+error:  Führe den Block 0 bis 9 Mal aus
 ---
 
-As we saw in the first example with a block (when counting ratings) we can pass a value to the block. Which
-values are __passed__ is determined by the method that is running the block.
+Wie wir im ersten Beispiel mit einem Block (beim Zählen von Bewertungen) 
+gesehen haben, können wir einen Wert an den Block übergeben. Welche Werte 
+__übergeben__ werden, hängt von der Methode ab, die den Block ausführt.
 
-The values that are __received__ by the block are placed in the variable name at the beginning of the block,
-between two pipe symbols: |
+Die Werte, die vom Block __empfangen__ werden, stehen im Variablennamen am 
+Anfang des Blocks, zwischen zwei Pipe-Symbolen: |
 
-Let's try that with this block:
+Versuchen wir das mal mit diesem Block:
 
     5.times { |time|
       puts time
     }
 
-Here, method __.times__ sends a value to variable __|time|__. But note that variable time is only known within the block.
+Hier sendet die Methode __.times__ einen Wert an die Variable __|time|__. Aber 
+beachte, dass die Variable time nur innerhalb des Blocks bekannt ist.
 
-> Did you notice that you can split code over multiple lines. This makes it a bit easier to read.
+> Hast du gemerkt, dass du den Code über mehrere Zeilen aufteilen kannst? Das 
+macht es etwas einfacher zu lesen.

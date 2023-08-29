@@ -1,27 +1,34 @@
 ---
-lang:   EN
-title:  A Wee Blank Book
+lang:   DE
+title:  Ein kleines leeres Buch
 answer: ^(splendid|quite_good|mediocre|quite_not_good|abysmal)$
 load:   books = {}
-ok:     Yes that's a new review
-error:  Use one of splendid, quite_good, mediocre, quite_not_good, abysmal.<br/>Don't forget the colon
+ok:     Ja, das ist eine neue Bewertung
+error:  Verwende einen der Begriffe splendid, quite_good, mediocre, quite_not_good, abysmal.<br/>Den Doppelpunkt nicht vergessen
 ---
 
-You've made an empty __hash__. A hash is like an array, only every one of its elements has a name.
+Du hast einen leeren __Hash__ erstellt. Ein Hash ist wie ein Array, nur dass 
+jedes seiner Elemente einen Namen hat.
 
-We're going to stuff some miniature book reviews in our new hash. Here's our rating system:
+Wir werden einige Mini-Buchrezensionen in unseren neuen Hash packen. Hier ist 
+unser Bewertungssystem:
 
-- :splendid &rarr; a masterpiece
-- :quite\_good &rarr; enjoyed, sure, yes
-- :mediocre &rarr; equal parts great and terrible
-- :quite\_not\_good &rarr; notably bad
-- :abysmal &rarr; steaming wreck
+- :splendid &rarr; ein Meisterwerk
+- :quite\_good &rarr; genossen, sicher, ja
+- :mediocre &rarr; gleichermaßen gut und schlecht
+- :quite\_not\_good &rarr; ausgesprochen schlecht
+- :abysmal &rarr; dampfendes Wrack
 
-To rate a book, put the title in square brackets and put the rating after the equals. For example:
+Um ein Buch zu bewerten, setze den Titel in eckige Klammern und die Bewertung 
+nach den Gleichheitszeichen. Zum Beispiel:
 
     books["Gravitys Rainbow"] = :splendid
 
-> By now I think it is only fair to tell you that all lessons in TryRuby are separate from each other.
-> So if you go crazy typing book reviews here, you can only use 'em in this lesson.  
-> If you want to use your reviews in the next lesson you should copy/paste them.  
-> Don't worry about this too much, each lesson has plenty of predefined stuff for you to play around with.
+> Ich denke, es ist nur angemessen, dir zu sagen, dass alle Lektionen in TryRuby 
+unabhängig voneinander sind.  
+> Wenn du also wild drauf los tippst, Buchbesprechungen zu schreiben, kannst du 
+die nur in dieser Lektion verwenden.  
+> Wenn du deine Bewertungen in der nächsten Lektion verwenden möchtest, 
+solltest du sie kopieren und einfügen.  
+> Mach dir nicht zu viele Gedanken darüber, jede Lektion enthält eine Menge 
+vorgegebener Dinge, mit denen du herumspielen kannst.

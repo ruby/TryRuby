@@ -1,15 +1,17 @@
 ---
 lang:   EN
-title:  Are You Harsh?
+title:  Bist du hart?
 answer: :mediocre
 load:   books = {"Gravitys Rainbow" => :splendid, "The deep end" => :abysmal, "Living colors" => :mediocre, "Bumblebees" => :mediocre}
-ok:     Great, wow! You've made a scorecard of your ratings
+ok:     Toll, wow! Du hast eine Übersicht über deine Bewertungen erstellt
 error:  
 ---
 
-So are you giving out harsh, unfair reviews? Let's keep score with a new hash __ratings__:
+Verteilst du also harte, unfaire Bewertungen? Lassen Sie uns mit einem neuen 
+Hash __ratings__ die Punkte zählen:
 
-Then, okay, now let's count up your reviews. Just stay with me. Type:
+Dann, okay, zählen wir jetzt deine Bewertungen zusammen. Mach einfach mit. 
+Tippe:
 
     ratings = Hash.new {0}
     
@@ -19,9 +21,10 @@ Then, okay, now let's count up your reviews. Just stay with me. Type:
     
     puts ratings
 
-The straight line in the code is the pipe character, probably located right above the Enter key
-on your keyboard.
+Die gerade Linie im Code ist das Pipe-Zeichen, das sich wahrscheinlich links 
+neben der Y-Taste auf deiner Tastatur befindet.
 
-That _+= 1_ line means: increase the value by 1.
+Die Zeile _+= 1_ bedeutet: Erhöhe den Wert um 1.
 
-Don't worry if you don't understand everything that is going on here. It will be revealed later.
+Mach dir keine Sorgen, wenn du nicht alles verstehst, was hier vor sich geht. 
+Es wird später erklärt werden.
