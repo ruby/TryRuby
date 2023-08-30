@@ -1,38 +1,43 @@
 ---
-lang:   EN
-title:  To (be) or not to (be)
+lang:   DE
+title:  "To (be) or not to (be)"
 answer:
-load:   poem = "My toast has flown from my hand\nAnd my toast has gone to the moon.\nYada yada yada\n"
+load:   poem = "Mein Toast ist mir aus der Hand geflogen\nUnd mein Toast ist zum Mond geflogen.\nBlablabla\n"
 ok:
 error:
 ---
 
-One other little thing we haven't really talked about openly: method arguments.
-Remember when we changed the poem a little bit? We used:
-__poem.gsub("toast", "honeydew")__
+Eine weitere kleine Sache, über die wir noch nicht wirklich offen gesprochen 
+haben: Argumente von Methoden.
+Weißt du noch, wie wir das Gedicht ein wenig verändert haben? Wir verwendeten:
+poem.gsub("Toast", "Melonenstück")
 
-The gsub method needs 2 arguments, which we passed to gsub by including two strings between
-parentheses. _Arguments tell the method exactly what to do._
+Die Methode gsub benötigt 2 Argumente, die wir an gsub übergeben, indem wir 
+zwei Strings zwischen Klammern einfügen. _Argumente sagen der Methode genau, 
+was sie tun soll._
 
-### Parentheses
-Actually, most of the time Ruby doesn't mind if you omit the parentheses. So this would have
-worked too:
-__poem.gsub "toast", "honeydew"__
+### Klammern
+Eigentlich macht es Ruby meistens nichts aus, wenn man die Klammern weglässt. 
+Das hätte also auch funktioniert:
+__poem.gsub "Toast", "Melonenstück"__
 
-We have already used another method with a parameter. Many times in fact, though it was not very
-obvious:
+Wir haben bereits eine andere Methode mit einem Parameter verwendet. Und zwar 
+schon oft, obwohl es nicht sehr offensichtlich war:
 
-    puts "Hello"
-    puts("Hello")
+    puts "Hallo"
+    puts("Hallo")
 
-Yes __puts__ is also a method. Using puts with or without parentheses is the same to Ruby, but the
-version without parentheses is a bit easier to read. And it saves you valuable typing time!
+Ja, __puts__ ist auch eine Methode. Die Verwendung von puts mit oder ohne 
+Klammern ist für Ruby dasselbe, aber die Version ohne Klammern ist etwas 
+einfacher zu lesen. Und sie spart wertvolle Zeit beim Tippen!
 
-> So I guess the conclusion is that you can do whatever you like with parentheses as long as your
-> code reads nicely.
+> Die Schlussfolgerung ist wohl, dass du mit Klammern machen kannst, was du 
+willst, solange dein Code gut lesbar ist.
 
 ### to (be) or not to (be)
-So if _to_ is a method and _be_ is an argument we now know the answer to this age old question.
-It is really just a matter of preference whether you want _to be_ or _to(be)_.
+Wenn also _to_ eine Methode und _be_ ein Argument ist, kennen wir jetzt die 
+Antwort auf diese uralte Frage.
+Es ist wirklich nur eine Frage der Vorliebe, ob du _ to be_ oder _to (be)_ 
+sein willst.
 
-Are you in the mood for more Shakespeare? Read on.
+Hast du Lust auf mehr Shakespeare? Lies weiter.
