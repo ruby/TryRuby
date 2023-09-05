@@ -1,24 +1,27 @@
 ---
-lang:   EN
-title:  All together now
+lang:   DE
+title:  Jetzt alle zusammen
 answer: ^4$
-ok:     Yes, Shakespeare wrote 4 plays in 1591
-error:  Answer for the year 1591 should be 4
+ok:     Ja, Shakespeare hat 4 Stücke im Jahr 1591 geschrieben.
+error:  Die Antwort für das Jahr 1591 sollte 4 sein
 load:   prev
 ---
 
-Now suppose we only want to know the names and number of plays written by Shakespeare
-in a certain year.
+Nehmen wir nun an, wir wollen nur die Namen und die Anzahl der Stücke wissen, 
+die Shakespeare in einem bestimmten Jahr geschrieben hat.
 
-Ruby lets us __select__ values from a hash. The select method uses a block to let us
-define what to select and returns what it found.
+Mit Ruby kann man Werte aus einem Hash __selektieren__. Die select-Methode 
+verwendet einen Block, um zu definieren, was ausgewählt werden soll, und gibt 
+das gefundene Ergebnis zurück.
 
-We can then use the results returned by __select__ in the __each__ method as before by
-simply adding it after the select block. This is another example of method chaining, which we saw
-earlier when reversing a poem.
+Wir können dann die von __select__ zurückgegebenen Ergebnisse in der __each__-
+Methode wie zuvor verwenden, indem wir sie einfach nach dem select-Block 
+hinzufügen. Dies ist ein weiteres Beispiel für die Methodenverkettung, die wir 
+bereits bei der Umkehrung eines Gedichts gesehen haben.
 
-I have prepared the __count\_plays__ method for you. See if you can find out how many plays
-were written by Shakespeare in the year __1591__. Try this:
+Ich habe die Methode __count\_plays__ für dich vorbereitet. Versuche 
+herauszufinden, wie viele Stücke von Shakespeare im Jahr __1591__ geschrieben 
+wurden. Versuche es hiermit:
 
     def count_plays(year)
       s = get_shakey
@@ -33,9 +36,9 @@ were written by Shakespeare in the year __1591__. Try this:
     
     puts count_plays(0)
 
-Did you notice that I chained the count method at the end of the each method. This gives
-us a return value for the __count\_plays__ method.
+Hast du gemerkt, dass ich die count-Methode am Ende der each-Methode angehängt 
+habe. Dadurch erhalten wir einen Rückgabewert für die Methode __count\_plays__.
 
-There is another possibility for chaining here. See that lonely line __s = get_shakey__.
-You could add the __["William Shakespeare"].select { |k, v|__ at the end of get_shakey
-(no dot needed in this case).
+Es gibt hier eine weitere Möglichkeit der Verkettung. Siehe die einsame Zeile 
+__s = get_shakey__. Man könnte __["William Shakespeare"].select { |k, v|__ am 
+Ende von get_shakey hinzufügen (in diesem Fall ist kein Punkt erforderlich).

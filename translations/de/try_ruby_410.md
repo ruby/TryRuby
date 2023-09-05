@@ -1,25 +1,28 @@
 ---
-lang:   EN
-title:  All's Well That Ends Well
+lang:   DE
+title:  Ende gut, alles gut
 answer: All's Well That Ends Well
-ok:     True
-error:  Use 1605 as the second parameter
+ok:     Wahr
+error:  Verwende 1605 als zweiten Parameter
 load:   prev
 ---
 
-Okay, we got some data from the internet, we selected what we wanted and printed it out.
-What is left to improve? We could print the results a bit prettier. Like add the year
-and align titles and years.
+Okay, wir haben uns ein paar Daten aus dem Internet besorgt, wir haben 
+ausgewählt, was wir wollten und es ausgedruckt. Was können wir noch verbessern? 
+Wir könnten die Ergebnisse etwas hübscher ausdrucken. Zum Beispiel das Jahr 
+hinzufügen und Titel und Jahre ausrichten.
 
-This means printing several values on one line. Ruby has a neat way of doing
-that. It is just like printing a string like: __puts "Hi, my name is Jimmy"__.
-But instead of the literal value _Jimmy_ we use the value of a variable.
+Das bedeutet, mehrere Werte in einer Zeile auszugeben. Ruby hat eine nette 
+Art, das zu tun. Es ist so, als würde man eine Zeichenkette ausgeben wie: 
+__puts "Hallo, mein Name ist Jimmy"__ aus. Aber anstelle des literalen Wertes 
+_Jimmy_ verwenden wir den Wert einer Variablen.
 
-First replace __Jimmy__ with __#{}__. If Ruby sees a hash symbol # followed by a curly brace {
-it looks for a variable between the first brace and the following closing brace }.
-So we can use this: __"Hi, my name is \#{name}"__.
+Ersetze als erstes __Jimmy__ durch __#{}__. Wenn Ruby ein Raute-Symbol # 
+gefolgt von einer geschweiften Klammer { sieht, sucht es nach einer Variablen 
+zwischen der ersten Klammer und der folgenden schließenden Klammer }.
+Wir können also Folgendes verwenden: __"Hallo, mein Name ist \#{name}"__.
 
-Let's change our code a bit
+Ändern wir unseren Code ein wenig
 
     def print_plays(year_from, year_to)
       get_shakey["William Shakespeare"]
@@ -32,9 +35,12 @@ Let's change our code a bit
     end
     print_plays(1600, 1605)
 
-I have added __.ljust(30)__ to the title. This way the title is _left justified_ with a minimum
-length of 30 characters so the years align nicely.
+Ich habe __.ljust(30)__ zum Titel hinzugefügt. Auf diese Weise ist der Titel 
+_linksbündig_ mit einer Mindestlänge von 30 Zeichen, so dass die Jahreszahlen 
+hübsch angeordnet sind.
 
-See if you can change the ouput of the program so that it shows the plays like this: __1600 -> As You Like It__
+Versuche, die Ausgabe des Programms so zu ändern, dass es die Stücke wie folgt 
+anzeigt: __1600 -> As You Like It__
 
-__All's Well That Ends Well?__ Hey we're not done yet, but the end is in sight!
+__Ende gut, alles gut?__ Hey, wir sind noch nicht fertig, aber das Ende ist in 
+Sicht!

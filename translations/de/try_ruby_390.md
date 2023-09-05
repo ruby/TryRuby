@@ -1,22 +1,24 @@
 ---
-lang:   EN
+lang:   DE
 title:  Noble Kinsmen
 answer: ^The Two Noble Kinsmen$
-ok:     That's much better
+ok:     Viel besser
 error:  
 load:   prev
 ---
 
-Okay we now have a list of plays from the internet. The list was in the json format.
-Fortunately for us Ruby kindly provides a method to convert json data to a Ruby hash.
-The _get\_shakey_ method already did that for us.
+Okay, wir haben jetzt eine Liste von Theaterstücken aus dem Internet. Die 
+Liste war im json-Format. Zum Glück bietet uns Ruby eine Methode, um json-Daten 
+in einen Ruby-Hash zu konvertieren. Die Methode _get\_shakey_ hat das bereits 
+für uns getan.
 
-But since the structure of the json data is retained in the hash, it is still a bit difficult to read.
-Let us write a method to display the plays nicely.
+Aber da die Struktur der json-Daten im Hash beibehalten wird, ist es immer noch 
+ein bisschen schwierig zu lesen. Lass uns eine Methode schreiben, welche die 
+Stücke schön anzeigt.
 
-If you inspect the list of plays carefully you will see that it has a kind of nested
-structure. (This is actually quite common in data you get from the internet.)
-Looks like this:
+Wenn du dir die Liste der Stücke genau ansiehst, wirst du sehen, dass sie eine 
+Art verschachtelte Struktur hat. (Das ist bei Daten aus dem Internet ziemlich 
+üblich.) So sieht das aus:
 
 <ul>
   <li>"William Shakespeare"
@@ -38,13 +40,14 @@ Looks like this:
   </li>
 </ul>
 
-To list the plays we first have to access the top "William Shakespeare" hash element by its name.
-Next we have to __iterate__ through each element below it.
+Um die Stücke aufzulisten, müssen wir zunächst auf das oberste Hash-Element 
+"William Shakespeare" über seinen Namen zugreifen. Als Nächstes müssen wir 
+durch jedes Element darunter __iterieren__.
 
-Ruby has a method for iterating. It is called __each__. We have seen it before when
-creating our book rating system.
+Ruby hat eine Methode zum Iterieren. Sie heißt __each__. Wir haben sie bereits 
+bei der Erstellung unseres Buchbewertungssystems gesehen.
 
-Everything that method __each__ returns is passed to a block:
+Alles, was die Methode __each__ zurückgibt, wird an einen Block übergeben:
 
     s = get_shakey
     

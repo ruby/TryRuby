@@ -1,33 +1,37 @@
 ---
-lang:   EN
-title:  Summary #6 Which Means You've Come So Far
+lang:   DE
+title:  Zusammenfassung #6 was bedeutet, du bist schon so weit gekommen
 answer: \{\}
 class:  stretcher chapmark
-ok:     Ok, that's an empty hash
+ok:     Ok, das ist ein leerer Hash
 error:
 ---
 
-You're a level six Ruby cleric. I mean what a great job you've done. Let's review:
+Du bist ein Ruby-Kleriker der Stufe 6. Ich meine, was für eine großartige 
+Leistung du vollbracht hast. Lass uns das noch einmal durchgehen:
 
 
-### Data
-You loaded some data off the internet, traversed a data structure and selected values.
+### Daten
+Du hast einige Daten aus dem Internet geladen, eine Datenstruktur durchlaufen 
+und Werte ausgewählt.
 
-### Iterating
+### Iterieren
 You iterated all elements of a hash and you chained some more methods.
 
-### Pretty printing
-And if that wasn't enough, you formatted and printed some values in a way that is easy
-to read for humans. In fact __you made a real program!__
+### Hübsches Ausgeben
+Und als ob das noch nicht genug wäre, hast du einige Werte so formatiert und 
+ausgedruckt, dass sie für Menschen leicht zu lesen sind. Du hast sogar __ein 
+richtiges Programm gemacht!__
 
 ### IF
-You learned to take control of your programs with __if__ and __else__ statements.
+Du hast gelernt, mit __if__ und __else__ Anweisungen die Kontrolle über deine 
+Programme zu übernehmen.
 
-## So
-What could possibly be next? What could you possibly have to learn now?
-Ha, this is the best part. You've come such a long way that we're going
-to uncover classes. For two more short lessons and you're done.
+## Also
+Was könnte als Nächstes kommen? Was könntest du jetzt noch lernen müssen? Ha, 
+das ist der beste Teil. Du bist schon so weit gekommen, dass wir den 
+Unterricht enthüllen werden. Noch zwei kurze Lektionen und du bist fertig.
 
-Earlier, we created a hash like this:
+Vorher haben wir einen Hash wie diesen erstellt:
 
     Hash.new

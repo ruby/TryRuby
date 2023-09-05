@@ -1,17 +1,19 @@
 ---
-lang:   EN
-title:  And Now For the Startling Conclusion
+lang:   DE
+title:  Und nun die erstaunliche Schlussfolgerung
 answer: is not equal to 100$
-ok:     That's better
-error:  This can't be right
+ok:     So ist es besser
+error:  Das kann nicht richtig sein
 ---
 
-Did you see the 2 equal signs in __'abc' == 'def'__?
+Hast du die 2 Gleichheitszeichen in __'abc' == 'def'__ gesehen?
 
-This __==__ means __is equal to__.
-The single equal sign that we have seen before means __assign a value to a variable__.
+Dieses __==__ bedeutet __ist gleich__.
+Das einzelne Gleichheitszeichen, das wir bereits gesehen haben, bedeutet 
+__einer Variablen einen Wert zuweisen__.
 
-To make it more confusing: you can use the assignment after an if method like this:
+Um es noch verwirrender zu machen: Sie können die Zuweisung nach einer if-
+Methode so verwenden:
 
     a = 0
     
@@ -21,14 +23,15 @@ To make it more confusing: you can use the assignment after an if method like th
       puts "#{a} is not equal to 100"
     end
 
-Change the = into == and see what happens.
+Ändere das = in == und sieh, was passiert.
 
-I can guarantee you that you will forget typing the second equal sign regularly. I also
-still forget it sometimes.
+Ich kann dir versichern, dass du regelmäßig vergessen wirst, das zweite 
+Gleichheitszeichen zu tippen. Auch ich vergesse es manchmal noch.
 
 ### else
-In the code above I have added an else expression. This part will be executed when the
-__if test-expression__ evaluates to false.
+In dem obigen Code habe ich einen else-Ausdruck hinzugefügt. Dieser Teil wird 
+ausgeführt, wenn der Ausdruck __if test-expression__ zu false ausgewertet wird.
 
-> There are more variations to this if-then-else theme. You can read more
-> <a href="http://www.ruby-doc.org/core/syntax/control_expressions_rdoc.html" target="_blank">here</a>.
+> Es gibt noch weitere Varianten dieses if-then-else-Themas. Du kannst 
+> <a href="http://www.ruby-doc.org/core/syntax/control_expressions_rdoc.html" target="_blank">hier</a>.
+> mehr lesen (auf Englisch).
