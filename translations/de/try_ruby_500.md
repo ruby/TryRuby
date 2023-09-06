@@ -1,19 +1,16 @@
 ---
-lang:   EN
-title:  Quickening it Up
+lang:   DE
+title:  Aufpeppen der Sache
 answer: ^\d{4}
-ok:     Noted
+ok:     Notiert
 error:  
 ---
 
-Cool, your app is awesome. Hey, let's make things a bit easier on you.
-You're not going to want to set the time like that every time you Blurb<sup>TM</sup>.
+Cool, deine App ist großartig. Hey, machen wir es dir ein bisschen leichter. Du wirst die Zeit nicht jedes Mal so eingeben wollen, wenn du Blurb<sup>TM</sup> benutzt.
 
-You just want to type the content and set the mood, right?
+Du willst nur den Inhalt eingeben und die Stimmung festlegen, richtig?
 
-Let's add an __initialize__ method to our class. This method is called whenever a new Blurb<sup>TM</sup>
-is created.
-At the same time we can limit the length of the Blurb<sup>TM</sup> content to 40 characters.
+Fügen wir eine __initialize__-Methode zu unserer Klasse hinzu. Diese Methode wird immer dann aufgerufen, wenn ein neuer Blurb erstellt wird. Gleichzeitig können wir die Länge des Blurb-Inhalts auf 40 Zeichen begrenzen.
 
     class Blurb
       attr_accessor :content, :time, :mood
@@ -27,5 +24,5 @@ At the same time we can limit the length of the Blurb<sup>TM</sup> content to 40
     
     Blurb.new(:sick).time
 
-(That parameter __content=""__ is there to make sure that we know content is a string,
-even if no content parameter is passed to the initialize method.)
+(Der Parameter __content=""__ ist dazu da, um sicherzustellen, dass content eine String ist,
+auch wenn kein Parameter content an die Methode initialize übergeben wird.)

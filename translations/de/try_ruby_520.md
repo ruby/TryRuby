@@ -1,6 +1,6 @@
 ---
-lang:   EN
-title:  A Giraffe Has Not Stolen Summary #7
+lang:   DE
+title:  Eine Giraffe hat nicht die Zusammenfassung #7 gestohlen
 answer: 
 class:  stretcher chapmark
 ok:     
@@ -8,20 +8,23 @@ error:
 load:   prev;blurb2=Blurb.new :confused, "I can not believe Mt. Hood was stolen!"
 ---
 
-Aha, you're here. And all in one piece. We're still going to make your app real,
-but until then, let's review, okay?
+Aha, du bist hier. Und alles in einem Stück. Wir werden deine App immer noch 
+verwirklichen, aber bis dahin, lass uns eine Zusammenfassung anschauen, okay?
 
-### Classes
-Everything in Ruby is some kind of object. Classes explain objects, how a certain object works.
-For example, you made a few Blurb<sup>TM</sup> objects and these objects are explained in the Blurb
-class.
-In other words: you call them Blurb objects.
-You can use classes to (kinda) model real life objects.
+### Klassen
+In Ruby ist alles eine Art von Objekt. Klassen erklären Objekte, wie ein 
+bestimmtes Objekt funktioniert.
+Du hast zum Beispiel ein paar Blurb<sup>TM</sup>-Objekte erstellt, und diese 
+Objekte werden in der Blurb Klasse erklärt.
+Mit anderen Worten: sie heißen Blurb-Objekte.
+Mit Klassen kann man (irgendwie) Objekte des wirklichen Lebens modellieren.
 
 ### Accessors
-Accessors are variables attached to an object which can be used __outside__ the object.
+Accessors sind Variablen, die an ein Objekt angehängt sind und __außerhalb__ 
+des Objekts verwendet werden können.
 (blurb2.time = Time.now)
 
-### Object variables
-Object variables are the same variables you're using for accessors, but __inside__ the object.
+### Objectvariablen
+Objektvariablen sind die gleichen Variablen, die man auch für Accessors 
+verwendet, aber __innerhalb__ des Objekts.
 (@time = Time.now)
