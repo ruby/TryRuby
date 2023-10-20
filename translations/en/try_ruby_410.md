@@ -35,6 +35,6 @@ Let's change our code a bit
 I have added __.ljust(30)__ to the title. This way the title is _left justified_ with a minimum
 length of 30 characters so the years align nicely.
 
-See if you can change the ouput of the program so that it shows the plays like this: __1600 -> As You Like It__
+See if you can change the output of the program so that it shows the plays like this: __1600 -> As You Like It__
 
 __All's Well That Ends Well?__ Hey we're not done yet, but the end is in sight!
