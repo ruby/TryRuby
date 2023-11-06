@@ -1,22 +1,24 @@
 ---
-lang:   EN
-title:  It's All About Combining
+lang:   DE
+title:  Die Kombination macht's
 answer: :-
 ok:     Moody!
 error:
 load:   prev
 ---
 
-Some beautiful things can be done with the simple parts of Ruby, especially when you combine them
-together into new things.
-Here we've got an app made of a class containing another class. And, actually, Ruby really does good
-with this kind of creature. It is called object oriented programming.
+Mit den einfachen Teilen von Ruby lassen sich einige wunderschöne Dinge 
+anstellen, besonders wenn man sie zu neuen Dingen kombiniert.
+Hier haben wir eine App, die aus einer Klasse besteht, die eine andere Klasse 
+enthält. Und genau mit dieser Art von Kreaturen kann Ruby wirklich gut umgehen. 
+Man nennt das objektorientierte Programmierung.
 
-We have arrived at the __last programming excercise__ of TryRuby. If you want, you can add some
-more features to Blurbalizer<sup>TM</sup>.
+Wir sind bei der __letzten Programmierübung__ von TryRuby angekommen. Wenn du 
+willst, kannst du dem Blurbalizer<sup>TM</sup> noch einige weitere Funktionen hinzufügen.
 
-Maybe you want to print the mood as a smiley in the __show_timeline__ method. You could add
-a _moodify_ method to the Blurb<sup>TM</sup> class and then use that method in the _show\_timeline_ method:
+Vielleicht möchtest du die Stimmung als Smiley in der Methode __show_timeline__ 
+ausgeben. Du könntest der Blurb<sup>TM</sup>-Klasse eine _moodify_-Methode 
+hinzufügen und diese Methode dann in der _show\_timeline_-Methode verwenden:
 
     class Blurb
       attr_accessor :content, :time, :mood

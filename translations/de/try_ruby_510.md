@@ -2,7 +2,7 @@
 lang:   DE
 title:  Du hast deiner App beigebracht, wertlose Dinge abzulehnen
 answer: Blurb:
-ok:     Blurb added
+ok:     Blurb hinzugefügt
 error:  
 load:   class Blurb;attr_accessor :content,:time,:mood;def initialize(mood, content="");@time=Time.now;@content=content[0..39];@mood=mood;end;end;blurb1=Blurb.new(:sick,"Today Mount Hood Was Stolen!")
 ---

@@ -1,23 +1,26 @@
 ---
-lang:   EN
-title:  What's that Blurb all about?
+lang:   DE
+title:  Was hat es mit dem Blurb auf sich?
 answer: Today
-ok:     Bring on the blurbs
+ok:     Bring die Blurbs
 error:
 load:   prev;class Blurbalizer;attr_reader :title;def initialize(title);@title=title;@blurbs=[];end;def add_a_blurb(mood, content);@blurbs << Blurb.new(mood, content);@blurbs.each {|t| t.time -= 73};end;def show_timeline;puts "Blurbalizer: #{@title} has #{@blurbs.count} Blurbs\n";@blurbs.sort_by { |t| t.time}.reverse.each { |t| puts "#{t.content.ljust(40)} #{t.time}"};end;end;myapp = Blurbalizer.new "The Big Blurb";myapp.add_a_blurb :sick,"Today Mount Hood Was Stolen!";myapp.add_a_blurb :confused,"I can not believe Mt. Hood was stolen!";myapp.add_a_blurb :dazed,"I am speechless!";myapp.add_a_blurb :mad,"It was stolen by a giraffe !!";myapp.add_a_blurb :sad,"I Left my Hoodie on the Mountain!";myapp.add_a_blurb :mad,"I am never going back to that mountain."
 ---
 
-There you are. Did you figure out what all that code in the Blurbalizer<sup>TM</sup> class does?
+Da hast du es. Hast du herausgefunden, was der ganze Code in der Blurbalizer
+<sup>TM</sup>-Klasse macht?
 
-> In the Blurbalizer<sup>TM</sup> class are two __methods__ (add\_a\_blurb and show\_timeline).
-> You can use a method outside the class, just like we did with accessors.
+> In der Klasse Blurbalizer<sup>TM</sup> gibt es zwei __Methoden__ (add\_a\_blurb und show\_timeline).
+> Du kannst eine Methode außerhalb der Klasse benutzen, genau wie wir es mit den Accessors gemacht haben.
 
-Time to start using Blurbalizer<sup>TM</sup>. I've already loaded some Blurbs<sup>TM</sup> for you,
-but feel free to add your own.
+Zeit, Blurbalizer<sup>TM</sup> zu verwenden. Ich habe bereits einige Blurbs
+<sup>TM</sup> für dich vorbereitet, aber du kannst gerne deine Eigenen 
+hinzufügen.
 
-We're no longer creating Blurbs<sup>TM</sup> directly, but we use the add\_a\_blurb __method__ of the
-Blurbalizer<sup>TM</sup> class. This way we can be sure all our Blurbs<sup>TM</sup> are stored in the
-myapp object.
+Wir erstellen die Blurbs<sup>TM</sup> nicht mehr direkt, sondern verwenden die 
+__Methode__ add\_a\_blurb der Blurbalizer<sup>TM</sup>-Klasse. Auf diese Weise 
+können wir sicher sein, dass alle unsere Blurbs<sup>TM</sup> im myapp-Objekt 
+gespeichert sind.
 
     myapp.add_a_blurb :moody, "Add Blurb here"
 

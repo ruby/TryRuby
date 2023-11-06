@@ -1,24 +1,29 @@
 ---
-lang:   EN
-title:  Your Own Turf
+lang:   DE
+title:  Dein eigenes Revier
 answer: Blurbalizer:
-ok:     My app created
+ok:     Meine App erstellt
 error:  
 load:   class Blurb;attr_accessor :content,:time,:mood;def initialize(mood, content="");@time=Time.now;@content=content[0..39];@mood=mood;end;end
 ---
 
-Okay, let's wrap things up, kid. Here's the last chapter of the GRIPPING epic story of Try Ruby!
-Now that you've got a taste of how it all works, how are you going to use it around the house
-and in your grocer's freezer?
-You're a great person (one of my favorites), but you need guidance.
+Okay, bringen wir die Sache zu Ende, Kleines. Hier ist das letzte Kapitel der 
+PACKENDEN, epischen Geschichte von Try Ruby!
+Jetzt, wo du einen Eindruck davon bekommen hast, wie das Ganze funktioniert, 
+wie wirst du es zu Hause und in der Tiefkühltruhe deines Lebensmittelhändlers 
+verwenden?
+Du bist eine großartige Person (eine meiner Favoriten), aber du brauchst 
+Orientierung.
 
-### Let's finish your app
-You have app entries, but no actual app.
-It still needs a title, someplace to store all Blurbs<sup>TM</sup> and a timeline in order to work.
+### Lass uns deine App fertigstellen
+Du hast App-Einträge, aber keine eigentliche App.
+Es braucht immer noch einen Titel, einen Ort, an dem alle Blurbs<sup>TM</sup> 
+gespeichert werden, und eine Timeline, um zu funktionieren.
 
-Guess what, we're going to use another class. I've given all the code for the new class in one go.
-Just __take your time__ to study it.  
-I'm in no hurry, I'll wait for you in the next lesson.
+Rate mal, was, wir werden eine weitere Klasse verwenden. Ich habe den gesamten 
+Code für die neue Klasse in einem Rutsch angegeben.
+__Nimm dir einfach die Zeit__, ihn zu lesen.  
+Ich habe es nicht eilig, ich werde in der nächsten Lektion auf dich warten.
 
     class Blurbalizer
       def initialize(title)
