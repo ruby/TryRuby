@@ -120,6 +120,8 @@ class TryRuby
         language = 'ua'
       when 'mk'
         language = 'mk'
+      when 'de'
+        language = 'de'
       else
         language = 'en'
       end
