@@ -6,3 +6,4 @@ _site/*
 .sass-cache
 tmp
 app/application.js
+source/try_ruby*.json
