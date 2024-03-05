@@ -1,27 +1,27 @@
 ---
-lang:   EN
-title:  Hello, Who's There? And Summary #5 Waves Its Hat!
+lang:   TR
+title:  Merhaba, Kim Orada? Ve Özet #5 Waves Its Hat!
 answer:
 class:  stretcher chapmark
 ok:
 error:
 ---
 
-Well done, well done, well done, well done!
+Aferin, Aferin, Aferin, Aferin!
 
-Truly, truly, truly, truly, truuuuuuuuly!
+Gerçekten, gerçekten, gerçekten, gerçekten, gerçekteeeen!
 
-Here's the last few minutes of your life in review:
+Al sana hayatının son birkaç dakikasının özeti:
 
-### Methods
-Methods can be defined with __def__ and have a name. Methods make your program shorter
-and easier to read.
+### Metodlar
+Metodlar, __def__ ve bir isim ile tanımlanabilirler. Metodlar programını daha kısa ve
+kolayca okunabilir hale getirir.
 
-### Parameters
-Methods can have parameters.
+### Parametreler
+Metodların parametreleri olabilir.
 
-### Return values
-Methods (almost) always return a value.
+### Return değerleri
+Metodlar (neredeyse) her zaman bir değer döndürürler.
 
-## Now
-To (be) or not to (be) is not a question to you anymore. Are you ready for some more Shakespeare?
+## Şimdi
+Olmak ya da olmamak artık senin için bir soru değil. Biraz daha Shakespeare için hazır mısın?
