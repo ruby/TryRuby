@@ -1,20 +1,20 @@
 ---
-lang:   EN
-title:  Wait, Did I Like Gravity's Rainbow?
+lang:   TR
+title:  Bir Saniye, Yer Çekiminin Gökkuşağını Beğendim Mi?
 answer: ^(splendid|quite_good|mediocre|quite_not_good|abysmal)$
 load:   books = {"Gravitys Rainbow" => :splendid, "The deep end" => :abysmal, "Living colors" => :mediocre}
-ok:     I liked it a lot
+ok:     Çok beğendim
 error:  
 ---
 
-One great thing about Ruby is that names are often reused, which means fewer names you need to remember.
+Ruby hakkında bir şey şu ki, isimler genel olarak tekrar ve tekrar kullanılır, bu sayede hatırlaman gereken isimler daha azdır.
 
-Remember how we retrieved items from an array using a number:  
+Bir sayı kullanarak array'den nasıl bir element aldığımızı hatırla:
 __puts ticket[1]__.
 
-For a hash this works the same way, except we don't use a number to get an element but a name.
+Bir hash için de bu aynı şekilde çalışıyor ancak element alabilmek için bir numara değil, bir isim kullanıyoruz.
 
-So, if you'd like to look up one of your old reviews, again put the title in the square. But leave off the equals.
-Just like this:
+Yani, eğer eski değerlendirmelerinden bir tanesine bakmak istersen başlığı köşeli parantezlere tekrardan koy ancak eşittir işaretlerini ekleme.
+Tam olarak şöyle:
 
     puts books["Gravitys Rainbow"]
