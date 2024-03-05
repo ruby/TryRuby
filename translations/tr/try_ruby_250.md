@@ -1,24 +1,24 @@
 ---
-lang:   EN
-title:  More Bite-Size Reviews
+lang:   TR
+title:  Daha Çok Isırık Büyüklüğünde Değerlendirmeler
 answer: [3-9]
 load:   books = {"Gravitys Rainbow" => :splendid}
-ok:     See, the length method works on strings, arrays and hashes.
+ok:     Gördün mü, length metodu hem string'de hem array'de hem de hash'de kullanılabiliyor
 error:
 ---
 
-Keep going, fill it up with reviews. And, if you want to see the whole list, just type: __puts books__
+Devam et, değerlendirmelerle doldur. Eğer olur da tüm listeyi görmek istersen sadece şunu yazman yeterli: __puts books__
 
-Again, the ratings are: :splendid, :quite\_good, :mediocre, :quite\_not\_good and :abysmal.
+Tekrardan, değerlendirmeler sadece: :splendid, :quite\_good, :mediocre, :quite\_not\_good and :abysmal.
 
-These ratings are not strings. When you place a colon in front of a simple word, you get a __symbol__.
-Symbols are cheaper than strings (in terms of computer memory.) If you use a word over and over in your program,
-use a symbol. Rather than having thousands of copies of that word in memory, the computer will store the symbol only
-__once__.
+Bu değerlendirmeler string değiller. Basit bir kelimenin önüne iki nokta üst üste karakterini koyduğunda bir __symbol__ haline gelirler.
+Symbol'ler string'lerden daha ucuzdurlar(bilgisayar hafızası anlamında.) Eğer olur da belirli bir kelimeyi programında tekrar ve tekrar
+kullandığını fark edersen, symbol kullan. Aynı bir kelimenin hafızada binlerce kopyasını yaratmak yerine bilgisayar bu sayede sadece __bir adet__
+symbol tutacaktır.
 
-More importantly, a symbol tells you that it is not just any old word but has a meaning within your program.
+Daha önemlisiyse, bir symbol o kelimenin programın için bir anlamı olmayan herhangi bir kelime olmadığı anlamına gelmektedir.
 
-Enter 2 more bookreviews, use __books.length__ to see how many reviews there are in the hash:
+2 tane daha kitap değerlendirmesi git, hash'te ne kadar kitap değerlendirmesi olduğunu görmek için __books.length__ yaz:
 
     books["The deep end"]  = :abysmal
     books["Living colors"] = :mediocre
