@@ -1,13 +1,13 @@
 ---
-lang:   EN
-title:  One Raises Its Hand
+lang:   TR
+title:  Elini Kaldıran
 answer: ^47$
-ok:     Okay
+ok:     Tamam
 error:  
 ---
 
-A list of lottery numbers. Which one is the highest?
+Piyango numaralarından oluşan bir liste. Hangisi en yüksek?
 
-Try: 
+Dene: 
 
     [12, 47, 35].max
