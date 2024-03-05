@@ -1,16 +1,16 @@
 ---
-lang:   EN
-title:  In Ruby, Def Leppard means: define method Leppard
+lang:   TR
+title:  Def Leppard'ın Ruby'deki Anlamı: Leppard Adlı Metodu Tanımla
 answer: ^tame
-ok:     Tame is not lame
+ok:     Uysal topal değil
 error:  
 ---
 
-Hey, okay, you done it. You're making your own method. You started with def, followed by the name of the method.
-And a list of arguments which the method will need. This isn't too scary and dangerous!
-All we have to do is fill it up with Ruby and finish it up with end.
+Hey, tamam, başardın. Kendi metodunu yapıyorsun. def ile başladın, sonra da metodun ismiyle devam ettin.
+Ardından metodunun ihtiyacı olacak bir argümanlar listesi. Bu o kadar da korkutucu ve tehlikeli değil!
+Tüm yapmamız gereken Ruby ile doldurup end ile bitirmek.
 
-Here's the code:
+İşte kod:
     
     def tame( number_of_shrews )
       number_of_shrews.times {
@@ -19,6 +19,6 @@ Here's the code:
     end
     
 > __P.S.__  
-> If you don't get the title of this chapter.
+> Eğer bu bölümün başlığını anlayamadıysanız.
 > <a href="http://en.wikipedia.org/wiki/Def_Leppard" target="_blank">Def Leppard</a>
-> is the name of a, once famous, English rock band.
+> ismi önceden ünlü olan İngiliz bir rock müziği grubudur.
