@@ -1,15 +1,15 @@
 ---
-lang:   EN
-title:  Are You Harsh?
+lang:   TR
+title:  Sert Misin?
 answer: :mediocre
 load:   books = {"Gravitys Rainbow" => :splendid, "The deep end" => :abysmal, "Living colors" => :mediocre, "Bumblebees" => :mediocre}
-ok:     Great, wow! You've made a scorecard of your ratings
+ok:     Süper, vay! Değerlendirmelerinin bir puan kardını oluşturdun
 error:  
 ---
 
-So are you giving out harsh, unfair reviews? Let's keep score with a new hash __ratings__:
+Yani sağda solda gidip sert ve haksız değerlendirmeler mi yapıyorsun? Hadi yeni hash'imiz __ratings__ ile bunu takip edelim:
 
-Then, okay, now let's count up your reviews. Just stay with me. Type:
+Öyleyse, tamam, hadi şimdi değerlendirmelerini sayalım. Sadece benimle kal. Şunu yaz:
 
     ratings = Hash.new {0}
     
@@ -19,9 +19,8 @@ Then, okay, now let's count up your reviews. Just stay with me. Type:
     
     puts ratings
 
-The straight line in the code is the pipe character, probably located right above the Enter key
-on your keyboard.
+Koddaki düz çizgi pipe karakteridir ve muhtemelen Enter tuşunun hemen üstünte yer almaktadır.
 
-That _+= 1_ line means: increase the value by 1.
+O _+= 1_ satırı şu anlama gelir: değeri 1 ile arttır.
 
-Don't worry if you don't understand everything that is going on here. It will be revealed later.
+Eğer burada olan her şeyi anlayamıyorsan endişelenme. Sonradan açıklayacağız.
