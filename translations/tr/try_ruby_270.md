@@ -1,19 +1,19 @@
 ---
-lang:   EN
-title:  Hashes as Pairs
+lang:   TR
+title:  Çift Olarak Hash'ler
 answer: ^\[".*"\]
 load:   prev
-ok:     You found the keys
+ok:     Anahtarları buldun
 error:  
 ---
 
-Keep in mind that hashes won't keep things in order. That's not their job. It'll just pair up
-two things: a __key__ and a __value__.
+Şunu unutma ki hash'ler şeyleri belirli bir sırada depolamaz. Bu onların işi değil. Hash'ler sadece şu iki şeyi
+çift haline getirirler: __key__ ve bir __value__.
 
-In your reviews, the book's title is the key and the rating is the value.
+Senin değerlendirmelerinde, kitabın başlığı bir key ve değerlendirmeyse bir value. 
 
-If you want to just see the titles of all the books you've reviewed:
+Eğer sadece tüm değerlendirdiğin kitapların başlıklarını görmek istiyorsan:
 
     books.keys
 
-You can also try this with .values instead of .keys.
+Bunu ayrıca .keys yerine .values ile de deneyebilirsin.
