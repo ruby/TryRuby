@@ -1,12 +1,12 @@
 ---
-lang:   EN
-title:  Ready, Aim
+lang:   TR
+title:  Hazır, Nişan Al
 answer: dnah ym morf nwolf sah tsaot yM
 load:   prev
-ok:     Okay, sure.  So the whole poem has been turned backwards.
+ok:     Tamam, peki. Şimdi şiir tersine geri dönüverdi.
 error:  
 ---
 
-Here's a question: what happens when we reverse this whole poem? 
+Hadi sana bir soru: bu tüm şiiri ters çevirirsek ne olur?
 
     poem.reverse
