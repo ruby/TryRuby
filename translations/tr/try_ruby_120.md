@@ -1,18 +1,18 @@
 ---
-lang:   EN
-title:  Standing in Line
+lang:   TR
+title:  Sırada Beklemek
 answer: ^\[([-\.\d]+)(\s*,\s*[-\d\.]+){3,}\]$
-ok:     Excellent
-error:  Try adding a fourth number to the list
+ok:     Süper
+error:  Listeye döndüncü bir eleman eklemeyi dene
 ---
 
-Lists (arrays) store things __in some order__.
+Listeler(array'ler) __belirli bir sırada olan__ şeyleri depolarlar.
 
-Like standing in line for popcorn. You are behind someone and you wouldn't dream of pushing them aside,
-right? And the guy behind you, you've got a close eye on him, right?
+Aynı biraz patlamış mısır için sırada beklemek gibi. Sen, birisinin arkasındasın ve onları kenara itmeyi düşünmezsin, değil mi?
+Ayrıca arkandaki kişi, ona dikkat ediyorsun değil mi?
 
-Here's a list for you. Lottery numbers: 
+Al sana bir liste. Piyango numaraları:
 
     [12, 47, 35]
 
-Try adding a number to this list: type a comma after 35 followed by a number. The space is optional.
+Bu listeye bir numara eklemeyi dene: bir virgül ardından 35 yaz. Boşluk karakteri opsiyoneldir.
