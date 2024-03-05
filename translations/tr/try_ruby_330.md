@@ -1,33 +1,33 @@
 ---
-lang:   EN
-title:  The Taming of the Shrew
+lang:   TR
+title:  Sivri Uçluların Ehlileştirilmesi
 answer: ^tame
-ok:     Good good!
+ok:     Güzel güzel!
 error:
 ---
 
-You totally know how to use Ruby now. I mean you've got down the essentials.
-You just need to keep learning more methods and try out more complex blocks.
+Artık tamamen Ruby'i nasıl kullanman gerektiğini biliyorsun. Yani, temelleri biliyorsun.
+Sadece daha çok metodları öğrenip daha kompleks blokları denemelisin.
 
-But there's one side of Ruby we haven't settled. Making your own methods.
-__Ahem!__ Let's get it over with then.
+Ancak Ruby'nin henüz hakkında konuşmadığımız bir kısmı daha var. Kendi metodlarını yapmak.
+__Öhöm!__ Hadi onu da halledelim bari.
 
-Next to using Ruby's built in methods (like puts, sort, times) you can define
-your own methods. Why is that a good idea? Two reasons:
+Ruby'nin zaten kendinden tanımlı metodlarının yanısıra (puts, sort, times gibi) kendi metodlarını da tanımlayabilirsin.
+Peki bu neden iyi bir fikir? İki sebepten ötürü:
 
-### To make your program shorter
-If you have to do the same thing in more than one part of your code it is easier
-to put that code in a separate method. Your code will be shorter.
+### Programını daha kısa yapabilmek için
+Eğer kodunda aynı şeyi birden fazla yerde yapmak ihtiyacı duyuyorsan bu kodu ayrı bir metoda
+koymak daha kolaydır. Kodun bu sayede daha kısa olacaktır.
 
-### To make your code easier to read
-Suppose your program needs to do a lot of different things.
-You __could__ stuff all code into one long piece. But it would be very difficult to
-read and understand that code later.
+### Kodunu daha kolay okunabilir yapmak için
+Diyelim ki programın birçok şey yapmaya ihtiyaç duyuyor.
+__Eğer istersen__ tüm kodunu upuzun bir parça halinde yazabilirsin. Ancak bu sonradan okuması ve
+anlaması zor bir hale gelecektir.
 
-Instead you should cut up your code in different methods and give each method an easy to
-understand English name. You will thank yourself later.
+Onun yerine kodunu ayrı metodlarda yazıp her birine anlaması kolay bir İngilizce isim ver.
+Kendine bunun için sonradan teşekkür edeceksin.
 
-So how do we define a method? Like this:
+Peki, nasıl bir metod tanımlayabiliriz? Bu şekilde:
 
     def tame( number_of_shrews )
     end
