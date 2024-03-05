@@ -1,34 +1,34 @@
 ---
-lang:   EN
-title:  Elemental
+lang:   TR
+title:  Elementsel
 answer: ^(12|35|47)$
 load:   ticket = [12, 47, 35]
-ok:     Ok
-error:  Almost
+ok:     Tamam
+error:  Neredeyse
 ---
 
-So we stored our lotto numbers inside variable ticket. How to get 'em out again?
+Lotto numaralarımızı ticket adlı değişkenimizde sakladık. Onları nasıl geri çıkarcaz?
 
-We already saw that we can get the highest number with __max__. Similarly you can
-get the __first__ or the __last__ element of the list.
-But what if you want a specific element?
+zaten __max__ ile en yüksek numarayı alabileceğimizi görmüştük. Benzer bir şekilde
+bir listenin __ilk__ ya da __son__ elementlerini de alabilirsin.
+Ancak ya spesifik bir element istiyorsan?
 
 ### [ ]
-Ruby uses the square brackets [ ] to target an element.
-The square brackets are very common in Ruby.
-They are like sights used to line up a target. Exactly.
-These brackets mean, "I am looking for ____" Ready, aim.
+Ruby, belirli bir elementi alabilmek için kareli parantezleri [ ] kullanır.
+Kareli parantezler Ruby'de yaygındır.
+Bunlar, sanki bir nişana tam hedef almak için bir dürbün gibi kullanılır. Aynen.
+Bu kareli parantezler, "Şunu arıyorum ____" Hazır, nişan al.
 
-Let's get all of our lotto numbers:
+Hadi tüm lotto numaralarımızı alalım:
 
     puts ticket[0]
     puts ticket[1]
     puts ticket[2]
 
-Why do we use [0], [1], [2]?
+Neden [0], [1], [2] şeklinde kullanıyoruz?
 
-And not [1], [2] and [3]? Is that some kind of Japanese Zen thing?
-No, we computer people just like to begin counting from zero. It's not just a Ruby thing,
-this _zero based indexing_ is used in most programming languages.
+Ve [1], [2], [3] şeklinde kullanmıyoruz? Bu Bir Japon Zen olayı mı?
+Yoo, bilgisayar insanları sadece 0'dan başlayarak saymayı seviyor. Ruby ile alakalı bir olay değil,
+bu _sıfır bazlı indexleme_ çoğu programlama dilinde kullanılmakta.
 
-> A little reminder: you can use the __Copy__ button to copy the example code to the editor.
+> Küçük bir hatırlatma: __Copy__ butonunu editöre örnek kodu koypalamak için kullanabilirsin.
