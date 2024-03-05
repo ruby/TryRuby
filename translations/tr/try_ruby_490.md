@@ -1,13 +1,13 @@
 ---
-lang:   EN
-title:  An Object, That Neat Little Package
+lang:   TR
+title:  Bir Obje, O Düzenli Küçük Paket
 answer: Blurb:
-ok:     Blurb updated
+ok:     Blurb güncellendi
 error:  
 load:   prev;blurb1=Blurb.new;blurb1.content="Today Mount Hood Was Stolen!"
 ---
 
-Go ahead and set the Blurb<sup>TM</sup> time and mood:
+Devam et ve Blurb<sup>TM</sup>'üm zaman ve ruh halini belirle:
 
     blurb1.time = Time.now
     blurb1.mood = :sick
