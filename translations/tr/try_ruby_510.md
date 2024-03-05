@@ -1,28 +1,28 @@
 ---
-lang:   EN
-title:  You've Taught Your App to Reject Worthless Things
+lang:   TR
+title:  Aplikasyonuna Değersiz Şeyleri Reddetmeyi Öğrettin
 answer: Blurb:
-ok:     Blurb added
+ok:     Blurb eklendi
 error:  
 load:   class Blurb;attr_accessor :content,:time,:mood;def initialize(mood, content="");@time=Time.now;@content=content[0..39];@mood=mood;end;end;blurb1=Blurb.new(:sick,"Today Mount Hood Was Stolen!")
 ---
 
-Did you see how inside the class we used the at-symbols (@time).
+Class içerisinde nasıl at-symbol'lerini (@time) kullandığımızı gördün mü?
 
-__Outside__ the class, we use accessors:
+Class __dışarısında__ accessor'lar kullanıyoruz:
 
 > __blurb.time = Time.now__
 
-but __inside__ we use the __object's variables__:
+ancak __içeride__ kullandıklarımızsa __objenin değişkenleri__: 
 
 > __@time = Time.now__
 
-They're the exact same thing, but expressed in two different places of your program.
+Tamamen aynı şeyler, ancak programında iki farklı yerde ifade edilmekteler.
 
-### Create another Blurb<sup>TM</sup>
-When a new Blurb<sup>TM</sup> is created, the initialize method is used to check for any
-arguments to new.
+### Başka bir Blurb<sup>TM</sup>
+Ne zaman bir Blurb<sup>TM</sup> yaratılsa, initialize metodu new metoduna verilen argümanları
+kontrol etmek için çalıştırılır.
 
-Uh, we need two arguments:
+Uh, iki argümana ihtiyacımız var:
 
     Blurb2 = Blurb.new :confused, "I can not believe Mt. Hood was stolen!"
