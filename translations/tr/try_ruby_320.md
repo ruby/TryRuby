@@ -1,38 +1,35 @@
 ---
-lang:   EN
+lang:   TR
 title:  To (be) or not to (be)
 answer:
-load:   poem = "My toast has flown from my hand\nAnd my toast has gone to the moon.\nYada yada yada\n"
+load:   poem = "Tostum elimden fırlayıverdi\nVe tostum aya uçtu.\nfalan filan falan filan falan filan\n"
 ok:
 error:
 ---
 
-One other little thing we haven't really talked about openly: method arguments.
-Remember when we changed the poem a little bit? We used:
+Üzerinde çok konuşmadığımız diğer bir küçük şeyse: metod argümanları.
+Şiiri biraz değiştirdiğimiz zamanı hatırlıyor musun? Şunu kullanmıştık:
 __poem.gsub("toast", "honeydew")__
 
-The gsub method needs 2 arguments, which we passed to gsub by including two strings between
-parentheses. _Arguments tell the method exactly what to do._
+gsub metodunun 2 argümana ihtiyacı var ve biz bunları parantezler arasında iki string vererek kullandık.
+_Argümanlar metoda tam olarak ne yapılması gerektiğini söylerler._
 
-### Parentheses
-Actually, most of the time Ruby doesn't mind if you omit the parentheses. So this would have
-worked too:
+### Parantezler
+Aslında, çoğu zaman parantezleri kullanmaman Ruby'nin umrunda değildir. Yani bu da çalışırdı:
 __poem.gsub "toast", "honeydew"__
 
-We have already used another method with a parameter. Many times in fact, though it was not very
-obvious:
+Zaten parametrelerle başka bir metodu kullanmıştık. Hatta birden fazla kere, ancak o kadar da açık değildi:
 
     puts "Hello"
     puts("Hello")
 
-Yes __puts__ is also a method. Using puts with or without parentheses is the same to Ruby, but the
-version without parentheses is a bit easier to read. And it saves you valuable typing time!
+Evet, __puts__ da bir metod. puts metodunu parantezli veya parantezsiz kullanmak Ruby için aynı şey, ancak
+parantezsiz versiyonunu okumak biraz daha kolay. Ayrıca seni değerli yazma zamanından da da kurtarmış oluyor!
 
-> So I guess the conclusion is that you can do whatever you like with parentheses as long as your
-> code reads nicely.
+> Sanırım buradaki sonuç kodun güzelce okunduğu sürece parantezlerle ne istersen yapabileceğin.
 
 ### to (be) or not to (be)
-So if _to_ is a method and _be_ is an argument we now know the answer to this age old question.
-It is really just a matter of preference whether you want _to be_ or _to(be)_.
+Yani eğer _to_ bir metod ve _be_ de bir argümansa bu eski soruya olan cevabı biliyoruz.
+_to be_ ya da _to(be)_ olmak aslında tamamen bir tercih meselesi.
 
-Are you in the mood for more Shakespeare? Read on.
+Biraz Shakespeare için modda mısın? Okumaya devam et.
