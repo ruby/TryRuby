@@ -1,12 +1,12 @@
 ---
-lang:   EN
-title:  Now Type Ticket
+lang:   TR
+title:  Şimdi Ticket Yaz
 answer: \[(\d+(, )?){2,}\]
 load:   ticket = [12, 47, 35]
-ok:     Restored!
+ok:     Geri yüklendi!
 error:  
 ---
 
-Now, type:
+Şimdi, şunu yaz:
 
     ticket
