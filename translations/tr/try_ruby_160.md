@@ -1,24 +1,24 @@
 ---
-lang:   EN
-title:  Saved, Tucked Away
+lang:   TR
+title:  Kaydedildi, Kenara Konuldu
 answer: \[12, 35, 47\]
 load:   ticket = [12, 47, 35]
-ok:     You've sorted the list
+ok:     Listeyi sıraladın
 error:  
 ---
 
-You've hung on to your lotto numbers, tucking them away inside a __variable__ called ticket.
-But any other name, like _jimmyslist_, would have been fine too.
+Lotto numaralarını ticket adında bir __değişkene__ atayarak onları sağlama aldın.
+Tabii, eğer isteseydin _mahmut_ adında bir değişkene de atayabilirdin.
 
-Programming, you will discover, is mostly about working with variables.
+Zaten fark edeceksin ki programlama aslında genel olarak değişkenlerle uğraşmaktır.
 
-Let's put your lotto numbers in order, how about?
+Hadi lotto numaralarını sıralayalım, şuna ne dersin?
 
-Use: 
+Şunu kullan: 
 
     ticket.sort!
     
-You had a list. You sorted the list. The ticket variable is now changed.  
-Did you notice that the _sort!_ method has a big, bright exclamation at the end?  
-A lot of times Ruby methods shout like that if they alter the variable for good.
-It's nothin special, just a mark.
+Bir listen var. Bunu sıraladın. ticket adındaki değişkenin şimdi değişti.
+_sort!_ metodunun sonda büyük bir ünlem işaretini barındırdığını fark ettin mi?
+Ruby, genel olarak bir değişkeni kalıcı bir şekilde değiştirdiğinde sana öyle bağırır.
+Herhangi bir özel bir şey değil, sadece bir işaret.
