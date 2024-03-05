@@ -1,6 +1,6 @@
 ---
-lang:   EN
-title:  Summary #8, The Hey-Relax-You-Did-Good Summary
+lang:   TR
+title:  Özet #8, The Hey-Relax-You-Did-Good Summary
 answer:
 class:  stretcher chapmark
 ok:     
@@ -8,24 +8,22 @@ error:
 load:   def ruby(f);puts "Go to www.ruby-lang.org to download Ruby";end;class K;attr_reader :rb;end;my_first_program=K.new
 ---
 
-This last section took a moment to wind down, to give you some pointers as to how you can use Ruby.
+Bu son bölümün bitmesi biraz zaman aldı, ancak bu sana Ruby'i kullanabilmen adına işaretler vermek içindi.
 
-If you enjoyed yourself, you can continue with the <a href="/playground">TryRuby Playground</a>
-or download and install Ruby:
+Eğer bunu beğendiysen, <a href="/playground">TryRuby Playground</a> ile devam edebilirsin ya da
+Ruby'i indirebilirsin:
 <a href="https://www.ruby-lang.org/en/downloads/" target="_blank">ruby-lang.org</a>
 
-Once you have Ruby installed, you can create a file, let say _my\_first\_program.rb_, with a text
-editor, type some Ruby code and then run it by opening a command prompt and typing:
+Ruby'i indirdiğin zaman text editörün aracılığıyla bir dosya oluşturabilir, diyelim ki _my\_first\_program.rb_ olsun,
+Ruby kodu yazabilir ve sonra komut istemini açıp şunu yazarak çalıştırabilirsin:
 
     ruby my_first_program.rb
 
-There are many (free) development tools available that combine an editor, file browser and a
-'ruby-runner'.
+Bir editörü, dosya tarayıcısını ve 'ruby-çalıştırıcısını' kombine eden birçok geliştirme araçları bulunmakta (ücretsiz).
 
-## Celebrate
-You really deserve a double-layer cake with double-double frosting and a guy playing one of those guitars that's a double guitar.
-I mean you finished, you really did! No doubt about it, you're a __certified red-blooded smartiac!__
+## Kutla
+Gerçekten iki katlı ve çift kremalı bir pastayı o ikili gitarlardan çalan bir adam eşliğinde hak ettin.
+Yani, bitirdin, gerçekten yaptın! Hakkında hiçbir şüphe yok, sen __sertifikalanmış kırmızı kanlı bir dahisin__!
 
-## More info
-There are a couple of articles on this website. They can give you some pointers on where to
-go from here.
+## Daha çok bilgi
+Bu websitede birkaç tane makale var. Sana buradan nereye gitmek konusunda fikir verebilirler.
