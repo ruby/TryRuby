@@ -1,13 +1,13 @@
 ---
-lang:   EN
-title:  Give and take
+lang:   TR
+title:  Ver ve Al
 answer: \d+
-ok:     Right on. Bravo.
+ok:     Nokta atışı. Bravo.
 error:
 ---
 
-Most methods do not only want some parameters as input, but will also __give something back__.
-I have changed our method a bit so it will return a value to you. Try it:
+Çoğu metodlar sadece giriş olarak parametreler istemez, ayrıca __geri bir şeyler de verirler__.
+Metodumuzu biraz değiştirdim ki sana bir şey döndürsün. Şunu dene:
 
     def tame( number_of_shrews )
       number_of_shrews.times {
@@ -19,11 +19,13 @@ I have changed our method a bit so it will return a value to you. Try it:
     puts tame(3)
 
 ### Return
-And, since you're getting so advanced and capable here, one other tip:
-you can omit the word __return__ from the last line of the method.
-Ruby will automagically return the last value that was used inside the method.
+Ve, burada bayağı gelişmiş ve yetenekli hale geldiğine göre sana benden bir ipucu:
+istersen __return__ kelimesini metoddan kaldırabilirsin.
+Ruby, bir sihirbaz gibi otomatik olarak metod içerisinde kullanılan son değeri döndürecektir.
 
-So we can change the last line to just: __number\_of\_shrews__.
+Bu bizim son satırı sadece şuna değiştirebileceğimizi gösteriyor: __number\_of\_shrews__.
 
 But since method __.times__ also returns the _number\_of\_shrews_ we can
 remove the entire last line. So in fact our original method already did what we wanted all along!
+Ancak zaten metod __.times__ ayrıca _number\_of\_shrews_ değerini döndüreceğizden ötürü son satırı tamamen
+kaldırabiliriz. Yani zaten en başından beridir bizim orijinal metodumuz tam olarak da istediğimiz şeyi yapıyordu!
