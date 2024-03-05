@@ -1,17 +1,17 @@
 ---
-lang:   EN
-title:  On Repeat
+lang:   TR
+title:  Tekrarda
 answer: (\w+)
-ok:     Nice to meet you.Nice to meet you.Nice to meet you.
+ok:     Tanıştığıma memnun oldum.Tanıştığıma memnun oldum.Tanıştığıma memnun oldum.
 error:  
 ---
 
-Now, you're probably wondering what any of this is good for.
+Şimdi, muhtemelen bunların ne işine yarayacağını düşünüyorsun.
 
-Well, I'm sure you've been to a website that screamed, __Hey, your password is too short!__
+Eminim ki önceden sana __Hey, şifren çok kısa!__ diye bağıran bir websitede bulunmuşsundur.
 
-See, some programs use that simple __.length__ code.
+Gördün mü, bazı programlar o basit __.length__ kodunu kullanıyor.
 
-Watch this. Let's multiply your name by 5. 
+Şuna bak. Hadi ismini 5 ile çarpalım.
 
-    "Jimmy" * 5
+    "Ali Rıza" * 5
