@@ -1,30 +1,30 @@
 ---
-lang:   EN
-title:  Hey, Summary #1 Already
+lang:   TR
+title:  Hey, Özet #1 Already
 answer: NoMethodError|undefined
 class:  stretcher chapmark
-ok:     Nope, it is not possible to reverse a number. Click 'next'
+ok:     Yoo, bir numarayı ters çevirmek mümkün değil ki. 'next' butonuna bas
 error:  
 ---
 
-Let's look at what you've learned in the first minute.
+Hadi ilk dakikanda öğrendiklerine bir göz atalım.
 
-### The editor
-Typing code into the editor and clicking on run gives you an answer in the output window.
-(Almost) all code gives an answer.
+### Editör
+Editöre yazmak ve run butonuna basmak sana çıktı ekranında bir sonuç verir.
+(Neredeyse) tüm kod sana bir cevap verir.
 
-### Numbers and strings
-Numbers and strings are Ruby's math and text objects.
+### Numaralar ve string'ler
+Numaraler ve string'ler Ruby'nin matematik ve metin objeleridir.
 
-### Methods
-You've used English-language methods like reverse and length. And symbolic methods like the
-multiplication method: \*  
-__Methods mean action!__
+### Metodlar  
+İngilizce dilinde olan reverse ve length gibi metod isimleri kullandın. Ayrıca çarpma metodu
+gibi sembolik metodlar da kullandın: \*
+__Methodlar aksiyon anlamına gelir!__
 
-This is the essence of your learning. Taking simple things, toying with them and turning them into
-new things. Feeling comfortable yet? I promise you are.
+Öğrenmenin özü budur. Basit şeyleri alıp onlarla oynadıktan sonra onları başka şeylere dönüştürmek.
+Rahat hissetmeye başladın mı? Başladığına eminim.
 
-## Okay,
-let's do something uncomfortable. Try reversing a number:
+## Tamam,
+bir de rahat olmayan bir şey yapalım. Bir numarayı ters çevirmeye çalış:
 
     40.reverse
