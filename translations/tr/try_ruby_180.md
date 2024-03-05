@@ -1,31 +1,31 @@
 ---
-lang:   EN
-title:  Summary #2 is Upon Us
+lang:   TR
+title:  Özet #2 is Upon Us
 answer: \w+
 class:  stretcher chapmark
 load:   poem = "My toast has flown from my hand\nAnd my toast has gone to the moon.\nBut when I saw it on television,\nPlanting our flag on Halley's comet,\nMore still did I want to eat it.\n"
-ok:     Does it rhyme?
+ok:     Kafiye oluyo mu?
 error:
 ---
 
-Now, look how your second minute went:
+Şimdi, ikinci dakikanın nasıl geçtiğine bir bak bakalım:
 
-### Errors
-If you try to reverse a number or do anything fishy, Ruby will tell you so.
+### Hatalar
+Eğer bir numarayı ters çevirmeye veya başka garip bir şey yapmaya çalışırsan, Ruby sana söyleyecektir.
 
-### Arrays
-Arrays are lists for storing things in some order.
-We also know how to create arrays and get items from arrays.
+### Array'ler(Diziler)
+Array'ler aslında bir şeyleri belirli bir sırada depolamak için olan listelerdir.
+Ayrıca, nasıl array oluşturup onlardan bir şeyler alabileceğimizi biliyoruz.
 
-### Variables
-Variables save a thing and give it a name. You used the equals sign to do this. Like:
+### Değişkenler
+Değişkenler bir şeyler depolayıp ona bir isim verir. Bunun için eşittir işaretini kullanmalısın. Mesela:
 ticket = [14, 37, 18].
 
 ### 2/8
-In all there are eight sections. You are two-eighths of the way there! This is simple stuff,
-don't you think? Good stuff up ahead.
+Tam olarak sekiz bölüm bulunmakta. Sona iki bölü 8 kadar yakınlaştın! Bunlar kolay şeyler,
+sen ne düşünüyorsun? İleride güzel şeyler var.
 
-Let's change directions for a moment. I've stuffed a bit of poetry for you in a certain variable.
-Take a look. Type:
+Bir an için yön değiştirelim. Belirli bir değişkenin içerisine biraz şiir koydum.
+Bakıversene. Şunu yaz:
 
     puts poem
