@@ -1,20 +1,20 @@
 ---
-lang:   EN
-title:  The Stuff Apps are Made of
+lang:   TR
+title:  Aplikasyonların Yapıldığı Şey
 answer: 
 ok:     
 error:  
 ---
 
-You've opened up a new Blurb<sup>TM</sup> class. What is your blog entry made of?
-The content, sure. Also, a time when the Blurb<sup>TM</sup> was posted. And a mood.
+Yeni bir Blurb<sup>TM</sup> class'ı açtın. Blog girişin neyden oluşuyor?
+İçerikten, tabii ki. Ayrıca, Blurb<sup>TM</sup>'ün oluşturulduğu zaman Blurb<sup>TM</sup>. Ve bir ruh hali.
 
-Okay, so you've got the first line of the class, here's the rest:
+Tamam, class'ın ilk satırını aldın, işte sonrası:
 
     class Blurb
       attr_accessor :content, :time, :mood
     end
 
-Class names always begin with a capital letter.
+Class isimleri her zaman büyük bir harfle başlar.
 
-(Still no output)
+(Hala bir çıktı yok)
