@@ -1,24 +1,23 @@
 ---
-lang:   EN
-title:  Now Arriving at Summary #4
+lang:   TR
+title:  Şimdi Özete Geliyoruz #4
 answer: 
 class:  stretcher chapmark
 ok:     
 error:  
 ---
 
-This last lesson was a bit longer. You've probably used up three minutes learning about:
+Bu son ders biraz uzundu. Yaklaşık 3 dakikanı şunları öğrenmekle harcadın:
 
-### Hashes
-The little dictionary with the curly pages: __{}__
+### Hashe'ler
+Şu şekilde oluşturulan küçük sözlük: __{}__
 
-### Symbols
-Tiny, efficient code words with a colon, like: __:splendid__
+### Symbol'lar
+Küçük ve efektif olan, iki nokta üst üste ile şu şekilde yazılan kod isimleri: __:splendid__
 
-### Blocks
-Chunks of code which can be tacked on to many of Ruby's methods. Here's the code you used to
-build a scorecard:  
+### Block'lar
+Ruby'nin birçok metoduna takılabilecek kod yığınları. İşte puan kartını yapmak için kullandığın kod:
 __books.values.each { |rate| ratings[rate] += 1 }__
 
-### Next
-In the next lesson we will delve a little bit deeper into methods.
+### Sonraki
+Sonraki derste metodlara daha derin bir dalış gerçekleştireceğiz.
