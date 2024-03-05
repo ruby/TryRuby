@@ -1,16 +1,16 @@
 ---
-lang:   EN
-title:  Sadly, You Hate Toast Poetry
+lang:   TR
+title:  Maalesef, Tost Şiirciliğinden Nefret Ediyorsun
 answer: (toast){0}
 load:   prev
-ok:     Excellent
-error:  Still smells like toast to me
+ok:     Mükemmel
+error:  Hala bana tost gibi kokuyor
 ---
 
-Look, it's okay. You don't have to like it. Hack it up, be my guest. Instead of toast, go for a
-melon or something. Try this to see the new poem:
+Bak, problem değil. Beğenmek zorunda değilsin. Kafana göre değiştir, başımın üstünde yerin var.
+Tost yerine git kavan falan yaz. Yeni şiiri görmek için şunu yaz:
 
     poem.gsub("toast", "honeydew")
 
-The __gsub__ method is short for global substitute. It replaces all occurences of "toast" with
-"honeydew".
+__gsub__ metodu global substitute'un kısaltılmış hali. Kendisi "toast" yazan tüm yerleri
+"honeydew" ile değiştirecek.
