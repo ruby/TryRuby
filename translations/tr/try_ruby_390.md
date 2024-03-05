@@ -1,22 +1,22 @@
 ---
-lang:   EN
+lang:   TR
 title:  Noble Kinsmen
 answer: ^The Two Noble Kinsmen$
-ok:     That's much better
+ok:     Bu çok daha iyi
 error:  
 load:   prev
 ---
 
-Okay we now have a list of plays from the internet. The list was in the json format.
-Fortunately for us Ruby kindly provides a method to convert json data to a Ruby hash.
-The _get\_shakey_ method already did that for us.
+Pekala, şimdi internetten içerisinde oyunlar barındıran bir listeye sahibiz. Liste json formatındaydı.
+Neyse ki, Ruby bize kibarca json datasını Ruby hash'ine döndürecek metodu sağlıyor.
+Onu _get\_shakey_ metodu bizim için zaten yaptı.
 
-But since the structure of the json data is retained in the hash, it is still a bit difficult to read.
-Let us write a method to display the plays nicely.
+Ancak json datanın yapısı hash içerisinde muhafaza edildiğinden ötürü bu hala biraz okuması zor.
+Hadi oyunları daha kolayca okumamızı sağlayacak bir metod yazalım.
 
-If you inspect the list of plays carefully you will see that it has a kind of nested
-structure. (This is actually quite common in data you get from the internet.)
-Looks like this:
+Eğer oyun listesini dikkatlice incelersen iç içe gömülü bir yapıya sahip olduğununun farkına
+varacaksın. (Bu aslında internetten aldığın datalar için gayet yaygındır.)
+Şu şekilde gözüküyor:
 
 <ul>
   <li>"William Shakespeare"
@@ -38,13 +38,13 @@ Looks like this:
   </li>
 </ul>
 
-To list the plays we first have to access the top "William Shakespeare" hash element by its name.
-Next we have to __iterate__ through each element below it.
+Oyunlara erişebilmek için ilk önce en yukarıdaki "William Shakespeare" hash elementine ismi aracılığıyla ulaşmalıyız.
+Sonra altında bulunan her element için __iterate__ etmeliyiz.
 
-Ruby has a method for iterating. It is called __each__. We have seen it before when
-creating our book rating system.
+Ruby'nin iterate etmek için bir metodu zaten bulunmakta. Buna __each__ deniyor. Bunu önceden
+kitap değerlendirme sistemimizi yazarken görmüştük.
 
-Everything that method __each__ returns is passed to a block:
+__each__ metodunun döndürdüğü her şey bir block'a verilmekte:
 
     s = get_shakey
     
