@@ -1,16 +1,16 @@
 ---
-lang:   EN
-title:  Say Your Name Backwards
+lang:   TR
+title:  İsmini Geriden Söyle
 answer: \w+
-ok:     dooG
+ok:     repüS
 error:  
 ---
 
-A string is a set of characters the computer can process. Imagine the letters are on a string of
-laundry line and the quotes are clothespins holding the ends. The quotes mark the beginning and end.
+Bir string, bilgisayarın işleyebileceği bir karakter(ler) kümesidir. String'leri çamaşır askısına
+asılmış çamaşırlar olarak, tırnakları da mandallar olarak düşünebilirsin.  Tırnaklar başlangıç ve sonu belirler.
 
-To reverse your name, type: 
+İsmini terse çevirmek için bunu yaz:
 
-    "Jimmy".reverse
+    "Ali Rıza".reverse
 
-(Don't forget the dot!)
+(Noktayı unutma!)
