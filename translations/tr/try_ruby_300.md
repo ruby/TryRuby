@@ -1,23 +1,22 @@
 ---
-lang:   EN
-title:  Have you got the time?
+lang:   TR
+title:  Zamanın var mı?
 answer: ^[0-9]$
-ok:     You timed it just right!
-error:  Run the block 0 to 9 times
+ok:     Tam zamanında yaptın!
+error:  Block'u 0 ila 9 arasında çalıştır.
 ---
 
-As we saw in the first example with a block (when counting ratings) we can pass a value to the block. Which
-values are __passed__ is determined by the method that is running the block.
+Birince örnekte de gördüğümüz (değerlendirmeleri sayarken) gibi bir block'a değer verebiliyoruz. Bu block'a
+verilen değerler block'u çalıştıran metoda bağlıdır.
 
-The values that are __received__ by the block are placed in the variable name at the beginning of the block,
-between two pipe symbols: |
+Block tarafından alınan değerler block'un başında iki pipe sembolü arasına yazılan değişken isimlerinde tutulur: |
 
-Let's try that with this block:
+Hadi onu bu block'ta deneyelim:
 
     5.times { |time|
       puts time
     }
 
-Here, method __.times__ sends a value to variable __|time|__. But note that variable time is only known within the block.
+Burada, __.times__ metodu değeri __|time|__ adlı değişkene göndermektedir. Ayrıca, time adlı değişkenin sadece bu block içerisinde bilindiğini aklımızda tutalım.
 
-> Did you notice that you can split code over multiple lines. This makes it a bit easier to read.
+> Bir kodu birden fazla satır üzerinde bölebileceğinizi fark ettiniz mi? Bu okumayı daha kolaylaştırır.
