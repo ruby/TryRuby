@@ -1,18 +1,18 @@
 ---
-lang:   EN
-title:  Me hungry
-answer: ^Me not hungry
-ok:     Yes
-error:  No way am I hungry at 10 AM!
+lang:   TR
+title:  Açım
+answer: ^Aç değilim
+ok:     Evet
+error:  Sabah 10'da aç olmam imkansız!
 ---
 
-Okay, this is coming along wonderfully. This is simple stuff for you, but keep in mind that you
-didn't know __any Ruby whatsoever__ just fifteen minutes ago!
+Tamam, her şey güzelce bir araya geliyor. Bunlar senin için kolay şeyler, ancak aklında tut ki
+15 dakika önce bir Ruby bilgin yoktu.
 
-Last step. Let's tie it all together, you know? Let's make it chime together like a very nice set
-of glistening chimes on the beach in the maginificent sunlight!
+Son adım. Artık tüm bunları birbirine bağlamanın zamanı geldi, değil mi? Hadi beraber bu güzel müziği
+parıldayan sahil ve mükemmel günbatımında beraber dinleyelim!
 
-We'll define two methods first and then take a decision:
+İlk önce iki metod tanımlayacak sonra bir karar vereceğiz:
 
     def hungry?(time_of_day_in_hours)
       puts "Me hungry"
@@ -27,5 +27,4 @@ We'll define two methods first and then take a decision:
 
     eat_an 'apple' if hungry?(10)
 
-Now see if you can change the method __hungry?__ to display __"Me not hungry"__ and returning false
-when the time is less than 12.
+Şimdi false değerini döndürüp zaman öğle 12'den erken olunca __"Me not hungry"__ görüntüleyebilmek için __hungry?__ metodunu değiştirmeyi dene. 
