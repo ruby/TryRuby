@@ -1,15 +1,15 @@
 ---
-lang:   EN
-title:  Stop, You're Barking Mad!
+lang:   TR
+title:  Dur, Delilercesine Havlıyorsun!
 answer: ^\d{1,}$
-ok:     Only strings can be reversed
+ok:     Sadece string'ler tersine çevirilebilir
 error:  
 ---
 
-You can't reverse the number forty. I guess you can hold your monitor up to the mirror, but reversing a number just doesn't make sense.
+40 sayısını tersine çeviremezsin. Aslında düşününce, monitörünü bir aynaya doğru tutabilirsin tabii ki, ancak bir numarayı tersine çevirmenin pek bir mantığı yok.
 
-Ruby has tossed an error message. Ruby is telling you there is no method reverse for numbers.
+Ruby sana bir hata mesajı fırlattı. Ruby, sana reverse metodunun numaralar için var olmadığını anlatıyor.
 
-Maybe if you turn the number into a string first:
+Eğer belki numara değerini ilk önce string'e çevirirsen:
 
     40.to_s.reverse
