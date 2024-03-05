@@ -1,17 +1,17 @@
 ---
-lang:   EN
-title:  Too Much Reversal
+lang:   TR
+title:  Biraz Fazla Çeviriverdik
 answer: ^\["More still did (.+)
 load:   prev
-ok:     Yes, almost what we want
+ok:     Aynen, nerdeyse istediğimiz gibi
 error:  
 ---
 
-So the whole poem's been turned backwards, letter-by-letter. I really wanted to just reverse the lines though.
-Move the last line up to first and the first line down to last.
+Görünüşe göre tüm şiir harf harf tamamen test çevirildi. Oysa ki ben sadece satırları ters çevirmek istemiştim.
+Son satırı başa, baş satırı sona çevirmek.
 
-Backwards, but not __that__ backwards.
+Geri çevirmen ancak, __öyle__ geri çevirmek değil.
 
-Here's how:
+İşle şöyle:
 
     poem.lines.reverse
