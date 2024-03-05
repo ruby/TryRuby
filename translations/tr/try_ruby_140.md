@@ -1,13 +1,13 @@
 ---
-lang:   EN
-title:  Tucking a List Away
+lang:   TR
+title:  Bir Listeyi Kenara Koymak
 answer: ^\[(\d+)(,\s*\d+){2,}\]$
-ok:     Saved!
+ok:     Kaydedildi!
 error:  
 ---
 
-Good, good. But it's annoying to have to retype that list every time you need it, isn't it?
+Aferin, aferin. Ancak bu listeyi her ihtiyacın olduğundan tekrar tekrar yazmak sinir bozucu, değil mi?
 
-Let's save our numbers inside a ticket like so: 
+Hadi numaralarımızı şu şekilde bir bilete kaydedelim:
 
     ticket = [12, 47, 35]
