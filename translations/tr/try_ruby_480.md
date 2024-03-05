@@ -1,24 +1,24 @@
 ---
-lang:   EN
-title:  Accessors Are the Dangling Limbs
+lang:   TR
+title:  Accessor'lar Sallanan Uzuvlardır
 answer: Blurb:
-ok:     My first Blurb
+ok:     İlk Blurb'üm
 error:  
 load:   class Blurb;attr_accessor :content,:time,:mood;end
 ---
 
-Hey, good class, man. You've got a new Blurb<sup>TM</sup> class.
+Hey, güzel class, dostum. Yeni bir Blurb<sup>TM</sup> class'ın var
 
-In the class definition, you used a method called attr\_accessor.
-There are many __attr__ibute methods like this which add little settings to classes.
-These attributes are just variables attached to a class.
+Class tanımalmasında attr\_accessor adlı bir metod kullandın.
+Bunun gibi küçük class'a küçük ayarlar ekleyen birçok __attr__ibute metodları bulunmaktadır.
+Bu attribute'lar sadece class'a yapışık değişkenlerdir.
 
-Think of it this way. A class is like a person. That star-shaped human thing out there.
-And the attributes are the dangling limbs, the different parts that make up a body and
-other people can shake hands with.
+Şu şekilde düşün. Bir class insan gibidir.O dışarıda dolaşan yıldız şekilli şey işte.
+Ve attribute'lar da sallanan uzuvlar, farklı parçalar bir vücudu oluşturur ve insanlar
+el sıkışabilir.
 
-### Now
-To create a Blurb<sup>TM</sup> and set the content:
+### Şimdi
+Blurb<sup>TM</sup> oluşturup içeriğini belirlemek için:
 
     blurb1 = Blurb.new
     puts blurb1
