@@ -1,17 +1,17 @@
 ---
-lang:   EN
-title:  And Now For the Startling Conclusion
-answer: is not equal to 100$
-ok:     That's better
-error:  This can't be right
+lang:   TR
+title:  Ve Şimdi Şaşırtıcı Sonuca Gelelim
+answer: 100$ değerine eşit değil
+ok:     Şimdi daha iyi
+error:  Bu doğru olamaz
 ---
 
-Did you see the 2 equal signs in __'abc' == 'def'__?
+__'abc' == 'def'__ ifadesinde bulunan çift eşitlik sembolünü gördün mü?
 
-This __==__ means __is equal to__.
-The single equal sign that we have seen before means __assign a value to a variable__.
+__==__,  __eşittir__ anlamına gelir.
+Önceden gördüğümüz tek eşittir sembolü __bir değişkene değer atamak__ için kullanılır.
 
-To make it more confusing: you can use the assignment after an if method like this:
+Daha çok kafa karıştırmak için: bir if metodundan sonra böyle bir atama kullanabilirsin:
 
     a = 0
     
@@ -21,14 +21,12 @@ To make it more confusing: you can use the assignment after an if method like th
       puts "#{a} is not equal to 100"
     end
 
-Change the = into == and see what happens.
+= sembolünü == sembolüne çevir ve ne olduğunu gör.
 
-I can guarantee you that you will forget typing the second equal sign regularly. I also
-still forget it sometimes.
+Garanti ederim ki ikinci eşittir sembolünü yazmayı düzenli olarak unutacaksın. Ben de
+bazen unutuyorum.
 
 ### else
-In the code above I have added an else expression. This part will be executed when the
-__if test-expression__ evaluates to false.
+Yukarıdaki kodda bir else ifadesi ekledim. Bu kısım if test ifadesi false olursa çalıştırılacak.
 
-> There are more variations to this if-then-else theme. You can read more
-> <a href="http://www.ruby-doc.org/core/syntax/control_expressions_rdoc.html" target="_blank">here</a>.
+> Bu if-then-else temasının sahip olduğu daha çok varyasyonlar bulunmaktadır. <a href="http://www.ruby-doc.org/core/syntax/control_expressions_rdoc.html" target="_blank">Burada</a> bunun hakkında daha çok okuyabilirsin.
