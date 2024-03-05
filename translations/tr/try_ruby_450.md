@@ -1,33 +1,33 @@
 ---
-lang:   EN
-title:  Summary #6 Which Means You've Come So Far
+lang:   TR
+title:  Özet #6 Which Means You've Come So Far
 answer: \{\}
 class:  stretcher chapmark
-ok:     Ok, that's an empty hash
+ok:     Pek, o boş bir hash 
 error:
 ---
 
-You're a level six Ruby cleric. I mean what a great job you've done. Let's review:
+Sen seviye 6 bir din insanısın. Yani, çok iyi bir iş becerdin demek istemiştim. Hadi gözden geçirelim:
 
 
 ### Data
-You loaded some data off the internet, traversed a data structure and selected values.
+İnternetten data yükledin, data yapısını gezip istediğin değerleri seçtin.
 
-### Iterating
-You iterated all elements of a hash and you chained some more methods.
+### Iterate etmek
+Bir hash'teki tüm elemenleri itere ettin ve metodlar zincirledin.
 
-### Pretty printing
-And if that wasn't enough, you formatted and printed some values in a way that is easy
-to read for humans. In fact __you made a real program!__
+### Güzel yazdırma
+Ve o da yeterli değilmiş gibi, bazı değerleri formatlayıp insanlar için okuması kolay
+bir şekilde yazdırdın. Aslında __gerçek bir program yaptın!__
 
-### IF
-You learned to take control of your programs with __if__ and __else__ statements.
+### If
+__if__ ve __else__ ile programının kontrolünü eline almayı öğrendin.
 
-## So
-What could possibly be next? What could you possibly have to learn now?
-Ha, this is the best part. You've come such a long way that we're going
-to uncover classes. For two more short lessons and you're done.
+## Yani
+Bundan sonra daha ne olabilir? Daha öğrenecek ne kalmış olabilir?
+He, burası en iyi kısmı. O kadar yok kat ettin ki artık class'ları
+keşfedeceğiz. İki tane daha kısa ders ve bitti.
 
-Earlier, we created a hash like this:
+Önceden bir hash'i şu şekilde oluşturduk:
 
     Hash.new
