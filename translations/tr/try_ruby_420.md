@@ -1,25 +1,25 @@
 ---
-lang:   EN
-title:  If only I knew how to make a decision
+lang:   TR
+title:  Eğer karar vermeyi bilseydim
 answer: 
 ok:     
 error:  
 ---
 
-Decision making, in real life this can be a real problem. Not for us though.
-Ruby makes it very easy to make decisions.
+Karar verme, gerçek hayatta bir problem olabilir. Ama bizim için değil.
+Ruby karar verme sürecini çok kolaylaştırıyor.
 
     if 1 < 2
       puts "It is true: 1 is less than 2"
     end
 
-The key word here is __if__. If can be placed before a method or after a method, like so:
+Buradaki anahtar kelime __if__. If bir metoddan önce veya sonra şu şekilde yerleştirilebilir:
 
     puts "It is true: 1 is less than 2" if 1 < 2
 
-__If__ is a method that requires one parameter. That parameter can be any expression that you
-want to test. The outcome of the expression must be either __true__ or __false__.
-Here are a couple of expressions with their outcomes:
+__If__ aslında bir parametre gerektiren bir metoddur. O parametre test etmek istediğin ifade olabilir.
+O test edilen ifadenin sonucu ya __true__ ya da __false__ olmalıdır.
+İşte burada sonuçlarıyla birkaç ifade:
 
     5     <= 10     # => true
     'abc' == 'def'  # => false
@@ -32,5 +32,5 @@ Here are a couple of expressions with their outcomes:
                     # comparison of String with
                     # Numeric failed
 
-The _if expression_ can take many forms. It can compare literal values (1 < 2),
-variables (a < 1) and the return value of a method ('xyz'.empty?).
+_if ifadesi_ birden fazla form alabilir. Literal değerleri (1 < 2),
+değişkenleri (a < 1) ve bir metodun döndürdüğü değeri ('xyz'.empty?) karşılaştırabilir.
