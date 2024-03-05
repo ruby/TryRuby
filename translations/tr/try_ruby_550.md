@@ -1,22 +1,22 @@
 ---
-lang:   EN
-title:  It's All About Combining
+lang:   TR
+title:  Tamamen Birleştirmekle Alakalı
 answer: :-
-ok:     Moody!
+ok:     Kaprisli!
 error:
 load:   prev
 ---
 
-Some beautiful things can be done with the simple parts of Ruby, especially when you combine them
-together into new things.
-Here we've got an app made of a class containing another class. And, actually, Ruby really does good
-with this kind of creature. It is called object oriented programming.
+Bazı güzel şeyler Ruby'nin basit parçalarıyla yapılabilir, özellikle onları
+yeni şeylere birleştirdiğin zaman.
+Burada bir class içeren başka bir class'tan oluşan bir aplikasyonumuz var. Ve, aslında, Ruby bu şekildeki
+yaratıklarla gayet iyi çalışıyor. Buna obje oryantasyonlu programlama deniyor.
 
-We have arrived at the __last programming excercise__ of TryRuby. If you want, you can add some
-more features to Blurbalizer<sup>TM</sup>.
+TryRuby'deki __son programlama egzersizine__ geldik. İstersen, Blurbalizer<sup>TM</sup>'a daha çok
+yeni özellikler ekleyebilirsin.
 
-Maybe you want to print the mood as a smiley in the __show_timeline__ method. You could add
-a _moodify_ method to the Blurb<sup>TM</sup> class and then use that method in the _show\_timeline_ method:
+Belki __show_timeline__ metodunda ruh halini bir smiley olarak yazdırmak istiyorsundur. Blurb<sup>TM</sup> class'ına
+_moodify_ metodunu ekleyebilir ve o metodu _show\_timeline_ metodunda kullanabilirsin:
 
     class Blurb
       attr_accessor :content, :time, :mood
