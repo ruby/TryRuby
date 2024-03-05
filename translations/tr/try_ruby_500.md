@@ -1,19 +1,19 @@
 ---
-lang:   EN
-title:  Quickening it Up
+lang:   TR
+title:  Hızlandırmak
 answer: ^\d{4}
-ok:     Noted
+ok:     Not alındı
 error:  
 ---
 
-Cool, your app is awesome. Hey, let's make things a bit easier on you.
-You're not going to want to set the time like that every time you Blurb<sup>TM</sup>.
+Güzel, aplikasyonun mükemmel. Hey, hadi bazı şeyleri senin için daha kolay hale getirelim.
+Her Blurb<sup>TM</sup> yaptığında zamanı o şekilde belirlemek istemeyeceksin.
 
-You just want to type the content and set the mood, right?
+Sadece içerik ve ruh halini belirlemek istiyorsun, değil mi?
 
-Let's add an __initialize__ method to our class. This method is called whenever a new Blurb<sup>TM</sup>
-is created.
-At the same time we can limit the length of the Blurb<sup>TM</sup> content to 40 characters.
+Hadi class'ımıza bir __initialize__ metodu oluşturalım. Bu metod her yeni Blurb<sup>TM</sup>
+oluşturduğumuzda çağırılacak
+O anda da Blurb<sup>TM</sup>'ün içeriğini 40 karaktere limitleyebiliriz.
 
     class Blurb
       attr_accessor :content, :time, :mood
@@ -27,5 +27,5 @@ At the same time we can limit the length of the Blurb<sup>TM</sup> content to 40
     
     Blurb.new(:sick).time
 
-(That parameter __content=""__ is there to make sure that we know content is a string,
-even if no content parameter is passed to the initialize method.)
+(O __content=""__ parametresi hiç content parametresi verilmese de
+content'in string olduğunu garanti etmek için orada.)
