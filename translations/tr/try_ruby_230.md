@@ -1,30 +1,30 @@
 ---
-lang:   EN
-title:  Of All the Summaries, #3 is Here Now
+lang:   TR
+title:  Tüm Özetlerin #3 is Here Now
 answer: \{\}
 class:  stretcher chapmark
 load:   prev
-ok:     You've made an empty hash!
+ok:     Boş bir hash yaptın!
 error:
 ---
 
-### Exclamations
-Methods may have exclamations (and also question marks) in their name.
-These are just there to better explain what their function is. No big deal.
+### Ünlemler
+Metodlar adlarında ünlemler (ve ayrıca soru işaretleri) barındırabilir.
+Bunlar sadece fonksiyonalitelerinin ne olduğunu daha iyi açıklamak için. Büyük bir olay değil.
 
-### String manipulation
-Search and change strings
+### String manipülasyonu
+String'leri ara ve değiştir
 
-### Chaining
-Chaining methods lets you get a lot more done. Break up a poem, reverse it, reassemble it:
+### Zincirleme
+Metodları zincirlemek daha çok şeyi yapabilmene olanak sağlar. Şiiri parçalara ayır, tersine çevir, tekrar bir araya getir:
 __poem.lines.reverse.join__
 
-At this point, you may want to tinker with the poem a bit more. A complete list of all the String
-methods is <a href="http://ruby-doc.org/core/classes/String.html" target="_blank">here</a>.
+Artık şiirle biraz daha uğraşmak isteyebilirsin. Tüm string metodlarını barındıran listeyi
+<a href="http://ruby-doc.org/core/classes/String.html" target="_blank">burada</a> bulabilirsin.
 
-Go ahead and try a few, such as: poem.downcase or poem.swapcase
+Kafana göre birkaç tanesini dene, mesela: poem.downcase ya da poem.swapcase
 
-## Ready?
-When you feel ready to move on, type:
+## Hazır mısın?
+Hazır hissettiğinde devam et ve şunu yaz:
 
     books = {}
