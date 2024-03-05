@@ -1,25 +1,25 @@
 ---
-lang:   EN
-title:  All's Well That Ends Well
-answer: All's Well That Ends Well
+lang:   TR
+title:  İyi Biten Her Şey İyi
+answer: İyi Biten Her Şey İyi
 ok:     True
-error:  Use 1605 as the second parameter
+error:  1605'i ikinci parametre olarak kullan
 load:   prev
 ---
 
-Okay, we got some data from the internet, we selected what we wanted and printed it out.
-What is left to improve? We could print the results a bit prettier. Like add the year
-and align titles and years.
+Tamam, internetten biraz data aldık ve istediğimizi seçip yazdırdık.
+Geriye geliştirmek için ne kaldı? Sonuçları daha güzel yazdırabilirdik. Mesela yılı ekleyip
+başlık ve yılı birbiriyle hizalayabiliriz.
 
-This means printing several values on one line. Ruby has a neat way of doing
-that. It is just like printing a string like: __puts "Hi, my name is Jimmy"__.
-But instead of the literal value _Jimmy_ we use the value of a variable.
+Bu bir satıra birden fazla değer yazdırmak anlamına geliyor. Ruby'nin bunu yapmak için kullanışlı
+bir yolu var. Normal bir string yazdırmak gibi: __puts "Hi, my name is Jimmy"__.
+Ancak _Jimmy_ gibi literal bir değer yerine bir değişkenin değerini kullanıyoruz.
 
-First replace __Jimmy__ with __#{}__. If Ruby sees a hash symbol # followed by a curly brace {
-it looks for a variable between the first brace and the following closing brace }.
-So we can use this: __"Hi, my name is \#{name}"__.
+Önce __Jimmy__'i __#{}__ ile değiştir. Eğer Ruby bir hast sembolünü # süslü parantezden
+önce görürse süslü parantezler arasındaki değişkenin değeri için aramaya başlar.
+Yani şunu kullanabiliriz: __"Hi, my name is \#{name}"__.
 
-Let's change our code a bit
+Hadi kodumuzu biraz değiştirelim
 
     def print_plays(year_from, year_to)
       get_shakey["William Shakespeare"]
@@ -32,9 +32,9 @@ Let's change our code a bit
     end
     print_plays(1600, 1605)
 
-I have added __.ljust(30)__ to the title. This way the title is _left justified_ with a minimum
-length of 30 characters so the years align nicely.
+Başlığa __.ljust(30)__'ı ekledim. Bu şekilde başlığın sola doğru minimum 30 karakter uzunlukta
+güzelce hizalı olmasını sağladım.
 
-See if you can change the output of the program so that it shows the plays like this: __1600 -> As You Like It__
+Programın çıktısını bu şekilde değiştirmeyi bir deneyin: __1600 -> As You Like It__
 
-__All's Well That Ends Well?__ Hey we're not done yet, but the end is in sight!
+__İyi Biten Her Şey İyi Midir?__ Hey, daha bitmedi. Ancak son yakındır.
