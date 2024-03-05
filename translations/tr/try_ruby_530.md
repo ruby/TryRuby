@@ -1,24 +1,24 @@
 ---
-lang:   EN
-title:  Your Own Turf
+lang:   TR
+title:  Kendi Çimin
 answer: Blurbalizer:
-ok:     My app created
+ok:     Aplikasyonum yaratıldı
 error:  
 load:   class Blurb;attr_accessor :content,:time,:mood;def initialize(mood, content="");@time=Time.now;@content=content[0..39];@mood=mood;end;end
 ---
 
-Okay, let's wrap things up, kid. Here's the last chapter of the GRIPPING epic story of Try Ruby!
-Now that you've got a taste of how it all works, how are you going to use it around the house
-and in your grocer's freezer?
-You're a great person (one of my favorites), but you need guidance.
+Tamam, hadi olayları toplayalım, ufaklık. İşte Try Ruby'nin etkileyici epik hikayesinin son bölümü!
+Şimdi buraya geldiğine göre her şeyin nasıl çalıştığının bir tadına vardın, evinde ve bakkan dondurucusunda
+nasıl kullanacaksın?
+Mükemmel bir insansın (favorilerimden biri), ancak yol gösterilmesine ihtiyacın var.
 
-### Let's finish your app
-You have app entries, but no actual app.
-It still needs a title, someplace to store all Blurbs<sup>TM</sup> and a timeline in order to work.
+### Hadi aplikasyonunu bitirelim
+Aplikasyon girdilerin var, ancak gerçek bir aplikasyonun yok.
+Hala çalışmak için bir başığa, Blurbs<sup>TM</sup>'lerin depolanacağı bir yere ve bir zaman çizelgesine ihtiyacı var.
 
-Guess what, we're going to use another class. I've given all the code for the new class in one go.
-Just __take your time__ to study it.  
-I'm in no hurry, I'll wait for you in the next lesson.
+Bil bakalım ne yapacağız, bir tane daha class kullanacağız. Tüm kodumu yeni class'ta tekte verdim.
+Sadece __ağırdan alarak__ anlamaya çalış.
+Benim acelem yok, seni diğer derste bekleyeceğim.
 
     class Blurbalizer
       def initialize(title)
