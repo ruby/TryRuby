@@ -1,12 +1,12 @@
 ---
-lang:   EN
-title:  Numbers and Math
+lang:   TR
+title:  Sayılar ve Matematik
 answer: ^[0-9\.,-]{1,}$
-ok:     Good
+ok:     Süper
 error:  
 ---
 
-Ruby recognizes numbers and mathematic symbols. You could try some other math like:
+Ruby, sayı ve matematiksel sayıları tanır. Şu şekilde matematik yapabilirsin:
 
     4 * 10
     5 - 12
