@@ -1,13 +1,13 @@
 ---
-lang:   EN
-title:  Counting the Letters
+lang:   TR
+title:  Harfleri Saymak
 answer: ^\d+$
-ok:     Yep. Length is also a 'method'
+ok:     Aynen. Length de bir 'metod'
 error:  
 ---
 
-You have used the reverse __method__ on your name! By enclosing your name in quotes, you made a string. Then you called the reverse method, which works on strings to flip all the letters backwards.
+İsminde reverse __metodunu__ kullandın! İsmini tırnak işaretleri arasına alarak bir string oluşturdun. Ardından reverse metodunu çağırarak sting üzerindeki tüm harfleri ters çevirdin.
 
-Now, let us see how many letters are in your name:
+Şimdi, bakalım isminde kaç adet harf varmış:
 
-    "Jimmy".length
+    "Ali Rıza".length
