@@ -1,27 +1,27 @@
 ---
-lang:   EN
-title:  A Wee Blank Book
+lang:   TR
+title:  Küçük Boş Bir Kitap
 answer: ^(splendid|quite_good|mediocre|quite_not_good|abysmal)$
 load:   books = {}
-ok:     Yes that's a new review
-error:  Use one of splendid, quite_good, mediocre, quite_not_good, abysmal.<br/>Don't forget the colon
+ok:     Evet o yeni bir eleştiri
+error:  splendid, quite_good, mediocre, quite_not_good, abysmal değerlerinden birini kullan.<br/>İki nokta üst üsteyi unutma
 ---
 
-You've made an empty __hash__. A hash is like an array, only every one of its elements has a name.
+Boş bir __hash__ yaptın. Hast boş bir array gibidir, tek farkı her bir elementinin bir adı olmasıdır.
 
-We're going to stuff some miniature book reviews in our new hash. Here's our rating system:
+Yeni hash'imize birkaç yeni minyatür eleştiriler koyacağız. İşte bizim değerlendirme sitemimiz:
 
-- :splendid &rarr; a masterpiece
-- :quite\_good &rarr; enjoyed, sure, yes
-- :mediocre &rarr; equal parts great and terrible
-- :quite\_not\_good &rarr; notably bad
-- :abysmal &rarr; steaming wreck
+- :splendid &rarr; bir sanateseri
+- :quite\_good &rarr; güzel, aynen, evet
+- :mediocre &rarr; iyi tarafları olduğu kadar kötü tarafları da vardı
+- :quite\_not\_good &rarr; oldukça kötü
+- :abysmal &rarr; duman tüten enkaz
 
-To rate a book, put the title in square brackets and put the rating after the equals. For example:
+Bir kitabı değerlendirmek için, köşeli parantez içerisine başlığı ve değerlendirmeyi de eşittir işaretinden sonra koy. Mesela
 
     books["Gravitys Rainbow"] = :splendid
 
-> By now I think it is only fair to tell you that all lessons in TryRuby are separate from each other.
-> So if you go crazy typing book reviews here, you can only use 'em in this lesson.  
-> If you want to use your reviews in the next lesson you should copy/paste them.  
-> Don't worry about this too much, each lesson has plenty of predefined stuff for you to play around with.
+> Şimdi, TryRuby içerisindeki her dersin birbirinden ayrı olduğunu söylemeyi boynumun bir borcu olarak görüyorum.
+> Yani, eğer burada gidip deli gibi değerlendirmeler yazıverirsen onları sadece bu derste görüntüleyebilirsin.
+> Eğer oluşturduğun değerlendirmeleri diğer derslerde kullanmak istiyorsan o zaman kopyala/yapıştır yapmalısın.
+> Bunları çok kafana takma, her dersin kendine özel uğraşabilmen için önceden yaratılmış şeyleri var zaten.
