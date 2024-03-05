@@ -1,18 +1,16 @@
 ---
-lang:   EN
-title:  A Tally
+lang:   TR
+title:  Bir Çetele
 answer: \w+
 ok:     Yodelay!
 error:
 ---
 
-One of the amazing new things we've just used is a __block__. We're going to explore these more
-in this and the next lesson. But, basically, a block is a bit of Ruby code surrounded by curly
-braces.
+Kullandığımız mükemmel şeylerden bir tanesi __block__. Bunları bu derste daha çok keşfedeceğiz. Ancak,
+basitçe, bir block süslü parantezlerle çevrelenmiş Ruby kodudur.
 
-Let's try another block:
+Hadi bir başka block daha deneyelim:
 
     5.times { print "Odelay! " }
 
-Blocks are always attached to methods. Like the __times__ method, which takes the block and runs
-the code over and over. (In our example: five times.)
+Block'lar her zaman metodlara bağlıdırlar. Kodu alıp tekrar ve tekrar çalıştıran __times__ metodunda da olduğu gibi. (Bizim örneğimizde: beş kere.)
