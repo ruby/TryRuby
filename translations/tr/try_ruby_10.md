@@ -1,6 +1,6 @@
 ---
 lang:   TR
-title:  30 Dakikan var mı? Varsa Ruby'i bir dene!
+title:  30 Dakikan Var Mı? Varsa Ruby'i Bir Dene!
 answer:
 class:  stretcher chapmark
 ok:

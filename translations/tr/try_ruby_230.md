@@ -1,6 +1,6 @@
 ---
 lang:   TR
-title:  Tüm Özetlerin #3 is Here Now
+title:  Tüm Özetlerin #3 Şimdi Burada
 answer: \{\}
 class:  stretcher chapmark
 load:   prev

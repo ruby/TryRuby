@@ -1,6 +1,6 @@
 ---
 lang:   TR
-title:  Farklı bir şekilde ifade etmek
+title:  Farklı Bir Şekilde İfade Etmek
 answer: ^[0-9\.,-]{1,}$
 ok:     Aferin
 error:

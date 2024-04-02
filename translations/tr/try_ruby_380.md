@@ -1,6 +1,6 @@
 ---
 lang:   TR
-title:  Dünya bizim istiridyemiz
+title:  Dünya Bizim İstiridyemiz
 answer: ^\{\"William
 ok:     Güzel. Sadece okuması biraz zor.
 error:  

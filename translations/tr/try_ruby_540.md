@@ -1,6 +1,6 @@
 ---
 lang:   TR
-title:  Blurb'ün olayı ne ya?
+title:  Blurb'ün Olayı Ne Ya?
 answer: Bugün
 ok:     Blurb'leri getir
 error:

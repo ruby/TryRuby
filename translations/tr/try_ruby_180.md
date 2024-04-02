@@ -1,6 +1,6 @@
 ---
 lang:   TR
-title:  Özet #2 is Upon Us
+title:  Özet #2 Bize Düştü
 answer: \w+
 class:  stretcher chapmark
 load:   poem = "My toast has flown from my hand\nAnd my toast has gone to the moon.\nBut when I saw it on television,\nPlanting our flag on Halley's comet,\nMore still did I want to eat it.\n"

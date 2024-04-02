@@ -1,6 +1,6 @@
 ---
 lang:   TR
-title:  Eğer karar vermeyi bilseydim
+title:  Eğer Karar Vermeyi Bilseydim
 answer: 
 ok:     
 error:  
