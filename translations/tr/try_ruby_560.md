@@ -1,6 +1,6 @@
 ---
 lang:   TR
-title:  Özet #8, The Hey-Relax-You-Did-Good Summary
+title:  Özet #8, Hey-Rahatla-İyi-İş-Çıkardın Özeti
 answer:
 class:  stretcher chapmark
 ok:     

@@ -1,6 +1,6 @@
 ---
 lang:   TR
-title:  Özet #6 Which Means You've Come So Far
+title:  Özet #6 Yani Uzun Yol Teptin
 answer: \{\}
 class:  stretcher chapmark
 ok:     Pek, o boş bir hash 

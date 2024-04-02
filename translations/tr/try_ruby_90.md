@@ -1,6 +1,6 @@
 ---
 lang:   TR
-title:  Hey, Özet #1 Already
+title:  Hey, Özet #Şimdiden 1 Numara
 answer: NoMethodError|undefined
 class:  stretcher chapmark
 ok:     Yoo, bir numarayı ters çevirmek mümkün değil ki. 'next' butonuna bas

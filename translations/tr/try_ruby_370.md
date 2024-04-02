@@ -1,6 +1,6 @@
 ---
 lang:   TR
-title:  Merhaba, Kim Orada? Ve Özet #5 Waves Its Hat!
+title:  Merhaba, Kim Orada? Ve Özet #5 Şapkasını Sallar!
 answer:
 class:  stretcher chapmark
 ok:

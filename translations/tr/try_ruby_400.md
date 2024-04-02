@@ -1,6 +1,6 @@
 ---
 lang:   TR
-title:  Şimdi hep beraber
+title:  Şimdi Hep Beraber
 answer: ^4$
 ok:     Evet, Shakespeare 1591'de 4 oyun yazdı
 error:  Cevap, 1591 yılı için 4 olmalı

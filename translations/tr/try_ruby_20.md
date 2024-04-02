@@ -1,6 +1,6 @@
 ---
 lang:   TR
-title:  Editörü kullanmak
+title:  Editörü Kullanmak
 answer: ^\d{1,}$
 ok:     Güzel! Biraz matematikle uğraştın. Cevabın nasıl çıkıverdiğini gördün mü?
 error:  Editöre 2 + 6 yaz
