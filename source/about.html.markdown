@@ -50,7 +50,8 @@ Japanese translation by _Koji Shimada_ & _Masayoshi Takahashi_
 Russian translation by _Alexander Nikolaev_  
 Ukrainian translation by _Andrii Palchik_  
 Macedonian translation by _Violeta Pavleska_  
-Chinese translation by _Ye Junzhe_ & _Heng Li_ & _Bitfox_
+Chinese translation by _Ye Junzhe_ & _Heng Li_ & _Bitfox_  
+Turkish translation by _Ali Rıza Şahin_  
 
 ### Privacy
 
