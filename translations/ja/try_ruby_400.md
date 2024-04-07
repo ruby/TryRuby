@@ -35,6 +35,6 @@ selectメソッドから返ったリストを使い、__each__メソッドを呼
 countメソッドをeachメソッドの終わりにつなげていることに気づきましたか？
 この値が__count\_plays__メソッドの戻り値になります。
 
-メソッド連鎖のまた別の具体例を示します。_s = get_shakey__ という行を見てみてください。
-ここで、get_shakeyのうしろに__["William Shakespeare"].select { |k, v|__ と続けることもできます
+メソッド連鎖のまた別の具体例を示します。__s = get\_shakey__ という行を見てみてください。
+ここで、get\_shakeyのうしろに__["William Shakespeare"].select { |k, v|__ と続けることもできます
 （この場合はドットは付けないでください）。
