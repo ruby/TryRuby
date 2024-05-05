@@ -1,17 +1,17 @@
 ---
-lang:   EN
-title:  Too Much Reversal
+lang:   FR
+title:  Surplus d'inversion
 answer: ^\["More still did (.+)
 load:   prev
-ok:     Yes, almost what we want
+ok:     Oui, c'est presque ce que nous voulons
 error:  
 ---
 
-So the whole poem's been turned backwards, letter-by-letter. I really wanted to just reverse the lines though.
-Move the last line up to first and the first line down to last.
+Tout le poème a donc été tourné à l'envers, lettre par lettre. Je voulais uniquement inverser les lignes.
+Mettre la dernière ligne en première et la première ligne en dernière.
 
-Backwards, but not __that__ backwards.
+Inversé, mais pas __autant__ inversé.
 
-Here's how:
+Voici comment:
 
     poem.lines.reverse

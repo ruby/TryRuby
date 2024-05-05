@@ -1,28 +1,27 @@
 ---
-lang:   EN
-title:  More Bite-Size Reviews
+lang:   FR
+title:  Encore plus de critiques
 answer: [3-9]
-load:   books = {"Gravitys Rainbow" => :splendid}
-ok:     See, the length method works on strings, array's and hashes.
+load:   livres = {"Harry Potter" => :splendide}
+ok:     See, the length method works on strings, arrays and hashes.
 error:
 ---
 
-Keep going, fill it up with reviews. And, if you want to see the whole list, just type: __puts books__
+Continuons, remplis des critiques. Et si tu veux voir toute la liste, il te suffit de taper : __puts livres__
 
-Again, the ratings are: :splendid, :quite\_good, :mediocre, :quite\_not\_good and :abyssmal.
+Encore une fois, les notations sont : :splendide, :assez_bon, :moyen, :decu, :catastrophique
 
-These ratings are not strings. When you place a colon in front of a simple word, you get a __symbol__.
-Symbols are cheaper than strings (in terms of computer memory.) If you use a word over and over in your program,
-use a symbol. Rather than having thousands of copies of that word in memory, the computer will store the symbol only
-__once__.
+Ces notations ne sont pas des strings. Lorsque tu places un deux-points devant un mot simple, tu obtiens un __symbole__.
+Les symboles sont moins coûteux en mémoire que les chaînes de caractères. Si tu utilises un mot encore et encore dans ton programme,
+utilise un symbole. Plutôt que d'avoir des milliers de copies de ce mot en mémoire, l'ordinateur ne stockera le symbole qu'une seule fois.
 
-More importantly, a symbol tells you that is not just any old word but has a meaning within your program.
+Plus important encore, un symbole te dit que ce n'est pas juste un mot ordinaire mais qu'il a une signification dans ton programme.
 
-Enter 2 more bookreviews, use __books.length__ to see how many reviews there are in the hash:
+Ajoute encore 2 critiques de livres, utilise __livres.length__ pour voir combien de critiques il y a dans le hash :
 
-    books["The deep end"]  = :abyssmal
-    books["Living colors"] = :mediocre
+    livres["The deep end"]  = :catastrophique
+    livres["Living colors"] = :moyen
     
-    puts books
+    puts livres
     
-    puts books.length
+    puts livres.length

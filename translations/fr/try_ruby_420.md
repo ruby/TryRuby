@@ -1,25 +1,25 @@
 ---
-lang:   EN
-title:  If only I new how to make a decision
+lang:   FR
+title:  Si seulement je savais comment prendre une décision
 answer: 
 ok:     
 error:  
 ---
 
-Decision making, in real life this can be a real problem. Not for us though.
-Ruby makes it very easy to make decisions.
+Prendre des décisions, dans la vie réelle, peut être un vrai problème. Pas pour nous cependant.
+Ruby rend très facile de prendre des décisions.
 
     if 1 < 2
-      puts "It is true: 1 is less than 2"
+      puts "C'est vrai : 1 est inférieur à 2"
     end
 
-The key word here is __if__. If can be placed before a method or after a method, like so:
+Le mot clé ici est __if__. If peut être placé avant une méthode ou après une méthode, comme ceci :
 
-    puts "It is true: 1 is less than 2" if 1 < 2
+    puts "C'est vrai : 1 est inférieur à 2" if 1 < 2
 
-__If__ is a method that requires one parameter. That parameter can be any expression that you
-want to test. The outcome of the expression must be either __true__ or __false__.
-Here are a couple of expressions with their outcomes:
+__If__ est une méthode qui nécessite un paramètre. Ce paramètre peut être n'importe quelle expression que vous
+voulez tester. Le résultat de l'expression doit être soit __true__ soit __false__.
+Voici quelques expressions avec leurs résultats :
 
     5     <= 10     # => true
     'abc' == 'def'  # => false
@@ -28,9 +28,9 @@ Here are a couple of expressions with their outcomes:
     0               # => true
     nil             # => false
     'xyz'.empty?    # => false
-    'a' > 5         # => error:
-                    # comparison of String with
-                    # Numeric failed
+    'a' > 5         # => erreur :
+                    # la comparaison entre une chaîne de caractères et
+                    # un nombre a échoué
 
-The _if expression_ can take many forms. It can compare literal values (1 < 2),
-variables (a < 1) and the return value of a method ('xyz'.empty?).
+L'_expression if_ peut prendre de nombreuses formes. Elle peut comparer des valeurs littérales (1 < 2),
+des variables (a < 1) et la valeur de retour d'une méthode ('xyz'.empty?).

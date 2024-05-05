@@ -7,20 +7,17 @@ ok:
 error:
 ---
 
-Ruby est un language de programmation originaire du Japon et qui a
-revolutionné le développement logiciel.
+Ruby est un language de programmation originaire du Japon qui a
+révolutionné le développement logiciel.
 
-La beauté de Ruby se situe dans sa balance entre simplicité et puissance.
+La beauté de Ruby réside dans son équilibre entre simplicité et puissance.
 
 Tu peux saisir du code Ruby dans l'éditeur et utiliser les boutons suivants pour naviguer :
 
-- __Run__ &rarr; Execute le code dans l'éditeur
-- __Copy__ &rarr; Copie l'example de code dans l'éditeur
-- __Next__ &rarr; Vous permet de sauter à la leçon suivante
-- __Back__ &rarr; Vous permet de revenir à la leçon précédente
-- __Clear__ &rarr; Remets l'éditeur à zéro
+- __Run__ &rarr; Executer le code dans l'éditeur
+- __Copy__ &rarr; Copier le code d'exemple dans l'éditeur
+- __Next__ &rarr; Basculer à la leçon suivante
+- __Back__ &rarr; Revenir à la leçon précédente
 
-Utilise le bouton « planête » <span aria-hidden="true" class="glyphicon glyphicon-globe"></span>
-ci-dessus pour changer le language de TryRuby.
+<div class="foxes">Clique sur <strong>Next</strong> pour commencer à apprendre.</div>
 
-### Clique sur __Next__ pour commencer à apprendre.

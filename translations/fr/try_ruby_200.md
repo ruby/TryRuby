@@ -1,12 +1,12 @@
 ---
-lang:   EN
-title:  Ready, Aim
-answer: ^\n.ti tae ot (.+)
+lang:   FR
+title:  Prêt, Viser
+answer: dnah ym morf nwolf sah tsaot yM
 load:   prev
-ok:     Okay, sure.  So the whole poem has been turned backwards.
+ok:     C'est plutôt logique.  L'entièrement du poème a été inversé.
 error:  
 ---
 
-Here's a question: what happens when we reverse this whole poem? 
+Petite question : que se passe-t-il lorsque nous inversons entièrement "poem" (__poème__) ?
 
     poem.reverse

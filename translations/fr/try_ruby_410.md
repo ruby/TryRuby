@@ -1,25 +1,24 @@
 ---
-lang:   EN
-title:  All's Well That Ends Well
+lang:   FR
+title:  Tout est bien qui finit bien
 answer: All's Well That Ends Well
-ok:     True
-error:  Use 1605 as the second parameter
+ok:     Vrai
+error:  Utilisez 1605 en deuxième paramètre
 load:   prev
 ---
 
-Okay, we got some data from the internet, we selected what we wanted and printed it out.
-What is left to improve? We could print the results a bit prettier. Like add the year
-and align titles and years.
+Bien, nous avons obtenu des données d'Internet, nous avons sélectionné ce que nous voulions et nous l'avons afficher.
+Que reste-t-il à améliorer ? Nous pourrions afficher les résultats un peu plus joliment. Comme ajouter l'année et aligner les titres et les années.
 
-This means printing several values on one line. Ruby has a neat way of doing
-that. It is just like printing a string like: __puts "Hi, my name is Jimmy"__.
-But instead of the literal value _Jimmy_ we use the value of a variable.
+Cela signifie afficher plusieurs valeurs sur une seule ligne. Ruby a une manière astucieuse de le faire.
+C'est comme afficher une chaîne de caractères comme ceci : __puts "Salut, je m'appelle Jimmy"__.
+Mais au lieu de la valeur littérale _Jimmy_, nous utilisons la valeur d'une variable.
 
-First replace __Jimmy__ with __#{}__. If Ruby sees a hash symbol # followed by a curly brace {
-it looks for a variable between the first brace and the following closing brace }.
-So we can use this: __"Hi, my name is \#{name}"__.
+Remplacez d'abord _Jimmy_ par __#{}__. Si Ruby voit un symbole de hachage # suivi d'une accolade {
+il cherche une variable entre la première accolade et l'accolade fermante suivante }.
+Nous pouvons donc utiliser ceci : __"Salut, je m'appelle \#{name}"__.
 
-Let's change our code a bit
+Modifions un peu notre code :
 
     def print_plays(year_from, year_to)
       get_shakey["William Shakespeare"]
@@ -27,14 +26,13 @@ Let's change our code a bit
           year_from <= v["finished"] &&
           year_to   >= v["finished"]
         }.each { |k, v|
-          puts "#{v["title"].ljust(30)} #{v["finished"]}"
+          puts "#{v["finished"]} -> #{v["title"]}"
         }
     end
     print_plays(1600, 1605)
 
-I have added __.ljust(30)__ to the title. This way the title is _left justified_ with a minimum
-length of 30 characters so the years align nicely.
+J'ai ajouté __.ljust(30)__ au titre. De cette façon, le titre est justifié à gauche avec une longueur minimale de 30 caractères pour que les années s'alignent joliment.
 
-See if you can change the ouput of the program so that it shows the plays like this: __1600 -> As You Like It__
+Voyez si vous pouvez changer la sortie du programme pour qu'elle affiche les pièces comme ceci : __1600 -> Comme il vous semble__
 
-__All's Well That Ends Well ?__ Hey we're not done yet, but the end is in sight !
+__Tout est bien qui finit bien ?__ Hé, nous n'avons pas encore terminé, mais la fin est proche !

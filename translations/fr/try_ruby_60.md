@@ -1,16 +1,16 @@
 ---
-lang:   EN
-title:  Say Your Name Backwards
+lang:   FR
+title:  Dis ton nom à l'envers
 answer: \w+
-ok:     dooG
+ok:     ! iuO
 error:  
 ---
 
-A string is a set of characters the computer can process. Imagine the letters are on a string of
-laundry line and the quotes are clothespins holding the ends. The quotes mark the beginning and end.
+Une chaîne de caractères (string) est un ensemble de caractères que l'ordinateur peut traiter. Imagine que les lettres sont sur une corde
+à linge et que les guillemets sont des pinces à linge tenant les extrémités. Les guillemets marquent le début et la fin.
 
-To reverse your name, type: 
+Pour inverser ton nom, écris:
 
     "Jimmy".reverse
 
-(Don't forget the dot!)
+(N'oublie pas le point !)

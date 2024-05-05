@@ -1,31 +1,33 @@
 ---
-lang:   EN
-title:  Me hungry
-answer: ^Me not hungry.$
-ok:     Yes
-error:  No way am I hungry at 10 AM !
+lang:   FR
+title:  Moi faim
+answer: ^Moi pas faim
+ok:     Oui
+error:  NON, j'ai pas faim à 10h !
 ---
 
-Okay, this is coming along wonderfully. This is simple stuff for you, but keep in mind that you
-didn't know __any Ruby whatsoever__ just fifteen minutes ago!
+Vous avancez à merveille ! C'est simple pour vous, mais rappelez-vous que vous ne connaissiez __absolument rien en Ruby__ il y a seulement quinze minutes !
 
-Last step. Let's tie it all together, you know? Let's make it chime together like a very nice set
-of glistening chimes on the beach in the maginificent sunlight!
+Dernière étape. Mettons tout cela ensemble, d'accord ? Faisons en sorte que tout sonne ensemble comme un très joli ensemble de carillons scintillants sur la plage, sous la magnifique lumière du soleil !
 
-We'll define two methods first and then take a decision:
+Nous allons d'abord définir deux méthodes, puis prendre une décision :
 
-    def hungry?(time_of_day_in_hours)
-      puts "Me hungry."
-      true
+    def faim?(heure_de_la_journée_en_heures)
+      if heure_de_la_journée_en_heures < 12
+        puts "Moi pas faim"
+        false
+      else
+        puts "Moi faim"
+        true
+      end
     end
     
-    def eat_an(what)
-      puts "Me eat #{what}.\n"
+    def manger(aliment)
+      puts "Moi manger #{aliment}\n"
     end
     
-    eat_an 'apple' if hungry?(14)
+    manger 'pomme' if faim?(14)
     
-    eat_an 'apple' if hungry?(10)
+    manger 'pomme' if faim?(10)
 
-Now see if you can change the method __hungry?__ to display __"Me not hungry"__ and returning false
-when the time is less than 12.
+Voyez si vous pouvez changer la méthode __faim?__ pour afficher __"Moi pas faim"__ et retourner faux __false__ lorsque l'heure est inférieure à 12.

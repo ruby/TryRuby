@@ -1,33 +1,31 @@
 ---
-lang:   EN
-title:  Summary #6 Which Means You've Come So Far
+lang:   FR
+title:  Résumé #6 Autrement dit, tu as parcouru du un long chemin
 answer: \{\}
 class:  stretcher chapmark
-ok:     Ok, that's an empty hash
-error:  
+ok:     Bien, ceci est un hash vide.
+error:
 ---
 
-You're a level six Ruby cleric. I mean what a great job you've done. Let's review:
+Tu es un prêtre niveau six en Ruby. Je veux dire, quel excellent travail tu as fait. Voyons voir :
 
+### Données
+Tu as chargé des données depuis internet, parcouru une structure de données et sélectionné des valeurs.
 
-### Data
-You loaded some data of the internet, traversed a data structure and selected values.
+### Itération
+Tu as itéré sur tous les éléments d'un hash et tu as chaîné encore plus de méthodes.
 
-### Iterating
-You iterated all elements of a hash and you chained some more methods.
-
-### Pretty printing
-And if that wasn't enough, you formatted and printed some values in a way that is easy
-to read for humans. In fact __you made a real program !__
+### Affichage agréable
+Et si cela ne suffisait pas, tu as formaté et affiché des valeurs d'une manière facile à lire pour le commun des mortels. En fait, __tu as créé un véritable programme !__
 
 ### IF
-You learned to take control of your programs with __if__ and __else__ statements.
+Tu as appris à prendre le contrôle de tes programmes avec des instructions __if__ et __else__.
 
-## So
-What could possibly be next? What could you possibly have to learn now?
-Ha, this is the best part. You've come such a long way that we're going
-to uncover classes. For two more short lessons and you're done.
+## Donc
+Qu'est-ce qui pourrait bien venir ensuite ? Que pourrais-tu encore avoir à apprendre maintenant ?
+Ha, voici la meilleure partie. Tu as parcouru un si long chemin que nous allons maintenant découvrir les classes.
+Après seulement deux leçons courtes de plus, tu auras terminé.
 
-Earlier, we created a hash like this: 
+Plus tôt, nous avons créé un hash comme ceci :
 
     Hash.new

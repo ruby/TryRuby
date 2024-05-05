@@ -1,33 +1,33 @@
 ---
 lang:   EN
-title:  Not a School Class, a Working Class
-answer: 
-ok:     
-error:  
+title:  Pas une classe d'école, une classe ouvrière
+answer:
+ok:
+error:
 ---
 
-You see, the empty curly braces {} is a shortcut for Hash.new. The new method is used to make objects
-of a certain class. Think "class" as in "working class" &mdash; a specific group of objects which
-are similar, have the same jobs, the same shirts.
-What use is a class ?
+Vois-tu les accolades vides {} c'est un raccourci pour Hash.new. 
+La méthode new est utilisée pour créer des objets d'une certaine classe.
+Pense à "classe" comme la "classe ouvrière" ; un groupe d'élément ayant les mêmes propriétés : mêmes emplois, mêmes maisons, même style vestimentaire.
+Quel est l'utilité d'une classe ?
 
 ### Blurbalizer<sup>TM</sup>
-You just had a brilliant idea for a new app. It is going to be __the__ next instant
-messaging platform. You want an app where people can send each other short messages. You call
-these messages Blurbs<sup>TM</sup>. A Blurb<sup>TM</sup> has a maximum length of just 40 characters. Let's do a mood setting too.
+Tu viens juste d'avoir une idée brillante pour une nouvelle application.
+Ce sera __LA__ prochaine plateforme de messagerie instantanée.
+Tu veux une application où les gens peuvent s'envoyer des messages courts.
+Tu appelles ces messages Blurbs<sup>TM</sup>. Un Blurb<sup>TM</sup> a une longueur maximale de seulement 40 caractères.
+Ajoutons également definir son humeur (__mood__).
 
-<!---The Internet has really brought back stick people and smileys out of bankruptcy. __Emote!__-->
+### Par où commencer
+Eh bien, tu pourrais stocker tes entrées Blurbs<sup>TM</sup> dans un fichier json, n'est-ce pas ?
+Mais comment garderais-tu une trace du contenu de l'entrée et de l'heure à laquelle elle a été postée ?
+Et lorsque tu chargerais le fichier, comment cela apparaîtrait-il en Ruby ?
+Serait-ce un Hash ? Ou un Array ? Ou un Array de Arrays ? Ou autre chose ?
 
-### Where to start
-Well, you might store your Blurbs<sup>TM</sup> entries in a json file, right?
-But how would you keep track of the content of the entry and the time it was posted?
-And when you loaded the file, how would it look in Ruby?
-Would it be a Hash? Or an Array? Or an Array of Arrays? Or something else? 
-
-### Class
-I really think you'll want to use a class. You are already familiar with many classes:
-Hash, Array, String.  
-Let's make a new class (returns no output):
+### Classe
+Je pense vraiment que tu voudras utiliser une classe.
+Tu es déjà familier avec de nombreuses classes : Hash, Array, String.
+Créons une nouvelle classe (ne renvoie aucune sortie) :
 
     class Blurb
     end

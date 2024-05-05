@@ -1,13 +1,13 @@
 ---
-lang:   EN
-title:  Say Your Name
+lang:   FR
+title:  Dis ton nom
 answer: [a-zA-Z]{1,1}
-ok:     Perfect, you've formed a string from the letters of your name
+ok:     Parfait, tu as formé une chaîne de caractères (string) à partir des lettres de ton nom.
 error:  
 ---
 
-Sure, computers are handy and fast for math. Let's move on. Want to see your name reversed?
+Bien sûr, les ordinateurs sont pratiques et rapides pour les calculs. Passons à autre chose : Veux-tu voir ton nom à l'envers ?
 
-First type your first name in quotes like this:
+Écris d'abord ton prénom entre guillemets comme ceci :
 
     "Jimmy"

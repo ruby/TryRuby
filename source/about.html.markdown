@@ -52,6 +52,8 @@ Ukrainian translation by _Andrii Palchik_
 Macedonian translation by _Violeta Pavleska_  
 Chinese translation by _Ye Junzhe_ & _Heng Li_ & _Bitfox_  
 Turkish translation by _Ali Rıza Şahin_  
+French translation by _Olivier Lacan_ & _Idris TAKERBOUST_  
+
 
 ### Privacy
 

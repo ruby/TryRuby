@@ -1,20 +1,20 @@
 ---
-lang:   EN
-title:  The Stuff Apps are Made of
+lang:   FR
+title:  Les éléments qui font une application
 answer: 
 ok:     
 error:  
 ---
 
-You've opened up a new Blurb<sup>TM</sup> class. What is your blog entry made of?
-The content, sure. Also, a time when the Blurb<sup>TM</sup> was posted. And a mood.
+Tu as crées une nouvelle classe Blurb<sup>TM</sup>. De quoi sont faits les articles de blog ?
+Le contenu (__content__), bien sûr. Mais aussi de l'heure à laquelle le Blurb<sup>TM</sup> a été publié (__time__). Et aussi une humeur (__mood__).
 
-Okay, so you've got the first line of the class, here's the rest:
+Bien, tu as la première ligne de la classe, voici la suite :
 
     class Blurb
       attr_accessor :content, :time, :mood
     end
 
-Class names always begin with a capital letter.
+Les noms de classe commencent toujours par une lettre majuscule.
 
-(Still no output)
+(Toujours pas de sortie)

@@ -22,7 +22,7 @@ Ukrainian translation by [_Andrii Palchik_](https://github.com/andriipalchik)
 Macedonian translation by [_Violeta Pavleska_](https://github.com/violeta-p)  
 Chinese translation by [_Ye Junzhe_](https://github.com/McF4r) & [_Bitfox_](https://github.com/bitfoxtop) & [_Heng Li_](https://github.com/iheng)  
 Turkish translation by [_Ali Rıza Şahin_](https://github.com/ARS-coding)  
-French translation by _Olivier Lacan_
+French translation by [_Olivier Lacan_](https://github.com/olivierlacan) & [_Idris TAKERBOUST_](https://github.com/idrista)
 
 Suggestions to improve translations are welcome.
 If you submit a pull request updating a translation please

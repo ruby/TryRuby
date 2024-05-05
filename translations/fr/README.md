@@ -1,5 +1,5 @@
 ## Copyright (C)
-Try Ruby version 4 French translation, 2018, _Olivier Lacan_
+Try Ruby version 4 French translation, 2018, _Olivier Lacan_, 2024, _Idris TAKERBOUST_
 
 ## The MIT License
 Permission is hereby granted, free of charge, to any person obtaining a copy

@@ -1,27 +1,26 @@
 ---
-lang:   EN
-title:  Are You Harsh?
-answer: "mediocre"
-load:   books = {"Gravitys Rainbow" => :splendid, "The deep end" => :abyssmal, "Living colors" => :mediocre, "Bumblebees" => :mediocre}
-ok:     Great, wow! You've made a scorecard of your ratings
+lang:   FR
+title:  Es-tu sévère ?
+answer: :moyen
+load:   livres = {"Harry Potter"=>:splendide, "The deep end"=>:catastrophique, "Living colors"=>:moyen}
+ok:     Génial, wow ! Tu as fait une feuille de notation de tes évaluations
 error:  
 ---
 
-So are you giving out harsh, unfair reviews? Let's keep score with a new hash __ratings__:
+Alors, tu donnes des critiques sévères et injustes ? Gardons une trace avec un nouveau hash __notations__ :
 
-Then, okay, now let's count up your reviews. Just stay with me. Type:
+Desormais, nous allons compter tes critiques. Reste avec moi. Écris :
 
-    ratings = Hash.new {0}
+    notations = Hash.new {0}
     
-    books.values.each { |rate|
-      ratings[rate] += 1
+    livres.values.each { |note|
+      notations[note] += 1
     }
     
-    puts ratings
+    puts notations
 
-The straight line in the code is the pipe character, probably located right above the Enter key
-on your keyboard.
+La trait droite dans le code est le caractère pipe (|), probablement situé juste au-dessus de la touche 'T' OU 'Y' d'un clavier Windows Français.
 
-That _+= 1_ line means: increase the value by 1.
+Le _+= 1_ signifie : augmenter la valeur de 1.
 
-Don't worry if you don't understand everything that is going on here. It will be revealed later.
+Ne t'inquiète pas si tu ne comprends pas tout ce qui se passe ici. Tout sera expliqué plus tard.
