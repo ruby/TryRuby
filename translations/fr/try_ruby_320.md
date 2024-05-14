@@ -1,5 +1,5 @@
 ---
-lang:   EN
+lang:   FR
 title:  Être ou ne pas être
 answer:
 load:   poem = "My toast has flown from my hand\nAnd my toast has gone to the moon.\nYada yada yada\n"

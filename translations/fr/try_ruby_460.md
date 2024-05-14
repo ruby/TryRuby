@@ -1,5 +1,5 @@
 ---
-lang:   EN
+lang:   FR
 title:  Pas une classe d'école, une classe ouvrière
 answer:
 ok:
