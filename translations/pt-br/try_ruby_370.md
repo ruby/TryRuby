@@ -11,7 +11,7 @@ Muito bem, muito bem, muito bem, muito bem!
 
 Verdadeiramente, verdadeiramente, verdadeiramente, verdadeiramente, verdadeirameeeeeente!
 
-Aqui estão os últimos minutos da nosa vida revisados:
+Aqui estão os últimos minutos da nossa vida revisados:
 
 ### Métodos
 Métodos podem ser definidos com __def__ e têm um nome. Métodos tornam os seus programas mais curtos
