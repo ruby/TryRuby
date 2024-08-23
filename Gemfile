@@ -11,7 +11,6 @@ gem "redcarpet"
 gem "sass"
 gem "webrick"
 gem "terser"
-gem "tilt", git: "https://github.com/rtomayko/tilt"
 
 group :test do
   gem "rspec"
