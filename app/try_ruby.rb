@@ -59,21 +59,11 @@ class TryRuby
     # Bind run button
     $document.on(:click, '#btn_run') { do_run }
 
-    # Control key pressed or not
-    control_pressed = false
 
-    #If you hold down the control and the Enter key goes down, run
+    #If hold down the control and the Enter key goes down, run
     $document.on :keydown, '#editor' do |e|
-      if e.key == "Control"
-        control_pressed = true
-      elsif e.key == "Enter" && control_pressed
+      if e.key == "Enter" && e.ctrl?
         do_run
-      end
-    end
-    
-    $document.on :keyup, '#editor' do |e|
-      if e.key == "Control"
-        control_pressed = false
       end
     end
 
