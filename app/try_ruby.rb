@@ -59,6 +59,13 @@ class TryRuby
     # Bind run button
     $document.on(:click, '#btn_run') { do_run }
 
+    #If hold down the control and the Enter key goes down, run
+    $document.on :keydown, '#editor' do |e|
+      if e.key == "Enter" && e.ctrl?
+        do_run
+      end
+    end
+
     # Is this the playground? If so, run code specific to the playground without
     # setting up the tutorial buttons.
     if title_element.inner_text.match(/playground/i)
