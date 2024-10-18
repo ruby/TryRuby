@@ -62,6 +62,7 @@ class TryRuby
     #If hold down the control and the Enter key goes down, run
     $document.on :keydown, '#editor' do |e|
       if e.key == "Enter" && e.ctrl?
+        e.prevent
         do_run
       end
     end
