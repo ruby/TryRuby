@@ -33,6 +33,7 @@ class TryRuby
     @current_item     = nil
     @current_copycode = nil
     @updating         = false
+
     initialize_menu
 
     # Stop if this is not a TryRuby enabled page
