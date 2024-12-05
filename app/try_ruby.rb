@@ -4,6 +4,7 @@ require 'dependencies'
 require 'editor'
 require 'lesson'
 require 'ruby_engine'
+require 'helper'
 
 # The TryRuby application
 class TryRuby
@@ -32,7 +33,7 @@ class TryRuby
     @current_item     = nil
     @current_copycode = nil
     @updating         = false
-    @navigator        = $window.navigator
+    @helper           = Helper.new($window)
 
     initialize_menu
 
@@ -62,8 +63,7 @@ class TryRuby
 
     #If hold down the control and the Enter key goes down, run
     $document.on :keydown, '#editor' do |e|
-      if e.key == "Enter" && ((e.ctrl? && !@navigator.user_agent&.match?(/\b(iPad|iPhone|iPod)\b/)) ||
-        (@navigator.user_agent&.match?(/\b(Mac|iPad|iPhone|iPod)\b/) && e.meta?))
+      if e.key == "Enter" && ((e.ctrl? && !@helper.ios?) || ((@helper.macos? || @helper.ios?) && e.meta?))
         e.prevent
         do_run
       end
