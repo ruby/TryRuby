@@ -32,6 +32,7 @@ class TryRuby
     @current_item     = nil
     @current_copycode = nil
     @updating         = false
+    @navigator        = $window.navigator
 
     initialize_menu
 
@@ -61,7 +62,7 @@ class TryRuby
 
     #If hold down the control and the Enter key goes down, run
     $document.on :keydown, '#editor' do |e|
-      if e.key == "Enter" && e.ctrl?
+      if e.key == "Enter" && (e.ctrl? || (@navigator.user_agent&.match?(/\b(Mac|iPad|iPhone|iPod)\b/) && e.meta?))
         e.prevent
         do_run
       end
