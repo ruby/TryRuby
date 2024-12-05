@@ -33,7 +33,7 @@ class TryRuby
     @current_item     = nil
     @current_copycode = nil
     @updating         = false
-    @helper           = Helper.new($window)
+    #@helper           = Helper.new($window)
 
     initialize_menu
 
@@ -63,7 +63,7 @@ class TryRuby
 
     #If hold down the control and the Enter key goes down, run
     $document.on :keydown, '#editor' do |e|
-      if e.key == "Enter" && ((e.ctrl? && !@helper.ios?) || ((@helper.macos? || @helper.ios?) && e.meta?))
+      if (e.key == "Enter" && (e.ctrl? && !Helper.ios?)) || ((Helper.macos? || Helper.ios?) && e.meta?)
         e.prevent
         do_run
       end

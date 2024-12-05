@@ -1,13 +1,13 @@
+require 'dependencies'
+
 class Helper
-  def initialize(window)
-    @navigator = window.navigator
+  @@navigator = $window.navigator
+
+  def self.ios?
+    @@navigator.user_agent&.match?(/\b(iPad|iPhone|iPod)\b/)
   end
 
-  def ios?
-    @navigator.user_agent&.match?(/\b(iPad|iPhone|iPod)\b/)
-  end
-
-  def macos?
-    @navigator.user_agent&.match?(/\bMac\b/)
+  def self.macos?
+    @@navigator.user_agent&.match?(/\bMac\b/)
   end
 end
