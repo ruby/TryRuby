@@ -4,6 +4,7 @@ require 'dependencies'
 require 'editor'
 require 'lesson'
 require 'ruby_engine'
+require 'helper'
 
 # The TryRuby application
 class TryRuby
@@ -61,7 +62,8 @@ class TryRuby
 
     #If hold down the control and the Enter key goes down, run
     $document.on :keydown, '#editor' do |e|
-      if e.key == "Enter" && e.ctrl?
+      if ((e.ctrl? && !Helper.ios?) || ((Helper.macos? || Helper.ios?) && e.meta?)) && e.key == "Enter"
+        e.prevent
         do_run
       end
     end
