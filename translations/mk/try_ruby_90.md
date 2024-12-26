@@ -1,7 +1,7 @@
 ---
 lang:   MK
 title:  Резиме на делот #1. Толку брзо?!
-answer: NoMethodError|undefined
+answer: NoMethodError|undefined|-e:in `eval'
 class:  stretcher chapmark
 ok:     Не, не е можно да го прикажеш бројот во обратен редослед. Кликни 'Next'
 error:  

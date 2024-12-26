@@ -1,7 +1,7 @@
 ---
 lang:   ZH
 title:  总结（第一部分）就到此为止!
-answer: NoMethodError|undefined
+answer: NoMethodError|undefined|-e:in `eval'
 class:  stretcher chapmark
 ok:     不不不，你不能逆置一个数字，点击‘Next’来继续
 error:  

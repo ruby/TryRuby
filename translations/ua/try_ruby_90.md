@@ -1,7 +1,7 @@
 ---
 lang:   UA
 title:  Підсумки #1 Вже
-answer: NoMethodError|undefined
+answer: NoMethodError|undefined|-e:in `eval'
 class:  stretcher chapmark
 ok:     Ні, неможливо розгорнути число. Натисни 'next'
 error:  
