@@ -39,17 +39,16 @@ class RubyEngine
   # When you update the engines, ensure that they are tested correctly.
   # Update the engine list also in spec/playground_spec.
   ENGINES = [
+    # https://www.jsdelivr.com/package/npm/@ruby/3.2-wasm-wasi?tab=files&path=dist&version=2.4.1
     CRubyWASI.new(
-      "https://cdn.jsdelivr.net/npm/ruby-head-wasm-wasi@0.5.0-2022-12-25-a/dist/ruby.wasm",
-      "3.2.0"
+      "https://cdn.jsdelivr.net/npm/@ruby/3.2-wasm-wasi@2.4.1/dist/ruby.wasm",
+      "3.2.2"
     ),
-    # FIXME(katei): Head build is no longer compatible with ruby-head-wasm-wasi@0.5.0,
-    # so we should have a worker for each version of CRuby to load corresponding ruby-*-wasm-wasi
-    # CRubyWASI.new(
-    #   "https://cdn.jsdelivr.net/npm/ruby-head-wasm-wasi@next/dist/ruby.wasm",
-    #   "3.3.0dev"
-    # ),
-
+    # https://www.jsdelivr.com/package/npm/@ruby/3.3-wasm-wasi?tab=files&path=dist&version=2.4.1
+    CRubyWASI.new(
+      "https://cdn.jsdelivr.net/npm/@ruby/3.3-wasm-wasi@2.4.1/dist/ruby.wasm",
+      "3.3.0"
+    ),
     # Opal.new,
     OpalWebWorker.new("1.7.1"),
   ].each_with_object({}) do |engine, hash|
