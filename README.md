@@ -5,6 +5,7 @@ where you can learn the Ruby language. Starting from zero knowledge about
 programming you can learn the basics of Ruby in 56 short lessons.
 
 ## Credits
+
 Try Ruby version 1 by _why the lucky stiff_  
 Try Ruby version 2 by _Andrew McElroy & David Miani_  
 Try Ruby version 3 by _Eric Allam & Nick Walsh_  
@@ -13,6 +14,7 @@ Try Ruby version 4 by _Ivo Herweijer_
 This website is partially based on OpalRb.com by _Adam Beynon_.
 
 ### Translations
+
 Spanish translation by _Jesus Gabriel y Galan_ & _Pablo García_  
 Dutch translation by [_Ivo Herweijer_](https://github.com/easydatawarehousing)  
 Brazilian Portuguese translation by [_Ricardo da Verdade Silva_](https://github.com/ricardovsilva)  
@@ -31,20 +33,23 @@ not the json files in folder _source_.
 These files will be updated automatically by the build/publish task.
 
 ## Frontend website
+
 The TryRuby is kind of unique in a way, that it is a frontend application created
 in Ruby with [Opal](https://opalrb.com/). The source code for this application is
 located in `app` directory.
 
 ## Docker
+
 You can deploy the website using docker by running the following commands:
+
 ```
-# creating the image
-docker build -f Dockerfile . -t tryruby
-# running the image, you can access tryruby on http://localhost:9099
-docker run -p 9099:4567 -d tryruby:latest
+docker compose up
 ```
 
+Then visit `http://localhost:9099`.
+
 ## Preparing
+
 Clone this repo, and use bundler to get dependencies:
 
     $ bundle install
@@ -70,9 +75,11 @@ Git branch 'gh-pages' now holds the publishable version of TryRuby, accessible
 via [try.ruby-lang.org/](https://try.ruby-lang.org/).
 
 ## Translators
+
 When adding a new translation: see the README file in /translations.
 
 ## Why
+
 See the website [try-ruby-version-4](https://try.ruby-lang.org/articles/try-ruby-version-4/)
 for more background information on how and why this website was created.
 

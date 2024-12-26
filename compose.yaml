@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: tryruby:latest
+    ports:
+      - "9099:4567"
+    volumes:
+      - .:/app
