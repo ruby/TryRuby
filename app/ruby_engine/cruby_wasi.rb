@@ -5,21 +5,22 @@ require 'await'
 class RubyEngine
   class CRubyWASI < RubyEngine
     REQUIRED_SCRIPTS = [
-      {
-        src: "https://cdn.jsdelivr.net/npm/ruby-head-wasm-wasi@0.5.0/dist/index.umd.js",
-        integrity: "sha256-EVJ2qiXD74E5qZpFm9MMNqOf5Buo+P2VQKiqOzOKGpg=",
-        crossorigin: "anonymous"
-      },
-      {
-        src: "https://cdn.jsdelivr.net/npm/@wasmer/wasmfs@0.12.0/lib/index.iife.js",
-        integrity: "sha256-sOd4ekxVsN4PXhR+cn/4uNAxeQOJRcsaW5qalYfvkTw=",
-        crossorigin: "anonymous"
-      },
-      {
-        src: "https://cdn.jsdelivr.net/npm/@wasmer/wasi@0.12.0/lib/index.iife.js",
-        integrity: "sha256-FslFp/Vq4bDf2GXu+9QyBEDLtEWO3fkMjpyOaJMHJT8=",
-        crossorigin: "anonymous"
-      }
+        {
+            # https://www.jsdelivr.com/package/npm/@ruby/wasm-wasi?version=2.4.1&tab=files&path=dist
+            src: "https://cdn.jsdelivr.net/npm/@ruby/wasm-wasi@2.4.1/dist/index.umd.js",
+            integrity: "sha256-300VwPu5WqY+8LDKdE4RQwDglgJSpMtLFLgyf508bv0=",
+            crossorigin: "anonymous"
+        },
+        {
+            src: "https://cdn.jsdelivr.net/npm/@wasmer/wasmfs@0.12.0/lib/index.iife.js",
+            integrity: "sha256-sOd4ekxVsN4PXhR+cn/4uNAxeQOJRcsaW5qalYfvkTw=",
+            crossorigin: "anonymous"
+        },
+        {
+            src: "https://cdn.jsdelivr.net/npm/@wasmer/wasi@0.12.0/lib/index.iife.js",
+            integrity: "sha256-FslFp/Vq4bDf2GXu+9QyBEDLtEWO3fkMjpyOaJMHJT8=",
+            crossorigin: "anonymous"
+        }
     ]
 
     def initialize(ruby_wasm_url, version)
