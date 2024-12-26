@@ -1,7 +1,7 @@
 ---
 lang:   ES
 title:  Ey, Sumario #1 Ya
-answer: NoMethodError|undefined
+answer: NoMethodError|undefined|-e:in `eval'
 class:  stretcher chapmark
 ok:     Nop, no es posible dar la vuelta a un número. Pulsa 'next'
 error:  

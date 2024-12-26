@@ -1,7 +1,7 @@
 ---
 lang:   TR
 title:  Hey, Özet #Şimdiden 1 Numara
-answer: NoMethodError|undefined
+answer: NoMethodError|undefined|-e:in `eval'
 class:  stretcher chapmark
 ok:     Yoo, bir numarayı ters çevirmek mümkün değil ki. 'next' butonuna bas
 error:  
