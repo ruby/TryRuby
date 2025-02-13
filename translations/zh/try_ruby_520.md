@@ -12,11 +12,6 @@ load:   prev;blurb2=Blurb.new :confused, "I can not believe Mt. Hood was stolen!
 但是现在，我们来回顾一下。
 
 ### 类
-Everything in Ruby is some kind of object. Classes explain objects, how a certain object works.
-For example, you made a few Blurb<sup>TM</sup> objects and these objects are explained in the Blurb
-class.
-In other words: you call them Blurb objects.
-You can use classes to (kinda) model real life objects.
 在Ruby中，一切皆对象。类会解释一个特定的对象是怎么工作的。
 比如，你创建了几个Blurb<sup>TM</sup>对象并且在Blurb<sup>TM</sup>类中对其进行了解释。
 换句话说：你把他们叫做Blurb对象。
