@@ -15,7 +15,7 @@ class TryRuby
   RUBY
   INITIAL_TRY_RESULT = 'Welcome ' * 3
 
-  DEFAULT_RUBY_ENGINE = "cruby-3.3.0"
+  DEFAULT_RUBY_ENGINE = "cruby-3.4.1"
 
   def self.start
     instance
