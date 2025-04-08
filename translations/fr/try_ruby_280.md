@@ -19,7 +19,7 @@ Desormais, nous allons compter tes critiques. Reste avec moi. Écris :
     
     puts notations
 
-La trait droite dans le code est le caractère pipe (|), probablement situé juste au-dessus de la touche 'T' OU 'Y' d'un clavier Windows Français.
+Le trait droit dans le code correspond au caractère "pipe" (|), probablement situé juste au-dessus de la touche 'T' OU 'Y' d'un clavier Windows Français, ou "Option+Maj+L" sur MacOS.
 
 Le _+= 1_ signifie : augmenter la valeur de 1.
 
