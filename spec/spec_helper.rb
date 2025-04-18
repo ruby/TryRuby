@@ -33,11 +33,10 @@ RSpec.configure do |config|
       inspector: ENV['INSPECTOR'],
       headless: !ENV['NO_HEADLESS'],
       timeout: 20,
-      url_blacklist: [
-        "https://docs.ruby-lang.org/", # It is quite a heavy website iframed on playground
-                                      # and for testing, we don't need it to be present.
-                                      # This should spare us from random test failures.
-      ],
+      # It is quite a heavy website iframed on playground
+      # and for testing, we don't need it to be present.
+      # This should spare us from random test failures.
+      url_blocklist: %r{https://docs.ruby-lang.org/},
     )
   end
 
