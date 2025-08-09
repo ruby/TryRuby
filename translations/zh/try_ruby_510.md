@@ -3,7 +3,7 @@ lang:   ZH
 title:  你教会了你的app拒绝做无意义的事
 answer: Blurb:
 ok:     Blurb已添加
-error:  
+error:
 load:   class Blurb;attr_accessor :content,:time,:mood;def initialize(mood, content="");@time=Time.now;@content=content[0..39];@mood=mood;end;end;blurb1=Blurb.new(:sick,"Today Mount Hood Was Stolen!")
 ---
 
@@ -24,4 +24,4 @@ They're the exact same thing, but expressed in two different places of your prog
 
 额，我们需要两个新参数:
 
-    Blurb2 = Blurb.new :confused, "I can not believe Mt. Hood was stolen!"
+    blurb2 = Blurb.new :confused, "I can not believe Mt. Hood was stolen!"

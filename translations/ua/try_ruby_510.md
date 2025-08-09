@@ -3,7 +3,7 @@ lang:   UA
 title:  Ти навчив свій додаток відкидати непотрібні речі
 answer: Blurb:
 ok:     Blurb додано
-error:  
+error:
 load:   class Blurb;attr_accessor :content,:time,:mood;def initialize(mood, content="");@time=Time.now;@content=content[0..39];@mood=mood;end;end;blurb1=Blurb.new(:sick,"Today Mount Hood Was Stolen!")
 ---
 
@@ -24,4 +24,4 @@ __Ззовні__ класу ми використовуємо аксесор:
 
 Ой, потрібно ще 2 аргументи:
 
-    Blurb2 = Blurb.new :confused, "Не можу повірити, Мавнт-Худ вкрали!"
+    blurb2 = Blurb.new :confused, "Не можу повірити, Мавнт-Худ вкрали!"

@@ -3,7 +3,7 @@ lang:   TR
 title:  Aplikasyonuna Değersiz Şeyleri Reddetmeyi Öğrettin
 answer: Blurb:
 ok:     Blurb eklendi
-error:  
+error:
 load:   class Blurb;attr_accessor :content,:time,:mood;def initialize(mood, content="");@time=Time.now;@content=content[0..39];@mood=mood;end;end;blurb1=Blurb.new(:sick,"Today Mount Hood Was Stolen!")
 ---
 
@@ -13,7 +13,7 @@ Class __dışarısında__ accessor'lar kullanıyoruz:
 
 > __blurb.time = Time.now__
 
-ancak __içeride__ kullandıklarımızsa __objenin değişkenleri__: 
+ancak __içeride__ kullandıklarımızsa __objenin değişkenleri__:
 
 > __@time = Time.now__
 
@@ -25,4 +25,4 @@ kontrol etmek için çalıştırılır.
 
 Uh, iki argümana ihtiyacımız var:
 
-    Blurb2 = Blurb.new :confused, "I can not believe Mt. Hood was stolen!"
+    blurb2 = Blurb.new :confused, "I can not believe Mt. Hood was stolen!"
