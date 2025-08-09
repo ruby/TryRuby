@@ -1,22 +1,23 @@
 ---
 lang:   FR
 title:  Nous arrivons au resumé #4
-answer: 
+answer:
 class:  stretcher chapmark
-ok:     
-error:  
+ok:
+error:
 ---
 
-Cette dernière leçon était un peu plus longue. Tu as probablement utilisé environ trois minutes pour apprendre sur :
+Cette dernière leçon était un peu plus longue. Tu as probablement utilisé environ trois minutes pour apprendre sur :
 
 ### Hashes
-Le petit dictionnaire avec les pages en boucle : __{}__
+Le petit dictionnaire avec les pages qui bouclent : __{}__
 
 ### Symbols
-De petits mots de code efficaces avec un deux-points, comme : __:splendide__
+De petits mots de code efficaces avec un deux-points, comme : __:splendide__
 
 ### Blocks
-Des morceaux de code qui peuvent être ajoutés à de nombreuses méthodes de Ruby. Voici le code que tu as utilisé pour construire une feuille de notation :  
+Des morceaux de code qui peuvent être ajoutés à de nombreuses méthodes de Ruby. Voici le code que tu as utilisé pour construire une feuille de notation :
+
 __livres.values.each { |note| notations[note] += 1 }__
 
 ### La suite

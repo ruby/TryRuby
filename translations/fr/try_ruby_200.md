@@ -1,12 +1,12 @@
 ---
 lang:   FR
 title:  Prêt, Viser
-answer: dnah ym morf nwolf sah tsaot yM
+answer: niam am ed eélovne tse's ettocsib aM
 load:   prev
-ok:     C'est plutôt logique.  L'entièrement du poème a été inversé.
-error:  
+ok:     C'est plutôt logique. L'ensemble du poème a été inversé.
+error:
 ---
 
-Petite question : que se passe-t-il lorsque nous inversons entièrement "poem" (__poème__) ?
+Petite question : que se passe-t-il lorsque nous inversons entièrement le poème ?
 
-    poem.reverse
+    poème.reverse
