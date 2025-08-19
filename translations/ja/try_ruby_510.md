@@ -3,7 +3,7 @@ lang:   JA
 title:  意味ないものは拒むようにしつけました
 answer: Blurb:
 ok:     Blurbが追加されました
-error:  
+error:
 load:   class Blurb;attr_accessor :content,:time,:mood;def initialize(mood, content="");@time=Time.now;@content=content[0..39];@mood=mood;end;end;blurb1=Blurb.new(:sick,"Today Mount Hood Was Stolen!")
 ---
 
@@ -24,4 +24,4 @@ load:   class Blurb;attr_accessor :content,:time,:mood;def initialize(mood, cont
 
 あ、2つの引数が必要です。
 
-    Blurb2 = Blurb.new :confused, "I can not believe Mt. Hood was stolen!"
+    blurb2 = Blurb.new :confused, "I can not believe Mt. Hood was stolen!"

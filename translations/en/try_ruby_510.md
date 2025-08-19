@@ -3,7 +3,7 @@ lang:   EN
 title:  You've Taught Your App to Reject Worthless Things
 answer: Blurb:
 ok:     Blurb added
-error:  
+error:
 load:   class Blurb;attr_accessor :content,:time,:mood;def initialize(mood, content="");@time=Time.now;@content=content[0..39];@mood=mood;end;end;blurb1=Blurb.new(:sick,"Today Mount Hood Was Stolen!")
 ---
 
@@ -25,4 +25,4 @@ arguments to new.
 
 Uh, we need two arguments:
 
-    Blurb2 = Blurb.new :confused, "I can not believe Mt. Hood was stolen!"
+    blurb2 = Blurb.new :confused, "I can not believe Mt. Hood was stolen!"

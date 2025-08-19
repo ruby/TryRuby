@@ -3,7 +3,7 @@ lang:   ES
 title:  Has Enseñado a tu Aplicación a Rechazar Cosas Sin Valor
 answer: Blurb:
 ok:     Blurb añadido
-error:  
+error:
 load:   class Blurb;attr_accessor :contenido,:tiempo,:animo;def initialize(animo, contenido="");@tiempo=Time.now;@contenido=contenido[0..39];@animo=animo;end;end;blurb1=Blurb.new(:enfermo,"¡El Everest ha sido robado!")
 ---
 
@@ -24,4 +24,4 @@ Cuando se crea un nuevo Blurb<sup>TM</sup>, se usa el método initialize para ch
 
 Eh, necesitamos dos argumentos:
 
-    Blurb2 = Blurb.new :confuso, "¡No puedo creer que hayan robado el Everest!"
+    blurb2 = Blurb.new :confuso, "¡No puedo creer que hayan robado el Everest!"

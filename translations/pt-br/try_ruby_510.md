@@ -3,7 +3,7 @@ lang:   PT-BR
 title:  Você Ensinou Seu App a Desprezar Coisas Sem Valor
 answer: Blurb:
 ok:     Blurb adicionado
-error:  
+error:
 load:   class Blurb;attr_accessor :conteudo,:tempo,:humor;def initialize(humor, conteudo="");@tempo=Time.now;@conteudo=conteudo[0..39];@humor=humor;end;end;blurb1=Blurb.new(:doente,"Hoje, Mount Hood foi roubado!")
 ---
 
@@ -25,4 +25,4 @@ por algum argumento para o new.
 
 Uh, nós precisamos de dois argumentos:
 
-    Blurb2 = Blurb.new :confuso, "Eu não posso acreditar que Mt. Hood foi roubado!"
+    blurb2 = Blurb.new :confuso, "Eu não posso acreditar que Mt. Hood foi roubado!"

@@ -25,4 +25,4 @@ arguments à new.
 
 Nous avons besoin de deux arguments :
 
-    Blurb2 = Blurb.new :confus, "Je ne peux pas croire que le Mont Blanc a été volé !"
+    blurb2 = Blurb.new :confus, "Je ne peux pas croire que le Mont Blanc a été volé !"
