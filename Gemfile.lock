@@ -256,7 +256,7 @@ DEPENDENCIES
   middleman-gh-pages
   middleman-livereload
   middleman-syntax
-  opal (~> 1.7)
+  opal (~> 1.8.2)
   opal-browser
   puma
   redcarpet

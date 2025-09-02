@@ -50,7 +50,7 @@ class RubyEngine
       "3.2.2"
     ),
     # Opal.new,
-    OpalWebWorker.new("1.7.1"),
+    OpalWebWorker.new("1.8.2"),
   ].each_with_object({}) do |engine, hash|
     hash[engine.engine_id] = engine
   end
