@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "opal", "~> 1.7"
+gem "opal", "~> 1.8.2"
 gem "opal-browser"
 gem "middleman"
 gem "middleman-livereload"
