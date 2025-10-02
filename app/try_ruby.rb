@@ -1,4 +1,5 @@
 # await: true
+# backtick_javascript: true
 
 require 'dependencies'
 require 'editor'
