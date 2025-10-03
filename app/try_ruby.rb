@@ -17,6 +17,13 @@ class TryRuby
 
   DEFAULT_RUBY_ENGINE = "cruby-3.4.1"
 
+  GEM_PRELUDE_WARNINGS = [
+    "`RubyGems' were not loaded.",
+    "`error_highlight' was not loaded.",
+    "`did_you_mean' was not loaded.",
+    "`syntax_suggest' was not loaded."
+  ].freeze
+
   def self.start
     instance
   end
@@ -455,6 +462,7 @@ class TryRuby
   end
 
   def print_to_output(str, term = "\n")
+    return if warnings_from_gem_prelude?(str)
     @output_buffer << str.to_s + term
     @output.value = @output_buffer.join
   end
@@ -462,6 +470,16 @@ class TryRuby
   def output=(text)
     @output.value = text
   end
+
+  # TODO: This would be needless if only supports Ruby >= 3.5.
+  def warnings_from_gem_prelude?(str)
+    return false if str.nil? || str.empty?
+
+    trimmed_str = str.strip
+    GEM_PRELUDE_WARNINGS.include?(trimmed_str)
+  end
+
+  private
 end
 
 $window.on("dom:load") { TryRuby.start }
