@@ -1,7 +1,7 @@
 ---
 lang:   EN
 title:  Bist du hart?
-answer: :mediocre
+answer: :mediocre|mediocre:
 load:   books = {"Gravitys Rainbow" => :splendid, "The deep end" => :abysmal, "Living colors" => :mediocre, "Bumblebees" => :mediocre}
 ok:     Toll, wow! Du hast eine Übersicht über deine Bewertungen erstellt
 error:  

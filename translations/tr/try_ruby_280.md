@@ -1,7 +1,7 @@
 ---
 lang:   TR
 title:  Sert Misin?
-answer: :mediocre
+answer: :mediocre|mediocre:
 load:   books = {"Gravitys Rainbow" => :splendid, "The deep end" => :abysmal, "Living colors" => :mediocre, "Bumblebees" => :mediocre}
 ok:     Süper, vay! Değerlendirmelerinin bir puan kardını oluşturdun
 error:  
