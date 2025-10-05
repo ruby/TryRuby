@@ -1,10 +1,10 @@
 ---
 lang:   EN
 title:  Hey, Summary #1 Already
-answer: NoMethodError|undefined|-e:in `eval'
+answer: NoMethodError|undefined|-e:in `eval'|-e:in 'Kernel.eval'
 class:  stretcher chapmark
 ok:     Nope, it is not possible to reverse a number. Click 'next'
-error:  
+error:
 ---
 
 Let's look at what you've learned in the first minute.
@@ -18,7 +18,7 @@ Numbers and strings are Ruby's math and text objects.
 
 ### Methods
 You've used English-language methods like reverse and length. And symbolic methods like the
-multiplication method: \*  
+multiplication method: \*
 __Methods mean action!__
 
 This is the essence of your learning. Taking simple things, toying with them and turning them into

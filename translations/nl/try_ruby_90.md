@@ -1,10 +1,10 @@
 ---
 lang:   NL
 title:  Je hebt samenvatting 1 bereikt
-answer: NoMethodError|undefined|-e:in `eval'
+answer: NoMethodError|undefined|-e:in `eval'|-e:in 'Kernel.eval'
 class:  stretcher chapmark
 ok:     Nee, nummers kan je niet omdraaien. Klik 'next'
-error:  
+error:
 ---
 
 Je bent net 1 minuut bezig en kijk eens wat je allemaal al weet.
@@ -18,8 +18,8 @@ je wilt tonen.
 Numbers en strings zijn Ruby's reken en tekst objecten.
 
 ### Methodes
-Je hebt Engelstalige methodes gebruikt als _reverse_ en _length_.  
-En symbolische methoden zoals vermenigvuldigen: \*  
+Je hebt Engelstalige methodes gebruikt als _reverse_ en _length_.
+En symbolische methoden zoals vermenigvuldigen: \*
 __Methodes betekenen actie!__
 
 

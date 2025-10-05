@@ -1,10 +1,10 @@
 ---
 lang:   UA
 title:  Підсумки #1 Вже
-answer: NoMethodError|undefined|-e:in `eval'
+answer: NoMethodError|undefined|-e:in `eval'|-e:in 'Kernel.eval'
 class:  stretcher chapmark
 ok:     Ні, неможливо розгорнути число. Натисни 'next'
-error:  
+error:
 ---
 
 Погляньмо, що ти вже вивчив за першу хвилину.
