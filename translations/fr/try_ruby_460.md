@@ -16,7 +16,7 @@ Tu viens juste d'avoir une idée brillante pour une nouvelle application.
 Ce sera __LA__ prochaine plateforme de messagerie instantanée.
 Tu veux une application où les gens peuvent s'envoyer des messages courts.
 Tu appelles ces messages Blurbs<sup>TM</sup>. Un Blurb<sup>TM</sup> a une longueur maximale de seulement 40 caractères.
-Ajoutons également definir son humeur (__mood__).
+Ajoutons également la possibilité de définir son humeur (__mood__).
 
 ### Par où commencer
 Eh bien, tu pourrais stocker tes entrées Blurbs<sup>TM</sup> dans un fichier json, n'est-ce pas ?
