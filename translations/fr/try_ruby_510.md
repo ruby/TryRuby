@@ -3,17 +3,17 @@ lang:   FR
 title:  Tu as appris à ton application à rejeter les choses sans valeur.
 answer: Blurb:
 ok:     Blurb ajouté
-error:  
-load:   class Blurb;attr_accessor :content,:time,:mood;def initialize(mood, content="");@time=Time.now;@content=content[0..39];@mood=mood;end;end;blurb1=Blurb.new(:sick,"Today Mount Hood Was Stolen!")
+error:
+load:   class Blurb;attr_accessor :contenu,:horaire,:humeur;def initialize(humeur, contenu="");@horaire=Time.now;@contenu=contenu[0..39];@humeur=humeur;end;end;blurb1=Blurb.new(:triste,"Today Mount Hood Was Stolen !")
 ---
 
-As-tu remarqué comment à l'intérieur de la classe nous avons utilisé le arobase '@' (@time).
+As-tu remarqué comment à l'intérieur de la classe nous avons utilisé le arobase « @ » (@horaire).
 
-__À l'extérieur__ de la classe, nous utilisons des 'accessors' :
+__À l'extérieur__ de la classe, nous utilisons des « accessors » :
 
 > __blurb.time = Time.now__
 
-mais __à l'intérieur__, nous utilisons les __variables de l'objet__ :
+mais __à l'intérieur__, nous utilisons les __variables de l'objet__ :
 
 > __@time = Time.now__
 

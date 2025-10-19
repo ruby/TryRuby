@@ -1,10 +1,10 @@
 ---
 lang:   FR
 title:  La page blanche du livre
-answer: ^(splendide|assez_bon|moyen|decu|catastrophique)$
+answer: ^(splendide|assez_bon|moyen|déçu|catastrophique)$
 load:   livres = {}
 ok:     Oui, c'est une nouvelle critique
-error:  Utilise l'un de ces mots splendide, assez_bon, moyen, decu, catastrophique.<br/>N'oublie pas le deux-points (:).
+error:  Utilise l'un de ces mots splendide, assez_bon, moyen, déçu, catastrophique.<br/>N'oublie pas le deux-points (:).
 ---
 
 Tu as créé un __hash__ vide. Un hash est comme un tableau, sauf que chaque élément a un nom.
@@ -14,10 +14,10 @@ Nous allons mettre quelques critiques de livres dans notre nouveau hash. Voici n
 - :splendide &rarr; un chef-d'œuvre
 - :assez_bon &rarr; apprécié, sûr, oui
 - :moyen &rarr; ni bon, ni mauvais
-- :decu &rarr; assez mauvais
+- :déçu &rarr; assez mauvais
 - :catastrophique &rarr; un désastre fumant
 
-Pour noter un livre, mets le titre entre crochets et mets la note après le signe égal. Par exemple :
+Pour noter un livre, mets le titre entre crochets et mets la note après le signe égal. Par exemple :
 
     livres["Harry Potter"] = :splendide
 

@@ -49,7 +49,7 @@ RSpec.describe "Tutorial", type: :feature, js: true do
 
           special = steps[step] || {}
 
-          find(:css, "h1").text.should be == data["title"]
+          find(:css, "h1").text.should be == data["title"].gsub(" ", " ")
 
           unless special[:pass]
             case special[:code]

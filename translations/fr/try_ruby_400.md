@@ -13,23 +13,23 @@ Ruby nous permet de sélectionner (__select__) des valeurs à partir d'un hash. 
 
 Nous pouvons ensuite utiliser les résultats retournés par __select__ dans la méthode __each__ comme précédemment en les ajoutant simplement après le bloc select. C'est un autre exemple de chaînage de méthodes, que nous avons vu précédemment lors de l'inversion d'un poème.
 
-J'ai préparé la méthode __count\_plays__ pour toi. Essaye de trouver combien de pièces ont été écrites par Shakespeare en l'année __1591__. Essaie ceci :
+J'ai préparé la méthode __compte\_pièces__ pour toi. Essaye de trouver combien de pièces ont été écrites par Shakespeare en l'année __1591__. Essaie ceci :
 
-    def count_plays(year)
-      s = get_shakey
-      
+    def compte_pièces(annee)
+      s = lis_shakou
+
       s["William Shakespeare"]
         .select { |k, v|
-          v["finished"] == year
+          v["finished"] == annee
         }.each { |key, val|
           puts val["title"]
         }.count
     end
-    
-    puts count_plays(0)
 
-As-tu remarqué que j'ai chaîné la méthode count à la fin de la méthode each ? Cela nous donne une valeur de retour pour la méthode __count\_plays__.
+    puts compte_pièces(0)
 
-Il y a une autre possibilité pour le chaînage ici.  
-Regarde cette ligne  __s = get\_shakey__.   
-Tu pourrais retirer la variable __s__ et chaîner get_shakey avec le __["William Shakespeare"].select { |k, v|__
+As-tu remarqué que j'ai chaîné la méthode count à la fin de la méthode each ? Cela nous donne une valeur de retour pour la méthode __compte\_pièces__.
+
+Il y a une autre possibilité pour le chaînage ici.
+Regarde cette ligne toute seule __s = lis\_shakou__.
+Tu pourrais retirer la variable __s__ et chaîner __lis\_shakou__ avec le __["William Shakespeare"].select { |k, v|__ directement (pas besoin de point dans ce cas).

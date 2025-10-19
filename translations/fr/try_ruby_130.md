@@ -6,8 +6,8 @@ ok:     D'accord
 error:
 ---
 
-Une liste de numéros de lotterie. Lequel est le plus grand ?
+Une liste de numéros de lotterie. Lequel est le plus grand ?
 
-Essaye:
+Essaye :
 
     [12, 47, 35].max
