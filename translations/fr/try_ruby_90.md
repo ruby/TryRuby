@@ -1,10 +1,10 @@
 ---
 lang:   FR
 title:  Hé, Résumé #1 Déjà
-answer: NoMethodError|undefined
+answer: NoMethodError|undefined|-e:in `eval'|-e:in 'Kernel.eval'
 class:  stretcher chapmark
 ok:     Nop, ce n'est pas possible d'inverser un nombre. Clique sur 'next'.
-error:  
+error:
 ---
 
 Regardons ce que tu as appris dans la première minute.
@@ -18,7 +18,7 @@ Les nombres et les chaînes de caractères sont des objets mathématiques et tex
 
 ### Méthodes
 Tu as utilisé des méthodes en anglais comme reverse (__inverse__) et length (__longueur__) . Et des méthodes symboliques comme la
-méthode de multiplication : \*  
+méthode de multiplication : \*
 __Méthodes signifie action !__
 
 C'est l'essence de ton apprentissage. Prendre des choses simples, jouer avec elles et les transformer en

@@ -1,10 +1,10 @@
 ---
 lang:   PT-BR
 title:  Ei, Sumário #1 Pronto
-answer: NoMethodError|undefined|-e:in `eval'
+answer: NoMethodError|undefined|-e:in `eval'|-e:in 'Kernel.eval'
 class:  stretcher chapmark
 ok:     Não, não é possível inverter um número. Clique em __next__ para continuar
-error:  
+error:
 ---
 
 Vamos revisar o que nós aprendemos neste primeiro minuto.

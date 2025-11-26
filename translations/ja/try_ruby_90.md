@@ -1,10 +1,10 @@
 ---
 lang:   JA
 title:  このくらいで要約（その1）にしましょう
-answer: NoMethodError|undefined|-e:in `eval'
+answer: NoMethodError|undefined|-e:in `eval'|-e:in 'Kernel.eval'
 class:  stretcher chapmark
 ok:     いいえ、数を逆さまにはできません。'Next'を押してください
-error:  
+error:
 ---
 
 ここまでの数分で学んだことを確認してみましょう。

@@ -1,10 +1,10 @@
 ---
 lang:   RU
 title:  Подводим итоги #1 Уже
-answer: NoMethodError|undefined|-e:in `eval'
+answer: NoMethodError|undefined|-e:in `eval'|-e:in 'Kernel.eval'
 class:  stretcher chapmark
 ok:     Неа, нельзя использовать метод reverse с числом. Жми 'next'
-error:  
+error:
 ---
 
 Давайте посмотрим, что Вы уже изучили.
@@ -18,7 +18,7 @@ error:
 
 ### Методы
 Вы попробовали использовать методы из слов на английском языке reverse и length. А также символьный
-метод умножения: \*  
+метод умножения: \*
 __Метод значит действие!__
 
 В этом суть Вашего обучения. Берем базовые вещи, играем с ними и превращаем их в

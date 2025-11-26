@@ -1,10 +1,10 @@
 ---
 lang:   ES
 title:  Ey, Sumario #1 Ya
-answer: NoMethodError|undefined|-e:in `eval'
+answer: NoMethodError|undefined|-e:in `eval'|-e:in 'Kernel.eval'
 class:  stretcher chapmark
 ok:     Nop, no es posible dar la vuelta a un número. Pulsa 'next'
-error:  
+error:
 ---
 
 Echemos un vistazo a lo que has aprendido en el primer minuto.
@@ -17,7 +17,7 @@ Escribir código en el editor y pulsar __run__ te da una respuesta en la ventana
 Los números y los strings (las cadenas de texto) son los objetos de Ruby para las mates y los textos.
 
 ### Métodos
-Ya has usado métodos de lenguaje como dar la __vuelta__ (reverse) o __tamaño__ (length). Y también métodos simbólicos como la multiplicación: \*  
+Ya has usado métodos de lenguaje como dar la __vuelta__ (reverse) o __tamaño__ (length). Y también métodos simbólicos como la multiplicación: \*
 __Los Métodos significan acción!__
 
 Esta es la esencia de tu aprendizaje. Coger cosas simples, jugar con ellas y convertirlas en cosas nuevas. ¿Te sientes cómodo? Seguro que sí.
