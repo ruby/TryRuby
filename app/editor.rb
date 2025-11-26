@@ -1,3 +1,5 @@
+# backtick_javascript: true
+
 # Wrapper for CodeMirror objects
 class Editor
   def initialize(dom_id, options)

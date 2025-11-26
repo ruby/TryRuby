@@ -1,4 +1,5 @@
 # await: *await*, loading
+# backtick_javascript: true
 
 require 'base64'
 require 'json'
