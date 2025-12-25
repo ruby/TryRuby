@@ -16,16 +16,21 @@
 
   --code-light-background-color: rgba(255, 255, 255, .4);
   --code-editor-border-color: #e2d1aa;
+
+  --noto-sans-subset: "Noto Sans JP";
 }
 
 // Body
 
-.tryruby-page {
+body {
   background-color: var(--background-color);
-
-  font: 1.2em "Plus Jakarta Sans", "Noto Sans JP", ui-sans-serif, system-ui, -apple-system, sans-serif;
   color: var(--text-color);
+
+  font: 1.2em "Plus Jakarta Sans", var(--noto-sans-subset), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
+
+:root:lang(zh) body { --noto-sans-subset: "Noto Sans SC"; }
+:root:lang(ja) body { --noto-sans-subset: "Noto Sans JP"; }
 
 // Navigation
 
