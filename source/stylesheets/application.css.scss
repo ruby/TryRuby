@@ -327,6 +327,10 @@ pre {
     zoom: .8;
     transform: scale(.8);
     transform-origin: 0 0;
+
+    :lang(fa-IR) & {
+      transform-origin: top right;
+    }
   }
 }
 
