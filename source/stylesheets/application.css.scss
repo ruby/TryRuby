@@ -165,6 +165,11 @@ blockquote {
   border-left: .5rem solid var(--secondary-color);
   background: transparent;
 
+  :lang(fa-IR) & {
+    border-left: unset;
+    border-right: .5rem solid var(--secondary-color);
+  }
+
   & > :last-child {
     margin-bottom: 0;
   }
@@ -211,6 +216,10 @@ code,
 .CodeMirror pre {
   color: #555;
   font: .9rem "Source Code Pro", "Courier New", monospace;
+
+  :lang(fa-IR) & {
+    direction: ltr;
+  }
 }
 
 code {
@@ -223,6 +232,12 @@ pre {
   padding: .5em .5em .5em .75em;
   border-left: .5rem solid var(--primary-color);
   background: var(--code-light-background-color);
+
+  :lang(fa-IR) & {
+    border-left: unset;
+    border-right: .5rem solid var(--primary-color);
+    background: var(--code-light-background-color);
+  }
 
   code {
     padding: 0;
@@ -313,4 +328,19 @@ pre {
     transform: scale(.8);
     transform-origin: 0 0;
   }
+}
+
+html:lang(fa-IR) body {
+  direction: rtl;
+  text-align: right;
+}
+
+
+.dropdown-menu-end[data-bs-popper]:lang(fa-IR) {
+  left: 0;
+  right: auto;
+}
+
+.form-select:lang(fa-IR) {
+  background-position: left .75rem center;
 }
