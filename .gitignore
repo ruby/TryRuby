@@ -2,7 +2,6 @@ build/*
 _site/*
 .bundle
 .idea
-.ruby-version
 .sass-cache
 tmp
 app/application.js
