@@ -48,32 +48,6 @@ docker compose up
 
 Then visit `http://localhost:9099`.
 
-## Preparing
-
-Clone this repo, and use bundler to get dependencies:
-
-    $ bundle install
-
-The website is built using middleman. Livereload is enabled.
-
-Note: to install the 'eventmachine' gem a ruby development environment needs to
-be present. You may need to run something like:
-
-    $ sudo apt-get install ruby2.3-dev
-
-## Run development website
-
-    $ bin/middleman server
-
-Then visit `http://localhost:4567`.
-
-## Publishing
-
-    $ bin/rake publish
-
-Git branch 'gh-pages' now holds the publishable version of TryRuby, accessible
-via [try.ruby-lang.org/](https://try.ruby-lang.org/).
-
 ## Translators
 
 When adding a new translation: see the README file in /translations.

@@ -16,7 +16,7 @@ class TryRuby
   RUBY
   INITIAL_TRY_RESULT = 'Welcome ' * 3
 
-  DEFAULT_RUBY_ENGINE = "cruby-3.4.1"
+  DEFAULT_RUBY_ENGINE = "cruby-4.0.0"
 
   GEM_PRELUDE_WARNINGS = [
     "`RubyGems' were not loaded.",
