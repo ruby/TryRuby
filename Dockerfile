@@ -1,5 +1,5 @@
 ## Building image ##
-FROM ruby:3.0.3-slim-bullseye AS builder
+FROM ruby:3.4.8-slim-trixie AS builder
 # install build dependencies
 RUN apt update && apt install make gcc g++ libffi-dev nodejs git -y
 COPY ./Gemfile /app/Gemfile

@@ -2,7 +2,7 @@ require_relative "tryruby_helpers"
 
 RSpec.describe "Playground", type: :feature, js: true do
   context "engine" do
-    engines = ["opal-ww-1.8.2", "cruby-3.2.2", "cruby-3.3.0", "cruby-3.4.1"]
+    engines = ["opal-ww-1.8.2", "cruby-3.2.4", "cruby-3.3.3", "cruby-3.4.1", "cruby-4.0.0"]
     engines.each do |engine|
       context engine do
         before :each do

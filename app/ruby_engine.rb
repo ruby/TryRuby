@@ -39,20 +39,25 @@ class RubyEngine
   # When you update the engines, ensure that they are tested correctly.
   # Update the engine list also in spec/playground_spec.
   ENGINES = [
-    # https://www.jsdelivr.com/package/npm/@ruby/3.4-wasm-wasi?tab=files&path=dist&version=2.7.2
+    # https://www.jsdelivr.com/package/npm/@ruby/4.0-wasm-wasi?tab=files&path=dist&version=2.8.1
     CRubyWASI.new(
-      "https://cdn.jsdelivr.net/npm/@ruby/3.4-wasm-wasi@2.7.2/dist/ruby.wasm",
+      "https://cdn.jsdelivr.net/npm/@ruby/4.0-wasm-wasi@2.8.1/dist/ruby.wasm",
+      "4.0.0"
+    ),
+  # https://www.jsdelivr.com/package/npm/@ruby/3.4-wasm-wasi?tab=files&path=dist&version=2.8.1
+    CRubyWASI.new(
+      "https://cdn.jsdelivr.net/npm/@ruby/3.4-wasm-wasi@2.8.1/dist/ruby.wasm",
       "3.4.1"
     ),
-    # https://www.jsdelivr.com/package/npm/@ruby/3.3-wasm-wasi?tab=files&path=dist&version=2.7.2
+    # https://www.jsdelivr.com/package/npm/@ruby/3.3-wasm-wasi?tab=files&path=dist&version=2.8.1
     CRubyWASI.new(
-      "https://cdn.jsdelivr.net/npm/@ruby/3.3-wasm-wasi@2.7.2/dist/ruby.wasm",
-      "3.3.0"
+      "https://cdn.jsdelivr.net/npm/@ruby/3.3-wasm-wasi@2.8.1/dist/ruby.wasm",
+      "3.3.3"
     ),
-    # https://www.jsdelivr.com/package/npm/@ruby/3.2-wasm-wasi?tab=files&path=dist&version=2.7.2
+    # https://www.jsdelivr.com/package/npm/@ruby/3.2-wasm-wasi?tab=files&path=dist&version=2.8.1
     CRubyWASI.new(
-      "https://cdn.jsdelivr.net/npm/@ruby/3.2-wasm-wasi@2.7.2/dist/ruby.wasm",
-      "3.2.2"
+      "https://cdn.jsdelivr.net/npm/@ruby/3.2-wasm-wasi@2.8.1/dist/ruby.wasm",
+      "3.2.4"
     ),
     # Opal.new,
     OpalWebWorker.new("1.8.2"),
