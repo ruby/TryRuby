@@ -1,5 +1,7 @@
 source "https://rubygems.org"
 
+ruby File.read(".ruby-version").strip
+
 gem "opal", "~> 1.8.2"
 gem "opal-browser"
 gem "middleman"
