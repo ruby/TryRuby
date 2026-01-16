@@ -1,6 +1,19 @@
 version: 2
 updates:
-  - package-ecosystem: 'github-actions'
-    directory: '/'
+  - package-ecosystem: bundler
+    directory: /
     schedule:
-      interval: 'weekly'
+      interval: weekly
+    groups:
+      dependencies:
+        dependency-type: production
+      dev-dependencies:
+        dependency-type: development
+    cooldown:
+      default-days: 7
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
