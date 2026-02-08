@@ -26,7 +26,7 @@ J'ai préparé la méthode __count\_plays__ pour toi. Essaye de trouver combien 
         }.count
     end
     
-    puts count_plays(0)
+    puts count_plays(1591)
 
 As-tu remarqué que j'ai chaîné la méthode count à la fin de la méthode each ? Cela nous donne une valeur de retour pour la méthode __count\_plays__.
 

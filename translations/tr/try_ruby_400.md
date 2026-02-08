@@ -30,7 +30,7 @@ yazdığına bir bak bakalım. Şunu dene:
         }.count
     end
     
-    puts count_plays(0)
+    puts count_plays(1591)
 
 count metodunu en sona zincirlediğimi fark ettin mi? Bu bize __count\_plays__ metodu için
 geri döndürülecek bir değer veriyor.
