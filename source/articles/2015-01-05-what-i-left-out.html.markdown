@@ -9,7 +9,7 @@ the_summary: TryRuby is a Ruby course for beginners. Its not possible to tell yo
 ## What I've left out
 
 TryRuby is a Ruby course for beginners. Its not possible to tell you everything about Ruby in
-15 minutes. Here is an overview of some of the things that I have left out.
+30 minutes. Here is an overview of some of the things that I have left out.
 
 ### Comments
 To add text to your Ruby file, you can do so with comments. Comments can be used for
