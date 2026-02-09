@@ -167,7 +167,7 @@ A very simple (and incomplete) example:
 
 The Cow and Chicken classes can use all attributes and methods that are defined for Animal.
 
-A course or a book on _Object Oriented programming_ can teach you all about this import concept.
+A course or a book on _Object Oriented programming_ can teach you all about this important concept.
 
 ### Instance variables
 In the lessons we mentioned _object variables_. Actually these should be called _instance variables_,
