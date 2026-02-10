@@ -21,7 +21,7 @@ device itself.
 These days, to deliver the service to a customer we really have to support multiple distribution
 channels:
 a website usable from a variety of computers and devices, plus a native app for each of the major
-platforms (Android, iOS, Windows Phone).
+platforms (Android, iOS).
 A lot of different technologies to learn!
 
 Life for software developers isn't that simple anymore. What are your options ?
