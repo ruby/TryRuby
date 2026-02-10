@@ -97,5 +97,7 @@ The answer is automating tests. When the test automation tool notices you have c
 file, part or all of the tests are executed again. And you will be notified of newly failing or
 passing tests.
 
-Test automation can for instance be done with __autotest__ or __guard__. Guard can automate lots
-of other tasks for you as well.
+Test automation can for instance be done with __autotest__, __guard__ or a [CI] infrastructure.
+Guard can automate lots of other tasks for you as well.
+
+[CI]: https://en.wikipedia.org/wiki/Continuous_integration
