@@ -54,5 +54,9 @@ Huge drawback to this approach is that every mobile platform uses a completely d
 environment and programming language. You might need to learn about Java, Objective-C, Swift,
 C-Sharp and others.
 
-But you are in luck ! There are cross-platform tools available where you create you app once and
-distribute it to multiple mobile platforms.
+But you are in luck! There are cross-platform tools available where you create your app once and
+distribute it to multiple mobile platforms. One example is [Hotwire Native][hotwire-native] which
+can be used to generate native Android and iOS apps from web applications you developed using
+a web framework like Ruby on Rails.
+
+[hotwire-native]: https://native.hotwired.dev/
