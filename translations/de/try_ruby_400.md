@@ -34,7 +34,7 @@ wurden. Versuche es hiermit:
         }.count
     end
     
-    puts count_plays(0)
+    puts count_plays(1591)
 
 Hast du gemerkt, dass ich die count-Methode am Ende der each-Methode angehängt 
 habe. Dadurch erhalten wir einen Rückgabewert für die Methode __count\_plays__.
