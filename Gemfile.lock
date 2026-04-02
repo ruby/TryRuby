@@ -185,7 +185,7 @@ GEM
     puma (7.1.0)
       nio4r (~> 2.0)
     racc (1.8.1)
-    rack (3.1.20)
+    rack (3.1.21)
     rack-livereload (0.6.1)
       rack (>= 3.0, < 3.2)
     rack-test (2.2.0)
