@@ -10,7 +10,7 @@ description: Learn to program in Ruby in 30 minutes
     </h1>
 
     <div id="tryruby-content">
-      <p>Ruby is a programming language from Japan which is revolutionizing software development.</p>
+      <p>Ruby is a programming language from Japan that is revolutionizing software development.</p>
       <p>The beauty of Ruby is found in its balance between simplicity and power.</p>
       <p>You can type some Ruby code in the editor and use these buttons to navigate:</p>
 
