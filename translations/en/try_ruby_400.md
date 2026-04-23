@@ -31,7 +31,7 @@ were written by Shakespeare in the year __1591__. Try this:
         }.count
     end
     
-    puts count_plays(0)
+    puts count_plays(1591)
 
 Did you notice that I chained the count method at the end of the each method. This gives
 us a return value for the __count\_plays__ method.
