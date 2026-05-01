@@ -2,18 +2,18 @@
 title: What I've left out
 date: 2015/01/05
 author: Ivo Herweijer
-the_summary: TryRuby is a Ruby course for beginners. Its not possible to tell you everything about Ruby in 15 minutes. Here is an overview of what I have left out.
+the_summary: TryRuby is a Ruby course for beginners. It's not possible to tell you everything about Ruby in 15 minutes. Here is an overview of what I have left out.
 ---
 
 
 ## What I've left out
 
-TryRuby is a Ruby course for beginners. Its not possible to tell you everything about Ruby in
+TryRuby is a Ruby course for beginners. It's not possible to tell you everything about Ruby in
 30 minutes. Here is an overview of some of the things that I have left out.
 
 ### Comments
-To add text to your Ruby file, you can do so with comments. Comments can be used for
-documentation, explain parts of your code or anything else you'd like.
+To add text to your Ruby file, you can use comments. Comments can be used for
+documentation, to explain parts of your code, or anything else you'd like.
 
 Single line comments
 
@@ -71,12 +71,12 @@ And there is an alternate form:
     end
 
 ### Regular expressions
-Sometimes you have a string and you want to test if that string contains some text. For instance if
+Sometimes you have a string and you want to test whether it contains some text. For instance, whether
 'user\_123' starts with 'user\_'. You could use a test like __my_string[0..4] == 'user\_'__, but
 there is a much more elegant and flexible way to do this kind of string testing, called
 regular expressions.
 
-Reason this isn't in TryRuby lessons is the fact that regular expressions have a syntax that is so
+The reason this isn't in the TryRuby lessons is that regular expressions have a syntax that is so
 strange at first, it might make your head explode. If you see a complex regular expression for the
 first time, it is like a monkey has been randomly bashing away on a keyboard.
 
@@ -84,7 +84,7 @@ The regex for the example mentioned above is relatively simple:
 
     my_string.match( /^user_(\d+)/ )
 
-This will return __nil__ if my_string didn't conform to the regex, or a matchdata object if it did.
+This will return __nil__ if my_string didn't conform to the regex, or a MatchData object if it did.
 In the last case it will also give you the 123 part as the matched data.
 
 The Ruby <a href="http://www.ruby-doc.org/core/Regexp.html" target="_blank">documentation</a> has
@@ -100,8 +100,8 @@ Now you can handle the missing method as if it existed. For instance you might w
 a _sort\_by\_variable_ method. Where _variable_ is the name of one of your class variables.
 
 ### Inspection
-Ruby can give you a lot of information about objects when a program is running. What an object is and
-what methods it responds to.
+Ruby can give you a lot of information about objects when a program is running, including what an object is
+and what methods it responds to.
 
     # Inspection
     s = 'abc'
@@ -110,9 +110,9 @@ what methods it responds to.
     puts s.respond_to?(:match)
 
 ### Error handling
-Reality is that all programs can run into errors. Errors that only raise their ugly heads when your 
+The reality is that all programs can run into errors. Errors that only raise their ugly heads when your
 program is running. And even when your code is flawless. That just happens.  
-You can let your program crash, but it is usually nicer if you let your program continue and politely tell
+You can let your program crash, but it is usually nicer to let your program continue and politely report
 that an error has occurred and it can't continue what it was doing.
 Ruby has a couple of facilities for this purpose:
 
@@ -130,7 +130,7 @@ stupid).
     raise "Yo dude seriously ? You can't enter zero for a divisor" if divisor == 0
 
 ### IO
-You will often need to read or write diskfiles. That is easy in Ruby. For instance reading can be done with
+You will often need to read or write disk files. That is easy in Ruby. For instance, reading can be done with
 <a href="http://www.ruby-doc.org/core/IO.html#method-i-read" target="_blank">IO.Read</a>.
 
     # Read a file
@@ -146,7 +146,7 @@ on whether the left hand side is smaller, equal to or bigger than the right hand
       'a' <=> 'b'   => Returns -1
 
 ### Class inheritance
-When you are coding objects (classes) that model some real life situation, you will often encounter
+When you are coding objects (classes) that model some real-life situation, you will often encounter
 objects that are a subset of other objects. And there are many of such subsets.
 This is where class inheritance comes to the rescue.
 
@@ -227,7 +227,7 @@ to give you a quick start to solve your coding problem. Gems are also very easy 
 
 ### DRY
 Not really a (Ruby) technique, but more a concept, DRY stands for __D__on't __R__epeat __Y__ourself.
-Meaning: do not write te same piece of code twice.  
+Meaning: do not write the same piece of code twice.  
 When you are coding you will often find you need to write a bit of code that is the same as, or very similar
 to, something you wrote before. Stop writing new code right then !!!  
 Instead find the existing similar code and extract it into a new method. Call the new method from the
