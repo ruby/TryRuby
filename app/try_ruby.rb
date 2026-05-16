@@ -143,6 +143,8 @@ class TryRuby
         language = 'tr'
       when 'fr'
         language = 'fr'
+      when 'fa-IR', 'fa'
+        language = 'fa-IR'
       else
         language = 'en'
       end
