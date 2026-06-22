@@ -1,12 +1,12 @@
 ---
-title: What's next
+title: What's next?
 date: 2015/01/06
 author: Ivo Herweijer
-the_summary: So, you finished the TryRuby lessons. Are you hungry for more ? Here are some tips to let you continue on the path to Ruby enlightenment.
+the_summary: So, you finished the TryRuby lessons. Are you hungry for more? Here are some tips to help you continue on the path to Ruby enlightenment.
 ---
 
-## What's next ?
-So, you finished the TryRuby lessons. Are you hungry for more ?
+## What's next?
+So, you finished the TryRuby lessons. Are you hungry for more?
 
 You can use the
 <a href="/playground">TryRuby Playground</a>
@@ -26,9 +26,9 @@ You can find websites with lots more ideas (and suggested solutions) for coding 
 Maybe you can read a book on Ruby. I'm not giving any suggestions since I want to remain
 impartial.
 
-Follow an online course, of which there are many. And many are also free.
+Follow an online course, of which there are many. Many are also free.
 
-Regardless what you do, you will find the Ruby
+Regardless of what you do, you will find the Ruby
 <a href="http://www.ruby-doc.org/core/" target="_blank">documentation</a>
 an invaluable resource.
 

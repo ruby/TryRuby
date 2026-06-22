@@ -9,16 +9,16 @@ the_summary: One of the areas of software development where Ruby really shines i
 One of the areas of software development where Ruby really shines is web development. From creating
 a simple website to a full cloud based webservice, it is all easily attainable.
 
-### Ruby-on-rails
+### Ruby on Rails
 I should mention Ruby on Rails. You have been learning the Ruby language, how to speak it.
 But Rails is a very powerful and popular toolkit for building websites.
 
-Ruby-on-rails, or RoR, consists of set of Ruby libraries. These libraries help you do things that
+Ruby on Rails, or RoR, consists of a set of Ruby libraries. These libraries help you do things that
 websites commonly need. Like routing an incoming request to the correct handler. Or interacting with
 the database. Or returning a fully rendered webpage.
 
 RoR makes creating a website easy, __if__ you follow the RoR conventions. This also means that you
-do not have to setup a lot of complicated stuff in order to get RoR to work.
+do not have to set up a lot of complicated stuff in order to get RoR to work.
 RoR people call this principle _convention over configuration_.
 
 One important convention is called: _Model-View-Controller_ (for purists it is a design pattern). It means that you should separate code
@@ -27,7 +27,7 @@ controller).
 
 If you're interested in learning about Rails, I would
 <a href="http://rubyonrails.org/" target="_blank">head over there</a>
-right away. Start using your Ruby skills proper!
+right away. Start putting your Ruby skills to proper use!
 
 ### Other frameworks
 One disadvantage of RoR is that, because there are so many libraries and conventions, it takes

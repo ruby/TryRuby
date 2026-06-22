@@ -10,14 +10,14 @@ Testing software is one of the most important aspects of software development. I
 you are writing is doing what it is supposed to do. Now and in the future.  
 
 Having a comprehensive set of tests for your code gives __you__ confidence that it does what it is
-supposed to do. It also helps bestow that confidence on __others__. Other people who are using or maintaining
+supposed to do. It also helps convey that confidence to __others__: people who use or maintain
 your code.
 
 Running tests some time after you created your code, for instance after some components you rely on have been
 updated, will tell you if your code still works or you need to make changes.
 
 ### Different tests for different purposes
-There are a lot of different kinds of test. I've list a couple here, in order in which they are used in a
+There are many different kinds of tests. I've listed a few here, in the order they are commonly used in a
 real programming project:
 
 - Unit tests  
@@ -83,13 +83,13 @@ Here is an example from <a href="https://docs.cucumber.io/" target="_blank">Cucu
 > &nbsp;&nbsp;&nbsp;&nbsp;__When__ I try to post to "Expensive Therapy"  
 > &nbsp;&nbsp;&nbsp;&nbsp;__Then__ I should see "Your article was published."  
 
-Each feature usually has many scenario's.
+Each feature usually has many scenarios.
 
 ### Test tools and automation
-Ruby has one of the most advanced set of testing tools available anywhere.
+Ruby has one of the most advanced sets of testing tools available.
 
 For supporting TDD style testing both __rspec__ and __minitest__ are very popular.
-BDD style testing is often done with __cucumber__. Cucumber lets you translate functional
+BDD-style testing is often done with __cucumber__. Cucumber lets you translate functional
 requirements written in plain English into executable (!) tests for your Ruby code.
 
 Testing is not supposed to involve additional work. This would soon lead to less testing.

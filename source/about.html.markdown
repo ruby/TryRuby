@@ -70,5 +70,5 @@ All source code for TryRuby (this website) is available on
 ### Contact
 
 This website was created by Ivo Herweijer. I am a software developer and
-live The Netherlands. You can contact me via
+live in the Netherlands. You can contact me via
 <a href="https://github.com/ruby/TryRuby/issues" target="_blank">GitHub</a>.
