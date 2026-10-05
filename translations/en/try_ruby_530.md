@@ -33,7 +33,7 @@ I'm in no hurry, I'll wait for you in the next lesson.
       end
       
       def show_timeline
-        puts "Blurbify: #{@title} has #{@blurbs.count} Blurbs"
+        puts "Blurbalizer: #{@title} has #{@blurbs.count} Blurbs"
         
         @blurbs.sort_by { |t|
           t.time

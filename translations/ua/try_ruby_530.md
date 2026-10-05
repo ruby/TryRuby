@@ -31,7 +31,7 @@ load:   class Blurb;attr_accessor :content,:time,:mood;def initialize(mood, cont
       end
     
       def show_timeline
-        puts "Blurbify: #{@title} has #{@blurbs.count} Blurbs"
+        puts "Blurbalizer: #{@title} has #{@blurbs.count} Blurbs"
 
         @blurbs.sort_by { |t|
           t.time

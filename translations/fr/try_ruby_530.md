@@ -33,7 +33,7 @@ __Prends ton temps__ pour l'étudier. Je ne suis pas pressé, je t'attendrai à 
       end
       
       def show_timeline
-        puts "Blurbify: #{@title} contient #{@blurbs.count} Blurbs"
+        puts "Blurbalizer: #{@title} contient #{@blurbs.count} Blurbs"
         
         @blurbs.sort_by { |t|
           t.time

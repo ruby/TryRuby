@@ -33,7 +33,7 @@ Eu não estou com pressa, eu irei esperar você para a sua próxima lição.
       end
 
       def exibir_timeline
-        puts "Blurbify: #{@titulo} tem #{@blurbs.count} Blurbs"
+        puts "Blurbalizer: #{@titulo} tem #{@blurbs.count} Blurbs"
 
         @blurbs.sort_by { |t|
           t.tempo
