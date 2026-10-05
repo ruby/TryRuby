@@ -50,6 +50,8 @@ RSpec.describe "Tutorial", type: :feature, js: true do
           special = steps[step] || {}
 
           find(:css, "h1").text.should be == data["title"]
+          page.should have_button("Back", disabled: step == 1)
+          page.should have_button("Next", disabled: step == 56)
 
           unless special[:pass]
             case special[:code]

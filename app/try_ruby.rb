@@ -381,6 +381,10 @@ class TryRuby
     step = item.step.to_s
     $document.at_css("#tryruby-index").value  = step
 
+    # Disable the buttons that have no step to go to
+    $document.at_css('#btn_back').disabled = !@items.has_key?(item.step - 1)
+    $document.at_css('#btn_next').disabled = !@items.has_key?(item.step + 1)
+
     # Set session cookie to store progress
     set_cookie('tryruby_step', step)
 
