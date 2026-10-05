@@ -252,6 +252,11 @@ pre {
     background: white;
     padding: .25em;
     border-radius: .5rem;
+
+    // Undo Bootstrap's bidi-override on pre, which lays out RTL text in logical order
+    pre {
+      unicode-bidi: normal;
+    }
   }
 }
 
