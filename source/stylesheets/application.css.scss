@@ -119,9 +119,13 @@ h3 {
 .btn-primary {
   border-radius: 1rem;
   font-family: sans-serif;
-  color: var(--button-primary-text-color);
-  background-color: var(--button-primary-color);
-  border-color: var(--button-primary-color);
+
+  &,
+  &:disabled {
+    color: var(--button-primary-text-color);
+    background-color: var(--button-primary-color);
+    border-color: var(--button-primary-color);
+  }
 
   &:focus,
   &:focus:not(:focus-visible),
