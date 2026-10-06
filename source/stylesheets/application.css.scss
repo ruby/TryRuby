@@ -68,6 +68,12 @@ body {
 }
 
 .language-menu-toggle {
+  // Bootstrap 5.3 gives a plain .btn.nav-link the navbar's font and no usable border or focus ring states
+  --bs-btn-hover-border-color: var(--nav-border-color);
+  --bs-btn-active-border-color: var(--nav-border-color);
+  --bs-btn-focus-box-shadow: 0 0 0 var(--bs-focus-ring-width) var(--bs-focus-ring-color);
+  font-size: 1rem;
+  font-weight: normal;
   background: transparent;
   border: 1px solid var(--nav-border-color);
 
