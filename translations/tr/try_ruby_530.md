@@ -33,7 +33,7 @@ Benim acelem yok, seni diğer derste bekleyeceğim.
       end
       
       def show_timeline
-        puts "Blurbify: #{@title} has #{@blurbs.count} Blurbs"
+        puts "Blurbalizer: #{@title} has #{@blurbs.count} Blurbs"
         
         @blurbs.sort_by { |t|
           t.time
