@@ -2,7 +2,7 @@
 lang:   PT-BR
 title:  Pare, Você Está Latindo Como Um Louco!
 answer: ^\d{1,}$
-ok:     Apenas strings podem ser invertidas
+ok:     Strings podem ser invertidas (assim como arrays, sobre os quais você aprenderá a seguir)
 error:  
 ---
 

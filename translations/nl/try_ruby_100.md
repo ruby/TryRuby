@@ -2,7 +2,7 @@
 lang:   NL
 title:  Doe niet zo gek
 answer: ^\d{1,}$
-ok:     Zie je, we kunnen alleen strings omdraaien
+ok:     Strings kunnen worden omgekeerd (en dat geldt ook voor arrays, waar je hierna meer over zult leren)
 error:  
 ---
 

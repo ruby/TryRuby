@@ -2,7 +2,7 @@
 lang:   ES
 title:  Para, estás loco de atar!
 answer: ^\d{1,}$
-ok:     Sólo a strings (cadenas de texto) se les puede dar la vuelta
+ok:     Las strings (cadenas de texto) se pueden invertir (también los arrays, que verás en la siguiente lección).
 error:  
 ---
 

@@ -2,7 +2,7 @@
 lang:   TR
 title:  Dur, Delilercesine Havlıyorsun!
 answer: ^\d{1,}$
-ok:     Sadece string'ler tersine çevirilebilir
+ok:     String'ler tersine çevrilebilir (bir sonraki bölümde öğreneceğiniz diziler de öyle)
 error:  
 ---
 

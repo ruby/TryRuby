@@ -19,7 +19,7 @@ class Editor
   end
 
   def mark_ok(line_from, line_to)
-    `#@native.markText({line: line_from, ch: 0}, {line: line_to, ch: 99}, {className: "tryruby-output-green"})`
+    `#@native.markText({line: line_from, ch: 0}, {line: line_to, ch: 128}, {className: "tryruby-output-green"})`
   end
 
   def mark_error(line_from, line_to)
