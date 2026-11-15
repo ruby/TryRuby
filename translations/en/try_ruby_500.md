@@ -27,5 +27,4 @@ At the same time we can limit the length of the Blurb<sup>TM</sup> content to 40
     
     Blurb.new(:sick).time
 
-(That parameter __content=""__ is there to make sure that we know content is a string,
-even if no content parameter is passed to the initialize method.)
+The default value `content=""` ensures that `content` is an empty string when no argument is provided.
