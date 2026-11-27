@@ -2,7 +2,7 @@
 lang:   FR
 title:  Stop, t'es barge !
 answer: ^\d{1,}$
-ok:     Seuls les strings peuvent être inversés
+ok:     Les chaînes de caractères peuvent être inversées (tout comme les tableaux, que vous découvrirez par la suite)
 error:
 ---
 

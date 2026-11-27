@@ -2,7 +2,7 @@
 lang:   DE
 title:  Stop, du bist völlig irre!
 answer: ^\d{1,}$
-ok:     Nur Strings können umgedreht werden
+ok:     Zeichenketten lassen sich umkehren (ebenso wie Arrays, die du als Nächstes kennenlernen wirst)
 error:  
 ---
 

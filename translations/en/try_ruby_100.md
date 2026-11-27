@@ -2,7 +2,7 @@
 lang:   EN
 title:  Stop, You're Barking Mad!
 answer: ^\d{1,}$
-ok:     Only strings can be reversed
+ok:     Strings can be reversed (and so can arrays, which you'll learn about next)
 error:  
 ---
 
