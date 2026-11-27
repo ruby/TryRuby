@@ -31,7 +31,7 @@ quantas peças foram escritas por Shakespeare no ano __1591__. Tente isso:
         }.count
     end
 
-    puts count_plays(0)
+    puts count_plays(1591)
 
 Você notou que eu encadeei o método __count__ ao final do método __each__? Isto nos dá o valor
 de retorno para o método __count\_plays__.
