@@ -12,4 +12,4 @@ error:
 
     "Jimmy".reverse
 
-(别忘了打!)
+（别忘了打点！）
